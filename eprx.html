@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>需給調整市場 一次 約定結果速報 | 電力政策情報モニター</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="container wide">
+  <nav class="top-nav">
+    <a href="index.html">政策関連情報</a>
+    <a href="eprx.html" class="active">需給調整市場 約定結果</a>
+    <a href="news.html">業界ニュース</a>
+    <a href="players.html">投資プレイヤー</a>
+  </nav>
+  <header class="page-header">
+    <h1>需給調整市場　一次　約定結果速報</h1>
+    <div class="sub">
+      商品区分: <span id="eprx-product">-</span>　｜　対象日: <span id="eprx-date">-</span>
+    </div>
+  </header>
+
+  <div class="chart-card">
+    <div class="chart-toolbar">
+      <div class="chart-legend">
+        <span class="legend-item"><span class="legend-swatch" style="background:var(--series-1)"></span>募集量（棒）</span>
+        <span class="legend-item"><span class="legend-swatch" style="background:var(--series-2)"></span>応札量合計・電源属地別（棒）</span>
+        <span class="legend-item"><span class="legend-swatch line" style="background:var(--series-3)"></span>最高落札価格・電源属地別（線）</span>
+        <span class="legend-item"><span class="legend-swatch line" style="background:var(--series-4)"></span>平均落札価格・電源属地別（線）</span>
+        <span class="legend-item"><span class="legend-swatch line-dashed"></span>募集量（過去30日平均・黒破線）</span>
+        <span class="legend-item"><span class="legend-swatch line-dotted"></span>平均落札価格（過去30日平均・黒点線）</span>
+      </div>
+      <div class="view-toggle">
+        <button id="eprx-btn-chart" class="active" onclick="eprxToggleView('chart')">グラフ</button>
+        <button id="eprx-btn-table" onclick="eprxToggleView('table')">テーブル</button>
+      </div>
+    </div>
+
+    <div class="chart-svg-wrap" id="eprx-chart-wrap" style="position:relative;">
+      <div id="eprx-root"></div>
+      <div class="chart-tooltip" id="eprx-tooltip"></div>
+    </div>
+    <div class="data-table-wrap" id="eprx-table-wrap"></div>
+
+    <div class="chart-note">
+      出典: 一般社団法人 電力需給調整力取引所（EPRX）<a id="eprx-source-link" href="#" target="_blank" rel="noopener">取引実績ページ</a>の「取引結果・連系線確保量結果ダウンロード（速報値）」CSV（zip一括ダウンロード）を1日1回取得して作成。左軸=MW（棒：募集量・応札量合計、黒破線：募集量の<span id="eprx-avg-window">過去30日平均</span>）、右軸=円/kW・30分（線：最高・平均落札価格、黒点線：平均落札価格の過去30日平均）。値はいずれも全国合計。EPRXサイトの利用規約上、自動的な大量取得（スクレイピング等）には事前承諾が必要なため、1日1回のファイル一括ダウンロードのみで更新しています。
+    </div>
+  </div>
+
+  <div class="area-section" id="eprx-area-section">
+    <h2>エリア別内訳</h2>
+    <div class="sub">9エリアとも同じ縦軸スケールで表示しています（棒：募集量・応札量合計、線：最高・平均落札価格）。各グラフにカーソルを合わせると詳細が確認できます。</div>
+    <div class="area-grid" id="eprx-area-grid"></div>
+  </div>
+</div>
+<script src="data/eprx_data.js"></script>
+<script src="assets/eprx.js"></script>
+<script>renderEprxChart();</script>
+</body>
+</html>

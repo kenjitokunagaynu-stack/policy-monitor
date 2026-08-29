@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>投資プレイヤー一覧 | 電力政策情報モニター</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="container wide">
+  <nav class="top-nav">
+    <a href="index.html">政策関連情報</a>
+    <a href="eprx.html">需給調整市場 約定結果</a>
+    <a href="news.html">業界ニュース</a>
+    <a href="players.html" class="active">投資プレイヤー</a>
+  </nav>
+  <header class="page-header">
+    <h1>系統用蓄電池 投資プレイヤー一覧</h1>
+    <div class="sub">調査対象: <span id="players-period">-</span></div>
+  </header>
+
+  <div class="news-toolbar-note">
+    ニュース検索（PR TIMES・共同通信PRワイヤー・日経の公開範囲・業界専門メディア等）で確認できた投資決定・稼働開始・EPC受注情報をもとに作成しています。「投資額目標」「MW規模」は各社が公表した範囲のみを記載し、非公開・不明な項目は正直に「非公開」「不明」としています。網羅的なランキングではなく、直近1年でニュースになった主要プレイヤーの試験的な一覧です。
+  </div>
+
+  <div id="players-list"></div>
+</div>
+<script src="data/players_data.js"></script>
+<script src="assets/players.js"></script>
+<script>renderPlayers();</script>
+</body>
+</html>

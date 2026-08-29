@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>業界ニュース | 電力政策情報モニター</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="container">
+  <nav class="top-nav">
+    <a href="index.html">政策関連情報</a>
+    <a href="eprx.html">需給調整市場 約定結果</a>
+    <a href="news.html" class="active">業界ニュース</a>
+    <a href="players.html">投資プレイヤー</a>
+  </nav>
+  <header class="page-header">
+    <h1>系統用蓄電池 業界ニュース</h1>
+    <div class="sub">収集対象期間: <span id="news-period">-</span>（試験運用）</div>
+  </header>
+
+  <div class="news-toolbar-note">
+    日経（xtech.nikkei.com等の公開範囲）・日経BP・PR TIMES・共同通信PRワイヤー・業界専門メディア・Google検索を横断的に調査して収集しています。日経電子版などの有料会員限定記事は、見出し・リード文など公開されている範囲のみで要約しています。ジャンルは今回収集した実データから抽出した「候補」です。使いやすいジャンル分けになっているか、ご意見をください。
+  </div>
+
+  <div class="genre-tabs" id="news-genre-tabs"></div>
+
+  <div id="news-list"></div>
+</div>
+<script src="data/news_data.js"></script>
+<script src="assets/news.js"></script>
+<script>renderNews();</script>
+</body>
+</html>
