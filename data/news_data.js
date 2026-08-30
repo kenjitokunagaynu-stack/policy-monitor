@@ -20,6 +20,7 @@ window.NEWS_DATA = {
   "items": [
     {
       "id": "n20260828_powerx_itochu",
+      "image": "https://www.media-ir.com/news/wp-content/uploads/2026/08/p3-1.jpg",
       "date": "2026-08-28",
       "genre": "epc",
       "title": "パワーエックス、伊藤忠商事と系統用蓄電システム30台を共同受注",
@@ -36,6 +37,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260827_meti_teiatsu_kenen",
+      "image": "https://project.nikkeibp.co.jp/ms/atcl/19/news/00001/06036/METIm.jpg?ver=1",
       "date": "2026-08-27",
       "genre": "policy",
       "title": "「低圧系統用蓄電池」申込急増に懸念、経産省が対策へ",
@@ -52,6 +54,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260825_kikusui",
+      "image": "https://prcdn.freetls.fastly.net/release_image/110320/14/110320-14-e496df64aec350188b8a1cf8fffa7ebe-1477x1108.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "date": "2026-08-25",
       "genre": "entry",
       "title": "菊水株式会社、系統用蓄電池事業へ本格参入",
@@ -68,6 +71,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260817_blueskyenergy",
+      "image": "https://kyodonewsprwire.jp/prwfile/release/M109010/202608134127/_prw_PI2fl_rQ6AGj9d.jpg",
       "date": "2026-08-17",
       "genre": "operation",
       "title": "ブルースカイエナジー、系統用蓄電所4拠点が運転開始（ヒューリックと提携）",
@@ -84,6 +88,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260803_ecostyle",
+      "image": "https://prcdn.freetls.fastly.net/release_image/12501/395/12501-395-2e520ff798c87ada2933284112c95303-1045x413.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "date": "2026-08-03",
       "genre": "entry",
       "title": "エコスタイル、低圧系統用蓄電所の開発事業を開始",
@@ -100,6 +105,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260803_meti_subsidy_requirements",
+      "image": "https://project.nikkeibp.co.jp/ms/atcl/19/news/00001/05984/0731METI01m.jpg?ver=1",
       "date": "2026-08-03",
       "genre": "policy",
       "title": "系統用蓄電池向け補助金、経産省が公募要件を追加",
@@ -132,6 +138,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260724_geac_erex",
+      "image": "http://www.zaikei.co.jp/images/zaikei_og_image.jpg",
       "date": "2026-07-24",
       "genre": "epc",
       "title": "グリーンエナジー&カンパニー、イーレックスから系統用蓄電池を追加受注（3件目）",
@@ -180,6 +187,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260715_tokyogas_1gw",
+      "image": "https://www.tokyo-gas.co.jp/p31hg90000005vxb-img/tokyogas_logo.jpg",
       "date": "2026-07-15",
       "genre": "entry",
       "title": "東京ガス、系統用蓄電池事業の運用予定容量が1GWを突破",
@@ -196,6 +204,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260714_balancing_price_cap_cut",
+      "image": "https://bessnews.jp/img/common/ogp.png",
       "date": "2026-07-14",
       "genre": "policy",
       "title": "需給調整市場の上限価格、9月1日から15円→10円へ引き下げへ",
@@ -212,6 +221,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260713_birdman_2gouki",
+      "image": "http://www.zaikei.co.jp/images/zaikei_og_image.jpg",
       "date": "2026-07-13",
       "genre": "capital",
       "title": "Birdman、系統用蓄電池2号機を取得",
@@ -228,6 +238,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260710_re100_birdman",
+      "image": "https://enehub.jp/wp-content/uploads/2026/07/RE100_BESS.jpg",
       "date": "2026-07-10",
       "genre": "capital",
       "title": "RE100電力、Birdmanと系統用蓄電所のアグリゲーション契約を締結",
@@ -260,6 +271,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260703_tokyufudosan_iizuka",
+      "image": "https://www.kankyo-business.jp/uploads/2026/07/07/c6JAQ4XiPx66XiBHjM0TldwmTsrHmw08yRHl9GTw.webp",
       "date": "2026-07-03",
       "genre": "epc",
       "title": "東急不動産など3社、福岡県飯塚市で系統用蓄電池設備が着工",
@@ -276,6 +288,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260616_ja_mitsui_kandenchi_fund",
+      "image": "https://prcdn.freetls.fastly.net/release_image/118220/10/118220-10-a9967d06862344d37df02b3b4f83d99c-419x357.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "date": "2026-06-16",
       "genre": "capital",
       "title": "JA三井リース、蓄電所ファンド「カン-denchiファンド」に参画",
@@ -292,6 +305,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260611_osakagas_sukagawa",
+      "image": "https://www.osakagas.co.jp/files/img/common/LogoOGDG.png",
       "date": "2026-06-11",
       "genre": "entry",
       "title": "大阪ガス、JA三井リースグループと福島県須賀川市で系統用蓄電池の開発に着手",
@@ -308,6 +322,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260604_geac_plus_kyoto_soden",
+      "image": "http://www.zaikei.co.jp/images/zaikei_og_image.jpg",
       "date": "2026-06-04",
       "genre": "epc",
       "title": "グリーンエナジー・プラス、京都府内で系統用蓄電池2件を受注",
@@ -324,6 +339,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260602_battery_industry_strategy",
+      "image": "https://project.nikkeibp.co.jp/ms/atcl/19/news/00001/05867/0610METI02m.jpg?ver=1",
       "date": "2026-06-02",
       "genre": "policy",
       "title": "経産省、「蓄電池産業戦略」を「蓄電池・電源産業戦略」に改定",
@@ -340,6 +356,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260601_mec_chikuzen",
+      "image": "https://www.mec.co.jp/ogimage.png",
       "date": "2026-06-01",
       "genre": "entry",
       "title": "三菱地所、福岡県筑前町で67MW・230MWhの系統用蓄電所建設に着手",
@@ -356,6 +373,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260601_mitsuuroko_kitahiroshima_34",
+      "image": "https://xn--q9ji3c6d676qnnlo0fgmgrr6k.com/wp-content/themes/office-n/img/icon/ogp.png",
       "date": "2026-06-01",
       "genre": "operation",
       "title": "ミツウロコグリーンエネルギー、北広島蓄電池3・4号機が運転開始",
@@ -372,6 +390,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260531_geac_kurashiki",
+      "image": "http://www.zaikei.co.jp/images/zaikei_og_image.jpg",
       "date": "2026-05-31",
       "genre": "epc",
       "title": "グリーンエナジー&カンパニー、岡山県倉敷市で系統用蓄電池システム工事を受注",
@@ -388,6 +407,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260529_itcenex_hiji",
+      "image": "https://www.itcenex.com/ja/common/images/enex_ogp2.png",
       "date": "2026-05-29",
       "genre": "capital",
       "title": "伊藤忠エネクス、大分県日出町の系統用蓄電池事業に出資参画",
@@ -404,6 +424,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260511_byd_haohan",
+      "image": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO2996472011052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=57520a8403c372e9f3197e9fb993234b",
       "date": "2026-05-11",
       "genre": "entry",
       "title": "BYD、高エネルギー密度の新型系統用蓄電池「Haohan」を日本投入",
@@ -420,6 +441,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260511_mitsuuroko_tahara",
+      "image": "https://xn--q9ji3c6d676qnnlo0fgmgrr6k.com/wp-content/themes/office-n/img/icon/ogp.png",
       "date": "2026-05-11",
       "genre": "operation",
       "title": "ミツウロコグリーンエネルギー、田原蓄電所が一次調整力市場へ新規参入",
@@ -436,6 +458,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260507_mizuho_biwako_investment",
+      "image": "https://prcdn.freetls.fastly.net/release_image/85927/141/85927-141-669232fd1033502613a0f76b7f6ee8a8-1098x376.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "date": "2026-05-07",
       "genre": "capital",
       "title": "みずほリース（ML Power）、森トラスト「琵琶湖蓄電所プロジェクト」に出資参画",
@@ -452,6 +475,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260428_ricoh_lease_nihon_chikudenchi_49oku",
+      "image": "https://xn--q9ji3c6d676qnnlo0fgmgrr6k.com/wp-content/themes/office-n/img/icon/ogp.png",
       "date": "2026-04-28",
       "genre": "capital",
       "title": "リコーリース、日本蓄電池の系統用蓄電池14件に49億円のPF融資枠",
@@ -468,6 +492,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260428_blueskyenergy_makinohara",
+      "image": "https://kyodonewsprwire.jp/prwfile/release/M109010/202604288295/_prw_PI1fl_4NYsS3m5.gif",
       "date": "2026-04-28",
       "genre": "operation",
       "title": "ブルースカイエナジー、牧之原蓄電所が需給調整市場へ参入",
@@ -484,6 +509,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260423_hokuriku_mizuho_funahashi",
+      "image": "https://www.nikkei.com/.resources/k-components/rectangle.rev-d54ea30.png",
       "date": "2026-04-23",
       "genre": "entry",
       "title": "みずほリース系、北陸電力と系統用蓄電池事業に参入",
@@ -500,6 +526,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260416_tokyogas_aomori",
+      "image": "https://www.tokyo-gas.co.jp/p31hg90000005vxb-img/tokyogas_logo.jpg",
       "date": "2026-04-16",
       "genre": "entry",
       "title": "東京ガス、青森県2カ所の系統用蓄電所で最適運用サービス契約を締結、事業目標を200万kWに引き上げ",
@@ -516,6 +543,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260413_aesc_nextes",
+      "image": "https://mma.prnewswire.com/media/2954552/photo.jpg?p=facebook",
       "date": "2026-04-13",
       "genre": "capital",
       "title": "AESCとNEXTES、1.5GWhの電池セル供給で戦略的提携　2026年国内最大級",
@@ -532,6 +560,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260408_tokyu_battery",
+      "image": "https://www.tokyu.co.jp/company/news/img/20260408_chikudensho_t1.jpg",
       "date": "2026-04-08",
       "genre": "entry",
       "title": "東急株式会社グループ、系統用蓄電所事業を推進（東京都支援事業に2年連続採択）",
@@ -564,6 +593,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260402_mori_trust_biwako",
+      "image": "https://www.mori-trust.co.jp/assets/media/960ae95be413a5ee6a18e3948e2b8a76-scaled.jpg",
       "date": "2026-04-02",
       "genre": "entry",
       "title": "森トラスト、系統用蓄電池事業に初参入「琵琶湖蓄電所プロジェクト」始動",
@@ -580,6 +610,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260331_renova_kikugawa",
+      "image": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO2830062031032026000000-2.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=f5ef248de53fd93db2ebbae62d996360",
       "date": "2026-03-31",
       "genre": "entry",
       "title": "レノバ、静岡県菊川市で国内最大級の系統用蓄電所を開発",
@@ -596,6 +627,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260326_tokyufudosan_libra",
+      "image": "https://prcdn.freetls.fastly.net/release_image/6953/684/6953-684-c89923ad73b8795cf32450e5ba6cbe0d-407x71.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "date": "2026-03-26",
       "genre": "capital",
       "title": "東急不動産グループと国内大手7社、300億円規模の系統用蓄電池コンソーシアムを組成",
@@ -612,6 +644,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260324_sungrow_blueskyenergy",
+      "image": "https://kyodonewsprwire.jp/prwfile/release/M109010/202603246199/_prw_PI2fl_n4uimkC9.gif",
       "date": "2026-03-24",
       "genre": "capital",
       "title": "サングロウジャパン、ブルースカイエナジーと系統用蓄電システム調達で基本合意",
@@ -628,6 +661,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260319_ja_mitsui_powerx_tsu",
+      "image": "https://power-x.jp/ja/intl/newsroom/2026-03-19/cover",
       "date": "2026-03-19",
       "genre": "operation",
       "title": "JA三井リース×PowerX、三重県津市の蓄電所が運転開始",
@@ -644,6 +678,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260319_rs_asset_hulic_fuyo_itochu",
+      "image": "https://prcdn.freetls.fastly.net/release_image/154894/11/154894-11-e39286a6e47be6b70709ca9dc12a4772-563x286.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "date": "2026-03-19",
       "genre": "capital",
       "title": "RSアセットアドバイザーズ、ヒューリック・芙蓉総合リース・伊藤忠商事と系統用蓄電池を共同開発",
@@ -660,6 +695,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260317_catl_volt",
+      "image": "https://prcdn.freetls.fastly.net/release_image/175252/6/175252-6-ce6bdd17da0d11bf412e42abce6e49d8-1477x1108.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "date": "2026-03-17",
       "genre": "capital",
       "title": "CATL、VOLT販売と2GWhの蓄電池供給契約を締結",
@@ -676,6 +712,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260303_nishimu_marubeni_powerx",
+      "image": "https://ferret-one.akamaized.net/images/66a71d0b5406e70403ff6a71/large.png?utime=1722227979",
       "date": "2026-03-03",
       "genre": "entry",
       "title": "ニシム電子工業・丸紅新電力・パワーエックス、系統用蓄電池パッケージ「Mega Power 2500」の提供を開始",
@@ -692,6 +729,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260302_kepco_gates",
+      "image": "https://gatestokyo.co.jp/wp-content/uploads/2026/06/site-image.jpg",
       "date": "2026-03-02",
       "genre": "capital",
       "title": "関西電力、GATESと系統用蓄電池事業で業務提携基本契約を締結",
@@ -708,6 +746,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260302_ntt_anode_hakodate",
+      "image": "https://prcdn.freetls.fastly.net/release_image/111866/66/111866-66-851ac98bd675580ce1f7a82537666365-3900x2921.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "date": "2026-03-02",
       "genre": "operation",
       "title": "NTTアノードエナジー、北海道函館蓄電所が商業運転開始",
@@ -724,6 +763,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260225_byd_itochu_10x",
+      "image": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO2600675009022026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.51&fp-y=0.2&h=630&w=1200&s=3b8c61b412b1ef8b135ee493d2c408a8",
       "date": "2026-02-25",
       "genre": "capital",
       "title": "BYD、伊藤忠と連携し日本の蓄電池販売を2030年までに10倍へ",
@@ -740,6 +780,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260218_gsyuasa_domestic_production",
+      "image": "https://cdn.clipkit.co/tenants/1398/articles/images/000/002/540/large/6f6b5068-ff2f-4ca5-819a-54d1b07beb41.png?1771224941",
       "date": "2026-02-18",
       "genre": "entry",
       "title": "GSユアサ、定置用リチウムイオン電池の国産量産計画が経産省認定　投資額703億円",
@@ -772,6 +813,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20251127_mizuho_osakagas_takeo",
+      "image": "https://www.osakagas.co.jp/files/img/common/LogoOGDG.png",
       "date": "2025-11-27",
       "genre": "operation",
       "title": "みずほリース・大阪ガスなど共同出資の武雄蓄電所、商業運転を開始",
@@ -788,6 +830,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20251104_fuyo_shinkawa",
+      "image": "https://www.nikkei.com/nkd/disclosure/tdnr/20251104586671/thumbnail/?ttype=ogp",
       "date": "2025-11-04",
       "genre": "operation",
       "title": "芙蓉総合リース、系統用蓄電池プロジェクト「しんかわ蓄電所」が商業運転を開始",

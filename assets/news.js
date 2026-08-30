@@ -56,9 +56,13 @@ function renderNews() {
         }).join("")
       : "";
     var genreLabel = genreMap[item.genre] || item.genre;
+    var thumbHtml = item.image
+      ? '<img class="news-thumb" src="' + newsEscapeHtml(item.image) + '" alt="" loading="lazy" onerror="this.remove()">'
+      : '';
     return (
       '<div class="item news-item" id="news-item-' + idx + '">'
       + '<button class="item-summary-toggle" onclick="toggleNewsItem(' + idx + ')">'
+      + thumbHtml
       + '<span>'
       + '<span class="news-meta"><span class="genre-badge genre-' + newsEscapeHtml(item.genre) + '">' + newsEscapeHtml(genreLabel) + '</span>'
       + '<span class="date">' + newsEscapeHtml(newsFmtDate(item.date)) + '</span></span>'
