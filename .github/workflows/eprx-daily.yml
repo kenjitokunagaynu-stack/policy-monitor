@@ -1,0 +1,46 @@
+name: EPRX daily update
+
+on:
+  schedule:
+    # 19:30 JST daily = 10:30 UTC
+    - cron: "30 10 * * *"
+  workflow_dispatch: {}
+  push:
+    paths:
+      - ".github/workflows/eprx-daily.yml"
+      - "scripts/eprx_fetch_and_process.sh"
+      - "scripts/generate_eprx_data.py"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch and process EPRX CSV
+        id: fetch
+        run: |
+          chmod +x scripts/eprx_fetch_and_process.sh
+          scripts/eprx_fetch_and_process.sh | tee /tmp/fetch.log
+          META=$(grep '^WORKDIR_META=' /tmp/fetch.log | cut -d= -f2-)
+          echo "meta=$META" >> "$GITHUB_OUTPUT"
+
+      - name: Generate eprx_data.js
+        run: |
+          python3 scripts/generate_eprx_data.py "${{ steps.fetch.outputs.meta }}" data/eprx_data.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "eprx-daily-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git diff --quiet -- data/eprx_data.js; then
+            echo "No changes to data/eprx_data.js"
+            exit 0
+          fi
+          git add data/eprx_data.js
+          git commit -m "eprx: daily data update ($(date -u +%Y-%m-%d))"
+          git push origin HEAD:main
