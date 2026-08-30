@@ -37,7 +37,12 @@ COMBINED="$WORKDIR/combined_utf8.csv"
 : > "$COMBINED"
 shopt -s nullglob
 for f in extracted_*/*.csv extracted_*/*.CSV; do
-  iconv -f SHIFT_JIS -t UTF-8 "$f" >> "$COMBINED" 2>/dev/null || true
+  # tr -d '\r' strips CRLF line endings from the source CSVs. Without this, the trailing \r
+  # sticks to the LAST field of each row ($NF, used as "total" for national-level extraction),
+  # which later gets misread as an embedded newline by Python's universal-newline text mode,
+  # silently truncating every field. Area-level extraction (which reads middle columns, not
+  # $NF) was unaffected by this, which is why only the national "blocks" array came out empty.
+  iconv -f SHIFT_JIS -t UTF-8 "$f" 2>/dev/null | tr -d '\r' >> "$COMBINED" || true
 done
 shopt -u nullglob
 

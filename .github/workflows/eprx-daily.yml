@@ -29,38 +29,18 @@ jobs:
           META=$(grep '^WORKDIR_META=' /tmp/fetch.log | cut -d= -f2-)
           echo "meta=$META" >> "$GITHUB_OUTPUT"
 
-      - name: Debug intermediate files
-        run: |
-          META="${{ steps.fetch.outputs.meta }}"
-          echo "META=$META"
-          cat "$META" || echo "meta.env not readable"
-          {
-            echo "=== meta.env ==="
-            cat "$META" 2>&1
-            for key in NATIONAL_BLOCKS AREA_BLOCKS NATIONAL_AVG30D AREA_AVG30D; do
-              path=$(grep "^$key=" "$META" | cut -d= -f2-)
-              echo "=== $key ($path) ==="
-              echo "line count: $(wc -l < "$path" 2>&1)"
-              echo "head:"
-              head -5 "$path" 2>&1
-              echo
-            done
-          } > /tmp/eprx_debug.txt
-          cat /tmp/eprx_debug.txt
-
       - name: Generate eprx_data.js
         run: |
-          python3 scripts/generate_eprx_data.py "${{ steps.fetch.outputs.meta }}" data/eprx_data.js 2>&1 | tee -a /tmp/eprx_debug.txt
+          python3 scripts/generate_eprx_data.py "${{ steps.fetch.outputs.meta }}" data/eprx_data.js
 
-      - name: Commit and push if changed (with debug artifact)
+      - name: Commit and push if changed
         run: |
           git config user.name "eprx-daily-bot"
           git config user.email "actions@users.noreply.github.com"
-          cp /tmp/eprx_debug.txt data/.eprx_debug.txt
-          git add data/eprx_data.js data/.eprx_debug.txt
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
+          if git diff --quiet -- data/eprx_data.js; then
+            echo "No changes to data/eprx_data.js"
             exit 0
           fi
-          git commit -m "eprx: daily data update ($(date -u +%Y-%m-%d)) [debug]"
+          git add data/eprx_data.js
+          git commit -m "eprx: daily data update ($(date -u +%Y-%m-%d))"
           git push origin HEAD:main

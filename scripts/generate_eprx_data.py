@@ -92,17 +92,7 @@ def main():
     meta_path, out_path = sys.argv[1], sys.argv[2]
     env = read_env(meta_path)
 
-    print("DEBUG env=%r" % (env,), file=sys.stderr)
-    print("DEBUG NATIONAL_BLOCKS path=%r" % (env.get("NATIONAL_BLOCKS"),), file=sys.stderr)
-    import os
-    nb_path = env["NATIONAL_BLOCKS"]
-    print("DEBUG exists=%r size=%r" % (os.path.exists(nb_path), os.path.getsize(nb_path) if os.path.exists(nb_path) else None), file=sys.stderr)
-    with open(nb_path, encoding="utf-8") as _f:
-        _raw = _f.read()
-    print("DEBUG raw_repr(first 300)=%r" % (_raw[:300],), file=sys.stderr)
-
     national = read_national_blocks(env["NATIONAL_BLOCKS"])
-    print("DEBUG len(national)=%d" % (len(national),), file=sys.stderr)
     national_avg = read_national_avg(env["NATIONAL_AVG30D"])
     area_raw = read_area_blocks(env["AREA_BLOCKS"])
     area_avg = read_area_avg(env["AREA_AVG30D"])
