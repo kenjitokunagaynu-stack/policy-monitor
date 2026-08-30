@@ -70,6 +70,25 @@ body {
   max-width: 1180px;
 }
 
+/* site brand band (fixed dark navy regardless of theme, for consistent contrast with white text) */
+.site-band {
+  display: block;
+  background: #142a4d;
+  color: #fff;
+  text-decoration: none;
+}
+.site-band-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+.site-band:hover .site-band-inner {
+  text-decoration: underline;
+}
+
 header.page-header {
   margin-bottom: 28px;
 }
