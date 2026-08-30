@@ -1,0 +1,46 @@
+=== meta.env ===
+TARGET_ISO=2026-08-31
+FETCHED_AT=2026-08-30
+SAMPLE_DAYS=30
+AVG_START_FMT=2026/08/01
+AVG_END_FMT=2026/08/30
+NATIONAL_BLOCKS=/tmp/tmp.L8KyHtIKVR/national_blocks.tsv
+AREA_BLOCKS=/tmp/tmp.L8KyHtIKVR/area_blocks.tsv
+NATIONAL_AVG30D=/tmp/tmp.L8KyHtIKVR/national_avg30d.tsv
+AREA_AVG30D=/tmp/tmp.L8KyHtIKVR/area_avg30d.tsv
+=== NATIONAL_BLOCKS (/tmp/tmp.L8KyHtIKVR/national_blocks.tsv) ===
+line count: 48
+head:
+1	1548	1493.474	15	3.14
+2	1548	1473.096	15	2.97
+3	1548	1441.296	15	3.46
+4	1546	1508.667	15	3.45
+5	1541	1490.455	15	3.54
+
+=== AREA_BLOCKS (/tmp/tmp.L8KyHtIKVR/area_blocks.tsv) ===
+line count: 432
+head:
+北海道	1	62	157.658	3.35	1.04
+北海道	2	62	157.658	2.5	0.99
+北海道	3	62	187.509	1.95	0.9
+北海道	4	61	155.708	3.99	1.13
+北海道	5	61	216.158	14.87	1.74
+
+=== NATIONAL_AVG30D (/tmp/tmp.L8KyHtIKVR/national_avg30d.tsv) ===
+line count: 48
+head:
+1	1416.5	3.459
+2	1416.5	3.592
+3	1416.5	3.659
+4	1414.5	3.631
+5	1409.5	3.601
+
+=== AREA_AVG30D (/tmp/tmp.L8KyHtIKVR/area_avg30d.tsv) ===
+line count: 432
+head:
+北海道	1	62.0	1.520
+北海道	2	62.0	1.448
+北海道	3	62.0	1.255
+北海道	4	61.0	1.532
+北海道	5	61.0	1.344
+
