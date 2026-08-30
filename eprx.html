@@ -9,10 +9,10 @@
 <body>
 <div class="container wide">
   <nav class="top-nav">
-    <a href="index.html">政策関連情報</a>
-    <a href="eprx.html" class="active">需給調整市場 約定結果</a>
-    <a href="news.html">業界ニュース</a>
-    <a href="players.html">投資プレイヤー</a>
+    <a href="news.html">Ⅰ．業界ニュース</a>
+    <a href="index.html">Ⅱ．政策関連情報</a>
+    <a href="eprx.html" class="active">Ⅲ．需給調整市場約定結果（速報）</a>
+    <a href="players.html">Ⅳ．投資プレイヤー</a>
   </nav>
   <header class="page-header">
     <h1>需給調整市場　一次　約定結果速報</h1>
@@ -31,11 +31,20 @@
         <span class="legend-item"><span class="legend-swatch line-dashed"></span>募集量（過去30日平均・黒破線）</span>
         <span class="legend-item"><span class="legend-swatch line-dotted"></span>平均落札価格（過去30日平均・黒点線）</span>
       </div>
-      <div class="view-toggle">
-        <button id="eprx-btn-chart" class="active" onclick="eprxToggleView('chart')">グラフ</button>
-        <button id="eprx-btn-table" onclick="eprxToggleView('table')">テーブル</button>
+      <div class="toolbar-controls">
+        <div class="series-toggle">
+          <button class="active" data-mode="all" onclick="eprxSetSeriesMode('all')">すべて</button>
+          <button data-mode="volume" onclick="eprxSetSeriesMode('volume')">数量のみ</button>
+          <button data-mode="price" onclick="eprxSetSeriesMode('price')">価格のみ</button>
+        </div>
+        <div class="view-toggle">
+          <button id="eprx-btn-chart" class="active" onclick="eprxToggleView('chart')">グラフ</button>
+          <button id="eprx-btn-table" onclick="eprxToggleView('table')">テーブル</button>
+        </div>
       </div>
     </div>
+
+    <div class="chart-analysis-wrap" id="eprx-analysis"></div>
 
     <div class="chart-svg-wrap" id="eprx-chart-wrap" style="position:relative;">
       <div id="eprx-root"></div>
@@ -50,10 +59,18 @@
 
   <div class="area-section" id="eprx-area-section">
     <h2>エリア別内訳</h2>
-    <div class="sub">9エリアとも同じ縦軸スケールで表示しています（棒：募集量・応札量合計、線：最高・平均落札価格）。各グラフにカーソルを合わせると詳細が確認できます。</div>
+    <div class="sub">9エリアとも同じ縦軸スケールで表示しています（棒：募集量・応札量合計、線：最高・平均落札価格、破線・点線：各項目の過去30日平均）。各グラフにカーソルを合わせると詳細、右上のボタンで拡大表示ができます。</div>
     <div class="area-grid" id="eprx-area-grid"></div>
   </div>
 </div>
+
+<div class="chart-modal-overlay" id="eprx-modal-overlay" onclick="if(event.target===this) eprxCloseModal()">
+  <div class="chart-modal">
+    <button class="chart-modal-close" onclick="eprxCloseModal()">✕</button>
+    <div id="eprx-modal-body"></div>
+  </div>
+</div>
+
 <script src="data/eprx_data.js"></script>
 <script src="assets/eprx.js"></script>
 <script>renderEprxChart();</script>

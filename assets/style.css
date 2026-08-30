@@ -16,10 +16,10 @@
   --chart-ink-muted: #898781;
   --chart-gridline: #e1e0d9;
   --chart-baseline: #c3c2b7;
-  --series-1: #2a78d6;
-  --series-2: #eb6834;
-  --series-3: #1baf7a;
-  --series-4: #eda100;
+  --series-1: #8b93a1;
+  --series-2: #7fb8e8;
+  --series-3: #d9433c;
+  --series-4: #7fb8e8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,10 +41,10 @@
     --chart-ink-muted: #898781;
     --chart-gridline: #2c2c2a;
     --chart-baseline: #383835;
-    --series-1: #3987e5;
-    --series-2: #d95926;
-    --series-3: #199e70;
-    --series-4: #c98500;
+    --series-1: #9aa1ac;
+    --series-2: #6fb0e0;
+    --series-3: #e2635d;
+    --series-4: #6fb0e0;
   }
 }
 
@@ -371,11 +371,20 @@ header.page-header .sub {
   opacity: 0.75;
 }
 
-.view-toggle {
+.toolbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.view-toggle,
+.series-toggle {
   display: flex;
   gap: 6px;
 }
-.view-toggle button {
+.view-toggle button,
+.series-toggle button {
   font-size: 12px;
   padding: 5px 10px;
   border-radius: 6px;
@@ -384,10 +393,21 @@ header.page-header .sub {
   color: var(--text-muted);
   cursor: pointer;
 }
-.view-toggle button.active {
+.view-toggle button.active,
+.series-toggle button.active {
   border-color: var(--accent);
   color: var(--accent);
   background: var(--accent-bg);
+}
+
+/* series display-mode toggle: hides bar(volume) or line(price) groups + their axis */
+body.eprx-mode-volume .series-price,
+body.eprx-mode-volume .axis-price {
+  display: none;
+}
+body.eprx-mode-price .series-vol,
+body.eprx-mode-price .axis-vol {
+  display: none;
 }
 
 .chart-svg-wrap {
@@ -696,11 +716,122 @@ table.players-table th:nth-child(6) {
   .area-grid { grid-template-columns: repeat(1, 1fr); }
 }
 .area-card {
+  position: relative;
   background: var(--chart-surface);
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 8px 10px 4px;
 }
 .area-card svg {
+  display: block;
+}
+.area-enlarge-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 22px;
+  height: 22px;
+  line-height: 1;
+  font-size: 13px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text-muted);
+  cursor: pointer;
+  z-index: 2;
+}
+.area-enlarge-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* analysis block (fill rate / avg price / commentary) */
+.chart-analysis {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--border);
+  font-size: 11.5px;
+}
+.analysis-metrics {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 3px;
+}
+.analysis-item {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.analysis-label {
+  color: var(--text-muted);
+}
+.analysis-val {
+  font-weight: 700;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.analysis-comment {
+  margin: 0;
+  color: var(--chart-ink-secondary);
+  line-height: 1.5;
+}
+.chart-analysis-wrap {
+  margin: 4px 0 12px;
+  padding: 10px 14px;
+  background: var(--accent-bg);
+  border-radius: 8px;
+  font-size: 12.5px;
+}
+.chart-analysis-wrap .analysis-metrics {
+  gap: 20px;
+  font-size: 13px;
+}
+.chart-analysis-wrap .analysis-comment {
+  margin-top: 4px;
+}
+
+/* enlarge modal */
+.chart-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.chart-modal-overlay.open {
+  display: flex;
+}
+.chart-modal {
+  position: relative;
+  background: var(--chart-surface);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 1040px;
+  width: 100%;
+  max-height: 90vh;
+  overflow: auto;
+  box-shadow: var(--shadow);
+}
+.chart-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 14px;
+}
+.chart-modal-close:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.chart-modal svg {
   display: block;
 }

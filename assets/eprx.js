@@ -105,13 +105,17 @@ function buildComboSvg(blocks, opts) {
     + '<line x1="' + marginL + '" x2="' + marginL + '" y1="' + marginT + '" y2="' + (marginT + plotH) + '" class="axis-baseline" />'
     + '<line x1="' + (marginL + plotW) + '" x2="' + (marginL + plotW) + '" y1="' + marginT + '" y2="' + (marginT + plotH) + '" class="axis-baseline" />'
     + '<line x1="' + marginL + '" x2="' + (marginL + plotW) + '" y1="' + (marginT + plotH) + '" y2="' + (marginT + plotH) + '" class="axis-baseline" />'
-    + '<g>' + barsSvg + '</g>'
+    + '<g class="series-vol">'
+    + barsSvg
     + (hasAvg ? '<polyline points="' + boshuAvgLine + '" class="line line-avg-mw" />' : '')
-    + (hasAvg ? '<polyline points="' + heikinAvgLine + '" class="line line-avg-price" />' : '')
+    + '</g>'
+    + '<g class="series-price">'
     + '<polyline points="' + saikouLine + '" class="line line-3" />'
     + '<polyline points="' + heikinLine + '" class="line line-4" />'
-    + '<g>' + leftAxisSvg + '</g>'
-    + '<g>' + rightAxisSvg + '</g>'
+    + (hasAvg ? '<polyline points="' + heikinAvgLine + '" class="line line-avg-price" />' : '')
+    + '</g>'
+    + '<g class="axis-vol">' + leftAxisSvg + '</g>'
+    + '<g class="axis-price">' + rightAxisSvg + '</g>'
     + '<g>' + xAxisSvg + '</g>'
     + '<g class="hover-cols">' + hoverSvg + '</g>'
     + '</svg>';
@@ -149,6 +153,84 @@ function attachChartTooltip(container, blocks, labels, tooltip, hasAvg) {
       tooltip.style.display = "none";
     });
   });
+}
+
+// 充足率(応札量合計/募集量の1日集計比)・当日平均単価・過去30日平均との比較コメントを算出
+function computeAnalysis(blocks) {
+  var n = blocks.length;
+  var sumBoshu = 0, sumOuatsu = 0, sumHeikin = 0;
+  var hasAvg = blocks[0].boshuAvg30d != null;
+  var sumBoshuAvg = 0, sumHeikinAvg = 0;
+  blocks.forEach(function (b) {
+    sumBoshu += b.boshu;
+    sumOuatsu += b.ouatsu;
+    sumHeikin += b.heikin;
+    if (hasAvg) {
+      sumBoshuAvg += b.boshuAvg30d;
+      sumHeikinAvg += b.heikinAvg30d;
+    }
+  });
+  var fillRate = sumBoshu > 0 ? (sumOuatsu / sumBoshu) * 100 : 0;
+  var avgPrice = sumHeikin / n;
+  var comment;
+  if (hasAvg) {
+    var avgBoshu = sumBoshu / n;
+    var avgBoshuAvg = sumBoshuAvg / n;
+    var avgHeikinAvg = sumHeikinAvg / n;
+    var volDiff = avgBoshuAvg > 0 ? ((avgBoshu - avgBoshuAvg) / avgBoshuAvg) * 100 : 0;
+    var priceDiff = avgHeikinAvg > 0 ? ((avgPrice - avgHeikinAvg) / avgHeikinAvg) * 100 : 0;
+    var volTrend = Math.abs(volDiff) < 3 ? "横ばい" : (volDiff > 0 ? "増加" : "減少");
+    var priceTrend = Math.abs(priceDiff) < 3 ? "横ばい" : (priceDiff > 0 ? "上昇" : "下落");
+    var stateText = fillRate >= 100 ? "応札量が募集量を上回り需給は充足傾向。" : "応札量が募集量を下回り需給はやや逼迫。";
+    comment = stateText + "募集量は過去30日平均比" + (volDiff >= 0 ? "+" : "") + fmtNum(volDiff, 1) + "%（" + volTrend + "）、"
+      + "平均単価は同" + (priceDiff >= 0 ? "+" : "") + fmtNum(priceDiff, 1) + "%（" + priceTrend + "）。";
+  } else {
+    comment = "過去30日平均データがないため比較できません。";
+  }
+  return { fillRate: fillRate, avgPrice: avgPrice, comment: comment };
+}
+
+function buildAnalysisHtml(a) {
+  return ''
+    + '<div class="chart-analysis">'
+    + '<div class="analysis-metrics">'
+    + '<div class="analysis-item"><span class="analysis-label">充足率</span><span class="analysis-val">' + fmtNum(a.fillRate, 1) + '%</span></div>'
+    + '<div class="analysis-item"><span class="analysis-label">平均単価</span><span class="analysis-val">' + fmtNum(a.avgPrice, 2) + ' 円/kW・30分</span></div>'
+    + '</div>'
+    + '<p class="analysis-comment">' + eprxEscapeHtml(a.comment) + '</p>'
+    + '</div>';
+}
+
+var eprxSeriesMode = "all";
+function eprxSetSeriesMode(mode) {
+  eprxSeriesMode = mode;
+  document.body.classList.remove("eprx-mode-volume", "eprx-mode-price");
+  if (mode !== "all") document.body.classList.add("eprx-mode-" + mode);
+  document.querySelectorAll(".series-toggle button").forEach(function (btn) {
+    btn.classList.toggle("active", btn.getAttribute("data-mode") === mode);
+  });
+}
+
+var eprxAreaScale = { mwAxisMax: 0, priceAxisMax: 0 };
+function eprxEnlargeArea(idx) {
+  var data = window.EPRX_DATA;
+  var area = data.areaOrder[idx];
+  var blocks = data.areaBlocks[area];
+  if (!blocks) return;
+  var svg = buildComboSvg(blocks, {
+    W: 980, H: 440, marginL: 60, marginR: 60, marginT: 26, marginB: 50,
+    mwAxisMax: eprxAreaScale.mwAxisMax, priceAxisMax: eprxAreaScale.priceAxisMax,
+    xLabelEvery: 4, showAvgLines: true, title: area
+  });
+  var body = document.getElementById("eprx-modal-body");
+  body.innerHTML = svg + buildAnalysisHtml(computeAnalysis(blocks));
+  document.getElementById("eprx-modal-overlay").classList.add("open");
+  var tooltip = document.getElementById("eprx-tooltip");
+  attachChartTooltip(body, blocks, data.labels, tooltip, true);
+}
+
+function eprxCloseModal() {
+  document.getElementById("eprx-modal-overlay").classList.remove("open");
 }
 
 function ttRow(color, label, val) {
@@ -192,6 +274,9 @@ function renderEprxChart() {
   var tooltip = document.getElementById("eprx-tooltip");
   attachChartTooltip(root, blocks, data.labels, tooltip, hasAvg);
 
+  var analysisEl = document.getElementById("eprx-analysis");
+  if (analysisEl) analysisEl.innerHTML = buildAnalysisHtml(computeAnalysis(blocks));
+
   renderEprxTable(data);
   renderEprxAreaGrid(data);
 }
@@ -203,23 +288,28 @@ function renderEprxAreaGrid(data) {
     return;
   }
   var grid = document.getElementById("eprx-area-grid");
-  var hasAvg = false;
 
-  // shared scale across all areas for fair visual comparison
+  // shared scale across all areas for fair visual comparison (includes 30d avg lines)
   var mwMax = 0, priceMax = 0;
   data.areaOrder.forEach(function (area) {
     (data.areaBlocks[area] || []).forEach(function (b) {
-      mwMax = Math.max(mwMax, b.boshu, b.ouatsu);
-      priceMax = Math.max(priceMax, b.saikou, b.heikin);
+      mwMax = Math.max(mwMax, b.boshu, b.ouatsu, b.boshuAvg30d || 0);
+      priceMax = Math.max(priceMax, b.saikou, b.heikin, b.heikinAvg30d || 0);
     });
   });
   var mwAxisMax = Math.ceil(mwMax / 100) * 100 + 100;
   var priceAxisMax = Math.ceil(priceMax / 5) * 5 + 5;
+  eprxAreaScale.mwAxisMax = mwAxisMax;
+  eprxAreaScale.priceAxisMax = priceAxisMax;
 
   var tooltip = document.getElementById("eprx-tooltip");
 
   var html = data.areaOrder.map(function (area, idx) {
-    return '<div class="area-card"><div id="eprx-area-' + idx + '"></div></div>';
+    return '<div class="area-card">'
+      + '<button class="area-enlarge-btn" onclick="eprxEnlargeArea(' + idx + ')" aria-label="拡大表示" title="拡大表示">⤢</button>'
+      + '<div id="eprx-area-' + idx + '"></div>'
+      + '<div id="eprx-area-analysis-' + idx + '"></div>'
+      + '</div>';
   }).join("");
   grid.innerHTML = html;
 
@@ -227,14 +317,18 @@ function renderEprxAreaGrid(data) {
     var blocks = data.areaBlocks[area];
     if (!blocks) return;
     var container = document.getElementById("eprx-area-" + idx);
+    var hasAvg = blocks[0].boshuAvg30d != null;
     var svg = buildComboSvg(blocks, {
       W: 360, H: 190, marginL: 40, marginR: 40, marginT: 20, marginB: 26,
       mwAxisMax: mwAxisMax, priceAxisMax: priceAxisMax,
-      mwTickCount: 3, xLabelEvery: 12, showAvgLines: false,
+      mwTickCount: 3, xLabelEvery: 12, showAvgLines: true,
       title: area
     });
     container.innerHTML = svg;
-    attachChartTooltip(container, blocks, data.labels, tooltip, false);
+    attachChartTooltip(container, blocks, data.labels, tooltip, hasAvg);
+
+    var analysisEl = document.getElementById("eprx-area-analysis-" + idx);
+    if (analysisEl) analysisEl.innerHTML = buildAnalysisHtml(computeAnalysis(blocks));
   });
 }
 
