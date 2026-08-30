@@ -632,12 +632,84 @@ table.players-table td.pl-notes {
   color: var(--text-muted);
   font-size: 12px;
   width: auto;
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 table.players-table td.pl-source,
 table.players-table th:nth-child(6) {
-  width: 60px;
+  width: 72px;
   white-space: nowrap;
   text-align: right;
+}
+
+/* mobile/tablet: switch players table to stacked cards (label: value rows) */
+@media (max-width: 860px) {
+  .table-scroll {
+    overflow-x: visible;
+  }
+  table.players-table {
+    min-width: 0;
+    table-layout: auto;
+    width: 100%;
+  }
+  table.players-table thead {
+    display: none;
+  }
+  table.players-table,
+  table.players-table tbody,
+  table.players-table tr,
+  table.players-table td {
+    display: block;
+    width: 100%;
+  }
+  table.players-table td:first-child {
+    position: static;
+  }
+  table.players-table tr {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    background: var(--card-bg);
+  }
+  table.players-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    border-bottom: none;
+    padding: 4px 0;
+    text-align: right;
+    white-space: normal;
+  }
+  table.players-table td::before {
+    content: attr(data-label);
+    flex-shrink: 0;
+    font-weight: 600;
+    font-size: 11.5px;
+    color: var(--text-muted);
+    text-align: left;
+  }
+  table.players-table td.pl-company {
+    font-size: 15px;
+    padding-bottom: 8px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid var(--border);
+  }
+  table.players-table td.pl-company::before {
+    content: none;
+  }
+  table.players-table td.pl-notes {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  table.players-table td.pl-source {
+    justify-content: flex-start;
+  }
+  table.players-table td.pl-source::before {
+    content: none;
+  }
 }
 
 .grid-line {

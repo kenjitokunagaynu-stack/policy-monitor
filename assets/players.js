@@ -16,12 +16,12 @@ function renderPlayers() {
 
   var rows = data.players.map(function (p) {
     return '<tr>'
-      + '<td class="pl-company">' + plEscapeHtml(p.company) + '</td>'
-      + '<td class="pl-num">' + plEscapeHtml(p.investmentTarget) + '</td>'
-      + '<td class="pl-num">' + plEscapeHtml(p.mwDeveloping) + '</td>'
-      + '<td class="pl-num">' + plEscapeHtml(p.mwOperational) + '</td>'
-      + '<td class="pl-notes">' + plEscapeHtml(p.notes) + '</td>'
-      + '<td class="pl-source"><a class="source-link small" href="' + plEscapeHtml(p.sourceUrl) + '" target="_blank" rel="noopener">出典 ↗</a></td>'
+      + '<td class="pl-company" data-label="会社名">' + plEscapeHtml(p.company) + '</td>'
+      + '<td class="pl-num" data-label="投資額目標">' + plEscapeHtml(p.investmentTarget) + '</td>'
+      + '<td class="pl-num" data-label="開発中MW">' + plEscapeHtml(p.mwDeveloping) + '</td>'
+      + '<td class="pl-num" data-label="運開済みMW">' + plEscapeHtml(p.mwOperational) + '</td>'
+      + '<td class="pl-notes" data-label="備考">' + plEscapeHtml(p.notes) + '</td>'
+      + '<td class="pl-source" data-label="出典"><a class="source-link small" href="' + plEscapeHtml(p.sourceUrl) + '" target="_blank" rel="noopener">出典 ↗</a></td>'
       + '</tr>';
   }).join("");
 
