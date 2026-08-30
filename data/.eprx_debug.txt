@@ -4,11 +4,11 @@ FETCHED_AT=2026-08-30
 SAMPLE_DAYS=30
 AVG_START_FMT=2026/08/01
 AVG_END_FMT=2026/08/30
-NATIONAL_BLOCKS=/tmp/tmp.L8KyHtIKVR/national_blocks.tsv
-AREA_BLOCKS=/tmp/tmp.L8KyHtIKVR/area_blocks.tsv
-NATIONAL_AVG30D=/tmp/tmp.L8KyHtIKVR/national_avg30d.tsv
-AREA_AVG30D=/tmp/tmp.L8KyHtIKVR/area_avg30d.tsv
-=== NATIONAL_BLOCKS (/tmp/tmp.L8KyHtIKVR/national_blocks.tsv) ===
+NATIONAL_BLOCKS=/tmp/tmp.1pmXXjnFvN/national_blocks.tsv
+AREA_BLOCKS=/tmp/tmp.1pmXXjnFvN/area_blocks.tsv
+NATIONAL_AVG30D=/tmp/tmp.1pmXXjnFvN/national_avg30d.tsv
+AREA_AVG30D=/tmp/tmp.1pmXXjnFvN/area_avg30d.tsv
+=== NATIONAL_BLOCKS (/tmp/tmp.1pmXXjnFvN/national_blocks.tsv) ===
 line count: 48
 head:
 1	1548	1493.474	15	3.14
@@ -17,7 +17,7 @@ head:
 4	1546	1508.667	15	3.45
 5	1541	1490.455	15	3.54
 
-=== AREA_BLOCKS (/tmp/tmp.L8KyHtIKVR/area_blocks.tsv) ===
+=== AREA_BLOCKS (/tmp/tmp.1pmXXjnFvN/area_blocks.tsv) ===
 line count: 432
 head:
 北海道	1	62	157.658	3.35	1.04
@@ -26,7 +26,7 @@ head:
 北海道	4	61	155.708	3.99	1.13
 北海道	5	61	216.158	14.87	1.74
 
-=== NATIONAL_AVG30D (/tmp/tmp.L8KyHtIKVR/national_avg30d.tsv) ===
+=== NATIONAL_AVG30D (/tmp/tmp.1pmXXjnFvN/national_avg30d.tsv) ===
 line count: 48
 head:
 1	1416.5	3.459
@@ -35,7 +35,7 @@ head:
 4	1414.5	3.631
 5	1409.5	3.601
 
-=== AREA_AVG30D (/tmp/tmp.L8KyHtIKVR/area_avg30d.tsv) ===
+=== AREA_AVG30D (/tmp/tmp.1pmXXjnFvN/area_avg30d.tsv) ===
 line count: 432
 head:
 北海道	1	62.0	1.520
@@ -44,3 +44,9 @@ head:
 北海道	4	61.0	1.532
 北海道	5	61.0	1.344
 
+DEBUG env={'TARGET_ISO': '2026-08-31', 'FETCHED_AT': '2026-08-30', 'SAMPLE_DAYS': '30', 'AVG_START_FMT': '2026/08/01', 'AVG_END_FMT': '2026/08/30', 'NATIONAL_BLOCKS': '/tmp/tmp.1pmXXjnFvN/national_blocks.tsv', 'AREA_BLOCKS': '/tmp/tmp.1pmXXjnFvN/area_blocks.tsv', 'NATIONAL_AVG30D': '/tmp/tmp.1pmXXjnFvN/national_avg30d.tsv', 'AREA_AVG30D': '/tmp/tmp.1pmXXjnFvN/area_avg30d.tsv'}
+DEBUG NATIONAL_BLOCKS path='/tmp/tmp.1pmXXjnFvN/national_blocks.tsv'
+DEBUG exists=True size=1377
+DEBUG raw_repr(first 300)='1\t1548\n\t1493.474\n\t15\n\t3.14\n2\t1548\n\t1473.096\n\t15\n\t2.97\n3\t1548\n\t1441.296\n\t15\n\t3.46\n4\t1546\n\t1508.667\n\t15\n\t3.45\n5\t1541\n\t1490.455\n\t15\n\t3.54\n6\t1539\n\t1437.681\n\t15\n\t3.38\n7\t1537\n\t1513.378\n\t15\n\t2.89\n8\t1538\n\t1515.247\n\t15\n\t3.19\n9\t1542\n\t1497.001\n\t15\n\t3.79\n10\t1543\n\t1503.373\n\t15\n\t3.82\n11\t1543\n\t1562.426\n\t15\n\t3.71\n1'
+DEBUG len(national)=0
+Wrote data/eprx_data.js (target=2026-08-31, fetchedAt=2026-08-30, sampleDays=30)
