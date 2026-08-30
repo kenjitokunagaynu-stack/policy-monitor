@@ -20,6 +20,7 @@ window.NEWS_DATA = {
   "items": [
     {
       "id": "n20260828_powerx_itochu",
+      "companies": ["パワーエックス", "伊藤忠商事"],
       "image": "https://www.media-ir.com/news/wp-content/uploads/2026/08/p3-1.jpg",
       "date": "2026-08-28",
       "genre": "epc",
@@ -37,6 +38,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260827_meti_teiatsu_kenen",
+      "companies": [],
       "image": "https://project.nikkeibp.co.jp/ms/atcl/19/news/00001/06036/METIm.jpg?ver=1",
       "date": "2026-08-27",
       "genre": "policy",
@@ -54,6 +56,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260825_kikusui",
+      "companies": ["菊水"],
       "image": "https://prcdn.freetls.fastly.net/release_image/110320/14/110320-14-e496df64aec350188b8a1cf8fffa7ebe-1477x1108.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "date": "2026-08-25",
       "genre": "entry",
@@ -71,6 +74,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260817_blueskyenergy",
+      "companies": ["ブルースカイエナジー"],
       "image": "https://kyodonewsprwire.jp/prwfile/release/M109010/202608134127/_prw_PI2fl_rQ6AGj9d.jpg",
       "date": "2026-08-17",
       "genre": "operation",
@@ -88,6 +92,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260803_ecostyle",
+      "companies": ["エコスタイル"],
       "image": "https://prcdn.freetls.fastly.net/release_image/12501/395/12501-395-2e520ff798c87ada2933284112c95303-1045x413.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "date": "2026-08-03",
       "genre": "entry",
@@ -105,6 +110,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260803_meti_subsidy_requirements",
+      "companies": [],
       "image": "https://project.nikkeibp.co.jp/ms/atcl/19/news/00001/05984/0731METI01m.jpg?ver=1",
       "date": "2026-08-03",
       "genre": "policy",
@@ -122,6 +128,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260801_connection_cap",
+      "companies": [],
       "date": "2026-08-01",
       "genre": "policy",
       "title": "系統用蓄電池の接続検討、事業者あたりの上限件数が8月1日から適用",
@@ -138,6 +145,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260724_geac_erex",
+      "companies": ["グリーンエナジー&カンパニー", "イーレックス"],
       "image": "http://www.zaikei.co.jp/images/zaikei_og_image.jpg",
       "date": "2026-07-24",
       "genre": "epc",
@@ -155,6 +163,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260723_erex",
+      "companies": ["イーレックス"],
       "date": "2026-07-23",
       "genre": "entry",
       "title": "イーレックス、系統用蓄電池の第3号案件に投資決定",
@@ -171,6 +180,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260717_tess",
+      "companies": ["テスホールディングス"],
       "date": "2026-07-17",
       "genre": "epc",
       "title": "テスホールディングス子会社、長野県小諸市で約60億円の蓄電所EPCを受注",
@@ -187,6 +197,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260715_tokyogas_1gw",
+      "companies": ["東京ガス"],
       "image": "https://www.tokyo-gas.co.jp/p31hg90000005vxb-img/tokyogas_logo.jpg",
       "date": "2026-07-15",
       "genre": "entry",
@@ -204,6 +215,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260714_balancing_price_cap_cut",
+      "companies": [],
       "image": "https://bessnews.jp/img/common/ogp.png",
       "date": "2026-07-14",
       "genre": "policy",
@@ -221,6 +233,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260713_birdman_2gouki",
+      "companies": ["Birdman"],
       "image": "http://www.zaikei.co.jp/images/zaikei_og_image.jpg",
       "date": "2026-07-13",
       "genre": "capital",
@@ -238,6 +251,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260710_re100_birdman",
+      "companies": ["Birdman"],
       "image": "https://enehub.jp/wp-content/uploads/2026/07/RE100_BESS.jpg",
       "date": "2026-07-10",
       "genre": "capital",
@@ -255,6 +269,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260704_birdman_sakaiminato",
+      "companies": ["Birdman"],
       "date": "2026-07-04",
       "genre": "operation",
       "title": "Birdman、鳥取県境港市の系統用蓄電池設備が完工・運用開始",
@@ -271,6 +286,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260703_tokyufudosan_iizuka",
+      "companies": ["東急不動産"],
       "image": "https://www.kankyo-business.jp/uploads/2026/07/07/c6JAQ4XiPx66XiBHjM0TldwmTsrHmw08yRHl9GTw.webp",
       "date": "2026-07-03",
       "genre": "epc",
@@ -288,6 +304,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260616_ja_mitsui_kandenchi_fund",
+      "companies": [],
       "image": "https://prcdn.freetls.fastly.net/release_image/118220/10/118220-10-a9967d06862344d37df02b3b4f83d99c-419x357.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "date": "2026-06-16",
       "genre": "capital",
@@ -305,6 +322,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260611_osakagas_sukagawa",
+      "companies": ["大阪ガス"],
       "image": "https://www.osakagas.co.jp/files/img/common/LogoOGDG.png",
       "date": "2026-06-11",
       "genre": "entry",
@@ -322,6 +340,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260604_geac_plus_kyoto_soden",
+      "companies": ["グリーンエナジー&カンパニー"],
       "image": "http://www.zaikei.co.jp/images/zaikei_og_image.jpg",
       "date": "2026-06-04",
       "genre": "epc",
@@ -339,6 +358,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260602_battery_industry_strategy",
+      "companies": [],
       "image": "https://project.nikkeibp.co.jp/ms/atcl/19/news/00001/05867/0610METI02m.jpg?ver=1",
       "date": "2026-06-02",
       "genre": "policy",
@@ -356,6 +376,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260601_mec_chikuzen",
+      "companies": ["三菱地所", "伊藤忠商事"],
       "image": "https://www.mec.co.jp/ogimage.png",
       "date": "2026-06-01",
       "genre": "entry",
@@ -373,6 +394,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260601_mitsuuroko_kitahiroshima_34",
+      "companies": ["ミツウロコグリーンエネルギー"],
       "image": "https://xn--q9ji3c6d676qnnlo0fgmgrr6k.com/wp-content/themes/office-n/img/icon/ogp.png",
       "date": "2026-06-01",
       "genre": "operation",
@@ -390,6 +412,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260531_geac_kurashiki",
+      "companies": ["グリーンエナジー&カンパニー"],
       "image": "http://www.zaikei.co.jp/images/zaikei_og_image.jpg",
       "date": "2026-05-31",
       "genre": "epc",
@@ -407,6 +430,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260529_itcenex_hiji",
+      "companies": [],
       "image": "https://www.itcenex.com/ja/common/images/enex_ogp2.png",
       "date": "2026-05-29",
       "genre": "capital",
@@ -424,6 +448,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260511_byd_haohan",
+      "companies": [],
       "image": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO2996472011052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=57520a8403c372e9f3197e9fb993234b",
       "date": "2026-05-11",
       "genre": "entry",
@@ -441,6 +466,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260511_mitsuuroko_tahara",
+      "companies": ["ミツウロコグリーンエネルギー"],
       "image": "https://xn--q9ji3c6d676qnnlo0fgmgrr6k.com/wp-content/themes/office-n/img/icon/ogp.png",
       "date": "2026-05-11",
       "genre": "operation",
@@ -458,6 +484,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260507_mizuho_biwako_investment",
+      "companies": ["みずほリース"],
       "image": "https://prcdn.freetls.fastly.net/release_image/85927/141/85927-141-669232fd1033502613a0f76b7f6ee8a8-1098x376.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "date": "2026-05-07",
       "genre": "capital",
@@ -475,6 +502,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260428_ricoh_lease_nihon_chikudenchi_49oku",
+      "companies": ["リコーリース", "日本蓄電池"],
       "image": "https://xn--q9ji3c6d676qnnlo0fgmgrr6k.com/wp-content/themes/office-n/img/icon/ogp.png",
       "date": "2026-04-28",
       "genre": "capital",
@@ -492,6 +520,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260428_blueskyenergy_makinohara",
+      "companies": ["ブルースカイエナジー"],
       "image": "https://kyodonewsprwire.jp/prwfile/release/M109010/202604288295/_prw_PI1fl_4NYsS3m5.gif",
       "date": "2026-04-28",
       "genre": "operation",
@@ -509,6 +538,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260423_hokuriku_mizuho_funahashi",
+      "companies": ["みずほリース"],
       "image": "https://www.nikkei.com/.resources/k-components/rectangle.rev-d54ea30.png",
       "date": "2026-04-23",
       "genre": "entry",
@@ -526,6 +556,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260416_tokyogas_aomori",
+      "companies": ["東京ガス"],
       "image": "https://www.tokyo-gas.co.jp/p31hg90000005vxb-img/tokyogas_logo.jpg",
       "date": "2026-04-16",
       "genre": "entry",
@@ -543,6 +574,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260413_aesc_nextes",
+      "companies": [],
       "image": "https://mma.prnewswire.com/media/2954552/photo.jpg?p=facebook",
       "date": "2026-04-13",
       "genre": "capital",
@@ -560,6 +592,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260408_tokyu_battery",
+      "companies": ["東急株式会社"],
       "image": "https://www.tokyu.co.jp/company/news/img/20260408_chikudensho_t1.jpg",
       "date": "2026-04-08",
       "genre": "entry",
@@ -577,6 +610,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260407_erex_kushima_operation",
+      "companies": ["イーレックス"],
       "date": "2026-04-07",
       "genre": "operation",
       "title": "イーレックス、系統用蓄電池第1号案件が商業運転開始",
@@ -593,6 +627,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260402_mori_trust_biwako",
+      "companies": [],
       "image": "https://www.mori-trust.co.jp/assets/media/960ae95be413a5ee6a18e3948e2b8a76-scaled.jpg",
       "date": "2026-04-02",
       "genre": "entry",
@@ -610,6 +645,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260331_renova_kikugawa",
+      "companies": ["レノバ"],
       "image": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO2830062031032026000000-2.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=f5ef248de53fd93db2ebbae62d996360",
       "date": "2026-03-31",
       "genre": "entry",
@@ -627,6 +663,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260326_tokyufudosan_libra",
+      "companies": ["東急不動産", "芙蓉総合リース"],
       "image": "https://prcdn.freetls.fastly.net/release_image/6953/684/6953-684-c89923ad73b8795cf32450e5ba6cbe0d-407x71.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "date": "2026-03-26",
       "genre": "capital",
@@ -644,6 +681,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260324_sungrow_blueskyenergy",
+      "companies": ["ブルースカイエナジー"],
       "image": "https://kyodonewsprwire.jp/prwfile/release/M109010/202603246199/_prw_PI2fl_n4uimkC9.gif",
       "date": "2026-03-24",
       "genre": "capital",
@@ -661,6 +699,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260319_ja_mitsui_powerx_tsu",
+      "companies": ["パワーエックス"],
       "image": "https://power-x.jp/ja/intl/newsroom/2026-03-19/cover",
       "date": "2026-03-19",
       "genre": "operation",
@@ -678,6 +717,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260319_rs_asset_hulic_fuyo_itochu",
+      "companies": ["芙蓉総合リース", "伊藤忠商事"],
       "image": "https://prcdn.freetls.fastly.net/release_image/154894/11/154894-11-e39286a6e47be6b70709ca9dc12a4772-563x286.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "date": "2026-03-19",
       "genre": "capital",
@@ -695,6 +735,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260317_catl_volt",
+      "companies": [],
       "image": "https://prcdn.freetls.fastly.net/release_image/175252/6/175252-6-ce6bdd17da0d11bf412e42abce6e49d8-1477x1108.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "date": "2026-03-17",
       "genre": "capital",
@@ -712,6 +753,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260303_nishimu_marubeni_powerx",
+      "companies": ["パワーエックス"],
       "image": "https://ferret-one.akamaized.net/images/66a71d0b5406e70403ff6a71/large.png?utime=1722227979",
       "date": "2026-03-03",
       "genre": "entry",
@@ -729,6 +771,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260302_kepco_gates",
+      "companies": ["関西電力"],
       "image": "https://gatestokyo.co.jp/wp-content/uploads/2026/06/site-image.jpg",
       "date": "2026-03-02",
       "genre": "capital",
@@ -746,6 +789,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260302_ntt_anode_hakodate",
+      "companies": ["NTTアノードエナジー"],
       "image": "https://prcdn.freetls.fastly.net/release_image/111866/66/111866-66-851ac98bd675580ce1f7a82537666365-3900x2921.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "date": "2026-03-02",
       "genre": "operation",
@@ -763,6 +807,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260225_byd_itochu_10x",
+      "companies": ["伊藤忠商事"],
       "image": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO2600675009022026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.51&fp-y=0.2&h=630&w=1200&s=3b8c61b412b1ef8b135ee493d2c408a8",
       "date": "2026-02-25",
       "genre": "capital",
@@ -780,6 +825,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260218_gsyuasa_domestic_production",
+      "companies": [],
       "image": "https://cdn.clipkit.co/tenants/1398/articles/images/000/002/540/large/6f6b5068-ff2f-4ca5-819a-54d1b07beb41.png?1771224941",
       "date": "2026-02-18",
       "genre": "entry",
@@ -797,6 +843,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260114_maeda_toshiba",
+      "companies": ["前田建設工業"],
       "date": "2026-01-14",
       "genre": "capital",
       "title": "前田建設工業と東芝エネルギーシステムズ、系統用蓄電池事業に参画",
@@ -813,6 +860,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20251127_mizuho_osakagas_takeo",
+      "companies": ["みずほリース", "大阪ガス"],
       "image": "https://www.osakagas.co.jp/files/img/common/LogoOGDG.png",
       "date": "2025-11-27",
       "genre": "operation",
@@ -830,6 +878,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20251104_fuyo_shinkawa",
+      "companies": ["芙蓉総合リース"],
       "image": "https://www.nikkei.com/nkd/disclosure/tdnr/20251104586671/thumbnail/?ttype=ogp",
       "date": "2025-11-04",
       "genre": "operation",
