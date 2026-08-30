@@ -50,7 +50,7 @@ jobs:
 
       - name: Generate eprx_data.js
         run: |
-          python3 scripts/generate_eprx_data.py "${{ steps.fetch.outputs.meta }}" data/eprx_data.js
+          python3 scripts/generate_eprx_data.py "${{ steps.fetch.outputs.meta }}" data/eprx_data.js 2>&1 | tee -a /tmp/eprx_debug.txt
 
       - name: Commit and push if changed (with debug artifact)
         run: |
