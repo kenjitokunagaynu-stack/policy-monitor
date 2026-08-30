@@ -222,6 +222,13 @@ header.page-header .sub {
   background: var(--bg);
   border: 1px solid var(--border);
 }
+/* the summary toggle has 3 flex children (thumb, text block, chevron) when a thumbnail
+   is present; without flex-grow on the text block, justify-content:space-between spreads
+   all three apart evenly, stranding the thumbnail far from the title. */
+.item-summary-toggle > span:not(.chevron) {
+  flex: 1 1 auto;
+  min-width: 0;
+}
 @media (max-width: 480px) {
   .news-thumb {
     width: 48px;
@@ -807,6 +814,7 @@ table.players-table th:nth-child(6) {
     text-align: left;
   }
   table.players-table td.pl-company {
+    width: 100%;
     font-size: 15px;
     padding-bottom: 8px;
     margin-bottom: 4px;
@@ -815,12 +823,17 @@ table.players-table th:nth-child(6) {
   table.players-table td.pl-company::before {
     content: none;
   }
+  table.players-table td.pl-num {
+    width: 100%;
+  }
   table.players-table td.pl-notes {
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
   }
   table.players-table td.pl-source {
+    width: 100%;
     justify-content: flex-start;
   }
   table.players-table td.pl-source::before {
