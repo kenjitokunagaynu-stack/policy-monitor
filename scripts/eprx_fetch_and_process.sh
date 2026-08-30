@@ -63,11 +63,15 @@ SAMPLE_DAYS=$(awk -F',' -v start="$START_DATE" -v end="$END_DATE" \
   '$1 ~ /^[0-9]{8}B[0-9]+$/ { d=substr($1,1,8); if (d>=start && d<=end) print d }' "$COMBINED" \
   | sort -u | wc -l | tr -d ' ')
 
+# Note: block-number extraction below uses index()/substr() rather than gawk's
+# match(str, regexp, array) 3-argument extension, since GitHub Actions' default
+# `awk` (mawk) does not support it — this must stay portable across awk dialects.
+
 # National 48-block extraction
 awk -F',' -v td="$TARGET_DATE" '
 $1 ~ "^"td"B" {
   key=$1; label=$2; n=NF; total=$n;
-  match(key, /B([0-9]+)$/, arr); block=arr[1]+0;
+  block = substr(key, index(key, "B") + 1) + 0;
   if (label=="募集量（TSO別）[MW]") boshu[block]=total;
   if (label=="応札量合計（電源属地別）[MW]") ouatsu[block]=total;
   if (label=="最高落札価格（電源属地別）[円/kW・30分]") saikou[block]=total;
@@ -84,7 +88,7 @@ BEGIN {
 }
 $1 ~ "^"td"B" {
   key=$1; label=$2;
-  match(key, /B([0-9]+)$/, arr); block=arr[1]+0;
+  block = substr(key, index(key, "B") + 1) + 0;
   if (label=="募集量（TSO別）[MW]") { for (a in areas) boshu[a,block]=$(areas[a]); }
   if (label=="応札量合計（電源属地別）[MW]") { for (a in areas) ouatsu[a,block]=$(areas[a]); }
   if (label=="最高落札価格（電源属地別）[円/kW・30分]") { for (a in areas) saikou[a,block]=$(areas[a]); }
@@ -99,7 +103,11 @@ END {
 awk -F',' -v start="$START_DATE" -v end="$END_DATE" '
 {
   key=$1; label=$2; n=NF; total=$n;
-  if (match(key, /^([0-9]{8})B([0-9]+)$/, arr)) { d=arr[1]; block=arr[2]+0; } else next;
+  bpos = index(key, "B");
+  if (bpos != 9) next;
+  d = substr(key, 1, 8);
+  if (d !~ /^[0-9]{8}$/) next;
+  block = substr(key, bpos + 1) + 0;
   if (d < start || d > end) next;
   if (label=="募集量（TSO別）[MW]") { bsum[block]+=total; bcnt[block]++; }
   if (label=="平均落札価格（電源属地別）[円/kW・30分]") { hsum[block]+=total; hcnt[block]++; }
@@ -120,7 +128,11 @@ BEGIN {
 }
 {
   key=$1; label=$2;
-  if (match(key, /^([0-9]{8})B([0-9]+)$/, arr)) { d=arr[1]; block=arr[2]+0; } else next;
+  bpos = index(key, "B");
+  if (bpos != 9) next;
+  d = substr(key, 1, 8);
+  if (d !~ /^[0-9]{8}$/) next;
+  block = substr(key, bpos + 1) + 0;
   if (d < start || d > end) next;
   if (label=="募集量（TSO別）[MW]") { for (a in areas) { bsum[a,block]+=$(areas[a]); bcnt[a,block]++; } }
   if (label=="平均落札価格（電源属地別）[円/kW・30分]") { for (a in areas) { hsum[a,block]+=$(areas[a]); hcnt[a,block]++; } }
