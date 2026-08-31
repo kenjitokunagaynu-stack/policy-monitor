@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-08-30",
+  "collectedAt": "2026-08-31",
   "periodLabel": "2025年11月〜2026年8月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,24 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20260828_taoke_energy",
+      "companies": [],
+      "image": "https://prcdn.freetls.fastly.net/release_image/103834/41/103834-41-511f0894c2dcfa7aef1ea0f814f49cbb-1200x630.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-08-28",
+      "genre": "operation",
+      "title": "TAOKE ENERGY、系統用蓄電所2拠点の運転開始",
+      "subtitle": "群馬県太田市・佐賀県伊万里市（各2MW/8MWh）が8月10日系統連系、子会社POWER POOLがアグリゲーター",
+      "sourceName": "PR TIMES（TAOKE ENERGY株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000041.000103834.html",
+      "topics": [
+        {
+          "theme": "2拠点の運転開始",
+          "conclusion": "群馬県太田市（単独販売案件）・佐賀県伊万里市（自社投資案件）の系統用蓄電所（各定格出力2MW・容量8MWh）が2026年8月10日に系統連系した。",
+          "detail": "市場参入は群馬拠点が12月1日、佐賀拠点が11月16日を予定。両拠点とも子会社POWER POOLがアグリゲーターを担当し、「SI・EM・AG」（設備構築・エネルギーマネジメント・アグリゲーション）三位一体モデルで蓄電所の安定運用と市場価値最大化を図る。"
+        }
+      ]
+    },
     {
       "id": "n20260828_powerx_itochu",
       "companies": ["パワーエックス", "伊藤忠商事"],
@@ -69,6 +87,24 @@ window.NEWS_DATA = {
           "theme": "参入の概要",
           "conclusion": "和歌山県・栃木県で出力2,000kW級の系統蓄電所をそれぞれ自社開発し、2027年夏の運用開始を目指す。",
           "detail": "和歌山県案件はPCS出力1,999kW・蓄電容量8,194kWh、栃木県案件は出力1,998kW・容量8,147kWh。将来的にはEPC事業への展開も視野に、開発・運用ノウハウの蓄積を図るとしている。"
+        }
+      ]
+    },
+    {
+      "id": "n20260818_rexev_remixpoint",
+      "companies": [],
+      "image": "https://response.jp/imgs/ogp_f/2235500.jpg",
+      "date": "2026-08-18",
+      "genre": "capital",
+      "title": "REXEVとリミックスポイントが業務提携、低圧系統用蓄電池約1000台を起点にエネルギープラットフォーム構築へ",
+      "subtitle": "リミックスポイント保有の低圧系統用蓄電池約1000台を対象にアグリゲーション事業を推進、将来的な資本提携も視野",
+      "sourceName": "レスポンス（Response.jp）",
+      "sourceUrl": "https://response.jp/article/2026/08/18/415368.html",
+      "topics": [
+        {
+          "theme": "業務提携の内容",
+          "conclusion": "REXEVとリミックスポイントが業務提携を締結し、リミックスポイント保有の低圧系統用蓄電池約1000台を起点に、需要家向け蓄電池やFIP電源等も含む分散型エネルギーリソースのアグリゲーション事業を推進する。",
+          "detail": "REXEVはエネルギーマネジメントシステム・IoT機器・クラウドシステムの構築から充放電制御、電力市場での実運用までを一貫して担う技術・運用基盤と電力取引人材を提供する。将来的な資本提携も検討されている。"
         }
       ]
     },
