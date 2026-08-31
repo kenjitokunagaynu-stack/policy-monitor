@@ -7,7 +7,7 @@
 // OCCTOは委員会数が多いため、容量市場・調整力・需給調整市場など蓄電池事業に特に関連する
 // 委員会・検討会に絞って収録しています（運用容量検討会等の技術専門会合は一部割愛）。
 window.APP_DATA = {
-  "generatedAt": "2026-08-30T11:30:00+09:00",
+  "generatedAt": "2026-08-31T05:13:00+09:00",
   "periodLabel": "2026年3月〜2026年8月（直近6ヶ月、試験収集）",
   "sources": [
     { "id": "wg", "label": "エネ庁 系統WG", "org": "経済産業省 資源エネルギー庁", "indexUrl": "https://www.meti.go.jp/shingikai/enecho/denryoku_gas/saisei_kano/smart_power_grid_wg/index.html" },
@@ -122,6 +122,16 @@ window.APP_DATA = {
       "sourceUrl": "https://www.occto.or.jp/iinkai/",
       "topics": [
         { "theme": "需給調整市場の商品要件見直し", "conclusion": "需給調整市場の実態調査結果を踏まえ、一部商品要件および一次調整力（異常時分必要量）の見直しが検討された。", "detail": "調整力市場の商品要件見直しは、系統用蓄電池の応札戦略・収益機会に直接関わる論点。" }
+      ]
+    },
+    {
+      "id": "occto_20260728_keikaku", "date": "2026-07-28", "source": "occto",
+      "title": "第14回 計画評価及び検証小委員会",
+      "subtitle": "中部関西間・東北東京間連系線の工事費増額の中間検証や、佐久間東幹線の工期遅延を審議",
+      "sourceName": "電力広域的運営推進機関",
+      "sourceUrl": "https://www.occto.or.jp/iinkai/",
+      "topics": [
+        { "theme": "広域連系設備の整備計画評価", "conclusion": "「中部関西間連系線」「東北東京間連系線」に係る広域系統整備計画の工事内容（工事費・工期）や工事費増額の中間検証、「東京中部間連系設備」佐久間東幹線（山線）増強工事の工期遅延について審議された。", "detail": "機微な内容を含むため非公開で開催。広域連系設備の整備進捗（工期遅延・費用増）は系統混雑の緩和時期や連系可能容量の見通しに関わる。" }
       ]
     },
     {
