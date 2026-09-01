@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-08-31",
+  "collectedAt": "2026-09-01",
   "periodLabel": "2025年11月〜2026年8月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,60 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20260901_erex_aggregation",
+      "companies": ["イーレックス"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/29914/175/29914-175-18481652ed5aa43b45e6e5cb384c2417-1691x923.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-01",
+      "genre": "entry",
+      "title": "イーレックス、系統用蓄電池のアグリゲーションサービスを開始",
+      "subtitle": "他社保有の特別高圧・高圧の系統用蓄電池が対象、需給調整市場等での運用を代行し収益機会拡大を支援",
+      "sourceName": "PR TIMES（イーレックス株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000175.000029914.html",
+      "topics": [
+        {
+          "theme": "アグリゲーションサービス開始の内容",
+          "conclusion": "イーレックスが、他社が保有する特別高圧・高圧の系統用蓄電池を対象としたアグリゲーションサービスを2026年9月1日に開始した。",
+          "detail": "需給調整市場をはじめとする各種電力市場での運用を通じて、蓄電池保有事業者の収益機会拡大を支援する。同社は自社案件（宮崎・千葉・京都）のアグリゲーションで培ったノウハウを外部事業者向けサービスとして展開する形。料金体系・詳細な参入方法は公式サービスページで個別案内。"
+        }
+      ]
+    },
+    {
+      "id": "n20260831_collec_holdings",
+      "companies": [],
+      "image": "https://prcdn.freetls.fastly.net/release_image/40575/110/40575-110-de6a17fda11d17519bc5be499452f52a-3900x595.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-08-31",
+      "genre": "entry",
+      "title": "コレックホールディングス、系統用蓄電池事業へ参入",
+      "subtitle": "岡山県久米郡に「岡山蓄電所（仮称）」（2MW/8MWh）を取得、2027年3月の事業開始を予定",
+      "sourceName": "PR TIMES（株式会社コレックホールディングス）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000110.000040575.html",
+      "topics": [
+        {
+          "theme": "新規参入の内容",
+          "conclusion": "コレックホールディングスが系統用蓄電池事業に参入し、岡山県久米郡の「岡山蓄電所（仮称）」（出力約2MW・容量約8MWh）を取得した。",
+          "detail": "電力系統に直接接続して需給調整や周波数制御を行い、専門のアグリゲーターに運営を委託する予定。2026年9月着工、2027年3月の事業開始を予定。取得価額は非開示だが連結純資産の30%以上に相当し、金融機関からの借入で充当予定。"
+        }
+      ]
+    },
+    {
+      "id": "n20260831_nihon_chikudenchi_maniwa",
+      "companies": ["日本蓄電池"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/161802/105/161802-105-6f9491a2c703f34abc03e1659575d77e-850x636.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-08-31",
+      "genre": "entry",
+      "title": "日本蓄電池、岡山県真庭市で系統用蓄電施設の設置を開始",
+      "subtitle": "「NC真庭市田羽根蓄電所」の蓄電池設置に着手（8月26日）、施工は中電工",
+      "sourceName": "PR TIMES（日本蓄電池株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000105.000161802.html",
+      "topics": [
+        {
+          "theme": "設置開始の内容",
+          "conclusion": "日本蓄電池が岡山県真庭市の系統用蓄電施設「NC真庭市田羽根蓄電所」で、2026年8月26日に蓄電池の設置を開始した。",
+          "detail": "施工は株式会社中電工が担当。需給調整市場・JEPX（卸電力市場）・容量市場対応や再エネ出力平準化を主用途とする。容量・運転開始予定時期など詳細規模は記事内で非公開。"
+        }
+      ]
+    },
     {
       "id": "n20260828_taoke_energy",
       "companies": [],
