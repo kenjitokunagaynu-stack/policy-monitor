@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-09-01",
+  "collectedAt": "2026-09-02",
   "periodLabel": "2025年11月〜2026年9月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,132 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20260901_daiei_welion",
+      "companies": [],
+      "image": "https://prcdn.freetls.fastly.net/release_image/116663/11/116663-11-864b33b2ed1810dc015751a77b3b2d33-278x89.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-01",
+      "genre": "entry",
+      "title": "大栄産業、WeLion New Energy Technologyと系統用蓄電池事業で戦略的業務提携",
+      "subtitle": "免震架台採用の耐震設計、光触媒による環境配慮型蓄電所、使用済みLiB回収・再資源化スキームを軸に国内展開",
+      "sourceName": "PR TIMES（大栄産業株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000011.000116663.html",
+      "topics": [
+        {
+          "theme": "戦略的業務提携の内容",
+          "conclusion": "大栄産業がWeLion New Energy Technologyと提携し、日本国内での系統用蓄電池事業を推進する。",
+          "detail": "免震架台採用による耐震性強化、光触媒技術を活用した環境配慮型蓄電所の整備、使用済みリチウムイオン電池の回収・再資源化によるリサイクルスキーム構築を特徴とする。「製造、販売、リサイクル」を一体的に推進する方針。"
+        }
+      ]
+    },
+    {
+      "id": "n20260901_smartenergy_powerx",
+      "companies": ["パワーエックス"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/6241/40/6241-40-30162dc64355d2218385b034a0d8bc59-2048x626.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-01",
+      "genre": "capital",
+      "title": "スマートエナジー、パワーエックスと発電所併設型蓄電池の導入推進で協業検討の覚書を締結",
+      "subtitle": "太陽光発電所併設型のオンサイト蓄電池が対象、需給調整市場・卸電力市場での収益機会確保を目指す",
+      "sourceName": "PR TIMES（株式会社スマートエナジー）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000040.000006241.html",
+      "topics": [
+        {
+          "theme": "協業検討の内容",
+          "conclusion": "スマートエナジーとパワーエックスが、太陽光発電所併設型のオンサイト蓄電池の導入推進に関する協業検討の覚書を締結した。",
+          "detail": "スマートエナジーが全国の太陽光発電所O&M事業ネットワークを活かして候補案件を提案し、パワーエックスが国内で開発・製造する蓄電システムを提供する役割分担。需給調整市場や卸電力市場への参加を通じた収益機会確保が狙い。系統用単独の案件ではなく太陽光併設型である点に留意。"
+        }
+      ]
+    },
+    {
+      "id": "n20260828_bluefield_energy_100mw",
+      "companies": [],
+      "image": "https://prcdn.freetls.fastly.net/release_image/174524/34/174524-34-e319cdd164889a25f5f282df5ccfd1e0-2400x1260.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-08-28",
+      "genre": "capital",
+      "title": "Bluefield Energy、アグリゲーションサービスの採用決定容量が100MWを突破",
+      "subtitle": "太陽光発電所から系統用蓄電所併設案件まで対象拡大、AI活用の需給マッチングで出力制御対応を支援",
+      "sourceName": "PR TIMES（Bluefield Energy株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000034.000174524.html",
+      "topics": [
+        {
+          "theme": "採用容量拡大の内容",
+          "conclusion": "Bluefield Energyのアグリゲーションサービスの採用決定容量が100MWを突破した（一般家庭約3.2万世帯分の年間消費電力相当、事業規模換算で約226億円）。",
+          "detail": "太陽光発電所単体から蓄電所併設案件まで対象アセットが拡大しており、沖縄を除く全国で大手事業者から個人オーナーまで幅広く利用。全国的に拡大する出力制御への対応需要を背景に、AIを活用した高度な需給マッチングで発電機会損失の最小化を図る。同社はポート・Fluenceとも系統用蓄電所の運用高度化で3社連携している。"
+        }
+      ]
+    },
+    {
+      "id": "n20260827_mri_hitachi_trading",
+      "companies": [],
+      "image": "https://prcdn.freetls.fastly.net/release_image/67590/614/67590-614-7b7524bf68bd3a4edec80910df4a1c0d-1176x571.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-08-27",
+      "genre": "capital",
+      "title": "三菱総合研究所と日立、特別高圧帯の系統用蓄電池事業者向け電力トレーディング高度化支援で協業",
+      "subtitle": "MRIの「MERSOL」と日立の電力トレーディングシステムを連携、入札計画から市場取引までを一体支援",
+      "sourceName": "PR TIMES（株式会社日立製作所）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000614.000067590.html",
+      "topics": [
+        {
+          "theme": "協業の内容",
+          "conclusion": "三菱総合研究所と日立製作所が、特別高圧帯の系統用蓄電池事業者向けに電力トレーディング高度化支援サービスを共同提供する。2027年度から提供開始予定。",
+          "detail": "MRIの入札計画最適化システム「MERSOL」と日立の電力トレーディングシステムを連携させ、蓄電池の入札計画の自動立案から市場取引までを一体的に支援する。業務効率化・委託コスト削減に加え、複数蓄電所への展開が容易になり、新規参入事業者でも自社トレーディングの実現が可能になるとしている。"
+        }
+      ]
+    },
+    {
+      "id": "n20260821_fujitaka_koka",
+      "companies": [],
+      "image": "https://prcdn.freetls.fastly.net/release_image/86264/22/86264-22-9452852d7c7b2b0faf82ab2222501c7c-1529x1019.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-08-21",
+      "genre": "operation",
+      "title": "Fujitaka、滋賀県甲賀市の系統用蓄電所「Fujitaka甲賀市土山町蓄電所」が系統連系を完了",
+      "subtitle": "定格出力1,999kW・容量8,128kWh、HUAWEI製コンテナ型蓄電池を採用、2026年11月に需給調整市場参入予定",
+      "sourceName": "PR TIMES（株式会社Fujitaka）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000022.000086264.html",
+      "topics": [
+        {
+          "theme": "系統連系完了の内容",
+          "conclusion": "Fujitakaが滋賀県甲賀市に開発した系統用蓄電所（定格出力1,999kW・容量8,128kWh）が2026年7月21日に系統連系を完了した。",
+          "detail": "HUAWEI製「LUNA2000-2.0MWH」コンテナ型蓄電池を採用。2026年11月を目標に需給調整市場への参入を予定している。"
+        }
+      ]
+    },
+    {
+      "id": "n20260817_rs_maeda_2sites",
+      "companies": ["前田建設工業"],
+      "image": "https://prtimes.jp/common/pc_v4/og.png",
+      "date": "2026-08-17",
+      "genre": "operation",
+      "title": "RSアセットアドバイザーズと前田建設工業が共同開発する系統用蓄電所2拠点がJEPX・需給調整市場へ参入",
+      "subtitle": "埼玉西狭山蓄電所（埼玉県所沢市）・岐阜多治見蓄電所（岐阜県多治見市）とも約2MW/8,000kWh規模",
+      "sourceName": "PR TIMES（RSアセットアドバイザーズ株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000014.000154894.html",
+      "topics": [
+        {
+          "theme": "市場参入の内容",
+          "conclusion": "RSアセットアドバイザーズと前田建設工業が共同開発した系統用蓄電所2拠点（埼玉西狭山蓄電所・岐阜多治見蓄電所）が、JEPXならびに需給調整市場での取引を開始した。",
+          "detail": "埼玉西狭山蓄電所（埼玉県所沢市、1,998kW/8,000kWh）はJEPXに2026年5月参入、岐阜多治見蓄電所（岐阜県多治見市、1,988kW/8,000kWh）は2026年7月参入。前田建設工業はRSアセットアドバイザーズとの協業で系統用蓄電池事業への参画を拡大している。"
+        }
+      ]
+    },
+    {
+      "id": "n20260812_kuradashi_namegawa",
+      "companies": [],
+      "image": "https://prcdn.freetls.fastly.net/release_image/14485/726/14485-726-90198f87c0982188ce2b1b017f3c14b2-3900x2611.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-08-12",
+      "genre": "epc",
+      "title": "クラダシ、埼玉県比企郡で「埼玉滑川蓄電所」を着工",
+      "subtitle": "定格出力2MW・容量8MWh、辻・本郷スマートアセットとの合弁で開発、2026年10月運転開始予定",
+      "sourceName": "PR TIMES（株式会社クラダシ）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000726.000014485.html",
+      "topics": [
+        {
+          "theme": "着工の内容",
+          "conclusion": "クラダシが埼玉県比企郡に系統用蓄電所「埼玉滑川蓄電所」（定格出力2MW・容量8MWh）を着工した。2026年10月の運転開始を予定。",
+          "detail": "クラダシと辻・本郷スマートアセットの合弁会社「合同会社クラダシ・インベストメント」が事業を推進し、クラダシがアセットマネジメント契約に基づき開発・運営を担当する。再生可能エネルギーの出力変動を補完する調整力として電力需給の安定化への貢献を目的とする。"
+        }
+      ]
+    },
     {
       "id": "n20260901_erex_aggregation",
       "companies": ["イーレックス"],
@@ -110,7 +236,7 @@ window.NEWS_DATA = {
     },
     {
       "id": "n20260828_powerx_itochu",
-      "companies": ["パワーエックス", "伊藤忠商事"],
+      "companies": ["パワーエックス", "伊藤忠商事", "東急不動産"],
       "image": "https://www.media-ir.com/news/wp-content/uploads/2026/08/p3-1.jpg",
       "date": "2026-08-28",
       "genre": "epc",
@@ -122,7 +248,7 @@ window.NEWS_DATA = {
         {
           "theme": "受注の内容",
           "conclusion": "パワーエックスが伊藤忠商事と共同で、宮城白石蓄電所合同会社向けに「Mega Power 2500」計30台を受注した。",
-          "detail": "設置場所は宮城県白石市。PCS出力23MW、合計蓄電容量75.2MWh（一般世帯約7,000世帯の1日分の電力消費に相当）。東北エリアの特別高圧系統に接続し、2028年度内の運転開始を予定。"
+          "detail": "設置場所は宮城県白石市。PCS出力23MW、合計蓄電容量75.2MWh（一般世帯約7,000世帯の1日分の電力消費に相当）。東北エリアの特別高圧系統に接続し、2028年度内の運転開始を予定。プロジェクト会社（宮城白石蓄電所合同会社）は株式会社IBeeTと東急不動産の共同開発案件で、パワーエックス×伊藤忠商事の「PowerX × Bluestorage」コ・ブランド蓄電システムパッケージを採用（IBeeT・東急不動産側のPR TIMES発表: https://prtimes.jp/main/html/rd/p/000000010.000110152.html）。経産省補助事業として実施。"
         }
       ]
     },
