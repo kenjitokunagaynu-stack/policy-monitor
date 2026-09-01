@@ -37,6 +37,24 @@ window.NEWS_DATA = {
       ]
     },
     {
+      "id": "n20260831_tokyocentury_tensor",
+      "companies": [],
+      "image": "https://prcdn.freetls.fastly.net/release_image/76147/249/76147-249-cbbae0aa0bb1346da60390d1f210b63b-1406x1407.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-08-31",
+      "genre": "capital",
+      "title": "東京センチュリー、Tensor Energyと系統用蓄電池事業で包括的業務提携を締結",
+      "subtitle": "AI活用の運用最適化プラットフォーム「Tensor Cloud」で、熊本県荒尾市・佐賀県唐津市の案件等の運用を高度化",
+      "sourceName": "PR TIMES（東京センチュリー株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000249.000076147.html",
+      "topics": [
+        {
+          "theme": "包括的業務提携の内容",
+          "conclusion": "東京センチュリーがTensor Energyと系統用蓄電池事業に関する包括的な業務提携を締結し、AI活用の運用最適化プラットフォーム「Tensor Cloud」を活用して再生可能エネルギー発電所（蓄電池含む）の運用を最適化する。",
+          "detail": "対象は熊本県荒尾市（メガソーラー併設型蓄電池、2024年6月稼働）や佐賀県唐津市（オンサイトPPA・FIP余剰売電、2025年3月開始）等の既存案件。「Tensor Cloud」は計画から30年にわたる運用・財務までを統合管理し、AIによる発電量・電力価格予測や複数電力市場への対応が特徴。東京センチュリーは三菱地所・東急不動産の系統用蓄電池案件にも共同事業者として参画しており、蓄電池事業への関与を拡大している。具体的な設備容量等の数値は記事内で非公開。"
+        }
+      ]
+    },
+    {
       "id": "n20260831_collec_holdings",
       "companies": [],
       "image": "https://prcdn.freetls.fastly.net/release_image/40575/110/40575-110-de6a17fda11d17519bc5be499452f52a-3900x595.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
