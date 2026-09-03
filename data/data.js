@@ -13,9 +13,29 @@ window.APP_DATA = {
     { "id": "wg", "label": "エネ庁 系統WG", "org": "経済産業省 資源エネルギー庁", "indexUrl": "https://www.meti.go.jp/shingikai/enecho/denryoku_gas/saisei_kano/smart_power_grid_wg/index.html" },
     { "id": "seido", "label": "エネ庁 制度検討作業部会", "org": "経済産業省 資源エネルギー庁", "indexUrl": "https://www.meti.go.jp/shingikai/enecho/denryoku_gas/jisedai_kiban/system_review/index.html" },
     { "id": "occto", "label": "OCCTO", "org": "電力広域的運営推進機関", "indexUrl": "https://www.occto.or.jp/iinkai/" },
-    { "id": "emsc", "label": "監視等委", "org": "電力・ガス取引監視等委員会（制度設計・監視専門会合）", "indexUrl": "https://www.egc.meti.go.jp/activity/index_systemsurveillance.html" }
+    { "id": "emsc", "label": "監視等委", "org": "電力・ガス取引監視等委員会（制度設計・監視専門会合）", "indexUrl": "https://www.egc.meti.go.jp/activity/index_systemsurveillance.html" },
+    { "id": "stable", "label": "エネ庁 電力安定供給WG", "org": "経済産業省 資源エネルギー庁", "indexUrl": "https://www.meti.go.jp/shingikai/enecho/denryoku_gas/jisedai_kiban/stable_power_supply_wg/index.html" }
   ],
   "items": [
+    {
+      "id": "stable006", "date": "2026-08-31", "source": "stable",
+      "title": "第6回 電力安定供給ワーキンググループ",
+      "subtitle": "容量市場追加オークション約定結果を報告、中長期の需給見通しを踏まえた供給力確保策と大規模電源休廃止の事前協議ルールを議論",
+      "sourceName": "経済産業省 資源エネルギー庁",
+      "sourceUrl": "https://www.meti.go.jp/shingikai/enecho/denryoku_gas/jisedai_kiban/stable_power_supply_wg/006.html",
+      "topics": [
+        {
+          "theme": "容量市場追加オークション約定結果（2027年度実需給）",
+          "conclusion": "容量市場2026年度追加オークションの約定結果と、それに係る監視結果の詳細が報告された。",
+          "detail": "容量市場の需給・価格動向は、系統用蓄電池が新設・増設を検討する際の収益見通しに直結する重要指標。"
+        },
+        {
+          "theme": "中長期の供給力確保策と大規模電源の休廃止事前協議",
+          "conclusion": "中長期の需給見通しを踏まえた今後の供給力確保の方向性と、大規模電源の休廃止に係る一般送配電事業者への事前協議ルールが議論された。",
+          "detail": "既設火力等の休廃止動向は、系統用蓄電池を含む調整力・供給力の必要量に影響し得る論点として注視。"
+        }
+      ]
+    },
     {
       "id": "wg012", "date": "2026-08-06", "source": "wg",
       "title": "第12回 次世代電力系統ワーキンググループ",
