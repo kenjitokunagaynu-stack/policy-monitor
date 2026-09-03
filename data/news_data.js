@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-09-02",
+  "collectedAt": "2026-09-03",
   "periodLabel": "2025年11月〜2026年9月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,42 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20260902_reforward_aggregation",
+      "companies": [],
+      "image": "https://prcdn.freetls.fastly.net/release_image/186479/4/186479-4-bde0098f2980880988a225a7e36cb73f-1731x909.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-02",
+      "genre": "entry",
+      "title": "REフォワード、アグリゲーション事業立ち上げ支援サービスを開始",
+      "subtitle": "系統用蓄電池事業者向けに事業スキーム設計から制度対応・運用体制構築・システム選定までワンストップで支援",
+      "sourceName": "PR TIMES（株式会社REフォワード）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000004.000186479.html",
+      "topics": [
+        {
+          "theme": "サービス開始の内容",
+          "conclusion": "REフォワードが、系統用蓄電池事業への参入を検討する事業者向けに「アグリゲーション事業立ち上げ支援サービス」を開始した。",
+          "detail": "自社の電力市場運用経験を活かし、事業スキーム設計から制度対応、運用体制構築、システム選定までをワンストップで支援するコンサルティング。系統用蓄電池だけでなくFIP発電所や需要家リソースも対象とする統合的なアグリゲーション対応。系統用蓄電池の普及拡大をサービス開始の背景として明記。具体的な対象規模・提携先企業名は非公開。"
+        }
+      ]
+    },
+    {
+      "id": "n20260831_marubeni_fip_bess_balancing",
+      "companies": ["丸紅新電力", "ブルースカイエナジー"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/175281/17/175281-17-3457d6a7b243b990705008a8a3902e85-730x382.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-08-31",
+      "genre": "operation",
+      "title": "丸紅新電力ほか4社、FIP太陽光併設型蓄電池が需給調整市場の参入審査に合格",
+      "subtitle": "ブルースカイエナジー・ニシム電子工業・みずほ証券等5社連携、2026年8月から調整力提供を開始",
+      "sourceName": "PR TIMES（ブルースカイエナジー株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000017.000175281.html",
+      "topics": [
+        {
+          "theme": "市場参入の内容",
+          "conclusion": "ブルースカイエナジー・ブルースカイアセットマネジメント・ニシム電子工業・丸紅新電力・みずほ証券の5社連携により、FIP制度に移行した太陽光発電所併設の蓄電池が需給調整市場の参入審査に合格し、2026年8月から調整力提供を開始した。",
+          "detail": "出力制御時間帯に発電した電気を蓄電池に充電し、需要が高まる時間帯に放電することで、従来活用できなかった電気を売電収入に転換する。ニシム電子工業のエネルギーマネジメントシステムと丸紅新電力の市場運用ノウハウを組み合わせ、再エネの有効活用と採算性確保を図る。"
+        }
+      ]
+    },
     {
       "id": "n20260901_daiei_welion",
       "companies": [],
