@@ -7,12 +7,19 @@ set -euo pipefail
 UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
 REFERER="https://www.jepx.jp/electricpower/market-data/spot/"
 
+# JEPX spot is a day-ahead market: bidding for delivery day D closes around 10:00 on
+# D-1 and results are published that same afternoon. So at a 9:00 JST run on day D,
+# day D's own 48 blocks are already fully settled (published the previous afternoon)
+# -- the target date is TODAY, not yesterday.
 NOW_JST=$(TZ=Asia/Tokyo date +%Y-%m-%d)
-TARGET_DATE=$(date -d "$NOW_JST -1 day" +%Y-%m-%d)
+TARGET_DATE="$NOW_JST"
 FETCHED_AT=$(TZ=Asia/Tokyo date +%Y-%m-%dT%H:%M:%S+09:00)
 
-# Need enough history for the 30-day trailing average plus +/-1 day buffer so the
-# 3-hour value-spread window can look across a day boundary near either edge.
+# Need enough history for the 30-day trailing average plus a 1-day buffer so the
+# 3-hour value-spread window can look across the day boundary near either edge.
+# (target+1 will not exist yet at a 9:00 JST run -- that day's own auction hasn't
+# closed -- so it's a harmless no-op fetch; day_stats() degrades gracefully when a
+# few of the spread window's neighbor blocks are missing.)
 WINDOW_START=$(date -d "$TARGET_DATE -33 day" +%Y-%m-%d)
 WINDOW_END=$(date -d "$TARGET_DATE +1 day" +%Y-%m-%d)
 

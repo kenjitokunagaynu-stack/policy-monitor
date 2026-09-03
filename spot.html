@@ -46,7 +46,7 @@
     <div class="data-table-wrap" id="spot-table-wrap"></div>
 
     <div class="chart-note">
-      出典: 一般社団法人 日本卸電力取引所（JEPX）<a id="spot-source-link" href="#" target="_blank" rel="noopener">スポット市場ページ</a>の約定価格CSVを1日1回取得して作成。横軸=コマ（30分単位、48コマ）、縦軸=価格（円/kWh）。対象日は取得実行日の前日（受渡日）。黒点線は同一コマの<span id="spot-avg-window">過去30日平均</span>。3時間値差は、当日の最高値・最低値それぞれのコマの前後3コマ（計6コマ=3時間、当該コマ自身は含まない）平均値の差分。
+      出典: 一般社団法人 日本卸電力取引所（JEPX）<a id="spot-source-link" href="#" target="_blank" rel="noopener">スポット市場ページ</a>の約定価格CSVを1日1回取得して作成。横軸=コマ（30分単位、48コマ）、縦軸=価格（円/kWh）。対象日は取得実行日当日（受渡日）。JEPXスポットは前日取引市場のため、朝の取得時点で当日分の約定結果は前日夕方までに確定・公開済み。黒点線は同一コマの<span id="spot-avg-window">過去30日平均</span>。3時間値差は、当日の最高値・最低値それぞれのコマの前後3コマ（計6コマ=3時間、当該コマ自身は含まない）平均値の差分。
     </div>
   </div>
 
