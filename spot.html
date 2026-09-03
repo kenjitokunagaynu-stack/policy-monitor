@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>系統用蓄電池情報ターミナル｜電力卸売市場（スポット）価格ウォッチ</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="site-band" href="news.html"><div class="site-band-inner">系統用蓄電池情報ターミナル</div></a>
+<div class="container wide">
+  <nav class="top-nav">
+    <a href="news.html">Ⅰ．業界ニュース</a>
+    <a href="index.html">Ⅱ．政策関連情報</a>
+    <a href="eprx.html">Ⅲ．需給調整市場約定結果（速報）</a>
+    <a href="players.html">Ⅳ．投資プレイヤー</a>
+    <a href="spot.html" class="active">Ⅴ．電力卸売市場（スポット）価格</a>
+  </nav>
+  <header class="page-header">
+    <h1>電力卸売市場（スポット市場）価格ウォッチ</h1>
+    <div class="sub">
+      対象日: <span id="spot-date">-</span>
+    </div>
+  </header>
+
+  <div class="chart-card">
+    <div class="chart-toolbar">
+      <div class="chart-legend">
+        <span class="legend-item"><span class="legend-swatch line" style="background:var(--series-3)"></span>システムプライス（全国）</span>
+        <span class="legend-item"><span class="legend-swatch line-dotted"></span>過去30日平均（黒点線）</span>
+      </div>
+      <div class="toolbar-controls">
+        <div class="view-toggle">
+          <button id="spot-btn-chart" class="active" onclick="spotToggleView('chart')">グラフ</button>
+          <button id="spot-btn-table" onclick="spotToggleView('table')">テーブル</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-analysis-wrap" id="spot-analysis"></div>
+
+    <div class="chart-svg-wrap" id="spot-chart-wrap" style="position:relative;">
+      <div id="spot-root"></div>
+      <div class="chart-tooltip" id="spot-tooltip"></div>
+    </div>
+    <div class="data-table-wrap" id="spot-table-wrap"></div>
+
+    <div class="chart-note">
+      出典: 一般社団法人 日本卸電力取引所（JEPX）<a id="spot-source-link" href="#" target="_blank" rel="noopener">スポット市場ページ</a>の約定価格CSVを1日1回取得して作成。横軸=コマ（30分単位、48コマ）、縦軸=価格（円/kWh）。対象日は取得実行日の前日（受渡日）。黒点線は同一コマの<span id="spot-avg-window">過去30日平均</span>。3時間値差は、当日の最高値・最低値それぞれのコマの前後3コマ（計6コマ=3時間、当該コマ自身は含まない）平均値の差分。
+    </div>
+  </div>
+
+  <div class="area-section" id="spot-area-section">
+    <h2>エリア別内訳（エリアプライス）</h2>
+    <div class="sub">9エリアとも同じ縦軸スケールで表示しています。各グラフにカーソルを合わせると詳細、右上のボタンで拡大表示ができます。</div>
+    <div class="area-grid" id="spot-area-grid"></div>
+  </div>
+</div>
+
+<div class="chart-modal-overlay" id="spot-modal-overlay" onclick="if(event.target===this) spotCloseModal()">
+  <div class="chart-modal">
+    <button class="chart-modal-close" onclick="spotCloseModal()">✕</button>
+    <div id="spot-modal-body"></div>
+  </div>
+</div>
+
+<script src="data/spot_data.js"></script>
+<script src="assets/spot.js"></script>
+<script>renderSpotChart();</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+name: Spot market daily update
+
+on:
+  schedule:
+    # 09:00 JST daily = 00:00 UTC
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch spot market CSV
+        id: fetch
+        run: |
+          chmod +x scripts/spot_fetch_and_process.sh
+          scripts/spot_fetch_and_process.sh | tee /tmp/fetch.log
+          META=$(grep '^WORKDIR_META=' /tmp/fetch.log | cut -d= -f2-)
+          echo "meta=$META" >> "$GITHUB_OUTPUT"
+
+      - name: Generate spot_data.js
+        run: |
+          python3 scripts/generate_spot_data.py "${{ steps.fetch.outputs.meta }}" data/spot_data.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "spot-daily-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git diff --quiet -- data/spot_data.js; then
+            echo "No changes to data/spot_data.js"
+            exit 0
+          fi
+          git add data/spot_data.js
+          git commit -m "spot: daily data update ($(date -u +%Y-%m-%d))"
+          git push origin HEAD:main
