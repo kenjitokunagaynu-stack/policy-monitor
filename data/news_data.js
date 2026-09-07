@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-09-03",
+  "collectedAt": "2026-09-07",
   "periodLabel": "2025年11月〜2026年9月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,114 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20260904_sustainable_holdings_pivot",
+      "companies": ["サステナブルホールディングス"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/96742/133/96742-133-12b376b494eff98dd3158286a580b675-1672x941.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-04",
+      "genre": "entry",
+      "title": "サステナブルホールディングス、ENERGY事業の主軸を「系統用蓄電池」へ移行",
+      "subtitle": "太陽光発電所の開発・販売から転換、用地開発から需給調整市場参入支援までを一貫提供する体制を構築",
+      "sourceName": "PR TIMES（サステナブルホールディングス株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000133.000096742.html",
+      "topics": [
+        {
+          "theme": "事業転換の内容",
+          "conclusion": "サステナブルホールディングスが、ENERGY事業の主軸を太陽光発電所の開発・販売から系統用蓄電池事業へ移行した。",
+          "detail": "事業用地の開発、系統連系対応、設計・施工管理、蓄電池・PCS・EMSの機器選定とシステム統合、アグリゲーターとの連携、需給調整市場への参入支援までを一貫して提供する体制を構築。自社の系統用蓄電池製品「Raptor」を軸に、福岡県宮若市の「宮若蓄電所」（2026年7月竣工、11月に需給調整市場参入予定）等の実績を積み上げている。"
+        }
+      ]
+    },
+    {
+      "id": "n20260831_tokugin_sustech_tokushima",
+      "companies": [],
+      "image": "https://prcdn.freetls.fastly.net/release_image/92942/90/92942-90-f0535eb26b1f11c697605a0cbaea96bc-1590x989.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-08-31",
+      "genre": "operation",
+      "title": "Sustech、徳島大正銀行グループ初の系統用蓄電所が竣工",
+      "subtitle": "とくぎんトモニリンクアップが導入、徳島県板野郡（1,990kW/8,226kWh）、Sustechがアグリゲーション受託",
+      "sourceName": "PR TIMES（株式会社Sustech）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000090.000092942.html",
+      "topics": [
+        {
+          "theme": "竣工の内容",
+          "conclusion": "徳島大正銀行の100%子会社・とくぎんトモニリンクアップが導入を進めていた同行グループ初の系統用蓄電所（徳島県板野郡、定格出力1,990kW・蓄電池公称容量8,226kWh）が2026年8月31日に竣工した。",
+          "detail": "Sustechがアグリゲーターとして、AI活用の需給調整市場入札・充放電制御システム「ELIC」を用いた運用を受託する。地域金融機関による地方創生・脱炭素貢献を目的とした案件。"
+        }
+      ]
+    },
+    {
+      "id": "n20260814_grome_tochigi_2gouki",
+      "companies": [],
+      "image": "https://prcdn.freetls.fastly.net/release_image/185790/8/185790-8-6b89ceda41ac340922fd4a3e8a020383-741x977.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-08-14",
+      "genre": "operation",
+      "title": "グローム・ホールディングス、栃木県栃木市の系統用蓄電所第2号施設が検収・引渡し完了",
+      "subtitle": "「GM西方町金井2465蓄電所」（最大受電電力1,994kW）、当初予定より約7週間前倒しで稼働段階へ",
+      "sourceName": "グローム・ホールディングス株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000008.000185790.html",
+      "topics": [
+        {
+          "theme": "検収・引渡し完了の内容",
+          "conclusion": "グローム・ホールディングスが、系統用蓄電所事業の第2号施設「GM西方町金井2465蓄電所」（栃木県栃木市西方町金井、最大受電電力1,994kW）の検収・引渡しを2026年7月10日に完了したと発表した。",
+          "detail": "当初の事業開始予定日（2026年9月1日）から約7週間前倒しでの稼働段階入り。同社は医療関連事業を主力としてきたが、専業子会社「グローム・エナジー株式会社」を通じて系統用蓄電所事業を第二の中核事業として本格展開している。"
+        }
+      ]
+    },
+    {
+      "id": "n20260903_occto_reserve_margin_2028",
+      "companies": [],
+      "image": "https://bessnews.jp/img/common/ogp.png",
+      "date": "2026-09-03",
+      "genre": "policy",
+      "title": "2028年1月前半、5エリアで予備率3%割れの見通し ─ 容量市場「補完オークション」案も",
+      "subtitle": "中部・北陸・関西・中国・九州で最大需要時2.0%、OCCTOが高経年電源を対象とする中期の新オークション制度案を提示",
+      "sourceName": "bessnews（OCCTO「第121回 調整力及び需給バランス評価等に関する委員会」資料に基づく解説記事）",
+      "sourceUrl": "https://bessnews.jp/institutional/standard/4626602102012/",
+      "topics": [
+        {
+          "theme": "需給見通しと制度案の内容",
+          "conclusion": "OCCTOは2026年8月24日の委員会で、2028年1月前半に中部・北陸・関西・中国・九州の5エリアで予備率3%を確保できない見通し（最大需要時2.0%、最小予備率時2.3%）を示した。同時に、高経年電源を実需給1〜3年前に確保する「容量市場・補完オークション」の制度案も提示された。",
+          "detail": "予備電源の知多第二発電所2号機（82.3万kW）を供給力に加えた仮試算では3.0〜3.8%まで改善する。補完オークションはメイン・追加オークションでは確保しにくい休廃止予定の高経年電源をコストベースのマルチプライス方式で1〜3年契約により確保する案で、現時点でBESSの参加条件や収入は示されていない。系統用蓄電池事業者は新収益を織り込まず、対象電源・供給力評価・契約義務等の制度詳細を注視する段階にある。"
+        }
+      ]
+    },
+    {
+      "id": "n20260901_occto_frt_requirement_review",
+      "companies": [],
+      "image": "https://bessnews.jp/img/common/ogp.png",
+      "date": "2026-09-01",
+      "genre": "policy",
+      "title": "特別高圧系統用蓄電池のFRT要件見直し案、2028年4月適用へ",
+      "subtitle": "OCCTOが周波数変化率の判定時間（300ms以上）や電圧・位相変動時の解列条件の緩和を審議、PCS発注時の確認事項に影響",
+      "sourceName": "bessnews（OCCTO「第22回グリッドコード検討会」資料に基づく解説記事）",
+      "sourceUrl": "https://bessnews.jp/technology/beginner/4626501305005/",
+      "topics": [
+        {
+          "theme": "FRT要件見直し案の内容",
+          "conclusion": "OCCTOは2026年8月21日の第22回グリッドコード検討会で、特別高圧に連系する蓄電設備を対象に「FRT要件（事故時運転継続要件）」の見直し案を審議した。適用は2028年4月を予定。",
+          "detail": "主な変更点は、①周波数変化率（RoCoF）を300ms以上の時間幅で判定すること、②残電圧20%以上52%未満・位相変化41度以下等の一定の電圧・位相変動でもPCSを解列させないこと、の2点。対象は容量によらず特高連系設備全体とする案。正式な規程改定・適用判定日・試験方法は未確定で、2027〜2028年に連系する案件はPCS発注前の確認が必要とされる。既設設備への一律遡及適用はしない方向。"
+        }
+      ]
+    },
+    {
+      "id": "n20260806_occto_tsuika_auction_fy2027",
+      "companies": [],
+      "image": "https://www.occto.or.jp/assets/ogp.jpg",
+      "date": "2026-08-06",
+      "genre": "policy",
+      "title": "容量市場・追加オークション（対象実需給年度2027年度）約定結果、蓄電池13.8万kWが全量約定",
+      "subtitle": "約定総容量458万kW・全エリア10,361円/kW、電源区分別落札率はいずれも100%",
+      "sourceName": "電力広域的運営推進機関（OCCTO）",
+      "sourceUrl": "https://www.occto.or.jp/news/012931.html",
+      "topics": [
+        {
+          "theme": "約定結果の内容",
+          "conclusion": "OCCTOが容量市場の追加オークション（対象実需給年度2027年度）の約定結果を公表した。応札した蓄電池13.8万kW（応札容量の3.0%）が全量約定した。",
+          "detail": "約定総容量は458万kW（経過措置を踏まえた約定総額425億円）、エリアプライスは全9エリアとも10,361円/kW。安定電源・変動電源・発動指令電源等いずれの区分も落札率100%。応札容量の74.9%が0円札だった一方、応札価格の加重平均は1,580円/kW。系統用蓄電池にとって容量市場のkW価値収入は、卸電力市場・需給調整市場と並ぶ収益の柱の一つ。"
+        }
+      ]
+    },
     {
       "id": "n20260902_reforward_aggregation",
       "companies": [],
