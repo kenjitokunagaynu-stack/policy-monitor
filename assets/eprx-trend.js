@@ -145,6 +145,94 @@ function trendSeriesFor(defs, seriesData) {
   });
 }
 
+// ---- 本日時点の充足率・平均単価、および長期トレンドの所感 ----
+
+function trendMonthlyAvg(dates, values) {
+  var byMonth = {}, order = [];
+  for (var i = 0; i < dates.length; i++) {
+    var v = values[i];
+    if (v == null) continue;
+    var m = dates[i].slice(0, 7);
+    if (!byMonth[m]) { byMonth[m] = { sum: 0, count: 0 }; order.push(m); }
+    byMonth[m].sum += v; byMonth[m].count++;
+  }
+  order.sort();
+  return order.map(function (m) { return { month: m, avg: byMonth[m].sum / byMonth[m].count }; });
+}
+
+// Largest single month-over-month % change (mode "drop" = most negative, "rise" = most positive).
+function trendFindExtreme(monthly, mode) {
+  var best = null;
+  for (var i = 1; i < monthly.length; i++) {
+    var prev = monthly[i - 1].avg, cur = monthly[i].avg;
+    if (!prev) continue;
+    var pct = (cur - prev) / Math.abs(prev) * 100;
+    if (mode === "drop" && (!best || pct < best.pct)) best = { month: monthly[i].month, pct: pct };
+    if (mode === "rise" && (!best || pct > best.pct)) best = { month: monthly[i].month, pct: pct };
+  }
+  return best;
+}
+
+function trendFindExtremeAfter(monthly, mode, afterMonth) {
+  var idx = monthly.findIndex(function (m) { return m.month === afterMonth; });
+  if (idx < 0) return null;
+  return trendFindExtreme(monthly.slice(idx), mode);
+}
+
+function trendMonthLabel(m) {
+  var parts = m.split("-");
+  return parts[0] + "年" + (+parts[1]) + "月";
+}
+
+function computeTrendAnalysis(dates, series) {
+  var n = dates.length;
+  if (!n) return null;
+  var lastIdx = n - 1;
+  var todayBoshu = series.avgBoshu[lastIdx], todayOuatsu = series.avgOuatsu[lastIdx], todayHeikin = series.avgHeikin[lastIdx];
+  var fillRate = (todayBoshu != null && todayBoshu > 0 && todayOuatsu != null) ? (todayOuatsu / todayBoshu) * 100 : null;
+
+  var boshuMonthly = trendMonthlyAvg(dates, series.avgBoshu);
+  var ouatsuMonthly = trendMonthlyAvg(dates, series.avgOuatsu);
+  var heikinMonthly = trendMonthlyAvg(dates, series.avgHeikin);
+
+  var boshuDrop = trendFindExtreme(boshuMonthly, "drop");
+  var boshuRecovery = boshuDrop ? trendFindExtremeAfter(boshuMonthly, "rise", boshuDrop.month) : null;
+  var ouatsuRise = trendFindExtreme(ouatsuMonthly, "rise");
+  var heikinDrop = trendFindExtreme(heikinMonthly, "drop");
+
+  var comments = [];
+  if (boshuDrop) {
+    var boshuLine = "募集量は" + trendMonthLabel(boshuDrop.month) + "頃に大きく低下（前月比" + trendFmtNum(boshuDrop.pct, 1) + "%）";
+    if (boshuRecovery && boshuRecovery.month !== boshuDrop.month && boshuRecovery.pct > 0) {
+      boshuLine += "、" + trendMonthLabel(boshuRecovery.month) + "頃に回復（前月比+" + trendFmtNum(boshuRecovery.pct, 1) + "%）";
+    }
+    comments.push(boshuLine + "。");
+  }
+  if (ouatsuRise) {
+    comments.push("応札量は" + trendMonthLabel(ouatsuRise.month) + "頃に大きく増加（前月比+" + trendFmtNum(ouatsuRise.pct, 1) + "%）。");
+  }
+  if (heikinDrop) {
+    comments.push("平均単価は" + trendMonthLabel(heikinDrop.month) + "頃に大きく下落（前月比" + trendFmtNum(heikinDrop.pct, 1) + "%）。");
+  }
+
+  return {
+    fillRate: fillRate, avgPrice: todayHeikin,
+    comment: comments.length ? comments.join("") : "月次の大きな変動は検出されませんでした。"
+  };
+}
+
+function buildTrendAnalysisHtml(a) {
+  if (!a) return "";
+  return ''
+    + '<div class="chart-analysis">'
+    + '<div class="analysis-metrics">'
+    + '<div class="analysis-item"><span class="analysis-label">充足率（本日）</span><span class="analysis-val">' + (a.fillRate != null ? trendFmtNum(a.fillRate, 1) + '%' : '-') + '</span></div>'
+    + '<div class="analysis-item"><span class="analysis-label">平均単価（本日）</span><span class="analysis-val">' + (a.avgPrice != null ? trendFmtNum(a.avgPrice, 2) + ' 円/kW・30分' : '-') + '</span></div>'
+    + '</div>'
+    + '<p class="analysis-comment">' + trendEscapeHtml(a.comment) + '</p>'
+    + '</div>';
+}
+
 var trendPeriodMode = "long";
 
 // index of the first date within `months` months of the last date
@@ -236,14 +324,18 @@ function renderTrendChart() {
   attachTrendTooltip(document.getElementById("trend-price-root"), data.dates, priceSeries, tooltip);
   attachTrendTooltip(document.getElementById("trend-vol-root"), data.dates, volSeries, tooltip);
 
-  renderTrendAreaGrid(data);
+  var analysisEl = document.getElementById("trend-analysis");
+  if (analysisEl) analysisEl.innerHTML = buildTrendAnalysisHtml(computeTrendAnalysis(raw.dates, raw.national));
+
+  renderTrendAreaGrid(data, raw);
 }
 
 var trendAreaScale = { price: { axisMin: 0, axisMax: 0 }, vol: { axisMin: 0, axisMax: 0 } };
 
-function renderTrendAreaGrid(data) {
+function renderTrendAreaGrid(data, raw) {
   var grid = document.getElementById("trend-area-grid");
   if (!grid || !data.areas || !data.areaOrder) return;
+  raw = raw || window.EPRX_TREND_DATA;
 
   var allPrice = [], allVol = [];
   data.areaOrder.forEach(function (area) {
@@ -261,6 +353,7 @@ function renderTrendAreaGrid(data) {
       + '<button class="area-enlarge-btn" onclick="trendEnlargeArea(' + idx + ')" aria-label="拡大表示" title="拡大表示">⤢</button>'
       + '<div class="trend-price-block"><div id="trend-area-price-' + idx + '"></div></div>'
       + '<div class="trend-vol-block"><div id="trend-area-vol-' + idx + '"></div></div>'
+      + '<div id="trend-area-analysis-' + idx + '"></div>'
       + '</div>';
   }).join("");
   grid.innerHTML = html;
@@ -280,6 +373,10 @@ function renderTrendAreaGrid(data) {
       axisMin: trendAreaScale.vol.axisMin, axisMax: trendAreaScale.vol.axisMax,
       tickCount: 2, xLabelEvery: data.dates.length + 1, axisDigits: 0, hover: false
     });
+
+    var rawSeries = raw.areas && raw.areas[area];
+    var analysisEl = document.getElementById("trend-area-analysis-" + idx);
+    if (analysisEl && rawSeries) analysisEl.innerHTML = buildTrendAnalysisHtml(computeTrendAnalysis(raw.dates, rawSeries));
   });
 }
 
@@ -300,8 +397,12 @@ function trendEnlargeArea(idx) {
     axisMin: trendAreaScale.vol.axisMin, axisMax: trendAreaScale.vol.axisMax,
     axisDigits: 0, title: area + "（数量）", hover: true
   });
+  var raw = window.EPRX_TREND_DATA;
+  var rawSeries = raw.areas && raw.areas[area];
+  var analysisHtml = rawSeries ? buildTrendAnalysisHtml(computeTrendAnalysis(raw.dates, rawSeries)) : "";
+
   var body = document.getElementById("trend-modal-body");
-  body.innerHTML = priceSvg + '<div style="height:12px"></div>' + volSvg;
+  body.innerHTML = priceSvg + '<div style="height:12px"></div>' + volSvg + analysisHtml;
   document.getElementById("trend-modal-overlay").classList.add("open");
   var tooltip = document.getElementById("trend-tooltip");
   attachTrendTooltip(body, data.dates, priceSeries, tooltip);
