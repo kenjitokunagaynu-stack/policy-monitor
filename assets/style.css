@@ -884,6 +884,8 @@ table.players-table th:nth-child(6) {
 }
 .line-3 { stroke: var(--series-3); }
 .line-4 { stroke: var(--series-4); }
+.line-1v { stroke: var(--series-1); }
+.line-2v { stroke: var(--series-2); }
 .line-avg-mw {
   stroke: var(--chart-ink);
   stroke-width: 1.5;

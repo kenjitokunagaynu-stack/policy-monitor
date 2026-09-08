@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>系統用蓄電池情報ターミナル｜需給調整市場約定結果（推移）</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="site-band" href="news.html"><div class="site-band-inner">系統用蓄電池情報ターミナル</div></a>
+<div class="container wide">
+  <nav class="top-nav">
+    <a href="news.html">Ⅰ．業界ニュース</a>
+    <a href="index.html">Ⅱ．政策関連情報</a>
+    <a href="eprx.html">Ⅲ．需給調整市場約定結果（速報）</a>
+    <a href="eprx-trend.html" class="active">Ⅳ．需給調整市場約定結果（推移）</a>
+    <a href="spot.html">Ⅴ．電力卸売市場（スポット）価格</a>
+    <a href="players.html">Ⅵ．投資プレイヤー</a>
+  </nav>
+  <header class="page-header">
+    <h1>需給調整市場　一次　約定結果推移</h1>
+    <div class="sub">
+      対象期間: <span id="trend-range">-</span>　｜　取得: <span id="trend-generated">-</span>
+    </div>
+  </header>
+
+  <div id="trend-root"></div>
+  <div class="chart-card">
+    <div class="chart-legend">
+      <span class="legend-item"><span class="legend-swatch line" style="background:var(--series-4)"></span>平均落札価格（1日平均）</span>
+      <span class="legend-item"><span class="legend-swatch line" style="background:var(--series-3)"></span>最高落札価格（1日最大）</span>
+    </div>
+    <div class="chart-svg-wrap" id="trend-price-wrap" style="position:relative;">
+      <div id="trend-price-root"></div>
+      <div class="chart-tooltip" id="trend-tooltip"></div>
+    </div>
+
+    <div class="chart-legend" style="margin-top:10px;">
+      <span class="legend-item"><span class="legend-swatch line" style="background:var(--series-1)"></span>平均募集量（1日平均）</span>
+      <span class="legend-item"><span class="legend-swatch line" style="background:var(--series-2)"></span>平均応札量（1日平均）</span>
+    </div>
+    <div class="chart-svg-wrap" style="position:relative;">
+      <div id="trend-vol-root"></div>
+    </div>
+
+    <div class="chart-note">
+      出典: 一般社団法人 電力需給調整力取引所（EPRX）「取引結果・連系線確保量結果ダウンロード（速報値）」年度別CSV（2024年度〜、zip一括ダウンロード）を1日1回取得して作成。各日の値は、その日の48コマ（30分単位）から算出した1日集計値（平均落札価格・平均募集量・平均応札量は48コマの単純平均、最高落札価格は48コマ中の最大値）。値はいずれも全国合計。EPRXサイトの利用規約上、自動的な大量取得（スクレイピング等）には事前承諾が必要なため、1日1回のファイル一括ダウンロードのみで更新しています。
+    </div>
+  </div>
+
+  <div class="area-section" id="trend-area-section">
+    <h2>エリア別推移</h2>
+    <div class="sub">上段=価格（平均・最高落札価格）、下段=数量（平均募集量・平均応札量）。右上のボタンで拡大表示できます。</div>
+    <div class="area-grid" id="trend-area-grid"></div>
+  </div>
+</div>
+
+<div class="chart-modal-overlay" id="trend-modal-overlay" onclick="if(event.target===this) trendCloseModal()">
+  <div class="chart-modal">
+    <button class="chart-modal-close" onclick="trendCloseModal()">✕</button>
+    <div id="trend-modal-body"></div>
+  </div>
+</div>
+
+<script src="data/eprx_trend_data.js"></script>
+<script src="assets/eprx-trend.js"></script>
+<script>renderTrendChart();</script>
+</body>
+</html>

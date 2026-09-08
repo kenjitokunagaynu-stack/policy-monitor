@@ -1,0 +1,54 @@
+name: EPRX trend daily update
+
+on:
+  schedule:
+    # 09:06 JST daily = 00:06 UTC (staggered from eprx-daily.yml / spot-daily.yml at 00:00 UTC)
+    - cron: "6 0 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch EPRX historical CSV bundles (FY2024-)
+        id: fetch
+        run: |
+          chmod +x scripts/eprx_trend_fetch_and_process.sh
+          scripts/eprx_trend_fetch_and_process.sh | tee /tmp/fetch.log
+          META=$(grep '^WORKDIR_META=' /tmp/fetch.log | cut -d= -f2-)
+          echo "meta=$META" >> "$GITHUB_OUTPUT"
+
+      - name: Generate eprx_trend_data.js
+        run: |
+          python3 scripts/generate_eprx_trend_data.py "${{ steps.fetch.outputs.meta }}" data/eprx_trend_data.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "eprx-trend-daily-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git diff --quiet -- data/eprx_trend_data.js; then
+            echo "No changes to data/eprx_trend_data.js"
+            exit 0
+          fi
+          git add data/eprx_trend_data.js
+          git commit -m "eprx-trend: daily data update ($(date -u +%Y-%m-%d))"
+          # eprx-daily.yml / spot-daily.yml may also push around the same time;
+          # rebase onto the latest main (different file, so never conflicts) and
+          # retry a few times rather than fail outright on a non-fast-forward push.
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push attempt $i failed, retrying after rebase..."
+            sleep $((RANDOM % 10 + 5))
+          done
+          echo "ERROR: failed to push data/eprx_trend_data.js after 5 attempts" >&2
+          exit 1
