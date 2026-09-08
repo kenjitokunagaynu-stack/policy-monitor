@@ -421,12 +421,14 @@ header.page-header .sub {
 }
 
 .view-toggle,
-.series-toggle {
+.series-toggle,
+.period-toggle {
   display: flex;
   gap: 6px;
 }
 .view-toggle button,
-.series-toggle button {
+.series-toggle button,
+.period-toggle button {
   font-size: 12px;
   padding: 5px 10px;
   border-radius: 6px;
@@ -436,11 +438,14 @@ header.page-header .sub {
   cursor: pointer;
 }
 .view-toggle button.active,
-.series-toggle button.active {
+.series-toggle button.active,
+.period-toggle button.active {
   border-color: var(--accent);
   color: var(--accent);
   background: var(--accent-bg);
 }
+body.trend-mode-volume .trend-price-block { display: none; }
+body.trend-mode-price .trend-vol-block { display: none; }
 
 /* series display-mode toggle: hides bar(volume) or line(price) groups + their axis */
 body.eprx-mode-volume .series-price,

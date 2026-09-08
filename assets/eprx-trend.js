@@ -145,13 +145,69 @@ function trendSeriesFor(defs, seriesData) {
   });
 }
 
+var trendPeriodMode = "long";
+
+// index of the first date within `months` months of the last date
+function trendCutoffIndex(dates, months) {
+  if (!dates.length) return 0;
+  var last = new Date(dates[dates.length - 1] + "T00:00:00");
+  var cutoff = new Date(last);
+  cutoff.setMonth(cutoff.getMonth() - months);
+  var cutoffStr = cutoff.toISOString().slice(0, 10);
+  for (var i = 0; i < dates.length; i++) {
+    if (dates[i] >= cutoffStr) return i;
+  }
+  return 0;
+}
+
+function trendSliceSeries(seriesObj, startIdx) {
+  var out = {};
+  Object.keys(seriesObj).forEach(function (k) { out[k] = seriesObj[k].slice(startIdx); });
+  return out;
+}
+
+function trendGetActiveData() {
+  var raw = window.EPRX_TREND_DATA;
+  if (trendPeriodMode === "long") return raw;
+  var startIdx = trendCutoffIndex(raw.dates, 3);
+  var dates = raw.dates.slice(startIdx);
+  var areas = {};
+  raw.areaOrder.forEach(function (area) {
+    if (raw.areas[area]) areas[area] = trendSliceSeries(raw.areas[area], startIdx);
+  });
+  return {
+    generatedAt: raw.generatedAt, startDate: dates[0] || raw.startDate, endDate: raw.endDate,
+    dates: dates, areaOrder: raw.areaOrder, national: trendSliceSeries(raw.national, startIdx), areas: areas
+  };
+}
+
+var trendSeriesMode = "all";
+function trendSetSeriesMode(mode) {
+  trendSeriesMode = mode;
+  document.body.classList.remove("trend-mode-price", "trend-mode-volume");
+  if (mode !== "all") document.body.classList.add("trend-mode-" + mode);
+  document.querySelectorAll(".series-toggle button").forEach(function (btn) {
+    btn.classList.toggle("active", btn.getAttribute("data-mode") === mode);
+  });
+}
+
+function trendSetPeriod(mode) {
+  trendPeriodMode = mode;
+  document.querySelectorAll(".period-toggle button").forEach(function (btn) {
+    btn.classList.toggle("active", btn.getAttribute("data-period") === mode);
+  });
+  renderTrendChart();
+}
+
 function renderTrendChart() {
-  var data = window.EPRX_TREND_DATA;
+  var raw = window.EPRX_TREND_DATA;
   var root = document.getElementById("trend-root");
-  if (!data || !data.dates || !data.dates.length) {
+  if (!raw || !raw.dates || !raw.dates.length) {
     root.innerHTML = '<div class="empty-state">データがまだありません。</div>';
     return;
   }
+  root.innerHTML = "";
+  var data = trendGetActiveData();
 
   var rangeEl = document.getElementById("trend-range");
   if (rangeEl) rangeEl.textContent = trendFmtJaDate(data.startDate) + "〜" + trendFmtJaDate(data.endDate);
@@ -203,8 +259,8 @@ function renderTrendAreaGrid(data) {
     if (!data.areas[area]) return "";
     return '<div class="area-card trend-area-card">'
       + '<button class="area-enlarge-btn" onclick="trendEnlargeArea(' + idx + ')" aria-label="拡大表示" title="拡大表示">⤢</button>'
-      + '<div id="trend-area-price-' + idx + '"></div>'
-      + '<div id="trend-area-vol-' + idx + '"></div>'
+      + '<div class="trend-price-block"><div id="trend-area-price-' + idx + '"></div></div>'
+      + '<div class="trend-vol-block"><div id="trend-area-vol-' + idx + '"></div></div>'
       + '</div>';
   }).join("");
   grid.innerHTML = html;
@@ -228,7 +284,7 @@ function renderTrendAreaGrid(data) {
 }
 
 function trendEnlargeArea(idx) {
-  var data = window.EPRX_TREND_DATA;
+  var data = trendGetActiveData();
   var area = data.areaOrder[idx];
   var s = data.areas[area];
   if (!s) return;

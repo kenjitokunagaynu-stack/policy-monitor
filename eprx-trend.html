@@ -25,23 +25,40 @@
   </header>
 
   <div id="trend-root"></div>
-  <div class="chart-card">
-    <div class="chart-legend">
-      <span class="legend-item"><span class="legend-swatch line" style="background:var(--series-4)"></span>平均落札価格（1日平均）</span>
-      <span class="legend-item"><span class="legend-swatch line" style="background:var(--series-3)"></span>最高落札価格（1日最大）</span>
+  <div class="chart-card" style="position:relative;">
+    <div class="chart-toolbar">
+      <div class="toolbar-controls">
+        <div class="series-toggle">
+          <button data-mode="all" class="active" onclick="trendSetSeriesMode('all')">すべて</button>
+          <button data-mode="price" onclick="trendSetSeriesMode('price')">価格のみ</button>
+          <button data-mode="volume" onclick="trendSetSeriesMode('volume')">数量のみ</button>
+        </div>
+        <div class="period-toggle">
+          <button data-period="long" class="active" onclick="trendSetPeriod('long')">長期（2024年4月〜）</button>
+          <button data-period="short" onclick="trendSetPeriod('short')">短期（直近3ヶ月）</button>
+        </div>
+      </div>
     </div>
-    <div class="chart-svg-wrap" id="trend-price-wrap" style="position:relative;">
-      <div id="trend-price-root"></div>
-      <div class="chart-tooltip" id="trend-tooltip"></div>
+    <div class="trend-price-block">
+      <div class="chart-legend">
+        <span class="legend-item"><span class="legend-swatch line" style="background:var(--series-4)"></span>平均落札価格（1日平均）</span>
+        <span class="legend-item"><span class="legend-swatch line" style="background:var(--series-3)"></span>最高落札価格（1日最大）</span>
+      </div>
+      <div class="chart-svg-wrap" id="trend-price-wrap">
+        <div id="trend-price-root"></div>
+      </div>
     </div>
 
-    <div class="chart-legend" style="margin-top:10px;">
-      <span class="legend-item"><span class="legend-swatch line" style="background:var(--series-1)"></span>平均募集量（1日平均）</span>
-      <span class="legend-item"><span class="legend-swatch line" style="background:var(--series-2)"></span>平均応札量（1日平均）</span>
+    <div class="trend-vol-block">
+      <div class="chart-legend" style="margin-top:10px;">
+        <span class="legend-item"><span class="legend-swatch line" style="background:var(--series-1)"></span>平均募集量（1日平均）</span>
+        <span class="legend-item"><span class="legend-swatch line" style="background:var(--series-2)"></span>平均応札量（1日平均）</span>
+      </div>
+      <div class="chart-svg-wrap">
+        <div id="trend-vol-root"></div>
+      </div>
     </div>
-    <div class="chart-svg-wrap" style="position:relative;">
-      <div id="trend-vol-root"></div>
-    </div>
+    <div class="chart-tooltip" id="trend-tooltip"></div>
 
     <div class="chart-note">
       出典: 一般社団法人 電力需給調整力取引所（EPRX）「取引結果・連系線確保量結果ダウンロード（速報値）」年度別CSV（2024年度〜、zip一括ダウンロード）を1日1回取得して作成。各日の値は、その日の48コマ（30分単位）から算出した1日集計値（平均落札価格・平均募集量・平均応札量は48コマの単純平均、最高落札価格は48コマ中の最大値）。値はいずれも全国合計。EPRXサイトの利用規約上、自動的な大量取得（スクレイピング等）には事前承諾が必要なため、1日1回のファイル一括ダウンロードのみで更新しています。
