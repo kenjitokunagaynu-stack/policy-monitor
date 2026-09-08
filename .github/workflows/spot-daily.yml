@@ -38,4 +38,17 @@ jobs:
           fi
           git add data/spot_data.js
           git commit -m "spot: daily data update ($(date -u +%Y-%m-%d))"
-          git push origin HEAD:main
+          # eprx-daily.yml runs on the same schedule and may push to main first;
+          # rebase onto the latest main (different file, so never conflicts) and
+          # retry a few times rather than fail outright on a non-fast-forward push.
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push attempt $i failed, retrying after rebase..."
+            sleep $((RANDOM % 10 + 5))
+          done
+          echo "ERROR: failed to push data/spot_data.js after 5 attempts" >&2
+          exit 1
