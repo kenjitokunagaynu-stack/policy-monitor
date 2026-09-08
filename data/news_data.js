@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-09-07",
+  "collectedAt": "2026-09-08",
   "periodLabel": "2025年11月〜2026年9月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,114 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20260907_bess_cyber_requirement",
+      "companies": [],
+      "image": "https://bessnews.jp/institutional/proffessional/4627203102001/img/hero_og.png",
+      "date": "2026-09-07",
+      "genre": "policy",
+      "title": "蓄電池の認定要件に「サイバー対策」3点追加 ─ 攻撃時は国へ報告、10月5日まで意見募集",
+      "subtitle": "経済安全保障推進法「蓄電池に係る安定供給確保を図るための取組方針」改正案、定置用蓄電システムの制御ソフトが名指しで対象に",
+      "sourceName": "bessnews",
+      "sourceUrl": "https://bessnews.jp/institutional/proffessional/4627203102001/",
+      "topics": [
+        {
+          "theme": "サイバーセキュリティ要件の追加",
+          "conclusion": "経済安全保障推進法上の特定重要物資である蓄電池の認定基準を定める「取組方針」の改正案が意見公募され、社内体制・製品（制御ソフト）・攻撃発生時の報告という3層のサイバーセキュリティ要件が新たに加わる。",
+          "detail": "認定要件（定置用、年300MWh以上）の対象事業者は、定置用蓄電システムの制御ソフトウェアについて脆弱性の点検・評価・対策の実施が求められ、攻撃を受けた場合は内閣官房国家サイバー統括室への報告が必要になる。意見募集は2026年9月4日〜10月5日0時。系統用蓄電池の調達仕様・運用体制に影響し得る規制動向として注視。"
+        }
+      ]
+    },
+    {
+      "id": "n20260907_occto_capacity_suspension_manual",
+      "companies": [],
+      "image": "https://bessnews.jp/market/proffessional/4627203001001/img/hero_og.png",
+      "date": "2026-09-07",
+      "genre": "policy",
+      "title": "蓄電池の容量停止計画は「2年前」提出 ─ 出力可能容量は管理容量×調整係数、重加算ペナルティ1.5倍",
+      "subtitle": "OCCTOが容量市場業務マニュアル（容量停止計画の調整業務編）2027・2028年度版など4本を意見募集、締切9月16日17時",
+      "sourceName": "bessnews",
+      "sourceUrl": "https://bessnews.jp/market/proffessional/4627203001001/",
+      "topics": [
+        {
+          "theme": "容量停止計画の算定式・提出期限",
+          "conclusion": "OCCTOが容量市場の容量停止計画（実需給年度の2年前に提出する停止申告）に関する業務マニュアル案4本の意見募集を行っており、蓄電池・純揚水の出力可能容量は「各月の管理容量×調整係数」で算定される旨が明記された。",
+          "detail": "提出期限は電源区分で異なり、長期固定電源は2年度前の7月末、それ以外は10月末。調整不調時のペナルティには重加算（1.5倍）の適用があり、系統用蓄電池の容量市場収入計画・運用計画に直結する実務情報。意見募集は2026年9月3日〜9月16日17時。"
+        }
+      ]
+    },
+    {
+      "id": "n20260907_hatsudengawa_kakin_kw",
+      "companies": [],
+      "image": "https://bessnews.jp/institutional/proffessional/4627203102002/img/hero_og.png",
+      "date": "2026-09-07",
+      "genre": "policy",
+      "title": "発電側課金、11月1日改定へ ─ 系統用蓄電池が負担するのは円/kWhでなく円/kWの基本料金",
+      "subtitle": "一般送配電8社の託送収入見通しを9月4日に経産大臣承認、関西の基本料金は+18円25銭/kWで1万kW案件は年約219万円増",
+      "sourceName": "bessnews",
+      "sourceUrl": "https://bessnews.jp/institutional/proffessional/4627203102002/",
+      "topics": [
+        {
+          "theme": "発電側課金改定の内容",
+          "conclusion": "一般送配電8社が申請していた託送収入の見通し変更が2026年9月4日に経済産業大臣の承認を受け、2026年11月1日から発電側の託送料金が改定される。",
+          "detail": "系統用蓄電池は系統充電由来の放電に限りkWh課金が免除される一方、kW課金（基本料金）は原則課金対象となる。関西電力送配電では発電側の基本料金が現行97円98銭から116円23銭へ（+18円25銭/kW、税込）改定され、契約1万kW規模の蓄電池では単純計算で年約219万円の負担増となる。円/kWhの平均単価上昇よりも、稼働率と無関係にかかる円/kWの基本料金の方が収支への影響が大きい点に注意が必要。"
+        }
+      ]
+    },
+    {
+      "id": "n20260907_geac_green_chord",
+      "companies": ["グリーンエナジー&カンパニー"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/71823/38/71823-38-592e14a0febee61840ea2a58c83ea098-925x654.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-07",
+      "genre": "entry",
+      "title": "グリーンエナジー&カンパニー、低圧系統用蓄電池向けパッケージ「GREEN CHORD」の提供を開始",
+      "subtitle": "出荷前に試験・設定・部材加工を完了した部材パッケージ、アグリゲーション・O&Mとセットで9月8日提供開始",
+      "sourceName": "PR TIMES（株式会社グリーンエナジー&カンパニー）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000038.000071823.html",
+      "topics": [
+        {
+          "theme": "新パッケージ提供開始の内容",
+          "conclusion": "グリーンエナジー&カンパニーが、低圧（50kW未満）系統用蓄電池向けの部材パッケージ「GREEN CHORD」を2026年9月8日より提供開始する。",
+          "detail": "出荷前に模擬周波数試験・EMS通信設定・配線材の加工を完了させることで、EPC各社の現場工数を削減する点が特徴。子会社GREEN ACTIONによるアグリゲーションとグリーンエナジー・ファシリティーズによるO&Mをセットで提供する。2026年4月の制度改正で低圧リソースが需給調整市場に参加可能になったことを受け、中小事業者・地主が低圧蓄電所事業に参入する際のハードルを下げる狙い。"
+        }
+      ]
+    },
+    {
+      "id": "n20260907_nihon_chikudenchi_yanai",
+      "companies": ["日本蓄電池"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/161802/106/161802-106-db112fd03b9de2d7d0e97284d9cf4b8e-864x516.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-07",
+      "genre": "operation",
+      "title": "日本蓄電池、山口県柳井市「NC柳井市遠崎洛田蓄電所」が需給調整市場での運用を開始",
+      "subtitle": "1,988kW/8,146kWh、TMEIC製PCS・CATL製電池、デジタルグリッドがアグリゲーター",
+      "sourceName": "PR TIMES（日本蓄電池株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000106.000161802.html",
+      "topics": [
+        {
+          "theme": "需給調整市場参入の内容",
+          "conclusion": "日本蓄電池とデジタルグリッドが、山口県柳井市の系統用蓄電施設「NC柳井市遠崎洛田蓄電所」（定格出力1,988kW・容量8,146kWh、TMEIC製PCS・CATL製電池）で2026年9月7日より需給調整市場での運用を開始した。",
+          "detail": "デジタルグリッドが自社プラットフォームを活用したアグリゲーション・市場参入支援を担当。日本蓄電池は「NC○○蓄電所」の名称で全国に系統用蓄電施設を展開しており、ほぼ毎週ペースで設置開始・受電開始・需給調整市場参入等のマイルストーンを発表している。"
+        }
+      ]
+    },
+    {
+      "id": "n20260907_hexa_merchant_2sites",
+      "companies": ["パワーエックス"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/173123/7/173123-7-38bbeb970b47600632bfcf6970176ce4-512x510.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-07",
+      "genre": "operation",
+      "title": "HEXA、マーチャント型取引の高圧蓄電所2件（福島県・宮城県）が商業運転・市場運用を開始",
+      "subtitle": "各1,998kW/4,936kWh、パワーエックスとの開発提携案件、市場リスクを自社負担するマーチャント型で運用",
+      "sourceName": "PR TIMES（ヘキサ・エネルギーサービス合同会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000007.000173123.html",
+      "topics": [
+        {
+          "theme": "商業運転開始の内容",
+          "conclusion": "ヘキサ・エネルギーサービスが2026年8月末に引き渡しを受けた福島県・宮城県の高圧蓄電所2件（各1,998kW・4,936kWh）が商業運転および電力市場での運用を開始した。",
+          "detail": "両案件はパワーエックスと2025年3月に締結した国内蓄電所開発に関する業務提携に基づくもので、自社開発の取引システムにより市場リスクを自ら負担するマーチャント型運用を行う。同社は系統用蓄電池事業ですでに送電端容量約650MW・定格容量約3GWh規模（2026年5月時点）を展開している。"
+        }
+      ]
+    },
     {
       "id": "n20260904_sustainable_holdings_pivot",
       "companies": ["サステナブルホールディングス"],
