@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Fetch EPRX historical CSV bundles (FY2024-)
         id: fetch
@@ -43,9 +45,12 @@ jobs:
           # retry a few times rather than fail outright on a non-fast-forward push.
           for i in 1 2 3 4 5; do
             git fetch origin main
-            git rebase origin/main
-            if git push origin HEAD:main; then
-              exit 0
+            if git rebase origin/main; then
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+            else
+              git rebase --abort || true
             fi
             echo "Push attempt $i failed, retrying after rebase..."
             sleep $((RANDOM % 10 + 5))
