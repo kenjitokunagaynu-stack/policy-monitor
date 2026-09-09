@@ -41,6 +41,13 @@ jobs:
           fi
           git add data/eprx_data.js
           git commit -m "eprx: daily data update ($(date -u +%Y-%m-%d))"
+          echo "---- diagnostic: repo/working-tree state right after commit ----"
+          pwd
+          git rev-parse --show-toplevel
+          git status
+          git diff --stat
+          git diff
+          echo "---- end diagnostic ----"
           # spot-daily.yml runs on the same schedule and may push to main first;
           # rebase onto the latest main (different file, so never conflicts) and
           # retry a few times rather than fail outright on a non-fast-forward push.
