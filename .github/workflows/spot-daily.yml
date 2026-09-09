@@ -32,6 +32,7 @@ jobs:
 
       - name: Commit and push if changed
         run: |
+          set -x
           git config user.name "spot-daily-bot"
           git config user.email "actions@users.noreply.github.com"
           if git diff --quiet -- data/spot_data.js; then
