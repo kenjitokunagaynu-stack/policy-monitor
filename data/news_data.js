@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-09-09",
+  "collectedAt": "2026-09-10",
   "periodLabel": "2025年11月〜2026年9月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,78 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20260909_tensor_ecostyle_partnership",
+      "companies": ["Tensor Energy", "エコスタイル"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/96424/44/96424-44-a6daa7fb1ddf5e1234bb65e420168978-3840x2160.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-09",
+      "genre": "capital",
+      "title": "Tensor Energy、エコスタイルと低圧系統用蓄電所開発事業で業務提携",
+      "subtitle": "2027年末までに累計1,000基のアグリゲーション連携を目指す、エコスタイルが開発・施工・O&M、Tensor Energyがアグリゲーション担当",
+      "sourceName": "PR TIMES（Tensor Energy株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000044.000096424.html",
+      "topics": [
+        {
+          "theme": "業務提携の内容",
+          "conclusion": "太陽光発電開発大手エコスタイルと、AI活用のアグリゲーション運用プラットフォーム「Tensor Cloud」を提供するTensor Energyが、低圧系統用蓄電所開発事業における業務提携契約を締結した。",
+          "detail": "エコスタイルが低圧系統用蓄電所の用地確保・系統連系申請・設計調達施工・O&Mを担当し、Tensor Energyがアグリゲーターとして市場入札・充放電制御・精算を担当する。2027年末までに累計1,000基の低圧系統用蓄電所のアグリゲーション連携を目指す。Tensor Energyは東京センチュリー（2026年8月31日発表）とも系統用蓄電池事業で包括的業務提携を締結しており、提携網を急速に拡大している。"
+        }
+      ]
+    },
+    {
+      "id": "n20260909_remixpoint_osaki_naruko",
+      "companies": [],
+      "image": "https://prcdn.freetls.fastly.net/release_image/33609/228/33609-228-62e129a87baa9f18d6c4e874361f41b8-529x325.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-09",
+      "genre": "epc",
+      "title": "リミックスポイント、宮城県大崎市「大崎市鳴子温泉字星沼蓄電所」が基礎工事を開始",
+      "subtitle": "外部販売案件、定格出力1,977kW・容量7,740kWh、HUAWEI製、2026年12月受電開始・引き渡し予定",
+      "sourceName": "PR TIMES（株式会社リミックスポイント）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000228.000033609.html",
+      "topics": [
+        {
+          "theme": "基礎工事開始の内容",
+          "conclusion": "リミックスポイントが外部顧客向け販売案件として開発する宮城県大崎市の系統用蓄電所（定格出力1,977kW・定格容量7,740kWh、HUAWEI製蓄電システム・PCS）が2026年8月末より基礎工事を本格開始した。",
+          "detail": "当期受注済み案件4件のうち2件目の着工案件で、2026年12月の受電開始・引き渡しを予定。販売先は美吉建設、開発・EPCはシールエンジニアリング。同社は2029年3月期までに高圧系統用蓄電所48か所・低圧系統用蓄電所900か所超の開発を目指す中期経営計画（2026年8月28日上方修正）を掲げ、外部販売事業を成長ドライバーの一つに位置付けている。"
+        }
+      ]
+    },
+    {
+      "id": "n20260908_daiwa_energy_epc_entry",
+      "companies": [],
+      "image": "https://prcdn.freetls.fastly.net/release_image/2296/2768/2296-2768-df1f5d8ea8876e45cdffb3b956e5a054-600x259.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-08",
+      "genre": "epc",
+      "title": "大和エネルギー、系統用蓄電所のEPC事業に本格参入 ─ ENEOS清水油槽所跡地に出力50MW・容量109MWh",
+      "subtitle": "大和ハウスグループ、ENEOS Powerとの契約で太陽光開発の技術力を蓄電インフラへ展開、2027年1月着工・2028年度内竣工予定",
+      "sourceName": "大和ハウス工業株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000002768.000002296.html",
+      "topics": [
+        {
+          "theme": "EPC事業参入の内容",
+          "conclusion": "大和ハウスグループの大和エネルギー株式会社が、系統用蓄電所のEPC（設計・調達・建設）事業に本格参入した。第1号案件はENEOS Power株式会社と契約した静岡県清水地域のENEOS清水油槽所内遊休地における出力50MW・容量109MWhの大型蓄電所。",
+          "detail": "着工は2027年1月、竣工は2028年度内を予定。太陽光発電事業で培った設計・調達・建設のノウハウを蓄電インフラ事業に展開する方針で、大和ハウスグループとして系統用蓄電池関連事業の裾野を拡大する動き。"
+        }
+      ]
+    },
+    {
+      "id": "n20260907_tensor_1gwh_milestone",
+      "companies": [],
+      "image": "https://prcdn.freetls.fastly.net/release_image/96424/43/96424-43-b19e85a16f1a7a2b31513c3404990b82-3840x2160.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-07",
+      "genre": "capital",
+      "title": "Tensor Energy、低圧系統用蓄電池のアグリゲーション申込容量が1GWhを突破",
+      "subtitle": "申込件数5,000件・出力250MW、低圧系統用蓄電池のバルクアグリゲーションで国内最大級",
+      "sourceName": "PR TIMES（Tensor Energy株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000043.000096424.html",
+      "topics": [
+        {
+          "theme": "申込容量拡大の内容",
+          "conclusion": "Tensor Energyの低圧系統用蓄電池向けアグリゲーション受託サービスへの申込容量が、2026年9月7日時点で1GWh（1,000,000kWh）を突破した。申込件数5,000件・出力ベース250MWに達し、低圧系統用蓄電池のバルクアグリゲーションとして国内最大級の規模となる見込み。",
+          "detail": "2026年の低圧VPP制度整備とFIP制度の普及を背景に、低圧系統用蓄電池は「メガ」から「ギガ」規模へ急拡大している。Tensor Cloudによる電力申請支援・開発進捗管理・複数市場での運用・精算業務までの一貫支援が申込拡大の背景。同社は東京センチュリー・エコスタイル等との提携も相次いで発表しており、低圧アグリゲーション分野で存在感を強めている。"
+        }
+      ]
+    },
     {
       "id": "n20260907_bess_cyber_requirement",
       "companies": [],
