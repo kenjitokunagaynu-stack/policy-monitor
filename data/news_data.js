@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-09-10",
+  "collectedAt": "2026-09-11",
   "periodLabel": "2025年11月〜2026年9月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,42 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20260910_aoki_asunaro_ishikari",
+      "companies": [],
+      "image": "https://prcdn.freetls.fastly.net/release_image/122569/24/122569-24-391b6cbc4afae5e7a6dfc1ca973343b1-666x429.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-10",
+      "genre": "operation",
+      "title": "青木あすなろ建設出資の「北海道石狩市蓄電所」が完成、商業運転を開始",
+      "subtitle": "出力10,125kW・容量29,970kWh、運営は九電みらいエナジー代表の北海道クリーンエネルギー蓄電合同会社",
+      "sourceName": "PR TIMES（青木あすなろ建設株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000024.000122569.html",
+      "topics": [
+        {
+          "theme": "商業運転開始の内容",
+          "conclusion": "青木あすなろ建設が出資参画する北海道クリーンエネルギー蓄電合同会社（代表社員：九電みらいエナジー）が、北海道石狩市に建設していた系統用蓄電所（出力10,125kW・蓄電池容量29,970kWh）を完成させ、2026年8月1日付で商業運転を開始した。",
+          "detail": "蓄電池・パワーコンディショナ・エネルギーマネジメントシステム・連系変電所機器等の主要機器に国産製品を採用し、今後の制度変更・機器更新にも柔軟に対応できる体制を構築。2026年9月10日に竣工式を開催した。青木あすなろ建設は2025年3月にも北海道札幌蓄電合同会社を設立しており、系統用蓄電池事業を継続的に展開している。"
+        }
+      ]
+    },
+    {
+      "id": "n20260909_asahi_ir_aggregator",
+      "companies": [],
+      "image": "https://prcdn.freetls.fastly.net/release_image/111441/29/111441-29-71de9228cf684f4feaa2a6b3cb698276-3900x435.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-09",
+      "genre": "entry",
+      "title": "朝日I&Rホールディングス、経産省より「特定卸供給事業者（アグリゲーター）」に認定",
+      "subtitle": "事業者番号第169番、2026年10月1日事業開始、50MW超の系統用蓄電所開発計画を基盤にFIP移行支援を展開",
+      "sourceName": "PR TIMES（朝日I&Rホールディングス株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000029.000111441.html",
+      "topics": [
+        {
+          "theme": "アグリゲーター認定の内容",
+          "conclusion": "佐賀県武雄市の朝日I&Rホールディングスが経済産業省資源エネルギー庁より特定卸供給事業者（アグリゲーター、事業者番号第169番）の承認を受け、2026年10月1日より事業を本格開始する。",
+          "detail": "同社は太陽光発電所100MW超の管理受託実績と50MW以上の系統用蓄電所の運転開始計画を事業基盤とし、2026年度の優先給電ルール見直し（FIT出力制御率34%→FIPで約2%）に対応した発電事業者のFIP移行支援を展開する。太陽光併設型蓄電池の導入推進やV2H住宅普及も重点戦略に掲げている。"
+        }
+      ]
+    },
     {
       "id": "n20260909_tensor_ecostyle_partnership",
       "companies": ["Tensor Energy", "エコスタイル"],
