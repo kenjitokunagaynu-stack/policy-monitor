@@ -7,7 +7,7 @@
 // OCCTOは委員会数が多いため、容量市場・調整力・需給調整市場など蓄電池事業に特に関連する
 // 委員会・検討会に絞って収録しています（運用容量検討会等の技術専門会合は一部割愛）。
 window.APP_DATA = {
-  "generatedAt": "2026-09-11T10:00:00+09:00",
+  "generatedAt": "2026-09-14T10:00:00+09:00",
   "periodLabel": "2026年3月〜2026年9月（直近6ヶ月、試験収集）",
   "sources": [
     { "id": "wg", "label": "エネ庁 系統WG", "org": "経済産業省 資源エネルギー庁", "indexUrl": "https://www.meti.go.jp/shingikai/enecho/denryoku_gas/saisei_kano/smart_power_grid_wg/index.html" },
@@ -17,6 +17,27 @@ window.APP_DATA = {
     { "id": "stable", "label": "エネ庁 電力安定供給WG", "org": "経済産業省 資源エネルギー庁", "indexUrl": "https://www.meti.go.jp/shingikai/enecho/denryoku_gas/jisedai_kiban/stable_power_supply_wg/index.html" }
   ],
   "items": [
+    {
+      "id": "occto_20260915_jukyu", "date": "2026-09-15", "source": "occto",
+      "title": "第63回 需給調整市場検討小委員会（第80回 調整力の細分化及び広域調達の技術的検討に関する作業会と合同開催）",
+      "subtitle": "二次調整力①の広域運用・広域調達と、需給調整市場前日取引化後の市場外調整力の状況を議論",
+      "sourceName": "電力広域的運営推進機関",
+      "sourceUrl": "https://www.occto.or.jp/iinkai/",
+      "topics": [
+        { "theme": "二次調整力①の広域運用・広域調達", "conclusion": "二次調整力①（蓄電池等が主に応札する商品区分）の広域運用および広域調達のあり方について議論された。", "detail": "二次調整力①は系統用蓄電池の主要な応札対象商品であり、広域運用・調達方式の見直しは蓄電池事業者の収益機会に直接影響する。" },
+        { "theme": "需給調整市場前日取引化後の市場外調整力の状況", "conclusion": "需給調整市場の前日取引化後における市場外調整力の活用状況が報告され、需給調整市場検討小委員会のこれまでの議論の方向性が上期報告として整理された。", "detail": "前日取引化に伴う市場外調整力の動向は、蓄電池の入札戦略にも影響し得る。" }
+      ]
+    },
+    {
+      "id": "occto_20260915_keikaku", "date": "2026-09-15", "source": "occto",
+      "title": "第16回 計画評価及び検証小委員会",
+      "subtitle": "北海道本州間連系設備（日本海ルート）の予備評価と、複数連系線の工事費増額の中間検証を審議",
+      "sourceName": "電力広域的運営推進機関",
+      "sourceUrl": "https://www.occto.or.jp/iinkai/",
+      "topics": [
+        { "theme": "広域連系設備の整備計画評価", "conclusion": "北海道本州間連系設備（日本海ルート）に係る広域系統整備計画の予備評価（工期・予備費・物価上昇、ファイナンス費用・リスク分担）が実施されたほか、同設備および東北東京間連系線の工事費増額に関する中間検証が行われた。", "detail": "機微な内容を含むため非公開で開催。広域連系設備の整備進捗（工期・費用）は系統混雑の緩和時期や連系可能容量の見通しに関わる。" }
+      ]
+    },
     {
       "id": "stable006", "date": "2026-08-31", "source": "stable",
       "title": "第6回 電力安定供給ワーキンググループ",
