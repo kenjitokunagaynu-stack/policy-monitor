@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-09-11",
+  "collectedAt": "2026-09-14",
   "periodLabel": "2025年11月〜2026年9月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,24 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20260911_jesdi_yamakawa",
+      "companies": ["日本蓄電開発機構"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/173175/10/173175-10-e63d3934b2321c7bc26a77cd3a9cbe4c-1504x704.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-11",
+      "genre": "operation",
+      "title": "日本蓄電開発機構、埼玉県深谷市に「山河蓄電所」を開設 ― 着工から約4ヶ月で受電、国内5拠点目",
+      "subtitle": "設備容量5MWh（出力2MW）、着工から約4ヶ月で受電完了、5拠点連続で着工半年以内の受電を達成",
+      "sourceName": "PR TIMES（日本蓄電開発機構株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000010.000173175.html",
+      "topics": [
+        {
+          "theme": "受電完了の内容",
+          "conclusion": "系統用蓄電池の社会実装を推進する日本蓄電開発機構（JESDI）が、埼玉県深谷市に開発していた「山河蓄電所」（設備容量5MWh・出力2MW）で2026年9月11日に受電を完了した。滋賀県愛荘町・埼玉県熊谷市（上奈良）・埼玉県上里町（七本木）・埼玉県寄居町（鉢形）に続く国内第5の受電拠点。",
+          "detail": "2026年5月10日の着工から約4ヶ月での受電となり、5拠点すべてで着工から半年以内の受電を実現している。HOBE ENERGY製5ftコンパクト型統合蓄電システムを採用し、建設はイー・トップ、運用支援は株式会社RUTILEAが担当する4社一体体制。狭小地でも設置可能な小型システムを軸に、耕作放棄地等の活用も含めた全国展開を加速する方針。"
+        }
+      ]
+    },
     {
       "id": "n20260910_aoki_asunaro_ishikari",
       "companies": [],
