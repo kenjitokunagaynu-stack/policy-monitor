@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-09-14",
+  "collectedAt": "2026-09-15",
   "periodLabel": "2025年11月〜2026年9月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,24 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20260914_nihon_chikudenchi_tsuruoka_yudagawa",
+      "companies": ["日本蓄電池"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/161802/108/161802-108-74ace3b596a3979a83ab6d7286f1af2c-864x650.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-14",
+      "genre": "operation",
+      "title": "日本蓄電池、山形県鶴岡市「NC鶴岡市湯田川蓄電所」が需給調整市場での運用を開始",
+      "subtitle": "1,999kW/8,146kWh、TMEIC製PCS・CATL製電池、デジタルグリッドがアグリゲーター",
+      "sourceName": "PR TIMES（日本蓄電池株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000108.000161802.html",
+      "topics": [
+        {
+          "theme": "需給調整市場参入の内容",
+          "conclusion": "日本蓄電池とデジタルグリッドが、山形県鶴岡市の系統用蓄電施設「NC鶴岡市湯田川蓄電所」（定格出力1,999kW・容量8,146kWh、TMEIC製PCS・CATL製電池）で2026年9月14日より需給調整市場での運用を開始した。",
+          "detail": "同施設は2026年7月13日に受電を完了しており、約2ヶ月で需給調整市場参入まで至った。デジタルグリッドが自社プラットフォーム「DGP」を活用したアグリゲーション・市場参入支援を担当。日本蓄電池は「NC○○蓄電所」の名称で全国に系統用蓄電施設を展開しており、ほぼ毎週ペースで設置開始・受電開始・需給調整市場参入等のマイルストーンを発表している。"
+        }
+      ]
+    },
     {
       "id": "n20260911_jesdi_yamakawa",
       "companies": ["日本蓄電開発機構"],
