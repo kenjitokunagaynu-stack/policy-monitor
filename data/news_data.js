@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-09-18",
+  "collectedAt": "2026-09-25",
   "periodLabel": "2025年11月〜2026年9月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,168 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20260924_fitfounder_hokkaido007",
+      "companies": [],
+      "image": "https://prcdn.freetls.fastly.net/release_image/148720/13/148720-13-7770b61cd6600305b2aece0eea382ab6-1603x981.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-24",
+      "genre": "entry",
+      "title": "Fit Founder、日本エネルギー総合システムの「北海道007蓄電所」プロジェクトの成約を支援",
+      "subtitle": "北海道勇払郡むかわ町の2MW/8MWh案件、蓄電池はCATL EnerOne、事業者とのマッチングから成約までを支援",
+      "sourceName": "PR TIMES（株式会社Fit Founder）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000013.000148720.html",
+      "topics": [
+        {
+          "theme": "成約支援の内容",
+          "conclusion": "Fit Founderが、日本エネルギー総合システムが手掛ける北海道勇払郡むかわ町の系統用蓄電池案件「北海道007蓄電所」（定格出力2MW・蓄電容量8MWh）の成約を、事業者とのマッチングから支援した。",
+          "detail": "蓄電池はCATL EnerOne、PCSは富士電機製。Fit Founderは今後、日本エネルギー総合システムとの連携を強化し、案件マッチングにとどまらず開発から販売までの協力体制構築を全国で進める方針。"
+        }
+      ]
+    },
+    {
+      "id": "n20260924_re100_jbess",
+      "companies": ["RE100電力"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/107409/39/107409-39-3547147f92cfc9b2496869a673b8ecae-1473x693.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-24",
+      "genre": "entry",
+      "title": "RE100電力、低価格志向の系統用蓄電池パッケージ「J-BESS」を提供開始",
+      "subtitle": "JC-STAR適合製品・世界トップシェア蓄電池・国産PCS/EMSを組み合わせ、導入コストを抑えたパッケージ",
+      "sourceName": "PR TIMES（RE100電力株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000039.000107409.html",
+      "topics": [
+        {
+          "theme": "新パッケージ提供開始の内容",
+          "conclusion": "RE100電力が、セキュリティ適合ラベル「JC-STAR」対応製品を採用しつつ導入価格を抑えた系統用蓄電池パッケージ「J-BESS」の提供を開始した。",
+          "detail": "世界トップシェアの蓄電池と高効率・高信頼の国産PCS・EMSを組み合わせ、機器選定・調達・システム構成の最適化により価格を抑制。系統用蓄電池事業ではコストが事業性を左右するとして、より導入しやすい選択肢として位置づけている。"
+        }
+      ]
+    },
+    {
+      "id": "n20260918_hatsudengawa_kakin_9sha_kaitei",
+      "companies": [],
+      "image": "https://bessnews.jp/institutional/proffessional/4628303102001/img/thumbnail.jpg",
+      "date": "2026-09-18",
+      "genre": "policy",
+      "title": "発電側課金、11月1日から一般送配電9社すべてで引き上げ ─ 東京0.50→0.57円、北海道0.64→0.79円",
+      "subtitle": "第4回電力事業環境整備WGに託送供給等約款の変更届出が報告、下げたエリアはゼロ・改定は9月4日申請済み",
+      "sourceName": "bessnews",
+      "sourceUrl": "https://bessnews.jp/institutional/proffessional/4628303102001/",
+      "topics": [
+        {
+          "theme": "発電側課金の引き上げ内容",
+          "conclusion": "2026年11月1日から適用される新しい託送料金で、一般送配電事業者9社すべての発電側課金の平均単価が引き上げられる（下げたエリアはゼロ）。上げ幅は北海道電力NWが最大（+0.15円/kWh、現行比約23%）、中国電力NWが最小（+0.01円/kWh）。",
+          "detail": "系統用蓄電池は放電時に発電側課金、充電時に需要側の託送料金を負担するため、両方の単価上昇が運転コストに効いてくる。稼働率の高い蓄電所ほど年間の負担増が大きくなる。北海道（0.64→0.79円/kWh）・関西（0.57→0.67円/kWh）は上げ幅が大きく、2026年度下期以降の運転コスト・入札価格の前提見直しが必要。"
+        }
+      ]
+    },
+    {
+      "id": "n20260918_sii_hojokin_deadline",
+      "companies": [],
+      "image": "https://bessnews.jp/institutional/beginner/4628301102001/img/thumbnail.jpg",
+      "date": "2026-09-18",
+      "genre": "policy",
+      "title": "系統用蓄電池の補助金、締切は11月4日17時必着 ─ SIIが公募説明動画を公開",
+      "subtitle": "令和7年度補正「系統用蓄電システム等導入支援事業」、公募は9月4日開始・対象は最大受電電力1,000kW以上",
+      "sourceName": "bessnews",
+      "sourceUrl": "https://bessnews.jp/institutional/proffessional/4628301102001/",
+      "topics": [
+        {
+          "theme": "補助金公募の締切・対象",
+          "conclusion": "SII（環境共創イニシアチブ）が執行する令和7年度補正「系統用蓄電システム等導入支援事業」は、電力系統に直接接続する最大受電電力1,000kW以上の蓄電システムが対象。締切は2026年11月4日17時必着（持参不可）、交付決定は2027年1月上旬以降の予定。",
+          "detail": "申請にはGビズIDプライムとJグランツでの電子申請に加え、配送状況を確認できる手段での郵送も必要。SIIは9月18日、事業内容・要件を説明する公募説明動画（47分34秒）を公開した。"
+        }
+      ]
+    },
+    {
+      "id": "n20260917_kyuden_jizenoudan_web",
+      "companies": [],
+      "image": "https://bessnews.jp/institutional/standard/4628202102001/img/thumbnail.jpg",
+      "date": "2026-09-17",
+      "genre": "policy",
+      "title": "九州電力送配電、系統アクセス事前相談を10月7日からWeb申込に移行",
+      "subtitle": "12月7日受領分までは郵送・メールも併用可、12月8日以降はWeb申込のみに一本化",
+      "sourceName": "bessnews",
+      "sourceUrl": "https://bessnews.jp/institutional/standard/4628202102001/",
+      "topics": [
+        {
+          "theme": "事前相談手続きのWeb化",
+          "conclusion": "九州電力送配電が、発電設備等の系統アクセス事前相談について2026年10月7日8時からWeb申込を開始する。対象は高圧・特別高圧。2026年12月7日（同社受領分）までは郵送・メールも使えるが、12月8日以降はWeb申込のみとなる。",
+          "detail": "九州エリアは系統用蓄電池の申込が多く、接続検討には一事業者8件という上限が既に適用されている。あわせて公表された別紙では「検討結果は申込から1か月以内に回答する」との運用も明らかになった。"
+        }
+      ]
+    },
+    {
+      "id": "n20260912_gx_senryaku_chiiki_18",
+      "companies": [],
+      "image": "https://bessnews.jp/institutional/proffessional/4627703102001/img/thumbnail.jpg",
+      "date": "2026-09-12",
+      "genre": "policy",
+      "title": "経産省、GX戦略地域（第1弾）18地域を認定 ─ 認定地域は電力系統を先行整備",
+      "subtitle": "データセンター集積型9地域・脱炭素電源活用型8地域・コンビナート等再生型1地域、系統増強の順番に産業立地政策が関与",
+      "sourceName": "bessnews",
+      "sourceUrl": "https://bessnews.jp/institutional/proffessional/4627703102001/",
+      "topics": [
+        {
+          "theme": "GX戦略地域認定の内容",
+          "conclusion": "経済産業省が2026年9月11日、GX戦略地域（第1弾）として18地域（20地点）を認定した。認定地域には「設備投資の後押し、電力系統の先行整備、規制・制度改革等」が措置される。",
+          "detail": "内訳はコンビナート等再生型1地域（川崎市）、データセンター集積型9地域10地点、脱炭素電源活用型8地域10地点。系統増強の順番に産業立地政策が関与する形となり、系統用蓄電池の開発候補地選定にも影響し得る。類型4の二次公募は10月中旬頃を予定。"
+        }
+      ]
+    },
+    {
+      "id": "n20260910_gridcode_2mw_fsm",
+      "companies": [],
+      "image": "https://bessnews.jp/technology/proffessional/4627503405001/img/thumbnail.jpg",
+      "date": "2026-09-10",
+      "genre": "policy",
+      "title": "グリッドコード検討会、FRT要件見直し案等を了承 ─ 蓄電池の対象容量基準とFSMは宿題に",
+      "subtitle": "第22回検討会（8/21開催分）議事録公表、特別高圧・2MW以上の基準は再検討、周波数変化抑制対策（FSM）は次回審議",
+      "sourceName": "bessnews",
+      "sourceUrl": "https://bessnews.jp/technology/proffessional/4627503405001/",
+      "topics": [
+        {
+          "theme": "系統連系技術要件の審議状況",
+          "conclusion": "OCCTOが2026年9月10日、8月21日開催の第22回グリッドコード検討会の議事録・配布資料を公表。FRT要件見直し（特別高圧）と周波数関連要件化案は「事務局案のまま進める」で了承されたが、対象容量基準（特別高圧・2MW以上）は再検討対象、蓄電池に重要とされるFSM（周波数変化の抑制対策）は次回審議に持ち越された。",
+          "detail": "第16回検討会では蓄電池の周波数調整機能要件化は継続検討・見送りとされていたが、今回「事務局案通り進める」方向へ整理が変わった。適用時期の2028年4月も「目指す」段階で見直しの余地を残す。系統用蓄電池の技術要件・調達仕様に影響し得る論点。"
+        }
+      ]
+    },
+    {
+      "id": "n20260910_eprx_chosei_shutsuryoku_juufuku",
+      "companies": [],
+      "image": "https://bessnews.jp/market/proffessional/4627503001002/img/thumbnail.jpg",
+      "date": "2026-09-10",
+      "genre": "policy",
+      "title": "EPRX、調整力指令と出力制御指令が重複した場合の取り扱いを公表",
+      "subtitle": "第61回需給調整市場検討小委員会の整理に基づきアセスメントⅡ・調整判定を実施、ただしエリアごとの給電申合書で別扱いの余地あり",
+      "sourceName": "bessnews",
+      "sourceUrl": "https://bessnews.jp/market/proffessional/4627503001002/",
+      "topics": [
+        {
+          "theme": "指令重複時の判定基準",
+          "conclusion": "EPRXが2026年9月10日、「調整力指令と出力制御指令が重複した場合の取り扱いについて」を公表。国の審議会（第61回需給調整市場検討小委員会資料3）の整理を根拠に、アセスメントⅡおよび調整判定を実施するとした。",
+          "detail": "蓄電池は充放電の双方向性から指令が重複しやすく、未達判定はペナルティに直結するため実務上重要。ただし公表文には、属地エリアの一般送配電事業者のシステム都合等により給電申合書で「基本的な対応以外」の取り扱いが定められる場合がある旨の留保も付されており、判定基準が全国一律ではない点に注意が必要。"
+        }
+      ]
+    },
+    {
+      "id": "n20260909_iea_liion_25years",
+      "companies": [],
+      "image": "https://bessnews.jp/market/standard/4627402001001/img/thumbnail.jpg",
+      "date": "2026-09-09",
+      "genre": "policy",
+      "title": "IEA、リチウムイオン電池の25年を総括 ─ セル価格97%下落、生産の85%が中国に集中",
+      "subtitle": "コメンタリー「The rise of lithium-ion batteries」公表、市場規模1500億ドル超・需要は2000年比約1000倍",
+      "sourceName": "bessnews",
+      "sourceUrl": "https://bessnews.jp/market/standard/4627402001001/",
+      "topics": [
+        {
+          "theme": "電池コスト・供給網トレンド",
+          "conclusion": "IEA（国際エネルギー機関）が2026年9月7日、リチウムイオン電池市場の25年間を総括するコメンタリーを公表。2000年から2025年にかけてセル平均価格は97%下落、世界需要は約1000倍に拡大、市場規模は1500億ドル超。リチウムイオン電池生産の85%、EV生産の70%超が中国に集中している。",
+          "detail": "内容はEV中心で系統用蓄電池固有の導入量・価格は示されていないため調達価格の根拠には使えないが、「セルは下がり続ける」「調達先が特定国に集中する」という事業計画上の2つの前提を裏付ける長期トレンド・供給網リスクの参考材料となる。"
+        }
+      ]
+    },
     {
       "id": "n20260917_clover_saga_epc",
       "companies": ["クローバー・テクノロジーズ"],
