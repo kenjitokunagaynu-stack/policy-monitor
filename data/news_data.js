@@ -81,7 +81,7 @@ window.NEWS_DATA = {
       "title": "系統用蓄電池の補助金、締切は11月4日17時必着 ─ SIIが公募説明動画を公開",
       "subtitle": "令和7年度補正「系統用蓄電システム等導入支援事業」、公募は9月4日開始・対象は最大受電電力1,000kW以上",
       "sourceName": "bessnews",
-      "sourceUrl": "https://bessnews.jp/institutional/proffessional/4628301102001/",
+      "sourceUrl": "https://bessnews.jp/institutional/beginner/4628301102001/",
       "topics": [
         {
           "theme": "補助金公募の締切・対象",
@@ -91,20 +91,38 @@ window.NEWS_DATA = {
       ]
     },
     {
-      "id": "n20260917_kyuden_jizenoudan_web",
-      "companies": [],
-      "image": "https://bessnews.jp/institutional/standard/4628202102001/img/thumbnail.jpg",
-      "date": "2026-09-17",
-      "genre": "policy",
-      "title": "九州電力送配電、系統アクセス事前相談を10月7日からWeb申込に移行",
-      "subtitle": "12月7日受領分までは郵送・メールも併用可、12月8日以降はWeb申込のみに一本化",
-      "sourceName": "bessnews",
-      "sourceUrl": "https://bessnews.jp/institutional/standard/4628202102001/",
+      "id": "n20260925_watttune_lv_fee",
+      "companies": ["WATT-TUNE", "REVIX JAPAN"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/183612/14/183612-14-50b93660fbbff899640535c5f1034eb3-1536x1024.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-25",
+      "genre": "entry",
+      "title": "WATT-TUNE、低圧系統用蓄電池アグリゲーションの料金体系を公開 ─ 手数料は「売上の8％＋年額30万円」",
+      "subtitle": "沖縄を除く全国9電力エリアで低圧蓄電池1台から相談受付、同一エリア内で複数設備を束ねて需給調整市場等での活用を設計",
+      "sourceName": "PR TIMES（REVIX JAPAN株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000014.000183612.html",
       "topics": [
         {
-          "theme": "事前相談手続きのWeb化",
-          "conclusion": "九州電力送配電が、発電設備等の系統アクセス事前相談について2026年10月7日8時からWeb申込を開始する。対象は高圧・特別高圧。2026年12月7日（同社受領分）までは郵送・メールも使えるが、12月8日以降はWeb申込のみとなる。",
-          "detail": "九州エリアは系統用蓄電池の申込が多く、接続検討には一事業者8件という上限が既に適用されている。あわせて公表された別紙では「検討結果は申込から1か月以内に回答する」との運用も明らかになった。"
+          "theme": "料金体系公開の内容",
+          "conclusion": "低圧系統用蓄電池のアグリゲーション事業を手がけるWATT-TUNE（REVIX JAPANグループ）が、料金体系を対象売上の8％＋年間基本料30万円（税別）に設定して公開した。",
+          "detail": "稼働中・建設中・導入予定を問わず低圧蓄電池1台から相談を受け付け、沖縄電力管内を除く全国9電力エリアで同一エリア内の複数設備をAC1,000kW以上のリソースとして束ね、需給調整市場等での活用を設計する。49.9kW/100kWh級21ロットを束ねる構成例を提示している。"
+        }
+      ]
+    },
+    {
+      "id": "n20260918_ryouteki_kyoukyuryoku_kakuho",
+      "companies": [],
+      "image": "https://bessnews.jp/institutional/proffessional/4628303102002/img/thumbnail.jpg",
+      "date": "2026-09-18",
+      "genre": "policy",
+      "title": "小売電気事業者の供給力確保、系統用蓄電池の相対契約は算入対象に ─ 電力先物は当面除外の案",
+      "subtitle": "資源エネルギー庁が確保手段の○×整理案を提示、2030年度供給計画から実需給3年度前5割・1年度前7割の事前確保を義務化",
+      "sourceName": "bessnews",
+      "sourceUrl": "https://bessnews.jp/institutional/proffessional/4628303102002/",
+      "topics": [
+        {
+          "theme": "供給力確保手段の整理案の内容",
+          "conclusion": "資源エネルギー庁は2026年9月18日の第4回電力事業環境整備ワーキンググループ資料4で、小売電気事業者に義務づける量的供給力確保の確保手段の○×整理案を示した。自社電源・相対契約・中長期取引市場・先渡市場は○、スポット市場と電力先物は当面×とされた。",
+          "detail": "確保する供給力は電源の種別を問わないとされており、系統用蓄電池からの相対契約（オフテイク契約）も小売の確保義務を満たす手段になり得る。2030年度の供給計画から適用され、実需給3年度前に過年度販売実績の5割、1年度前に7割の事前確保が求められる（小規模事業者は2.5割・5割に緩和）。同一出力の複数小売への重複計上は認められない。"
         }
       ]
     },
@@ -1844,24 +1862,6 @@ window.NEWS_DATA = {
           "theme": "商業運転開始の内容",
           "conclusion": "芙蓉総合リースが手がける系統用蓄電池プロジェクト「しんかわ蓄電所」が商業運転を開始した。",
           "detail": "同社はRSアセットアドバイザーズや前田建設工業との協業、大分県臼杵市案件（2026年5月運開予定、実際の運転開始は本ページ未確認）、東急不動産グループ「合同会社リブラ」（全国6地点174MW）への出資参画など、複数の系統用蓄電池プロジェクトを並行して展開している。"
-        }
-      ]
-    },
-    {
-      "id": "n20260908_daiwa_energy_eneos_shimizu",
-      "companies": ["大和エネルギー", "ENEOS Power"],
-      "image": "https://prcdn.freetls.fastly.net/release_image/2296/2768/2296-2768-df1f5d8ea8876e45cdffb3b956e5a054-600x259.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
-      "date": "2026-09-08",
-      "genre": "epc",
-      "title": "大和エネルギー、系統用蓄電所のEPC事業に本格参入 ─ 着工第1号はENEOS Powerと静岡県清水で50MW/109MWh",
-      "subtitle": "大和ハウスグループの大和エネルギーがENEOS Powerと特別高圧蓄電所のEPC契約を締結、2027年1月着工・2028年度内竣工予定",
-      "sourceName": "PR TIMES（大和ハウス工業株式会社）",
-      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000002768.000002296.html",
-      "topics": [
-        {
-          "theme": "EPC事業参入・第1号案件の内容",
-          "conclusion": "大和ハウスグループの大和エネルギーが系統用蓄電所のEPC（設計・調達・施工）事業に本格参入し、その着工第1号としてENEOS Powerとの契約により静岡県清水（ENEOS清水油槽所内の遊休地）に特別高圧蓄電所（出力50MW・容量109MWh）を建設する。",
-          "detail": "特別高圧変電設備・蓄電池・PCS等の設備調達から設計・施工までを一貫して担当する。着工は2027年1月、竣工は2028年度内を予定。大和エネルギーは太陽光発電所329件・計344MWのEPC実績を持ち、そのノウハウを系統用蓄電池事業に展開する。"
         }
       ]
     }
