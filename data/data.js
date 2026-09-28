@@ -7,7 +7,7 @@
 // OCCTOは委員会数が多いため、容量市場・調整力・需給調整市場など蓄電池事業に特に関連する
 // 委員会・検討会に絞って収録しています（運用容量検討会等の技術専門会合は一部割愛）。
 window.APP_DATA = {
-  "generatedAt": "2026-09-25T09:08:02+09:00",
+  "generatedAt": "2026-09-28T09:58:00+09:00",
   "periodLabel": "2026年3月〜2026年9月（直近6ヶ月、試験収集）",
   "sources": [
     { "id": "wg", "label": "エネ庁 系統WG", "org": "経済産業省 資源エネルギー庁", "indexUrl": "https://www.meti.go.jp/shingikai/enecho/denryoku_gas/saisei_kano/smart_power_grid_wg/index.html" },
@@ -17,6 +17,16 @@ window.APP_DATA = {
     { "id": "stable", "label": "エネ庁 電力安定供給WG", "org": "経済産業省 資源エネルギー庁", "indexUrl": "https://www.meti.go.jp/shingikai/enecho/denryoku_gas/jisedai_kiban/stable_power_supply_wg/index.html" }
   ],
   "items": [
+    {
+      "id": "occto_20260928_grid", "date": "2026-09-28", "source": "occto",
+      "title": "第104回 広域系統整備委員会",
+      "subtitle": "広域系統整備の長期展望レビューと、北海道本州間連系設備の工事費増額の中間検証実施を審議",
+      "sourceName": "電力広域的運営推進機関",
+      "sourceUrl": "https://www.occto.or.jp/iinkai/",
+      "topics": [
+        { "theme": "広域系統整備に関する長期展望と連系設備の更新・検証", "conclusion": "広域系統整備に関する長期展望のレビュー、本四連系線及び阿南紀北直流幹線の更新、「北海道本州間連系設備に係る広域系統整備計画」の工事費増額の中間検証実施、北海道本州間連系設備（日本海ルート）の検討状況が議題となった（日本海ルートの議題は機微な内容を含むため非公開）。", "detail": "広域連系設備の整備・更新の進捗と費用は、系統混雑の緩和時期や連系可能容量の見通しに関わり、系統用蓄電池の立地・連系戦略にも間接的に影響する。" }
+      ]
+    },
     {
       "id": "occto_20260915_jukyu", "date": "2026-09-15", "source": "occto",
       "title": "第63回 需給調整市場検討小委員会（第80回 調整力の細分化及び広域調達の技術的検討に関する作業会と合同開催）",
