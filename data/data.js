@@ -7,7 +7,7 @@
 // OCCTOは委員会数が多いため、容量市場・調整力・需給調整市場など蓄電池事業に特に関連する
 // 委員会・検討会に絞って収録しています（運用容量検討会等の技術専門会合は一部割愛）。
 window.APP_DATA = {
-  "generatedAt": "2026-09-28T09:58:00+09:00",
+  "generatedAt": "2026-09-29T09:16:00+09:00",
   "periodLabel": "2026年3月〜2026年9月（直近6ヶ月、試験収集）",
   "sources": [
     { "id": "wg", "label": "エネ庁 系統WG", "org": "経済産業省 資源エネルギー庁", "indexUrl": "https://www.meti.go.jp/shingikai/enecho/denryoku_gas/saisei_kano/smart_power_grid_wg/index.html" },
@@ -17,6 +17,17 @@ window.APP_DATA = {
     { "id": "stable", "label": "エネ庁 電力安定供給WG", "org": "経済産業省 資源エネルギー庁", "indexUrl": "https://www.meti.go.jp/shingikai/enecho/denryoku_gas/jisedai_kiban/stable_power_supply_wg/index.html" }
   ],
   "items": [
+    {
+      "id": "occto_20260929_chosei", "date": "2026-09-29", "source": "occto",
+      "title": "第122回 調整力及び需給バランス評価等に関する委員会",
+      "subtitle": "補完オークション、需給状況を表す新たなシグナル、今後の供給信頼度評価の課題整理を審議",
+      "sourceName": "電力広域的運営推進機関",
+      "sourceUrl": "https://www.occto.or.jp/iinkai/",
+      "topics": [
+        { "theme": "補完オークション", "conclusion": "供給力確保のための「補完オークション」が議題として取り上げられた。", "detail": "第121回で議論された中長期の需給見通しを踏まえた供給力確保策の具体化の一環とみられる。容量市場の追加オークション等と並ぶ供給力の追加調達手段であり、応札可能な電源種別に蓄電池が含まれるか、調達期間・価格水準がどうなるかは、系統用蓄電池の容量収入機会に直結するため、配布資料公開後に要件を確認したい。" },
+        { "theme": "需給状況を表す新たなシグナル・供給信頼度評価", "conclusion": "需給状況を表す新たなシグナルの検討状況、および今後の供給信頼度評価の課題整理（報告）が議題となった。", "detail": "需給ひっ迫を示す新たなシグナルは、市場参加者の運転判断や価格形成に影響し得るもので、蓄電池の充放電最適化（スポット・需給調整市場での裁定）にも関わる。供給信頼度評価の見直しは容量市場の目標調達量や蓄電池のkW価値評価（調整係数）の前提となるため、議論の方向性を注視する必要がある。" }
+      ]
+    },
     {
       "id": "occto_20260928_grid", "date": "2026-09-28", "source": "occto",
       "title": "第104回 広域系統整備委員会",
@@ -126,7 +137,7 @@ window.APP_DATA = {
       ]
     },
     {
-      "id": "occto_20260821_chosei", "date": "2026-08-21", "source": "occto",
+      "id": "occto_20260821_chosei", "date": "2026-08-24", "source": "occto",
       "title": "第121回 調整力及び需給バランス評価等に関する委員会",
       "subtitle": "中長期の需給見通しを踏まえた供給力確保策と、イベリア半島停電を踏まえた対応を議論",
       "sourceName": "電力広域的運営推進機関",
