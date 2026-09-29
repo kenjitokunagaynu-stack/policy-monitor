@@ -19,6 +19,42 @@ window.NEWS_DATA = {
   ],
   "items": [
     {
+      "id": "n20260929_kuradashi_shimane_yasugi_start",
+      "companies": ["クラダシ", "グリーンエナジー&カンパニー"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/14485/734/14485-734-022b44bc7edfdd9c55c3e6c93a5d0d90-960x277.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-29",
+      "genre": "epc",
+      "title": "クラダシ、島根県安来市で「島根安来蓄電所」を着工",
+      "subtitle": "定格出力2MW・容量8MWh、9月28日着工・2027年1月運転開始予定、グリーンエナジー&カンパニーとの匿名組合出資スキーム",
+      "sourceName": "PR TIMES（株式会社クラダシ）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000734.000014485.html",
+      "topics": [
+        {
+          "theme": "島根安来蓄電所の着工",
+          "conclusion": "クラダシが島根県安来市で系統用蓄電所「島根安来蓄電所」（定格出力2MW・容量8MWh）を2026年9月28日に着工した。運転開始は2027年1月を予定。",
+          "detail": "事業主体は合同会社クラダシ・インベストメント２号で、クラダシとグリーンエナジー&カンパニーが匿名組合員として出資する合弁スキーム。クラダシがアセットマネジメント契約に基づき開発から運営までの実務を一貫して担う。フードロス削減事業を本業とする同社の系統用蓄電池事業拡張の一環。"
+        }
+      ]
+    },
+    {
+      "id": "n20260929_ntt_anode_hourly_matching_poc",
+      "companies": ["NTTアノードエナジー", "JERA Cross", "NTTドコモ"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/111866/81/111866-81-2fa596871cacf33f0337c4edd408482c-2880x1620.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-29",
+      "genre": "entry",
+      "title": "NTTアノードエナジー・JERA Cross・NTTドコモ、太陽光と系統用蓄電所を組み合わせたHourly Matching実証を開始",
+      "subtitle": "西日本の複数太陽光発電所と系統用蓄電所1カ所、ドコモ通信ビルを対象に10月1日から時間単位のカーボンフリー率向上を検証",
+      "sourceName": "PR TIMES（NTTアノードエナジー株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000081.000111866.html",
+      "topics": [
+        {
+          "theme": "蓄電池を活用した時間単位の再エネマッチング",
+          "conclusion": "NTTアノードエナジー、JERA Cross、NTTドコモの3社が、太陽光発電所と系統用蓄電所を組み合わせたHourly Matching（時間単位の需給一致）の実証実験を2026年10月1日から開始する。",
+          "detail": "西日本エリアの複数の太陽光発電所と1カ所の系統用蓄電所、ドコモの複数通信ビルを対象に、昼間の太陽光余剰電力を蓄電池に充電し夜間など発電の少ない時間帯に放電することで、時間単位のカーボンフリー電力供給率がどれだけ向上するかと、その経済合理性を検証する。系統用蓄電池の新たな収益・活用モデルとして注目される。"
+        }
+      ]
+    },
+    {
       "id": "n20260928_taoke_4sites_operation",
       "companies": ["TAOKE ENERGY"],
       "image": "https://prcdn.freetls.fastly.net/release_image/103834/45/103834-45-b06537f24c287655ce867f1ade8921ec-1200x630.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
