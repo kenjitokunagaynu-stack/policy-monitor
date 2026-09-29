@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-09-28",
+  "collectedAt": "2026-09-29",
   "periodLabel": "2025年11月〜2026年9月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,42 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20260928_taoke_4sites_operation",
+      "companies": ["TAOKE ENERGY"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/103834/45/103834-45-b06537f24c287655ce867f1ade8921ec-1200x630.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-28",
+      "genre": "operation",
+      "title": "TAOKE ENERGY、系統用蓄電所4カ所（神戸・須賀川・菊池・鳥取）の運転を開始",
+      "subtitle": "各2MW/8MWhの計8MW/32MWh、SPC「PP7号合同会社」がGK-TKスキームで事業主体、アグリゲーターは子会社POWER POOL",
+      "sourceName": "PR TIMES（TAOKE ENERGY株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000045.000103834.html",
+      "topics": [
+        {
+          "theme": "4拠点の運転開始",
+          "conclusion": "TAOKE ENERGYが、兵庫県神戸市・福島県須賀川市・熊本県菊池市・鳥取県鳥取市の系統用蓄電所4カ所（各定格出力2MW・容量8MWh）の運転を開始した。",
+          "detail": "受電日は神戸・須賀川・菊池が2026年9月18日、鳥取が9月24日。事業主体は特別目的会社PP7号合同会社で、投資家が匿名組合（TK）を通じて合同会社（GK）に出資する「GK-TKスキーム」を採用。4カ所ともPOWER POOLがアグリゲーターを務める。"
+        }
+      ]
+    },
+    {
+      "id": "n20260928_taoke_pp6_primary_market",
+      "companies": ["TAOKE ENERGY"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/103834/44/103834-44-16606dd2ee6542bf14283d0217c60752-1253x940.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-28",
+      "genre": "operation",
+      "title": "TAOKE ENERGY、SPC「PP6合同会社」の2案件（栃木県小山市・岐阜県各務原市）で一次調整力市場へ参入",
+      "subtitle": "各2MW/8MWhの高圧蓄電所が9月15日・17日に一次調整力の運用開始、蓄電所ファンド事業の一環",
+      "sourceName": "PR TIMES（TAOKE ENERGY株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000044.000103834.html",
+      "topics": [
+        {
+          "theme": "一次調整力市場への参入",
+          "conclusion": "TAOKE ENERGYが、SPC「PP6合同会社」を通じて開発した栃木県小山市東野田・岐阜県各務原市那加大門町の高圧蓄電所2カ所（各2MW/8MWh）で、一次調整力市場への参入を開始した。",
+          "detail": "市場参入開始日は小山が2026年9月15日、各務原が9月17日。外部資金を活用した蓄電所ファンド事業の案件で、子会社POWER POOLがアグリゲーター。7月の2案件での需給調整市場参入に続くもので、自社開発EMSで一次調整力の厳格な制御・応答要件に対応したとしている。"
+        }
+      ]
+    },
     {
       "id": "n20260914_nozomi_usuki_fc",
       "companies": ["のぞみエナジー"],
