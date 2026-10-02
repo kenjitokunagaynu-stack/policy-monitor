@@ -7,8 +7,8 @@
 // OCCTOは委員会数が多いため、容量市場・調整力・需給調整市場など蓄電池事業に特に関連する
 // 委員会・検討会に絞って収録しています（運用容量検討会等の技術専門会合は一部割愛）。
 window.APP_DATA = {
-  "generatedAt": "2026-09-30T09:38:00+09:00",
-  "periodLabel": "2026年3月〜2026年9月（直近6ヶ月、試験収集）",
+  "generatedAt": "2026-10-02T15:56:00+09:00",
+  "periodLabel": "2026年4月〜2026年10月（直近6ヶ月、試験収集）",
   "sources": [
     { "id": "wg", "label": "エネ庁 系統WG", "org": "経済産業省 資源エネルギー庁", "indexUrl": "https://www.meti.go.jp/shingikai/enecho/denryoku_gas/saisei_kano/smart_power_grid_wg/index.html" },
     { "id": "seido", "label": "エネ庁 制度検討作業部会", "org": "経済産業省 資源エネルギー庁", "indexUrl": "https://www.meti.go.jp/shingikai/enecho/denryoku_gas/jisedai_kiban/system_review/index.html" },
