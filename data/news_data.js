@@ -7,8 +7,8 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-09-30",
-  "periodLabel": "2025年11月〜2026年9月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
+  "collectedAt": "2026-10-04",
+  "periodLabel": "2025年11月〜2026年10月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
     { "id": "entry", "label": "新規参入・事業拡大" },
@@ -18,6 +18,130 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20261002_sassor_port_aggregation",
+      "companies": ["Sassor", "ポート"],
+      "date": "2026-10-02",
+      "genre": "capital",
+      "title": "Sassorとポート、高圧系統用蓄電所のアグリゲーション運用に関する契約を締結",
+      "subtitle": "東京電力エリアの約2MW/8MWh蓄電所を対象に、2027年上期の系統連系にあわせJEPX・需給調整市場・容量市場のマルチマーケット運用を開始予定",
+      "sourceName": "PR TIMES（ポート株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000223.000016325.html",
+      "topics": [
+        {
+          "theme": "アグリゲーション契約の内容",
+          "conclusion": "ポートが東京電力エリアで投資する高圧系統用蓄電所（定格出力約2MW・容量約8MWh）について、Sassorとアグリゲーション運用契約を締結した。2027年上期の系統連系にあわせて市場運用を開始する予定。",
+          "detail": "Sassorは供出可能量管理、EMS連携、遠隔監視・制御、入札計画、実績管理、精算レポートまでを担い、JEPXでのアービトラージに需給調整市場・容量市場を組み合わせたマルチマーケット運用で収益最大化を図る。ポートは2027年3月期に計14カ所の系統用蓄電所への投資を決定済みで、同日にTensor Energyとも別案件のアグリゲーション契約を公表している。"
+        }
+      ]
+    },
+    {
+      "id": "n20261002_tensor_port_aggregation",
+      "companies": ["Tensor Energy", "ポート"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/96424/51/96424-51-bd016fdfade08d7d7117c21cca522ae6-3840x2160.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-02",
+      "genre": "capital",
+      "title": "Tensor Energyとポート、高圧系統用蓄電所のアグリゲーション契約を締結",
+      "subtitle": "東京電力PG管内ほかの約2MW/8MWh蓄電所で、Tensor Cloudにより価格予測から市場取引・リアルタイム制御まで一気通貫で運用、2027年度上期開始予定",
+      "sourceName": "PR TIMES（Tensor Energy株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000051.000096424.html",
+      "topics": [
+        {
+          "theme": "アグリゲーション契約の内容",
+          "conclusion": "Tensor Energyがポートと、高圧系統用蓄電所（出力約2MW・容量約8MWh、東京電力パワーグリッド管内ほか）のアグリゲーション契約を締結した。運用開始は2027年度上期の予定。",
+          "detail": "Tensor Energyは自社プラットフォーム「Tensor Cloud」を基盤に、市場価格予測、充放電計画の最適化、電力市場での取引、需給管理、リアルタイム制御までを一気通貫で担う。所在地はセキュリティ上の理由で非公表。ポートは2026年3月期に系統用蓄電所3カ所を稼働させ初年度黒字化を実現し、2027年3月期は14カ所への投資を決定済み。"
+        }
+      ]
+    },
+    {
+      "id": "n20261001_ibeet_shizuokagas_bluestorage",
+      "companies": ["IBeeT", "伊藤忠商事", "静岡ガス", "グリーンエナジー・プラス"],
+      "date": "2026-10-01",
+      "genre": "entry",
+      "title": "IBeeT、静岡ガスグループ向けに伊藤忠商事「Bluestorage」高圧蓄電システムを供給",
+      "subtitle": "静岡ガスグループ初の高圧蓄電所（浜松市中央区、1,999kW/8,584kWh）、事業主体は静岡ガス＆パワー、2028年4月運転開始予定",
+      "sourceName": "PR TIMES（株式会社IBeeT）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000011.000110152.html",
+      "topics": [
+        {
+          "theme": "静岡ガスグループ初の高圧蓄電所",
+          "conclusion": "静岡ガス＆パワーが事業主体となる静岡県浜松市中央区有玉西町の高圧蓄電所（出力1,999kW・容量8,584kWh）に、IBeeTが伊藤忠商事の蓄電システム「Bluestorage」を供給する。運転開始は2028年4月の予定。",
+          "detail": "静岡ガスグループとして初の高圧蓄電所プロジェクトで、IBeeTが販売窓口、伊藤忠商事がBluestorage（リチウムイオン電池）を提供、グリーンエナジー・プラスが蓄電所開発を担う。再生可能エネルギー導入拡大に伴う電力系統の安定化への貢献を目的としている。"
+        }
+      ]
+    },
+    {
+      "id": "n20261001_tokyocentury_iizuka_hybrid_bess",
+      "companies": ["東京センチュリー", "Tensor Energy", "GSユアサ", "テスホールディングス"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/76147/253/76147-253-ed36af0a6c8f75b2f05e770ed244a4ff-1536x1024.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-01",
+      "genre": "operation",
+      "title": "東京センチュリーG、福岡・飯塚第一メガソーラー発電所の併設蓄電池（1.5MW/約6MWh）が運転開始",
+      "subtitle": "FITからFIPへ移行し、GSユアサ製蓄電池をTensor CloudのAI自動制御でJEPX・需給調整市場に最適運用、施工はテス・エンジニアリング",
+      "sourceName": "PR TIMES（東京センチュリー株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000253.000076147.html",
+      "topics": [
+        {
+          "theme": "既設太陽光への蓄電池併設とFIP移行",
+          "conclusion": "東京センチュリーグループの京セラTCLソーラーが、福岡県飯塚市の飯塚第一メガソーラー発電所（1,990kW、2018年12月運転開始）に併設した蓄電池（出力1,500kW・容量約6,000kWh）の運転を2026年10月に開始した。",
+          "detail": "売電方式をFITからFIPへ移行。蓄電池はGSユアサ製、設置工事はテス・エンジニアリング、運用はTensor Energyの「Tensor Cloud」が発電量・電力価格予測に基づきJEPXと需給調整市場へ自動対応する。既設FIT太陽光の蓄電池併設・FIP転換モデルの事例として注目される。"
+        }
+      ]
+    },
+    {
+      "id": "n20261001_nihonchikudenchi_maniwa_tabane",
+      "companies": ["日本蓄電池"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/161802/111/161802-111-942465a533615ef2447aa7e7c5fe6231-1304x736.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-01",
+      "genre": "operation",
+      "title": "日本蓄電池、岡山県真庭市「NC真庭市田羽根蓄電所」が受電開始",
+      "subtitle": "定格出力1,999kW・容量8,146kWh、9月30日受電開始。同日、山口県周南市「NC周南市湯野蓄電所」も需給調整市場に参入",
+      "sourceName": "PR TIMES（日本蓄電池株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000111.000161802.html",
+      "topics": [
+        {
+          "theme": "新施設の受電開始",
+          "conclusion": "日本蓄電池が岡山県真庭市の系統用蓄電施設「NC真庭市田羽根蓄電所」（定格出力1,999kW・容量8,146kWh）で2026年9月30日に受電を開始した。",
+          "detail": "JEPX・需給調整市場・容量市場に対応する地域分散型エネルギー拠点として位置づけ、災害時の地域電力供給を支える防災拠点の役割も担う。同社は10月1日に「NC周南市湯野蓄電所」の需給調整市場参入、10月2日に和歌山県海南市「NC海南市木津蓄電所」の蓄電池設置開始も発表しており、全国で施設を相次ぎ立ち上げている。"
+        }
+      ]
+    },
+    {
+      "id": "n20261001_jcstar_replacement_2027",
+      "companies": ["EX4Energy"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/191633/1/191633-1-529509ccbbf740f21ba79faa6116f0b5-1920x1081.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-01",
+      "genre": "policy",
+      "title": "2027年4月以降、稼働中の蓄電所・太陽光発電所も機器交換時にJC-STAR取得製品が原則必要に",
+      "subtitle": "高圧系統接続は2027年4月、低圧（50kW未満）は2027年10月以降、交換機器は原則JC-STAR取得品、例外適用には平時のサイバー対策実施の証明が必要",
+      "sourceName": "PR TIMES（EX4Energy株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000001.000191633.html",
+      "topics": [
+        {
+          "theme": "既設設備へのサイバーセキュリティ要件",
+          "conclusion": "高圧系統に接続する蓄電所・太陽光発電所は2027年4月以降、低圧（50kW未満）は2027年10月以降、機器交換時に交換対象機器として原則JC-STAR（IPAが評価する国のセキュリティ適合ラベル）取得製品の使用が求められる。",
+          "detail": "取得製品への交換が困難な場合の例外措置もあるが、適用には平時から一定のサイバーセキュリティ対策を実施していることの証明が必要とされる。遠隔監視・制御される蓄電所がサイバー攻撃の標的となるリスクへの対応。発表元のEX4Energyは閉域網で機器を運用する「Grid Shield EMS」を提供しており、新設だけでなく稼働済み蓄電所のO&M計画にも影響する。"
+        }
+      ]
+    },
+    {
+      "id": "n20260928_mori_building_fukaya",
+      "companies": ["森ビル"],
+      "image": "https://www.mori.co.jp/_mori_assets/images/assets/3f2dbd9a710d4daaaa8451a27e512959/0056a7a5fa49406fae09a340045dd444/260928_1.webp",
+      "date": "2026-09-28",
+      "genre": "operation",
+      "title": "森ビル、初の系統用蓄電所「森ビル深谷市永田系統用蓄電所」（埼玉県深谷市）が運転開始",
+      "subtitle": "定格出力約2,000kW・容量約8,000kWh、9月28日運転開始。再エネ発電所・蓄電所と都心物件を結ぶ広域VPP構築を目指す",
+      "sourceName": "森ビル株式会社",
+      "sourceUrl": "https://www.mori.co.jp/press/release/260928_1/",
+      "topics": [
+        {
+          "theme": "デベロッパーの系統用蓄電池参入",
+          "conclusion": "森ビルが同社初の系統用蓄電所「森ビル深谷市永田系統用蓄電所」（埼玉県深谷市永田、定格出力約2,000kW・容量約8,000kWh）の運転を2026年9月28日に開始した。",
+          "detail": "事業地は約600㎡で、送配電網に直接接続し余剰時に充電・不足時に放電して需給調整に貢献する。同社は2026年3月末時点で国内需要の8割以上を再エネ電力に切り替え済みで、今後は複数の再エネ発電所・系統用蓄電所と東京都心の物件をネットワークで結ぶ「広域バーチャル・パワープラント（VPP）」の構築を目指す。"
+        }
+      ]
+    },
     {
       "id": "n20260929_occto_land_rights_document_deadline",
       "companies": [],
