@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-10-04",
+  "collectedAt": "2026-10-05",
   "periodLabel": "2025年11月〜2026年10月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,58 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20261005_nextes_activa",
+      "companies": ["NEXTES"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/176308/19/176308-19-5a7da39d876772223c42b1836d73b99e-1920x1080.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-05",
+      "genre": "entry",
+      "title": "NEXTES、独自の電池制御技術「ACTIVA（アクティバ）」を公開",
+      "subtitle": "アクティブバランス方式でセル・モジュール間のエネルギーを移動させ損失を抑制、系統用蓄電システム「NX-CE007」「NX-CE009」に搭載",
+      "sourceName": "PR TIMES（株式会社NEXTES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000019.000176308.html",
+      "topics": [
+        {
+          "theme": "電池制御技術「ACTIVA」",
+          "conclusion": "蓄電池メーカーのNEXTESが、蓄えた電気を無駄なく活かすための独自電池制御技術「ACTIVA」を公開した。",
+          "detail": "従来のパッシブバランス方式はセル間の充電量のばらつきを熱として放出していたが、ACTIVAはアクティブ・セルバランス（ACB）、アクティブ・モジュールバランス（AMB）、ラック単位のインテリジェント・ホットプラグ・スイッチ（IHS）で電池間のエネルギーを移動させ損失を抑える。関連特許は国内25件以上・海外34件以上。13ftコンテナ型「NX-CE007」とキャビネット型「NX-CE009」の系統用蓄電システムに実装されている。"
+        }
+      ]
+    },
+    {
+      "id": "n20260930_occta_ltda2026_manual",
+      "image": "https://bessnews.jp/institutional/proffessional/4629503102001/img/thumbnail.jpg",
+      "date": "2026-09-30",
+      "genre": "policy",
+      "title": "長期脱炭素電源オークション2026年度の業務マニュアルが確定 ─ 事業者情報の登録は10月13日から、電源等情報の再申込は1回のみ",
+      "subtitle": "OCCTOが業務マニュアル第1版を公表、蓄電池は10月19〜23日の電源等情報登録が山場で、応札は2027年1月19〜26日の予定",
+      "sourceName": "bessnews",
+      "sourceUrl": "https://bessnews.jp/institutional/proffessional/4629503102001/",
+      "topics": [
+        {
+          "theme": "2026年度長期脱炭素電源オークションのスケジュール",
+          "conclusion": "電力広域的運営推進機関（OCCTO）が9月30日に2026年度長期脱炭素電源オークションの業務マニュアル第1版を公表し、参加手続きの日程が確定した。",
+          "detail": "事業者情報の登録は10月13〜16日、蓄電池事業者にとって山場となる電源等情報の登録は10月19〜23日で、不合格の場合の再申込は1回のみに限られる。接続検討回答書（D2）が参加資格通知書発行の必須条件となり、蓄電池には専用書類D41〜D55（2026年度内に実施した説明会の議事録D51等）が求められる。応札は2027年1月19〜26日の予定。"
+        }
+      ]
+    },
+    {
+      "id": "n20260930_chugoku_pumped_hydro_suspension",
+      "image": "https://bessnews.jp/market/proffessional/4629503001001/img/thumbnail.jpg",
+      "date": "2026-09-30",
+      "genre": "policy",
+      "title": "中国エリアの揚水随契、運用権貸与を中断 ─ 2026年度下期の需給調整市場（複合商品）は随契分を控除せず募集",
+      "subtitle": "中国電力NWが揚水発電機の運転制約で運用権貸与を中断、中国エリアの募集枠が一時拡大し蓄電池の応札機会が増える可能性",
+      "sourceName": "bessnews",
+      "sourceUrl": "https://bessnews.jp/market/proffessional/4629503001001/",
+      "topics": [
+        {
+          "theme": "下期の複合市場商品の募集量",
+          "conclusion": "中国電力ネットワークが9月29日、揚水発電機の運用権貸与を中断していると公表。中国エリアでは当面、随契分を控除せず調整力必要量どおりに募集が行われる。",
+          "detail": "随意契約自体は解約されておらず中断状態で、再開時期は未定。再開されれば募集量は再び随契分だけ縮小する。一方、東京（約120万kW）・中部（約61万kW）・関西（約47万kW）・東北（最大23万kW）の4エリアは随契を継続し、下期も随契分を控除した募集量となる。中国エリアの蓄電池事業者には応札機会拡大の可能性があるが、募集量変動に応じた柔軟な入札戦略が求められる。"
+        }
+      ]
+    },
     {
       "id": "n20261002_sassor_port_aggregation",
       "companies": ["Sassor", "ポート"],
