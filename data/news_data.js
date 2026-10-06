@@ -19,6 +19,41 @@ window.NEWS_DATA = {
   ],
   "items": [
     {
+      "id": "n20261001_nttanode_aomori_misawa",
+      "companies": ["NTTアノードエナジー"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/111866/80/111866-80-f1718eee2420f5a520cf4577bc877320-3900x2921.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-01",
+      "genre": "operation",
+      "title": "NTTアノードエナジー、「青森三沢蓄電所」（青森県三沢市・1,999kW/8,226kWh）の商用運転を開始",
+      "subtitle": "2026年9月に商用運転を開始し、同社が自社開発・運用する蓄電所は全国11システムに。2028年度までに23システムの運用開始を予定",
+      "sourceName": "PR TIMES（NTTアノードエナジー株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000080.000111866.html",
+      "topics": [
+        {
+          "theme": "NTTアノードエナジーの自社蓄電所拡大",
+          "conclusion": "NTTアノードエナジーが青森県三沢市南町に建設した「青森三沢蓄電所」（PCS出力1,999kW・公称容量8,226kWh、リチウムイオン電池）が2026年9月から商用運転を開始した。",
+          "detail": "容量は約720世帯の1日分の電力使用量に相当。同社自らアグリゲーターとして卸電力市場・需給調整市場・容量市場での最適取引、充放電制御、一元的な保守監視を行う。本蓄電所で自社開発・運用の蓄電所は全国11システムとなり、2028年度までに23システムの運用開始を計画している。"
+        }
+      ]
+    },
+    {
+      "id": "n20261001_meti_inspection_notice127",
+      "image": "https://bessnews.jp/institutional/standard/4629602102002/img/thumbnail.jpg",
+      "date": "2026-10-01",
+      "genre": "policy",
+      "title": "経産省、点検頻度告示を改正（告示第127号）─ 柱上の高圧変圧器も落下防止・上面点検の措置で設備条件に適合",
+      "subtitle": "外部委託の高圧蓄電所の受変電設備は、第7号イ〜ニを全て満たせば点検頻度「二月に一回以上」から「三月に一回以上」の区分へ移行可能に",
+      "sourceName": "BESS NEWS",
+      "sourceUrl": "https://bessnews.jp/institutional/standard/4629602102002/",
+      "topics": [
+        {
+          "theme": "蓄電所の保安管理（点検頻度）の制度改正",
+          "conclusion": "経済産業省が2026年10月1日、保安管理業務の外部委託に関する点検頻度告示の第4条第7号イを改正し公布日に施行。柱上に高圧変圧器がある構成でも、落下防止と上面点検の措置があれば設備条件に適合するとした。",
+          "detail": "蓄電所の受変電設備は第7号イ〜ニ（柱上変圧器・絶縁油・地絡保護・変成器）を全て満たせば区分ハ（三月に一回以上、換算係数0.33）となり、従来の区分ニ（二月に一回以上、0.36）から移れる。同日改正の主任技術者制度Q&Aは、月次はカメラ等で上部確認、年次は高所作業車等で近接確認を措置例として示した。設置者は受託者と点検計画・保安規程・委託契約の見直しを検討する余地がある。"
+        }
+      ]
+    },
+    {
       "id": "n20261005_keiyogas_isesaki_bess",
       "companies": ["京葉ガス", "サンヴィレッジ", "丸紅新電力"],
       "image": "https://prcdn.freetls.fastly.net/release_image/125331/12/125331-12-e519c1063ca7053f5431be0f33d4e502-1448x1086.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
