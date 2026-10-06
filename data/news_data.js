@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-10-05",
+  "collectedAt": "2026-10-06",
   "periodLabel": "2025年11月〜2026年10月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,96 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20261005_keiyogas_isesaki_bess",
+      "companies": ["京葉ガス", "サンヴィレッジ", "丸紅新電力"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/125331/12/125331-12-e519c1063ca7053f5431be0f33d4e502-1448x1086.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-05",
+      "genre": "operation",
+      "title": "京葉ガス、初の国内系統用蓄電所（群馬県伊勢崎市・2MW/8MWh）が本格稼働",
+      "subtitle": "SPC「KG BESS合同会社」が運営する高圧蓄電所が10月1日に稼働開始、開発・建設はサンヴィレッジ、アグリゲーターは丸紅新電力",
+      "sourceName": "PR TIMES（京葉ガス株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000012.000125331.html",
+      "topics": [
+        {
+          "theme": "京葉ガスの国内系統用蓄電池事業参入",
+          "conclusion": "京葉ガスが群馬県伊勢崎市に同社初の国内系統用蓄電所（出力2MW・容量8MWh）を開設し、2026年10月1日から本格稼働を開始した。",
+          "detail": "運営は2026年2月設立のKG BESS合同会社（代表社員：京葉ガス不動産、業務執行社員：京葉ガス）。開発・建設はサンヴィレッジ（同日に建設完了を発表）、アグリゲーターは丸紅新電力。卸電力市場・需給調整市場・容量市場で電力・調整力を提供する。2025年6月の米国系統用蓄電池案件への出資に続く取り組みで、中期経営計画2025-2027に沿った新規事業。"
+        }
+      ]
+    },
+    {
+      "id": "n20260930_mufgtrust_yufu_yonezawa",
+      "companies": ["三菱UFJ信託銀行", "オリックス"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/36656/377/36656-377-f29d24a729438c7faf1369dd22f1ba68-762x603.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-30",
+      "genre": "capital",
+      "title": "三菱UFJ信託銀行、大分県由布市・山形県米沢市の大型系統用蓄電所事業に参画",
+      "subtitle": "由布蓄電所（70MW/280MWh、2028年運転開始予定）と米沢蓄電所（75MW/309MWh、2030年予定）にオリックス等と共同出資",
+      "sourceName": "PR TIMES（三菱UFJ信託銀行）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000377.000036656.html",
+      "topics": [
+        {
+          "theme": "信託銀行による特高蓄電所への出資",
+          "conclusion": "三菱UFJ信託銀行が子会社を通じ、オリックス等と共に大分県由布市（70MW/280MWh）と山形県米沢市（75MW/309MWh）の系統用蓄電所事業に参画した。",
+          "detail": "由布蓄電所は2028年、米沢蓄電所は2030年の商業運転開始を予定。両蓄電所は卸電力市場・需給調整市場・容量市場に参加する。アセットマネジメントは三菱UFJ信託銀行の完全子会社が担う。金融機関による大型BESSへのエクイティ参画の事例として注目される（蓄電所ネットの報道を参照）。"
+        }
+      ]
+    },
+    {
+      "id": "n20260930_hybrid_reu511_saga",
+      "companies": ["HYBRID", "RE100電力"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/191820/1/191820-1-abae22ecdd9eb06f2a70d0b1ac89278c-1672x941.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-30",
+      "genre": "epc",
+      "title": "HYBRID、JC-STAR★1適合設備を採用した「RE.U511蓄電所」（佐賀市・2MW/8MWh）を起点に系統用蓄電所事業を本格展開",
+      "subtitle": "佐賀市本庄町の高圧蓄電所をEPCとして手掛け、2027年4月の運転開始を予定、運転後のアグリゲーション・O&MはRE100電力が担当",
+      "sourceName": "PR TIMES（株式会社HYBRID）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000001.000191820.html",
+      "topics": [
+        {
+          "theme": "JC-STAR適合設備を採用した高圧蓄電所",
+          "conclusion": "HYBRIDが佐賀県佐賀市本庄町で出力2MW・容量8MWhの「RE.U511蓄電所」を手掛け、これを起点に系統用蓄電所事業を本格展開する。",
+          "detail": "IoT製品のセキュリティ適合性評価制度「JC-STAR」★1適合設備を採用。2027年4月の商業運転開始を予定し、運転開始後のアグリゲーションおよびO&MはRE100電力が担当する。2027年4月以降は機器交換時にもJC-STAR取得製品が原則必要となる中、先行対応した案件として位置付けられる。"
+        }
+      ]
+    },
+    {
+      "id": "n20260929_greenenergy_fukuchiyama_start",
+      "companies": ["グリーンエナジー&カンパニー"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/71823/42/71823-42-53c903af8e24ea00fff336a20edf600f-1300x688.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-29",
+      "genre": "operation",
+      "title": "グリーンエナジー＆カンパニー、自社保有の系統用蓄電所が京都府福知山市で運用開始",
+      "subtitle": "出力1,999kW・容量8,146kWhのLFP蓄電所が9月29日に運用開始、鹿児島・広島に続く自社保有3拠点目で関西エリアに初展開",
+      "sourceName": "PR TIMES（株式会社グリーンエナジー＆カンパニー）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000042.000071823.html",
+      "topics": [
+        {
+          "theme": "自社保有蓄電所の3拠点目",
+          "conclusion": "グリーンエナジー＆カンパニーが京都府福知山市土師で自社保有の系統用蓄電所（1,999kW/8,146kWh）の運用を開始した。",
+          "detail": "リン酸鉄リチウムイオン電池を採用し、子会社のマイクロGX京都合同会社が運営する。鹿児島・広島に続く自社保有3拠点目で、関西エリアへの初展開となる。卸電力市場（JEPX）での運用から開始する。EPC受注に加え、自社保有による蓄電所事業の拡大を進めている。"
+        }
+      ]
+    },
+    {
+      "id": "n20260925_venaenergy_nre_nakagawa2_ltda",
+      "companies": ["ヴィーナ・エナジー・ジャパン"],
+      "image": "https://prcdn.freetls.fastly.net/release_image/52790/71/52790-71-b91060fab8e9ba07c40fec63af42c1fc-3900x2925.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-09-25",
+      "genre": "entry",
+      "title": "ヴィーナ・エナジー、2025年度長期脱炭素電源オークションで「NRE中川第二蓄電所」（長野県松本市）が落札",
+      "subtitle": "落札容量46,828kWのリチウムイオン系統用蓄電池案件、彦根蓄電所（2.0MW）に続く国内蓄電池事業",
+      "sourceName": "PR TIMES（ヴィーナ・エナジー・ジャパン株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000071.000052790.html",
+      "topics": [
+        {
+          "theme": "長期脱炭素電源オークション落札",
+          "conclusion": "ヴィーナ・エナジーが長野県松本市で計画する「NRE中川第二蓄電所」が、2025年度（応札年度）長期脱炭素電源オークションで落札容量46,828kWとして落札された。",
+          "detail": "電力広域的運営推進機関が実施したオークションで、リチウムイオン蓄電池による系統用蓄電池プロジェクトとして落札。蓄電容量（kWh）や運転開始時期は公表されていない。同社は前年に商業運転を開始した滋賀県彦根市の彦根蓄電所（2.0MW）に続き、国内での蓄電池事業を大型化させる。"
+        }
+      ]
+    },
     {
       "id": "n20261005_nextes_activa",
       "companies": ["NEXTES"],
