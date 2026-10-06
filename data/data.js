@@ -7,7 +7,7 @@
 // OCCTOは委員会数が多いため、容量市場・調整力・需給調整市場など蓄電池事業に特に関連する
 // 委員会・検討会に絞って収録しています（運用容量検討会等の技術専門会合は一部割愛）。
 window.APP_DATA = {
-  "generatedAt": "2026-10-05T10:06:00+09:00",
+  "generatedAt": "2026-10-06T10:00:00+09:00",
   "periodLabel": "2026年4月〜2026年10月（直近6ヶ月、試験収集）",
   "sources": [
     { "id": "wg", "label": "エネ庁 系統WG", "org": "経済産業省 資源エネルギー庁", "indexUrl": "https://www.meti.go.jp/shingikai/enecho/denryoku_gas/saisei_kano/smart_power_grid_wg/index.html" },
@@ -17,6 +17,16 @@ window.APP_DATA = {
     { "id": "stable", "label": "エネ庁 電力安定供給WG", "org": "経済産業省 資源エネルギー庁", "indexUrl": "https://www.meti.go.jp/shingikai/enecho/denryoku_gas/jisedai_kiban/stable_power_supply_wg/index.html" }
   ],
   "items": [
+    {
+      "id": "occto_20261013_keikaku", "date": "2026-10-13", "source": "occto",
+      "title": "第17回 計画評価及び検証小委員会（開催予定）",
+      "subtitle": "北海道本州間・東北東京間連系設備の工事費増額の中間検証と、中部関西間連系線の工事内容（工事費・工期）を審議予定（非公開）",
+      "sourceName": "電力広域的運営推進機関",
+      "sourceUrl": "https://www.occto.or.jp/iinkai/",
+      "topics": [
+        { "theme": "広域連系設備の工事費増額・工期の検証", "conclusion": "「北海道本州間連系設備」「東北東京間連系線」の各広域系統整備計画における工事費増額の中間検証、および「中部関西間連系線」の工事内容（工事費・工期）が議題として予定されている（2026年10月6日時点では開催前の告知。機微な内容を含むため非公開開催）。", "detail": "第15回・第16回から継続する連系設備の費用・工期の検証で、工事費増額や工期遅延が確定すれば地域間連系線の増強時期が後ろ倒しになる可能性がある。連系線の増強時期は、エリア間の調整力融通や系統混雑の緩和見通し、ひいては系統用蓄電池の立地選定・需給調整市場の広域調達の前提に関わるため、結果の公表内容を注視したい。" }
+      ]
+    },
     {
       "id": "emsc024", "date": "2026-09-29", "source": "emsc",
       "title": "第24回 制度設計・監視専門会合",
