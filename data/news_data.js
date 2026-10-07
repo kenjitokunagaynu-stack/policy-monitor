@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-10-06",
+  "collectedAt": "2026-10-08",
   "periodLabel": "2025年11月〜2026年10月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,74 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20261007_enecho_lowvoltage_site_split",
+      "image": "https://bessnews.jp/institutional/proffessional/4630203102004/img/thumbnail.jpg",
+      "date": "2026-10-07",
+      "genre": "policy",
+      "title": "低圧系統用蓄電池の敷地分割対策案 ─ 地権者確認を「1年遡り」→「5年遡り」へ、特段の理由5から蓄電設備を除外（次世代電力系統WG 第13回）",
+      "subtitle": "エネ庁が10月6日のWGで提示。低圧蓄電池の契約申込みは2026年8月末時点で約13万kW・約2,800件に急増",
+      "sourceName": "BESS NEWS（資源エネルギー庁 次世代電力系統WG 第13回）",
+      "sourceUrl": "https://bessnews.jp/institutional/proffessional/4630203102004/",
+      "topics": [
+        {
+          "theme": "低圧連系の敷地分割規制",
+          "conclusion": "一体の土地を名義分割して低圧連系する案件への対策として、地権者同一性の確認期間延長と例外規定からの蓄電設備除外が示された。",
+          "detail": "低圧蓄電池は接続検討プロセスがなく保証金も不要なため、土地分割で昇圧を回避する事例が増加。事務局案は、名義を分けた分割と判断される場合の地権者確認を1年遡りから5年遡りへ変更し、異種設備隣接の例外（特段の理由5）から蓄電設備を外す方向。施行時期・経過措置・申込済み案件の扱いは未定。"
+        }
+      ]
+    },
+    {
+      "id": "n20261007_enecho_connection_study_fee",
+      "image": "https://bessnews.jp/institutional/proffessional/4630203102003/img/thumbnail.jpg",
+      "date": "2026-10-07",
+      "genre": "policy",
+      "title": "接続検討料（22万円／地点）の引き上げ案、まず系統用蓄電池を対象に全国一律で ─ デポジット・容量別加算・混雑加算の3手法を例示",
+      "subtitle": "接続検討受付済みは約2億1,100万kW（連系済み128万kW）に膨張、事業化の蓋然性が低い案件を抑制するディスインセンティブとして検討",
+      "sourceName": "BESS NEWS（資源エネルギー庁 次世代電力系統WG 第13回）",
+      "sourceUrl": "https://bessnews.jp/institutional/proffessional/4630203102003/",
+      "topics": [
+        {
+          "theme": "接続検討料の見直し",
+          "conclusion": "系統用蓄電池の接続検討料（現行税込22万円/地点）を全国一律で引き上げる方針が示され、手法として預託金・容量別加算・混雑加算の3案が例示された。",
+          "detail": "8月導入の申込件数上限に続く空押さえ対策の位置づけ。対象はまず系統用蓄電池に限定し、他電源は今後検討。引き上げ部分は事業化の蓋然性が低い案件へのディスインセンティブとする。引き上げ幅・適用時期・最終手法は諸外国事例やヒアリングを踏まえ次回以降に議論予定。"
+        }
+      ]
+    },
+    {
+      "id": "n20261007_enecho_n1_charge_stop_dc",
+      "image": "https://bessnews.jp/institutional/proffessional/4630203102001/img/thumbnail.jpg",
+      "date": "2026-10-07",
+      "genre": "policy",
+      "title": "データセンター等の早期接続のため、系統用蓄電池にN-1充電停止装置の事後設置・充放電制限を求める検討を提起（次世代電力系統WG 第13回）",
+      "subtitle": "既に連系済みの蓄電池にも後付けで装置設置を求める可能性、2035年度のDC最大需要は2026年度比で約600万kW増の見込み",
+      "sourceName": "BESS NEWS（資源エネルギー庁 次世代電力系統WG 第13回）",
+      "sourceUrl": "https://bessnews.jp/institutional/proffessional/4630203102001/",
+      "topics": [
+        {
+          "theme": "連系後の充電制約追加の可能性",
+          "conclusion": "系統事故時に蓄電池の充電を停止させ、その分の系統容量をデータセンター等の一般需要に割り当てる考え方が検討段階で提起された。",
+          "detail": "資源エネルギー庁は10月6日のWGで、大規模需要の早期接続策として蓄電池へのN-1充電停止装置の事後設置と充放電制限を提起。対象案件・条件・費用負担は未定。充電側で系統容量を確保している既連系の蓄電所事業者にとって、連系後に制約条件が追加される可能性があり、収益影響の試算が必要になる。"
+        }
+      ]
+    },
+    {
+      "id": "n20261007_enecho_jcstar_guideline_pubcomment",
+      "image": "https://bessnews.jp/technology/standard/4630202405001/img/thumbnail.jpg",
+      "date": "2026-10-07",
+      "genre": "policy",
+      "title": "系統用蓄電池のPCS・BMS・EMSにJC-STAR★1を求める系統連系技術要件ガイドライン改定案、意見公募開始（締切11月6日）",
+      "subtitle": "特高・高圧は2027年4月1日、低圧は同年10月1日以降の契約申込み受付分から適用予定、ガイドラインは年内改定見込み",
+      "sourceName": "BESS NEWS（資源エネルギー庁）",
+      "sourceUrl": "https://bessnews.jp/technology/standard/4630202405001/",
+      "topics": [
+        {
+          "theme": "サイバーセキュリティ要件の義務化",
+          "conclusion": "資源エネルギー庁が10月6日、IP通信機能を持つPCS・BMS・EMS等に「JC-STAR★1以上」の適合ラベル取得を求めるガイドライン改定案を公表し、意見公募を開始した。",
+          "detail": "「電力品質確保に係る系統連系技術要件ガイドライン」の改定案。適用は契約申込みの受付日で判定し、受付済み案件には遡及しないが、既設設備の機器交換時は交換機器に要件が適用される。風力は2027年4月、燃料電池は2028年4月に適用予定。意見はe-Gov・郵送・電子メールで11月6日まで受付。"
+        }
+      ]
+    },
     {
       "id": "n20261001_nttanode_aomori_misawa",
       "companies": ["NTTアノードエナジー"],
