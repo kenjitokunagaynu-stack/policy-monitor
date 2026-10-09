@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-10-08",
+  "collectedAt": "2026-10-09",
   "periodLabel": "2025年11月〜2026年10月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,73 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20261008_gritz_3sites_energized",
+      "image": "https://prcdn.freetls.fastly.net/release_image/117277/12/117277-12-7ee987affd0fd5da27a488c39269f90e-3400x2550.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-08",
+      "genre": "operation",
+      "title": "GRITZ、高圧系統用蓄電所3拠点（茨城・栃木・岩手）で受電開始",
+      "subtitle": "北茨城市・栃木市・奥州市の各1,986kW/8,194kWhが9月28日〜10月8日に順次受電、2027年度までに40MW/160MWhの開発を計画",
+      "sourceName": "PR TIMES（株式会社GRITZ）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000012.000117277.html",
+      "topics": [
+        {
+          "theme": "高圧蓄電所の受電開始",
+          "conclusion": "GRITZが自社開発の高圧系統用蓄電所3拠点で受電を開始した。",
+          "detail": "茨城県北茨城市（9月28日）、栃木県栃木市（10月5日）、岩手県奥州市（10月8日）の3拠点で受電開始。いずれも定格出力1,986kW・蓄電容量8,194kWh。同社は用地選定・取得から系統連系手続き、設計・施工、機器調達、アグリゲーター選定までを一貫して手掛け、東京電力・東北電力エリアを中心に2027年度までに40MW/160MWhの開発を計画している。"
+        }
+      ]
+    },
+    {
+      "id": "n20261008_nihonchikudenchi_ncpioneer_pf",
+      "image": "https://prcdn.freetls.fastly.net/release_image/161802/113/161802-113-fd047bf99b5089c8b0d00fa1551e0bde-2000x1410.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-08",
+      "genre": "capital",
+      "title": "日本蓄電池・リミックスポイント出資のSPC「NCパイオニア」、全国7件の高圧蓄電所でSMTBリースとプロジェクトファイナンス契約",
+      "subtitle": "SMTBリースをシニアレンダーとするノンリコースPF、AMはecoプロパティーズが受託し私募ファンドとして運営",
+      "sourceName": "PR TIMES（日本蓄電池株式会社／株式会社ecoプロパティーズ）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000113.000161802.html",
+      "topics": [
+        {
+          "theme": "高圧蓄電所ポートフォリオのPF組成",
+          "conclusion": "日本蓄電池とリミックスポイントが共同出資する合同会社NCパイオニアが、全国7件の高圧系統用蓄電施設を対象にノンリコース型プロジェクトファイナンス契約を締結した。",
+          "detail": "シニアレンダーはSMTBリース。対象は全国に分散配置された高圧蓄電施設7件で、需給調整市場・卸電力市場・容量市場での収益化を想定。アセットマネジメントはecoプロパティーズが受託し、私募ファンドとして運営する（同社も同日発表）。日本蓄電池はPFとファンド化による資金循環モデルを構築し、蓄電施設を金融商品として投資家に提供する方針。金額・個別所在地は非開示。"
+        }
+      ]
+    },
+    {
+      "id": "n20261008_hexa_oyabe_50mw",
+      "image": "https://prcdn.freetls.fastly.net/release_image/173123/9/173123-9-dbe45b414be6fc52b93f6c599f231e05-2560x1440.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-08",
+      "genre": "epc",
+      "title": "ヘキサ・エネルギーサービス、富山県小矢部市と共同記者会見 ─ 北陸最大級「ヘキサ小矢部蓄電所」（50MW）の建設へ",
+      "subtitle": "第1回長期脱炭素電源オークション落札案件、9月6日に地鎮祭を実施し2028年5月の商業運転開始を予定",
+      "sourceName": "PR TIMES（ヘキサ・エネルギーサービス合同会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000009.000173123.html",
+      "topics": [
+        {
+          "theme": "北陸の大型蓄電所",
+          "conclusion": "ヘキサ・エネルギーサービスが小矢部市長と共同記者会見を行い、送電端容量50MWacの「ヘキサ小矢部蓄電所」の事業概要を発表した。",
+          "detail": "所在地は富山県小矢部市石名田で、北陸地域で最大級の系統用蓄電所となる。経産省の第1回長期脱炭素電源オークションで落札した案件で、2026年9月6日に地鎮祭を実施、2028年5月の商業運転開始を予定。再エネ余剰時に充電し不足時に放電することで、北陸エリアの需給安定化に貢献するとしている。"
+        }
+      ]
+    },
+    {
+      "id": "n20261001_sumitomo_namie_62mw_construction",
+      "date": "2026-10-01",
+      "genre": "epc",
+      "title": "住友商事、福島県浪江町で系統用蓄電所（62MW/291MWh）の建設を開始",
+      "subtitle": "長期脱炭素電源オークション落札案件、三菱UFJ銀行をリードアレンジャーとするPFを組成し2029年の商業運転開始を予定",
+      "sourceName": "住友商事 ニュースリリース",
+      "sourceUrl": "https://www.sumitomocorp.com/ja/jp/news/release/2026/group/21720",
+      "topics": [
+        {
+          "theme": "大型蓄電所の着工",
+          "conclusion": "住友商事が100%出資する浪江蓄電所合同会社が、福島県浪江町で定格出力62MW・蓄電容量291MWhの系統用蓄電所の建設を開始した。",
+          "detail": "BSホールディングス経由で住友商事が100%出資。長期脱炭素電源オークションの採択案件で、三菱UFJ銀行をリードアレンジャーとするプロジェクトファイナンスを組成し、2026年10月1日に建設工事を開始した。商業運転開始は2029年を予定。EPC・蓄電池メーカーは開示されていない。"
+        }
+      ]
+    },
     {
       "id": "n20261007_enecho_lowvoltage_site_split",
       "image": "https://bessnews.jp/institutional/proffessional/4630203102004/img/thumbnail.jpg",
