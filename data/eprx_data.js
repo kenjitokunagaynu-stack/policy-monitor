@@ -2,14 +2,14 @@
 // 出典: 一般社団法人 電力需給調整力取引所（EPRX）「取引結果・連系線確保量結果ダウンロード（速報値）」
 //   https://www.eprx.or.jp/information/results.php （年度別 一次調整力 複合取引 速報値CSV, zip一括ダウンロード）
 // 取得方法: 上記ページのCSV一括ダウンロードリンクから1日1回だけ取得（GitHub Actions、scripts/eprx_fetch_and_process.sh）。
-// boshuAvg30d / heikinAvg30d は対象日を含まない直近30日間（本データでは2026/09/10〜2026/10/09）の
+// boshuAvg30d / heikinAvg30d は対象日を含まない直近30日間（本データでは2026/09/11〜2026/10/10）の
 // 同一コマの単純平均値。EPRXサイトの利用規約上、自動的な大量取得には事前承諾が必要なため、
 // このファイルは毎日1回のGitHub Actionsワークフロー（.github/workflows/eprx-daily.yml）でのみ更新されます。
 window.EPRX_DATA = {
   "product": "一次調整力（複合市場）",
-  "targetDate": "2026-10-10",
-  "fetchedAt": "2026-10-10",
-  "avgWindowLabel": "過去30日平均（2026/09/10〜2026/10/09）",
+  "targetDate": "2026-10-11",
+  "fetchedAt": "2026-10-11",
+  "avgWindowLabel": "過去30日平均（2026/09/11〜2026/10/10）",
   "sourceUrl": "https://www.eprx.or.jp/information/results.php",
   "units": {
     "boshu": "MW",
@@ -30,481 +30,481 @@ window.EPRX_DATA = {
       "block": 1,
       "label": "00:00~00:30",
       "boshu": 1086,
-      "ouatsu": 1518.158,
-      "saikou": 9.03,
-      "heikin": 2.42,
-      "boshuAvg30d": 1197.4,
-      "heikinAvg30d": 2.683
+      "ouatsu": 1305.858,
+      "saikou": 10,
+      "heikin": 3.15,
+      "boshuAvg30d": 1188.2,
+      "heikinAvg30d": 2.663
     },
     {
       "block": 2,
       "label": "00:30~01:00",
       "boshu": 1086,
-      "ouatsu": 1558.24,
-      "saikou": 9.8,
-      "heikin": 2.71,
-      "boshuAvg30d": 1197.4,
-      "heikinAvg30d": 2.55
+      "ouatsu": 1349.361,
+      "saikou": 10,
+      "heikin": 2.86,
+      "boshuAvg30d": 1188.2,
+      "heikinAvg30d": 2.565
     },
     {
       "block": 3,
       "label": "01:00~01:30",
       "boshu": 1086,
-      "ouatsu": 1532.413,
-      "saikou": 8.47,
-      "heikin": 2.69,
-      "boshuAvg30d": 1197.4,
-      "heikinAvg30d": 2.586
+      "ouatsu": 1459.094,
+      "saikou": 9.91,
+      "heikin": 3.11,
+      "boshuAvg30d": 1188.2,
+      "heikinAvg30d": 2.596
     },
     {
       "block": 4,
       "label": "01:30~02:00",
       "boshu": 1086,
-      "ouatsu": 1597.533,
-      "saikou": 8.43,
-      "heikin": 2.7,
-      "boshuAvg30d": 1197.4,
-      "heikinAvg30d": 2.559
+      "ouatsu": 1516.684,
+      "saikou": 9.91,
+      "heikin": 2.63,
+      "boshuAvg30d": 1188.2,
+      "heikinAvg30d": 2.564
     },
     {
       "block": 5,
       "label": "02:00~02:30",
       "boshu": 1083,
-      "ouatsu": 1526.326,
-      "saikou": 8.35,
-      "heikin": 2.77,
-      "boshuAvg30d": 1193.0,
-      "heikinAvg30d": 2.541
+      "ouatsu": 1450.733,
+      "saikou": 9.91,
+      "heikin": 3.02,
+      "boshuAvg30d": 1183.9,
+      "heikinAvg30d": 2.54
     },
     {
       "block": 6,
       "label": "02:30~03:00",
       "boshu": 1082,
-      "ouatsu": 1512.228,
-      "saikou": 10,
-      "heikin": 3.5,
-      "boshuAvg30d": 1192.0,
-      "heikinAvg30d": 2.631
+      "ouatsu": 1416.039,
+      "saikou": 9.43,
+      "heikin": 2.81,
+      "boshuAvg30d": 1182.9,
+      "heikinAvg30d": 2.661
     },
     {
       "block": 7,
       "label": "03:00~03:30",
       "boshu": 1079,
-      "ouatsu": 1647.087,
-      "saikou": 10,
-      "heikin": 3.23,
-      "boshuAvg30d": 1208.3,
-      "heikinAvg30d": 2.742
+      "ouatsu": 1550.095,
+      "saikou": 9.91,
+      "heikin": 3.48,
+      "boshuAvg30d": 1199.1,
+      "heikinAvg30d": 2.768
     },
     {
       "block": 8,
       "label": "03:30~04:00",
       "boshu": 1081,
-      "ouatsu": 1623.247,
-      "saikou": 9.9,
-      "heikin": 3.26,
-      "boshuAvg30d": 1209.6,
-      "heikinAvg30d": 2.906
+      "ouatsu": 1551.043,
+      "saikou": 7.97,
+      "heikin": 3.61,
+      "boshuAvg30d": 1200.4,
+      "heikinAvg30d": 2.928
     },
     {
       "block": 9,
       "label": "04:00~04:30",
       "boshu": 1083,
-      "ouatsu": 1622.867,
-      "saikou": 8.16,
-      "heikin": 2.85,
-      "boshuAvg30d": 1212.3,
-      "heikinAvg30d": 2.993
+      "ouatsu": 1584.246,
+      "saikou": 9.91,
+      "heikin": 4,
+      "boshuAvg30d": 1203.1,
+      "heikinAvg30d": 3.0
     },
     {
       "block": 10,
       "label": "04:30~05:00",
       "boshu": 1084,
-      "ouatsu": 1612.652,
-      "saikou": 8.31,
-      "heikin": 3.27,
-      "boshuAvg30d": 1212.6,
-      "heikinAvg30d": 3.089
+      "ouatsu": 1543.49,
+      "saikou": 7.63,
+      "heikin": 4.12,
+      "boshuAvg30d": 1203.4,
+      "heikinAvg30d": 3.115
     },
     {
       "block": 11,
       "label": "05:00~05:30",
       "boshu": 1084,
-      "ouatsu": 1706.785,
+      "ouatsu": 1472.18,
       "saikou": 10,
-      "heikin": 4.22,
-      "boshuAvg30d": 1212.6,
-      "heikinAvg30d": 3.165
+      "heikin": 4.15,
+      "boshuAvg30d": 1203.4,
+      "heikinAvg30d": 3.211
     },
     {
       "block": 12,
       "label": "05:30~06:00",
       "boshu": 1084,
-      "ouatsu": 1647.498,
+      "ouatsu": 1448.377,
       "saikou": 10,
-      "heikin": 3.88,
-      "boshuAvg30d": 1212.6,
-      "heikinAvg30d": 3.213
+      "heikin": 3.7,
+      "boshuAvg30d": 1203.4,
+      "heikinAvg30d": 3.255
     },
     {
       "block": 13,
       "label": "06:00~06:30",
       "boshu": 1144,
-      "ouatsu": 1660.137,
-      "saikou": 9.91,
-      "heikin": 3.82,
-      "boshuAvg30d": 1276.8,
-      "heikinAvg30d": 3.312
+      "ouatsu": 1491.517,
+      "saikou": 10,
+      "heikin": 3.6,
+      "boshuAvg30d": 1267.4,
+      "heikinAvg30d": 3.354
     },
     {
       "block": 14,
       "label": "06:30~07:00",
       "boshu": 1167,
-      "ouatsu": 1724.666,
-      "saikou": 10,
-      "heikin": 3.5,
-      "boshuAvg30d": 1298.4,
-      "heikinAvg30d": 3.128
+      "ouatsu": 1417.744,
+      "saikou": 9.91,
+      "heikin": 2.78,
+      "boshuAvg30d": 1289.1,
+      "heikinAvg30d": 3.162
     },
     {
       "block": 15,
       "label": "07:00~07:30",
       "boshu": 1188,
-      "ouatsu": 1596.993,
+      "ouatsu": 1566.276,
       "saikou": 10,
-      "heikin": 2.84,
-      "boshuAvg30d": 1320.8,
-      "heikinAvg30d": 2.891
+      "heikin": 2.65,
+      "boshuAvg30d": 1311.4,
+      "heikinAvg30d": 2.887
     },
     {
       "block": 16,
       "label": "07:30~08:00",
       "boshu": 1205,
-      "ouatsu": 1570.528,
+      "ouatsu": 1482.444,
       "saikou": 10,
-      "heikin": 3.07,
-      "boshuAvg30d": 1338.5,
-      "heikinAvg30d": 2.77
+      "heikin": 2.47,
+      "boshuAvg30d": 1329.1,
+      "heikinAvg30d": 2.773
     },
     {
       "block": 17,
       "label": "08:00~08:30",
       "boshu": 1205,
-      "ouatsu": 1625.827,
+      "ouatsu": 1298.71,
       "saikou": 10,
-      "heikin": 2.75,
-      "boshuAvg30d": 1339.2,
-      "heikinAvg30d": 2.989
+      "heikin": 2.33,
+      "boshuAvg30d": 1329.7,
+      "heikinAvg30d": 2.971
     },
     {
       "block": 18,
       "label": "08:30~09:00",
       "boshu": 1205,
-      "ouatsu": 1576.848,
+      "ouatsu": 1356.198,
       "saikou": 10,
-      "heikin": 2.74,
-      "boshuAvg30d": 1339.2,
-      "heikinAvg30d": 3.06
+      "heikin": 2.46,
+      "boshuAvg30d": 1329.7,
+      "heikinAvg30d": 3.04
     },
     {
       "block": 19,
       "label": "09:00~09:30",
       "boshu": 1137,
-      "ouatsu": 1624.512,
+      "ouatsu": 1393.221,
       "saikou": 10,
-      "heikin": 2.65,
-      "boshuAvg30d": 1315.1,
-      "heikinAvg30d": 3.237
+      "heikin": 2.01,
+      "boshuAvg30d": 1302.6,
+      "heikinAvg30d": 3.209
     },
     {
       "block": 20,
       "label": "09:30~10:00",
       "boshu": 1140,
-      "ouatsu": 1569.211,
+      "ouatsu": 1508.89,
       "saikou": 10,
-      "heikin": 2.79,
-      "boshuAvg30d": 1318.8,
-      "heikinAvg30d": 3.255
+      "heikin": 2.23,
+      "boshuAvg30d": 1306.3,
+      "heikinAvg30d": 3.232
     },
     {
       "block": 21,
       "label": "10:00~10:30",
       "boshu": 1145,
-      "ouatsu": 1592.973,
+      "ouatsu": 1415.235,
       "saikou": 10,
-      "heikin": 2.96,
-      "boshuAvg30d": 1325.9,
-      "heikinAvg30d": 3.3
+      "heikin": 2.28,
+      "boshuAvg30d": 1313.3,
+      "heikinAvg30d": 3.277
     },
     {
       "block": 22,
       "label": "10:30~11:00",
       "boshu": 1145,
-      "ouatsu": 1637.09,
+      "ouatsu": 1444.619,
       "saikou": 10,
-      "heikin": 2.7,
-      "boshuAvg30d": 1325.9,
-      "heikinAvg30d": 3.247
+      "heikin": 2.69,
+      "boshuAvg30d": 1313.3,
+      "heikinAvg30d": 3.215
     },
     {
       "block": 23,
       "label": "11:00~11:30",
       "boshu": 1142,
-      "ouatsu": 1604.331,
+      "ouatsu": 1438.388,
       "saikou": 10,
-      "heikin": 2.87,
-      "boshuAvg30d": 1322.9,
-      "heikinAvg30d": 3.185
+      "heikin": 2.54,
+      "boshuAvg30d": 1310.3,
+      "heikinAvg30d": 3.158
     },
     {
       "block": 24,
       "label": "11:30~12:00",
       "boshu": 1141,
-      "ouatsu": 1678.992,
+      "ouatsu": 1410.7,
       "saikou": 10,
-      "heikin": 2.73,
-      "boshuAvg30d": 1321.9,
-      "heikinAvg30d": 3.093
+      "heikin": 2.48,
+      "boshuAvg30d": 1309.3,
+      "heikinAvg30d": 3.078
     },
     {
       "block": 25,
       "label": "12:00~12:30",
       "boshu": 1121,
-      "ouatsu": 1755.147,
+      "ouatsu": 1379.664,
       "saikou": 10,
-      "heikin": 2.42,
-      "boshuAvg30d": 1308.1,
-      "heikinAvg30d": 3.017
+      "heikin": 2.66,
+      "boshuAvg30d": 1295.1,
+      "heikinAvg30d": 2.999
     },
     {
       "block": 26,
       "label": "12:30~13:00",
       "boshu": 1121,
-      "ouatsu": 1719.335,
+      "ouatsu": 1424.484,
       "saikou": 10,
-      "heikin": 2.47,
-      "boshuAvg30d": 1308.1,
-      "heikinAvg30d": 3.028
+      "heikin": 2.44,
+      "boshuAvg30d": 1295.1,
+      "heikinAvg30d": 3.016
     },
     {
       "block": 27,
       "label": "13:00~13:30",
       "boshu": 1121,
-      "ouatsu": 1831.992,
+      "ouatsu": 1465.76,
       "saikou": 10,
-      "heikin": 2.57,
-      "boshuAvg30d": 1305.1,
-      "heikinAvg30d": 3.158
+      "heikin": 1.9,
+      "boshuAvg30d": 1292.1,
+      "heikinAvg30d": 3.139
     },
     {
       "block": 28,
       "label": "13:30~14:00",
       "boshu": 1119,
-      "ouatsu": 1800.269,
+      "ouatsu": 1447.781,
       "saikou": 10,
-      "heikin": 2.51,
-      "boshuAvg30d": 1300.7,
-      "heikinAvg30d": 3.192
+      "heikin": 2.21,
+      "boshuAvg30d": 1287.7,
+      "heikinAvg30d": 3.162
     },
     {
       "block": 29,
       "label": "14:00~14:30",
       "boshu": 1116,
-      "ouatsu": 1705.453,
+      "ouatsu": 1448.311,
       "saikou": 10,
-      "heikin": 2.57,
-      "boshuAvg30d": 1296.3,
-      "heikinAvg30d": 3.195
+      "heikin": 2.01,
+      "boshuAvg30d": 1283.4,
+      "heikinAvg30d": 3.157
     },
     {
       "block": 30,
       "label": "14:30~15:00",
       "boshu": 1110,
-      "ouatsu": 1573.629,
+      "ouatsu": 1484.08,
       "saikou": 10,
-      "heikin": 2.69,
-      "boshuAvg30d": 1289.6,
-      "heikinAvg30d": 3.27
+      "heikin": 2.37,
+      "boshuAvg30d": 1276.7,
+      "heikinAvg30d": 3.245
     },
     {
       "block": 31,
       "label": "15:00~15:30",
       "boshu": 1176,
-      "ouatsu": 1557.784,
+      "ouatsu": 1328.846,
       "saikou": 10,
-      "heikin": 1.79,
-      "boshuAvg30d": 1317.7,
-      "heikinAvg30d": 3.253
+      "heikin": 2.51,
+      "boshuAvg30d": 1308.1,
+      "heikinAvg30d": 3.191
     },
     {
       "block": 32,
       "label": "15:30~16:00",
       "boshu": 1176,
-      "ouatsu": 1462.698,
+      "ouatsu": 1310.183,
       "saikou": 10,
-      "heikin": 2.31,
-      "boshuAvg30d": 1317.7,
-      "heikinAvg30d": 3.437
+      "heikin": 3.16,
+      "boshuAvg30d": 1308.1,
+      "heikinAvg30d": 3.383
     },
     {
       "block": 33,
       "label": "16:00~16:30",
       "boshu": 1177,
-      "ouatsu": 1646.664,
+      "ouatsu": 1337.305,
       "saikou": 10,
-      "heikin": 3.65,
-      "boshuAvg30d": 1318.0,
-      "heikinAvg30d": 3.67
+      "heikin": 3.1,
+      "boshuAvg30d": 1308.4,
+      "heikinAvg30d": 3.66
     },
     {
       "block": 34,
       "label": "16:30~17:00",
       "boshu": 1176,
-      "ouatsu": 1557.342,
-      "saikou": 10,
-      "heikin": 3.95,
-      "boshuAvg30d": 1316.3,
+      "ouatsu": 1331.845,
+      "saikou": 9.91,
+      "heikin": 3.94,
+      "boshuAvg30d": 1306.7,
       "heikinAvg30d": 3.945
     },
     {
       "block": 35,
       "label": "17:00~17:30",
       "boshu": 1174,
-      "ouatsu": 1567.896,
+      "ouatsu": 1241.471,
       "saikou": 10,
-      "heikin": 4.09,
-      "boshuAvg30d": 1308.7,
-      "heikinAvg30d": 4.03
+      "heikin": 3.58,
+      "boshuAvg30d": 1299.2,
+      "heikinAvg30d": 4.029
     },
     {
       "block": 36,
       "label": "17:30~18:00",
       "boshu": 1169,
-      "ouatsu": 1546.066,
-      "saikou": 10,
-      "heikin": 4.28,
-      "boshuAvg30d": 1304.1,
-      "heikinAvg30d": 4.076
+      "ouatsu": 1298.432,
+      "saikou": 8.08,
+      "heikin": 3.8,
+      "boshuAvg30d": 1294.5,
+      "heikinAvg30d": 4.09
     },
     {
       "block": 37,
       "label": "18:00~18:30",
       "boshu": 1164,
-      "ouatsu": 1527.524,
-      "saikou": 10,
-      "heikin": 3.91,
-      "boshuAvg30d": 1297.0,
-      "heikinAvg30d": 4.095
+      "ouatsu": 1398.262,
+      "saikou": 9.91,
+      "heikin": 3.8,
+      "boshuAvg30d": 1287.5,
+      "heikinAvg30d": 4.091
     },
     {
       "block": 38,
       "label": "18:30~19:00",
       "boshu": 1164,
-      "ouatsu": 1511.183,
-      "saikou": 10,
-      "heikin": 3.88,
-      "boshuAvg30d": 1297.0,
-      "heikinAvg30d": 4.01
+      "ouatsu": 1651.234,
+      "saikou": 8.9,
+      "heikin": 3.34,
+      "boshuAvg30d": 1287.5,
+      "heikinAvg30d": 4.022
     },
     {
       "block": 39,
       "label": "19:00~19:30",
       "boshu": 1164,
-      "ouatsu": 1837.425,
-      "saikou": 10,
-      "heikin": 3.95,
-      "boshuAvg30d": 1297.3,
-      "heikinAvg30d": 3.902
+      "ouatsu": 1701.015,
+      "saikou": 9.91,
+      "heikin": 3.47,
+      "boshuAvg30d": 1287.8,
+      "heikinAvg30d": 3.911
     },
     {
       "block": 40,
       "label": "19:30~20:00",
       "boshu": 1163,
-      "ouatsu": 1868.934,
-      "saikou": 10,
-      "heikin": 3.81,
-      "boshuAvg30d": 1296.3,
-      "heikinAvg30d": 3.743
+      "ouatsu": 1639.808,
+      "saikou": 8.8,
+      "heikin": 3.26,
+      "boshuAvg30d": 1286.8,
+      "heikinAvg30d": 3.749
     },
     {
       "block": 41,
       "label": "20:00~20:30",
       "boshu": 1155,
-      "ouatsu": 1896.692,
-      "saikou": 10,
-      "heikin": 3.75,
-      "boshuAvg30d": 1290.4,
-      "heikinAvg30d": 3.646
+      "ouatsu": 1656.437,
+      "saikou": 9.91,
+      "heikin": 3.5,
+      "boshuAvg30d": 1280.8,
+      "heikinAvg30d": 3.648
     },
     {
       "block": 42,
       "label": "20:30~21:00",
       "boshu": 1155,
-      "ouatsu": 1888.054,
-      "saikou": 10,
-      "heikin": 3.83,
-      "boshuAvg30d": 1287.6,
-      "heikinAvg30d": 3.554
+      "ouatsu": 1587.946,
+      "saikou": 9.83,
+      "heikin": 3.33,
+      "boshuAvg30d": 1278.1,
+      "heikinAvg30d": 3.563
     },
     {
       "block": 43,
       "label": "21:00~21:30",
       "boshu": 1065,
-      "ouatsu": 1909.038,
-      "saikou": 10,
-      "heikin": 3.93,
-      "boshuAvg30d": 1209.8,
-      "heikinAvg30d": 3.396
+      "ouatsu": 1675.834,
+      "saikou": 9.91,
+      "heikin": 3.47,
+      "boshuAvg30d": 1197.6,
+      "heikinAvg30d": 3.399
     },
     {
       "block": 44,
       "label": "21:30~22:00",
       "boshu": 1068,
-      "ouatsu": 1980.746,
-      "saikou": 10,
-      "heikin": 3.65,
-      "boshuAvg30d": 1212.8,
-      "heikinAvg30d": 3.532
+      "ouatsu": 1594.418,
+      "saikou": 8.7,
+      "heikin": 3.44,
+      "boshuAvg30d": 1200.6,
+      "heikinAvg30d": 3.528
     },
     {
       "block": 45,
       "label": "22:00~22:30",
       "boshu": 1069,
-      "ouatsu": 1834.924,
-      "saikou": 10,
-      "heikin": 3.46,
-      "boshuAvg30d": 1214.2,
-      "heikinAvg30d": 3.387
+      "ouatsu": 1483.486,
+      "saikou": 9.91,
+      "heikin": 3.85,
+      "boshuAvg30d": 1202.0,
+      "heikinAvg30d": 3.374
     },
     {
       "block": 46,
       "label": "22:30~23:00",
       "boshu": 1064,
-      "ouatsu": 1872.542,
-      "saikou": 10,
-      "heikin": 3.14,
-      "boshuAvg30d": 1207.8,
-      "heikinAvg30d": 3.259
+      "ouatsu": 1554.037,
+      "saikou": 8.39,
+      "heikin": 3.04,
+      "boshuAvg30d": 1195.6,
+      "heikinAvg30d": 3.248
     },
     {
       "block": 47,
       "label": "23:00~23:30",
       "boshu": 1055,
-      "ouatsu": 1707.938,
-      "saikou": 10,
-      "heikin": 2.44,
-      "boshuAvg30d": 1200.2,
-      "heikinAvg30d": 3.244
+      "ouatsu": 1596.769,
+      "saikou": 9.91,
+      "heikin": 3.25,
+      "boshuAvg30d": 1188.0,
+      "heikinAvg30d": 3.208
     },
     {
       "block": 48,
       "label": "23:30~24:00",
       "boshu": 1048,
-      "ouatsu": 1609.967,
-      "saikou": 8.51,
-      "heikin": 2.72,
-      "boshuAvg30d": 1192.5,
-      "heikinAvg30d": 2.973
+      "ouatsu": 1496.463,
+      "saikou": 7.64,
+      "heikin": 2.39,
+      "boshuAvg30d": 1180.3,
+      "heikinAvg30d": 2.96
     }
   ],
   "areaOrder": [
@@ -524,481 +524,481 @@ window.EPRX_DATA = {
         "block": 1,
         "label": "00:00~00:30",
         "boshu": 48,
-        "ouatsu": 202.908,
-        "saikou": 9.03,
-        "heikin": 4.37,
-        "boshuAvg30d": 59.2,
-        "heikinAvg30d": 1.291
+        "ouatsu": 81.468,
+        "saikou": 9.91,
+        "heikin": 8.22,
+        "boshuAvg30d": 58.7,
+        "heikinAvg30d": 1.403
       },
       {
         "block": 2,
         "label": "00:30~01:00",
         "boshu": 48,
-        "ouatsu": 206.678,
-        "saikou": 9.8,
-        "heikin": 3.64,
-        "boshuAvg30d": 59.2,
-        "heikinAvg30d": 1.064
+        "ouatsu": 28.918,
+        "saikou": 5,
+        "heikin": 4.63,
+        "boshuAvg30d": 58.7,
+        "heikinAvg30d": 1.152
       },
       {
         "block": 3,
         "label": "01:00~01:30",
         "boshu": 48,
-        "ouatsu": 166.958,
-        "saikou": 8.47,
-        "heikin": 3.66,
-        "boshuAvg30d": 59.2,
-        "heikinAvg30d": 1.145
+        "ouatsu": 69.518,
+        "saikou": 9.91,
+        "heikin": 8.58,
+        "boshuAvg30d": 58.7,
+        "heikinAvg30d": 1.234
       },
       {
         "block": 4,
         "label": "01:30~02:00",
         "boshu": 48,
-        "ouatsu": 198.058,
-        "saikou": 8.43,
-        "heikin": 3.97,
-        "boshuAvg30d": 59.2,
-        "heikinAvg30d": 1.04
+        "ouatsu": 26.968,
+        "saikou": 5.71,
+        "heikin": 5.37,
+        "boshuAvg30d": 58.7,
+        "heikinAvg30d": 1.139
       },
       {
         "block": 5,
         "label": "02:00~02:30",
         "boshu": 48,
-        "ouatsu": 168.908,
-        "saikou": 8.35,
-        "heikin": 4.12,
-        "boshuAvg30d": 59.2,
-        "heikinAvg30d": 1.302
+        "ouatsu": 73.458,
+        "saikou": 9.91,
+        "heikin": 8.43,
+        "boshuAvg30d": 58.7,
+        "heikinAvg30d": 1.406
       },
       {
         "block": 6,
         "label": "02:30~03:00",
         "boshu": 48,
-        "ouatsu": 150.518,
-        "saikou": 10,
-        "heikin": 8.38,
-        "boshuAvg30d": 59.2,
-        "heikinAvg30d": 1.405
+        "ouatsu": 30.908,
+        "saikou": 8.3,
+        "heikin": 5.52,
+        "boshuAvg30d": 58.7,
+        "heikinAvg30d": 1.629
       },
       {
         "block": 7,
         "label": "03:00~03:30",
         "boshu": 48,
-        "ouatsu": 175.858,
-        "saikou": 10,
-        "heikin": 7.65,
-        "boshuAvg30d": 58.5,
-        "heikinAvg30d": 1.305
+        "ouatsu": 71.508,
+        "saikou": 9.91,
+        "heikin": 8.62,
+        "boshuAvg30d": 58.0,
+        "heikinAvg30d": 1.526
       },
       {
         "block": 8,
         "label": "03:30~04:00",
         "boshu": 48,
-        "ouatsu": 127.958,
-        "saikou": 9.9,
-        "heikin": 7.5,
-        "boshuAvg30d": 58.5,
-        "heikinAvg30d": 1.138
+        "ouatsu": 28.958,
+        "saikou": 7.7,
+        "heikin": 6.66,
+        "boshuAvg30d": 58.0,
+        "heikinAvg30d": 1.354
       },
       {
         "block": 9,
         "label": "04:00~04:30",
         "boshu": 48,
-        "ouatsu": 127.918,
-        "saikou": 4.89,
-        "heikin": 3.91,
-        "boshuAvg30d": 58.5,
-        "heikinAvg30d": 1.297
+        "ouatsu": 71.468,
+        "saikou": 9.91,
+        "heikin": 9.44,
+        "boshuAvg30d": 58.0,
+        "heikinAvg30d": 1.392
       },
       {
         "block": 10,
         "label": "04:30~05:00",
         "boshu": 48,
-        "ouatsu": 127.958,
-        "saikou": 7.89,
-        "heikin": 6.18,
-        "boshuAvg30d": 58.5,
-        "heikinAvg30d": 1.212
+        "ouatsu": 28.918,
+        "saikou": 7.34,
+        "heikin": 6.55,
+        "boshuAvg30d": 58.0,
+        "heikinAvg30d": 1.384
       },
       {
         "block": 11,
         "label": "05:00~05:30",
         "boshu": 48,
-        "ouatsu": 172.468,
-        "saikou": 10,
-        "heikin": 9.04,
-        "boshuAvg30d": 58.5,
-        "heikinAvg30d": 1.243
+        "ouatsu": 69.518,
+        "saikou": 9.91,
+        "heikin": 8.76,
+        "boshuAvg30d": 58.0,
+        "heikinAvg30d": 1.508
       },
       {
         "block": 12,
         "label": "05:30~06:00",
         "boshu": 48,
-        "ouatsu": 127.958,
-        "saikou": 10,
-        "heikin": 7.7,
-        "boshuAvg30d": 58.5,
-        "heikinAvg30d": 1.455
+        "ouatsu": 28.958,
+        "saikou": 9.89,
+        "heikin": 9.07,
+        "boshuAvg30d": 58.0,
+        "heikinAvg30d": 1.677
       },
       {
         "block": 13,
         "label": "06:00~06:30",
         "boshu": 49,
-        "ouatsu": 217.208,
+        "ouatsu": 73.458,
         "saikou": 9.91,
-        "heikin": 4.82,
-        "boshuAvg30d": 60.2,
-        "heikinAvg30d": 1.781
+        "heikin": 8.06,
+        "boshuAvg30d": 59.7,
+        "heikinAvg30d": 1.908
       },
       {
         "block": 14,
         "label": "06:30~07:00",
         "boshu": 49,
-        "ouatsu": 217.208,
+        "ouatsu": 112.458,
         "saikou": 9.91,
-        "heikin": 4.34,
-        "boshuAvg30d": 60.2,
-        "heikinAvg30d": 1.688
+        "heikin": 7.32,
+        "boshuAvg30d": 59.7,
+        "heikinAvg30d": 1.799
       },
       {
         "block": 15,
         "label": "07:00~07:30",
         "boshu": 49,
-        "ouatsu": 139.908,
-        "saikou": 7.2,
-        "heikin": 2.4,
-        "boshuAvg30d": 60.9,
-        "heikinAvg30d": 1.426
+        "ouatsu": 69.908,
+        "saikou": 7.09,
+        "heikin": 3.91,
+        "boshuAvg30d": 60.3,
+        "heikinAvg30d": 1.473
       },
       {
         "block": 16,
         "label": "07:30~08:00",
         "boshu": 50,
-        "ouatsu": 174.268,
+        "ouatsu": 105.508,
         "saikou": 9.91,
-        "heikin": 2.59,
-        "boshuAvg30d": 61.2,
-        "heikinAvg30d": 1.202
+        "heikin": 6.58,
+        "boshuAvg30d": 60.7,
+        "heikinAvg30d": 1.259
       },
       {
         "block": 17,
         "label": "08:00~08:30",
         "boshu": 50,
-        "ouatsu": 161.958,
-        "saikou": 9.69,
-        "heikin": 1.96,
-        "boshuAvg30d": 61.2,
-        "heikinAvg30d": 0.905
+        "ouatsu": 65.968,
+        "saikou": 7.59,
+        "heikin": 3.2,
+        "boshuAvg30d": 60.7,
+        "heikinAvg30d": 0.948
       },
       {
         "block": 18,
         "label": "08:30~09:00",
         "boshu": 50,
-        "ouatsu": 196.768,
-        "saikou": 1.01,
-        "heikin": 0.84,
-        "boshuAvg30d": 61.2,
-        "heikinAvg30d": 0.971
+        "ouatsu": 69.518,
+        "saikou": 9.91,
+        "heikin": 6.45,
+        "boshuAvg30d": 60.7,
+        "heikinAvg30d": 0.97
       },
       {
         "block": 19,
         "label": "09:00~09:30",
         "boshu": 51,
-        "ouatsu": 163.908,
-        "saikou": 1.01,
-        "heikin": 0.86,
-        "boshuAvg30d": 62.2,
-        "heikinAvg30d": 0.908
+        "ouatsu": 28.918,
+        "saikou": 1,
+        "heikin": 1,
+        "boshuAvg30d": 61.7,
+        "heikinAvg30d": 0.909
       },
       {
         "block": 20,
         "label": "09:30~10:00",
         "boshu": 51,
-        "ouatsu": 164.758,
-        "saikou": 1.01,
-        "heikin": 1,
-        "boshuAvg30d": 62.9,
-        "heikinAvg30d": 0.909
+        "ouatsu": 103.518,
+        "saikou": 9.91,
+        "heikin": 4.46,
+        "boshuAvg30d": 62.3,
+        "heikinAvg30d": 0.914
       },
       {
         "block": 21,
         "label": "10:00~10:30",
         "boshu": 51,
-        "ouatsu": 163.908,
+        "ouatsu": 64.908,
         "saikou": 9.8,
-        "heikin": 2.43,
-        "boshuAvg30d": 62.9,
-        "heikinAvg30d": 1.069
+        "heikin": 4.24,
+        "boshuAvg30d": 62.3,
+        "heikinAvg30d": 1.121
       },
       {
         "block": 22,
         "label": "10:30~11:00",
         "boshu": 52,
-        "ouatsu": 198.758,
-        "saikou": 1.01,
-        "heikin": 0.95,
-        "boshuAvg30d": 63.2,
-        "heikinAvg30d": 0.993
+        "ouatsu": 103.518,
+        "saikou": 9.91,
+        "heikin": 4.47,
+        "boshuAvg30d": 62.7,
+        "heikinAvg30d": 0.995
       },
       {
         "block": 23,
         "label": "11:00~11:30",
         "boshu": 52,
-        "ouatsu": 163.908,
+        "ouatsu": 64.908,
         "saikou": 9.8,
-        "heikin": 2.39,
-        "boshuAvg30d": 63.2,
-        "heikinAvg30d": 0.974
+        "heikin": 4.29,
+        "boshuAvg30d": 62.7,
+        "heikinAvg30d": 1.026
       },
       {
         "block": 24,
         "label": "11:30~12:00",
         "boshu": 52,
-        "ouatsu": 159.968,
+        "ouatsu": 62.958,
         "saikou": 9.8,
-        "heikin": 2.44,
-        "boshuAvg30d": 63.2,
-        "heikinAvg30d": 1.012
+        "heikin": 4.35,
+        "boshuAvg30d": 62.7,
+        "heikinAvg30d": 1.066
       },
       {
         "block": 25,
         "label": "12:00~12:30",
         "boshu": 50,
-        "ouatsu": 204.54,
-        "saikou": 1.01,
-        "heikin": 0.86,
-        "boshuAvg30d": 61.9,
+        "ouatsu": 71.468,
+        "saikou": 9.91,
+        "heikin": 9.06,
+        "boshuAvg30d": 61.3,
         "heikinAvg30d": 0.998
       },
       {
         "block": 26,
         "label": "12:30~13:00",
         "boshu": 50,
-        "ouatsu": 127.958,
-        "saikou": 6.34,
-        "heikin": 2.3,
-        "boshuAvg30d": 61.9,
-        "heikinAvg30d": 1.051
+        "ouatsu": 71.508,
+        "saikou": 9.91,
+        "heikin": 8.16,
+        "boshuAvg30d": 61.3,
+        "heikinAvg30d": 1.1
       },
       {
         "block": 27,
         "label": "13:00~13:30",
         "boshu": 50,
-        "ouatsu": 206.508,
-        "saikou": 7.89,
-        "heikin": 1.92,
-        "boshuAvg30d": 61.9,
-        "heikinAvg30d": 1.183
+        "ouatsu": 30.908,
+        "saikou": 6.7,
+        "heikin": 4.51,
+        "boshuAvg30d": 61.3,
+        "heikinAvg30d": 1.219
       },
       {
         "block": 28,
         "label": "13:30~14:00",
         "boshu": 50,
-        "ouatsu": 161.958,
-        "saikou": 1.01,
-        "heikin": 0.86,
-        "boshuAvg30d": 61.9,
-        "heikinAvg30d": 1.052
+        "ouatsu": 67.55,
+        "saikou": 9.91,
+        "heikin": 6.61,
+        "boshuAvg30d": 61.3,
+        "heikinAvg30d": 1.05
       },
       {
         "block": 29,
         "label": "14:00~14:30",
         "boshu": 49,
-        "ouatsu": 148.958,
-        "saikou": 9.91,
-        "heikin": 3.57,
-        "boshuAvg30d": 60.9,
-        "heikinAvg30d": 1.216
+        "ouatsu": 30.908,
+        "saikou": 9.8,
+        "heikin": 8.45,
+        "boshuAvg30d": 60.3,
+        "heikinAvg30d": 1.301
       },
       {
         "block": 30,
         "label": "14:30~15:00",
         "boshu": 49,
-        "ouatsu": 159.958,
+        "ouatsu": 105.508,
         "saikou": 9.91,
-        "heikin": 2.69,
-        "boshuAvg30d": 60.9,
-        "heikinAvg30d": 1.412
+        "heikin": 6.5,
+        "boshuAvg30d": 60.3,
+        "heikinAvg30d": 1.468
       },
       {
         "block": 31,
         "label": "15:00~15:30",
         "boshu": 47,
-        "ouatsu": 168.908,
-        "saikou": 5.94,
-        "heikin": 2.31,
-        "boshuAvg30d": 58.9,
-        "heikinAvg30d": 1.077
+        "ouatsu": 69.908,
+        "saikou": 5.35,
+        "heikin": 3.3,
+        "boshuAvg30d": 58.3,
+        "heikinAvg30d": 1.12
       },
       {
         "block": 32,
         "label": "15:30~16:00",
         "boshu": 47,
-        "ouatsu": 144.108,
-        "saikou": 4.09,
-        "heikin": 1.7,
-        "boshuAvg30d": 58.9,
-        "heikinAvg30d": 1.877
+        "ouatsu": 69.518,
+        "saikou": 9.91,
+        "heikin": 7.56,
+        "boshuAvg30d": 58.3,
+        "heikinAvg30d": 1.902
       },
       {
         "block": 33,
         "label": "16:00~16:30",
         "boshu": 47,
-        "ouatsu": 174.268,
-        "saikou": 10,
-        "heikin": 8.16,
-        "boshuAvg30d": 58.9,
-        "heikinAvg30d": 2.765
+        "ouatsu": 28.918,
+        "saikou": 7.79,
+        "heikin": 6.87,
+        "boshuAvg30d": 58.3,
+        "heikinAvg30d": 3.004
       },
       {
         "block": 34,
         "label": "16:30~17:00",
         "boshu": 47,
-        "ouatsu": 125.968,
-        "saikou": 10,
-        "heikin": 8.73,
-        "boshuAvg30d": 58.9,
-        "heikinAvg30d": 3.094
+        "ouatsu": 69.518,
+        "saikou": 9.91,
+        "heikin": 8.36,
+        "boshuAvg30d": 58.3,
+        "heikinAvg30d": 3.352
       },
       {
         "block": 35,
         "label": "17:00~17:30",
         "boshu": 47,
-        "ouatsu": 134.268,
-        "saikou": 10,
-        "heikin": 7.44,
-        "boshuAvg30d": 58.2,
-        "heikinAvg30d": 3.213
+        "ouatsu": 1.99,
+        "saikou": 8.5,
+        "heikin": 8.5,
+        "boshuAvg30d": 57.7,
+        "heikinAvg30d": 3.427
       },
       {
         "block": 36,
         "label": "17:30~18:00",
         "boshu": 47,
-        "ouatsu": 87.958,
-        "saikou": 10,
-        "heikin": 9.77,
-        "boshuAvg30d": 58.9,
-        "heikinAvg30d": 3.184
+        "ouatsu": 0,
+        "saikou": 0,
+        "heikin": 0,
+        "boshuAvg30d": 58.3,
+        "heikinAvg30d": 3.477
       },
       {
         "block": 37,
         "label": "18:00~18:30",
         "boshu": 47,
-        "ouatsu": 138.208,
-        "saikou": 10,
-        "heikin": 7.59,
-        "boshuAvg30d": 58.2,
-        "heikinAvg30d": 2.94
+        "ouatsu": 44.5,
+        "saikou": 9.91,
+        "heikin": 9.69,
+        "boshuAvg30d": 57.7,
+        "heikinAvg30d": 3.159
       },
       {
         "block": 38,
         "label": "18:30~19:00",
         "boshu": 47,
-        "ouatsu": 143.508,
-        "saikou": 10,
-        "heikin": 7.97,
-        "boshuAvg30d": 58.2,
-        "heikinAvg30d": 3.008
+        "ouatsu": 30.908,
+        "saikou": 8.9,
+        "heikin": 5.56,
+        "boshuAvg30d": 57.7,
+        "heikinAvg30d": 3.24
       },
       {
         "block": 39,
         "label": "19:00~19:30",
         "boshu": 47,
-        "ouatsu": 127.94,
-        "saikou": 10,
-        "heikin": 8.56,
-        "boshuAvg30d": 58.2,
-        "heikinAvg30d": 2.404
+        "ouatsu": 73.458,
+        "saikou": 9.91,
+        "heikin": 7.89,
+        "boshuAvg30d": 57.7,
+        "heikinAvg30d": 2.649
       },
       {
         "block": 40,
         "label": "19:30~20:00",
         "boshu": 47,
-        "ouatsu": 169.14,
-        "saikou": 10,
-        "heikin": 7.36,
-        "boshuAvg30d": 58.2,
-        "heikinAvg30d": 2.334
+        "ouatsu": 30.908,
+        "saikou": 8.8,
+        "heikin": 4.56,
+        "boshuAvg30d": 57.7,
+        "heikinAvg30d": 2.537
       },
       {
         "block": 41,
         "label": "20:00~20:30",
         "boshu": 46,
-        "ouatsu": 127.94,
-        "saikou": 10,
-        "heikin": 8.16,
-        "boshuAvg30d": 57.9,
-        "heikinAvg30d": 2.015
+        "ouatsu": 71.468,
+        "saikou": 9.91,
+        "heikin": 9.52,
+        "boshuAvg30d": 57.3,
+        "heikinAvg30d": 2.253
       },
       {
         "block": 42,
         "label": "20:30~21:00",
         "boshu": 47,
-        "ouatsu": 145.95,
-        "saikou": 10,
-        "heikin": 8.37,
-        "boshuAvg30d": 58.2,
-        "heikinAvg30d": 1.721
+        "ouatsu": 28.918,
+        "saikou": 9.83,
+        "heikin": 8.9,
+        "boshuAvg30d": 57.7,
+        "heikinAvg30d": 1.964
       },
       {
         "block": 43,
         "label": "21:00~21:30",
         "boshu": 47,
-        "ouatsu": 127.94,
-        "saikou": 10,
-        "heikin": 9.42,
-        "boshuAvg30d": 58.2,
-        "heikinAvg30d": 1.586
+        "ouatsu": 73.458,
+        "saikou": 9.91,
+        "heikin": 8.94,
+        "boshuAvg30d": 57.7,
+        "heikinAvg30d": 1.866
       },
       {
         "block": 44,
         "label": "21:30~22:00",
         "boshu": 48,
-        "ouatsu": 127.94,
-        "saikou": 10,
-        "heikin": 7.95,
-        "boshuAvg30d": 59.2,
-        "heikinAvg30d": 2.074
+        "ouatsu": 30.908,
+        "saikou": 8.7,
+        "heikin": 7.5,
+        "boshuAvg30d": 58.7,
+        "heikinAvg30d": 2.306
       },
       {
         "block": 45,
         "label": "22:00~22:30",
         "boshu": 49,
-        "ouatsu": 176.24,
-        "saikou": 10,
-        "heikin": 6.97,
-        "boshuAvg30d": 60.2,
-        "heikinAvg30d": 1.721
+        "ouatsu": 73.458,
+        "saikou": 9.91,
+        "heikin": 8.81,
+        "boshuAvg30d": 59.7,
+        "heikinAvg30d": 1.919
       },
       {
         "block": 46,
         "label": "22:30~23:00",
         "boshu": 49,
-        "ouatsu": 157.94,
-        "saikou": 10,
-        "heikin": 7.48,
-        "boshuAvg30d": 60.2,
-        "heikinAvg30d": 1.735
+        "ouatsu": 28.918,
+        "saikou": 8.39,
+        "heikin": 7.66,
+        "boshuAvg30d": 59.7,
+        "heikinAvg30d": 1.951
       },
       {
         "block": 47,
         "label": "23:00~23:30",
         "boshu": 49,
-        "ouatsu": 82.94,
-        "saikou": 10,
-        "heikin": 8.67,
-        "boshuAvg30d": 60.2,
-        "heikinAvg30d": 1.661
+        "ouatsu": 71.468,
+        "saikou": 9.91,
+        "heikin": 8.71,
+        "boshuAvg30d": 59.7,
+        "heikinAvg30d": 1.916
       },
       {
         "block": 48,
         "label": "23:30~24:00",
         "boshu": 49,
-        "ouatsu": 53.94,
-        "saikou": 8.51,
-        "heikin": 6.96,
-        "boshuAvg30d": 60.2,
-        "heikinAvg30d": 1.612
+        "ouatsu": 30.908,
+        "saikou": 7.64,
+        "heikin": 7.02,
+        "boshuAvg30d": 59.7,
+        "heikinAvg30d": 1.81
       }
     ],
     "東北": [
@@ -1006,141 +1006,141 @@ window.EPRX_DATA = {
         "block": 1,
         "label": "00:00~00:30",
         "boshu": 118,
-        "ouatsu": 27.066,
-        "saikou": 4.99,
-        "heikin": 4.84,
-        "boshuAvg30d": 140.7,
-        "heikinAvg30d": 7.148
+        "ouatsu": 75.066,
+        "saikou": 10,
+        "heikin": 4.97,
+        "boshuAvg30d": 138.8,
+        "heikinAvg30d": 7.069
       },
       {
         "block": 2,
         "label": "00:30~01:00",
         "boshu": 118,
-        "ouatsu": 27.066,
-        "saikou": 5,
-        "heikin": 4.94,
-        "boshuAvg30d": 140.7,
-        "heikinAvg30d": 7.428
+        "ouatsu": 75.102,
+        "saikou": 10,
+        "heikin": 5.54,
+        "boshuAvg30d": 138.8,
+        "heikinAvg30d": 7.329
       },
       {
         "block": 3,
         "label": "01:00~01:30",
         "boshu": 118,
-        "ouatsu": 46.944,
-        "saikou": 5.24,
-        "heikin": 5.09,
-        "boshuAvg30d": 140.7,
-        "heikinAvg30d": 7.512
+        "ouatsu": 94.98,
+        "saikou": 6.59,
+        "heikin": 5.31,
+        "boshuAvg30d": 138.8,
+        "heikinAvg30d": 7.411
       },
       {
         "block": 4,
         "label": "01:30~02:00",
         "boshu": 118,
-        "ouatsu": 48.904,
-        "saikou": 5,
-        "heikin": 4.99,
-        "boshuAvg30d": 140.7,
-        "heikinAvg30d": 7.587
+        "ouatsu": 96.94,
+        "saikou": 7.01,
+        "heikin": 5.68,
+        "boshuAvg30d": 138.8,
+        "heikinAvg30d": 7.48
       },
       {
         "block": 5,
         "label": "02:00~02:30",
         "boshu": 118,
-        "ouatsu": 48.904,
-        "saikou": 5,
-        "heikin": 4.99,
-        "boshuAvg30d": 140.7,
-        "heikinAvg30d": 7.639
+        "ouatsu": 96.94,
+        "saikou": 7.01,
+        "heikin": 5.66,
+        "boshuAvg30d": 138.8,
+        "heikinAvg30d": 7.524
       },
       {
         "block": 6,
         "label": "02:30~03:00",
         "boshu": 118,
-        "ouatsu": 48.904,
-        "saikou": 5.5,
-        "heikin": 5.38,
-        "boshuAvg30d": 140.7,
-        "heikinAvg30d": 7.688
+        "ouatsu": 84.94,
+        "saikou": 6.82,
+        "heikin": 5.9,
+        "boshuAvg30d": 138.8,
+        "heikinAvg30d": 7.595
       },
       {
         "block": 7,
         "label": "03:00~03:30",
         "boshu": 117,
-        "ouatsu": 73.904,
-        "saikou": 4.99,
-        "heikin": 4.67,
-        "boshuAvg30d": 156.9,
-        "heikinAvg30d": 7.692
+        "ouatsu": 97.904,
+        "saikou": 6.28,
+        "heikin": 5.56,
+        "boshuAvg30d": 155.0,
+        "heikinAvg30d": 7.574
       },
       {
         "block": 8,
         "label": "03:30~04:00",
         "boshu": 117,
-        "ouatsu": 75.404,
-        "saikou": 5,
-        "heikin": 4.72,
-        "boshuAvg30d": 156.9,
-        "heikinAvg30d": 7.629
+        "ouatsu": 99.404,
+        "saikou": 6.25,
+        "heikin": 5.45,
+        "boshuAvg30d": 155.0,
+        "heikinAvg30d": 7.512
       },
       {
         "block": 9,
         "label": "04:00~04:30",
         "boshu": 117,
-        "ouatsu": 77.403,
-        "saikou": 4.99,
-        "heikin": 4.68,
-        "boshuAvg30d": 156.9,
-        "heikinAvg30d": 7.608
+        "ouatsu": 101.403,
+        "saikou": 6.06,
+        "heikin": 5.26,
+        "boshuAvg30d": 155.0,
+        "heikinAvg30d": 7.489
       },
       {
         "block": 10,
         "label": "04:30~05:00",
         "boshu": 117,
-        "ouatsu": 77.403,
-        "saikou": 5.5,
-        "heikin": 4.93,
-        "boshuAvg30d": 156.9,
-        "heikinAvg30d": 7.574
+        "ouatsu": 101.403,
+        "saikou": 6.13,
+        "heikin": 5.36,
+        "boshuAvg30d": 155.0,
+        "heikinAvg30d": 7.463
       },
       {
         "block": 11,
         "label": "05:00~05:30",
         "boshu": 117,
-        "ouatsu": 77.403,
-        "saikou": 9,
-        "heikin": 5.08,
-        "boshuAvg30d": 156.9,
-        "heikinAvg30d": 7.655
+        "ouatsu": 101.403,
+        "saikou": 10,
+        "heikin": 6.04,
+        "boshuAvg30d": 155.0,
+        "heikinAvg30d": 7.564
       },
       {
         "block": 12,
         "label": "05:30~06:00",
         "boshu": 117,
-        "ouatsu": 77.403,
-        "saikou": 7,
-        "heikin": 5.78,
-        "boshuAvg30d": 156.9,
-        "heikinAvg30d": 7.687
+        "ouatsu": 101.403,
+        "saikou": 10,
+        "heikin": 6.1,
+        "boshuAvg30d": 155.0,
+        "heikinAvg30d": 7.604
       },
       {
         "block": 13,
         "label": "06:00~06:30",
         "boshu": 124,
-        "ouatsu": 101.403,
-        "saikou": 9,
-        "heikin": 5.93,
-        "boshuAvg30d": 165.3,
-        "heikinAvg30d": 7.786
+        "ouatsu": 101.439,
+        "saikou": 10,
+        "heikin": 6.81,
+        "boshuAvg30d": 163.3,
+        "heikinAvg30d": 7.708
       },
       {
         "block": 14,
         "label": "06:30~07:00",
         "boshu": 129,
-        "ouatsu": 75.939,
-        "saikou": 7.12,
-        "heikin": 6.7,
-        "boshuAvg30d": 170.3,
-        "heikinAvg30d": 7.914
+        "ouatsu": 87.939,
+        "saikou": 8.56,
+        "heikin": 7.14,
+        "boshuAvg30d": 168.3,
+        "heikinAvg30d": 7.829
       },
       {
         "block": 15,
@@ -1148,339 +1148,339 @@ window.EPRX_DATA = {
         "boshu": 132,
         "ouatsu": 101.439,
         "saikou": 10,
-        "heikin": 8.1,
-        "boshuAvg30d": 175.4,
-        "heikinAvg30d": 8.056
+        "heikin": 7.89,
+        "boshuAvg30d": 173.3,
+        "heikinAvg30d": 8.017
       },
       {
         "block": 16,
         "label": "07:30~08:00",
         "boshu": 134,
-        "ouatsu": 99.939,
+        "ouatsu": 111.939,
         "saikou": 10,
-        "heikin": 7.95,
-        "boshuAvg30d": 178.8,
-        "heikinAvg30d": 8.208
+        "heikin": 7.49,
+        "boshuAvg30d": 176.7,
+        "heikinAvg30d": 8.164
       },
       {
         "block": 17,
         "label": "08:00~08:30",
         "boshu": 134,
-        "ouatsu": 101.439,
+        "ouatsu": 113.439,
         "saikou": 10,
-        "heikin": 8.24,
-        "boshuAvg30d": 178.8,
-        "heikinAvg30d": 8.484
+        "heikin": 7.87,
+        "boshuAvg30d": 176.7,
+        "heikinAvg30d": 8.449
       },
       {
         "block": 18,
         "label": "08:30~09:00",
         "boshu": 134,
-        "ouatsu": 87.939,
+        "ouatsu": 111.939,
         "saikou": 10,
-        "heikin": 7.99,
-        "boshuAvg30d": 178.8,
-        "heikinAvg30d": 8.391
+        "heikin": 8.23,
+        "boshuAvg30d": 176.7,
+        "heikinAvg30d": 8.349
       },
       {
         "block": 19,
         "label": "09:00~09:30",
         "boshu": 58,
-        "ouatsu": 113.989,
+        "ouatsu": 115.435,
         "saikou": 10,
-        "heikin": 8.38,
-        "boshuAvg30d": 142.1,
-        "heikinAvg30d": 8.214
+        "heikin": 8.43,
+        "boshuAvg30d": 136.9,
+        "heikinAvg30d": 8.228
       },
       {
         "block": 20,
         "label": "09:30~10:00",
         "boshu": 58,
-        "ouatsu": 104.669,
+        "ouatsu": 115.435,
         "saikou": 10,
-        "heikin": 8.57,
-        "boshuAvg30d": 143.5,
-        "heikinAvg30d": 8.329
+        "heikin": 8.49,
+        "boshuAvg30d": 138.2,
+        "heikinAvg30d": 8.349
       },
       {
         "block": 21,
         "label": "10:00~10:30",
         "boshu": 60,
-        "ouatsu": 100.714,
+        "ouatsu": 111.48,
         "saikou": 10,
-        "heikin": 8.82,
-        "boshuAvg30d": 146.2,
-        "heikinAvg30d": 8.317
+        "heikin": 8.55,
+        "boshuAvg30d": 140.9,
+        "heikinAvg30d": 8.342
       },
       {
         "block": 22,
         "label": "10:30~11:00",
         "boshu": 60,
-        "ouatsu": 100.714,
+        "ouatsu": 100.81,
         "saikou": 10,
-        "heikin": 8.84,
-        "boshuAvg30d": 146.9,
-        "heikinAvg30d": 8.381
+        "heikin": 8.67,
+        "boshuAvg30d": 141.5,
+        "heikinAvg30d": 8.403
       },
       {
         "block": 23,
         "label": "11:00~11:30",
         "boshu": 61,
-        "ouatsu": 104.669,
+        "ouatsu": 104.765,
         "saikou": 10,
-        "heikin": 8.76,
-        "boshuAvg30d": 147.2,
-        "heikinAvg30d": 8.388
+        "heikin": 8.64,
+        "boshuAvg30d": 141.9,
+        "heikinAvg30d": 8.414
       },
       {
         "block": 24,
         "label": "11:30~12:00",
         "boshu": 61,
-        "ouatsu": 102.769,
+        "ouatsu": 104.765,
         "saikou": 10,
-        "heikin": 8.72,
-        "boshuAvg30d": 147.2,
-        "heikinAvg30d": 8.353
+        "heikin": 8.59,
+        "boshuAvg30d": 141.9,
+        "heikinAvg30d": 8.379
       },
       {
         "block": 25,
         "label": "12:00~12:30",
         "boshu": 57,
-        "ouatsu": 109.44,
+        "ouatsu": 100.768,
         "saikou": 10,
-        "heikin": 8.66,
-        "boshuAvg30d": 143.8,
-        "heikinAvg30d": 8.415
+        "heikin": 8.59,
+        "boshuAvg30d": 138.3,
+        "heikinAvg30d": 8.437
       },
       {
         "block": 26,
         "label": "12:30~13:00",
         "boshu": 57,
-        "ouatsu": 111.441,
+        "ouatsu": 102.769,
         "saikou": 10,
-        "heikin": 8.65,
-        "boshuAvg30d": 143.8,
-        "heikinAvg30d": 8.332
+        "heikin": 8.51,
+        "boshuAvg30d": 138.3,
+        "heikinAvg30d": 8.357
       },
       {
         "block": 27,
         "label": "13:00~13:30",
         "boshu": 57,
-        "ouatsu": 111.441,
+        "ouatsu": 114.085,
         "saikou": 10,
-        "heikin": 8.04,
-        "boshuAvg30d": 143.8,
-        "heikinAvg30d": 8.071
+        "heikin": 8.45,
+        "boshuAvg30d": 138.3,
+        "heikinAvg30d": 8.076
       },
       {
         "block": 28,
         "label": "13:30~14:00",
         "boshu": 56,
-        "ouatsu": 113.341,
+        "ouatsu": 113.439,
         "saikou": 10,
-        "heikin": 7.85,
-        "boshuAvg30d": 141.4,
-        "heikinAvg30d": 7.817
+        "heikin": 8.51,
+        "boshuAvg30d": 136.0,
+        "heikinAvg30d": 7.816
       },
       {
         "block": 29,
         "label": "14:00~14:30",
         "boshu": 56,
-        "ouatsu": 103.339,
+        "ouatsu": 101.439,
         "saikou": 10,
-        "heikin": 7.19,
-        "boshuAvg30d": 140.0,
-        "heikinAvg30d": 7.85
+        "heikin": 7.96,
+        "boshuAvg30d": 134.7,
+        "heikinAvg30d": 7.827
       },
       {
         "block": 30,
         "label": "14:30~15:00",
         "boshu": 54,
-        "ouatsu": 103.339,
+        "ouatsu": 103.435,
         "saikou": 10,
-        "heikin": 6.37,
-        "boshuAvg30d": 135.9,
-        "heikinAvg30d": 7.197
+        "heikin": 6.6,
+        "boshuAvg30d": 130.7,
+        "heikinAvg30d": 7.146
       },
       {
         "block": 31,
         "label": "15:00~15:30",
         "boshu": 133,
-        "ouatsu": 79.339,
+        "ouatsu": 91.435,
         "saikou": 10,
-        "heikin": 5.77,
-        "boshuAvg30d": 175.7,
-        "heikinAvg30d": 7.512
+        "heikin": 6.82,
+        "boshuAvg30d": 173.7,
+        "heikinAvg30d": 7.394
       },
       {
         "block": 32,
         "label": "15:30~16:00",
         "boshu": 133,
-        "ouatsu": 79.339,
+        "ouatsu": 91.435,
         "saikou": 10,
-        "heikin": 5.22,
-        "boshuAvg30d": 175.7,
-        "heikinAvg30d": 7.01
+        "heikin": 6.42,
+        "boshuAvg30d": 173.7,
+        "heikinAvg30d": 6.891
       },
       {
         "block": 33,
         "label": "16:00~16:30",
         "boshu": 133,
-        "ouatsu": 79.339,
-        "saikou": 6.41,
-        "heikin": 4.53,
-        "boshuAvg30d": 175.7,
-        "heikinAvg30d": 7.028
+        "ouatsu": 79.399,
+        "saikou": 10,
+        "heikin": 4.38,
+        "boshuAvg30d": 173.7,
+        "heikinAvg30d": 6.914
       },
       {
         "block": 34,
         "label": "16:30~17:00",
         "boshu": 133,
-        "ouatsu": 65.803,
-        "saikou": 4.49,
-        "heikin": 4.23,
-        "boshuAvg30d": 175.0,
-        "heikinAvg30d": 6.95
+        "ouatsu": 77.899,
+        "saikou": 6.94,
+        "heikin": 4.17,
+        "boshuAvg30d": 173.0,
+        "heikinAvg30d": 6.853
       },
       {
         "block": 35,
         "label": "17:00~17:30",
         "boshu": 132,
         "ouatsu": 65.403,
-        "saikou": 5,
-        "heikin": 4.19,
-        "boshuAvg30d": 173.3,
-        "heikinAvg30d": 6.858
+        "saikou": 10,
+        "heikin": 4.39,
+        "boshuAvg30d": 171.3,
+        "heikinAvg30d": 6.777
       },
       {
         "block": 36,
         "label": "17:30~18:00",
         "boshu": 131,
-        "ouatsu": 61.938,
-        "saikou": 4.9,
-        "heikin": 4.2,
-        "boshuAvg30d": 171.6,
-        "heikinAvg30d": 6.563
+        "ouatsu": 63.903,
+        "saikou": 4.79,
+        "heikin": 3.96,
+        "boshuAvg30d": 169.7,
+        "heikinAvg30d": 6.479
       },
       {
         "block": 37,
         "label": "18:00~18:30",
         "boshu": 130,
         "ouatsu": 65.403,
-        "saikou": 4,
-        "heikin": 3.91,
-        "boshuAvg30d": 170.6,
-        "heikinAvg30d": 6.714
+        "saikou": 4.79,
+        "heikin": 3.82,
+        "boshuAvg30d": 168.7,
+        "heikinAvg30d": 6.628
       },
       {
         "block": 38,
         "label": "18:30~19:00",
         "boshu": 130,
-        "ouatsu": 51.883,
-        "saikou": 4.49,
-        "heikin": 4.14,
-        "boshuAvg30d": 170.6,
-        "heikinAvg30d": 6.457
+        "ouatsu": 61.938,
+        "saikou": 4.06,
+        "heikin": 3.82,
+        "boshuAvg30d": 168.7,
+        "heikinAvg30d": 6.356
       },
       {
         "block": 39,
         "label": "19:00~19:30",
         "boshu": 130,
-        "ouatsu": 89.383,
-        "saikou": 6.03,
-        "heikin": 4.39,
-        "boshuAvg30d": 170.6,
-        "heikinAvg30d": 6.608
+        "ouatsu": 54.733,
+        "saikou": 3.37,
+        "heikin": 3.37,
+        "boshuAvg30d": 168.7,
+        "heikinAvg30d": 6.504
       },
       {
         "block": 40,
         "label": "19:30~20:00",
         "boshu": 130,
-        "ouatsu": 90.733,
-        "saikou": 5.84,
-        "heikin": 4.28,
-        "boshuAvg30d": 169.9,
-        "heikinAvg30d": 6.724
+        "ouatsu": 54.733,
+        "saikou": 4.29,
+        "heikin": 3.95,
+        "boshuAvg30d": 168.0,
+        "heikinAvg30d": 6.608
       },
       {
         "block": 41,
         "label": "20:00~20:30",
         "boshu": 129,
-        "ouatsu": 84.884,
-        "saikou": 6.45,
-        "heikin": 4.73,
-        "boshuAvg30d": 169.6,
-        "heikinAvg30d": 6.711
+        "ouatsu": 49.428,
+        "saikou": 4,
+        "heikin": 3.89,
+        "boshuAvg30d": 167.7,
+        "heikinAvg30d": 6.576
       },
       {
         "block": 42,
         "label": "20:30~21:00",
         "boshu": 129,
-        "ouatsu": 83.534,
-        "saikou": 6.45,
-        "heikin": 4.68,
-        "boshuAvg30d": 169.6,
-        "heikinAvg30d": 6.781
+        "ouatsu": 50.778,
+        "saikou": 4.29,
+        "heikin": 3.92,
+        "boshuAvg30d": 167.7,
+        "heikinAvg30d": 6.664
       },
       {
         "block": 43,
         "label": "21:00~21:30",
         "boshu": 40,
-        "ouatsu": 89.419,
-        "saikou": 6.68,
-        "heikin": 5.2,
-        "boshuAvg30d": 94.2,
-        "heikinAvg30d": 6.949
+        "ouatsu": 53.383,
+        "saikou": 3.79,
+        "heikin": 3.56,
+        "boshuAvg30d": 89.5,
+        "heikinAvg30d": 6.831
       },
       {
         "block": 44,
         "label": "21:30~22:00",
         "boshu": 40,
-        "ouatsu": 101.403,
-        "saikou": 5.84,
-        "heikin": 4.3,
-        "boshuAvg30d": 94.2,
-        "heikinAvg30d": 7.053
+        "ouatsu": 53.383,
+        "saikou": 3.19,
+        "heikin": 3.19,
+        "boshuAvg30d": 89.5,
+        "heikinAvg30d": 6.887
       },
       {
         "block": 45,
         "label": "22:00~22:30",
         "boshu": 40,
-        "ouatsu": 89.403,
-        "saikou": 5.58,
-        "heikin": 4.19,
-        "boshuAvg30d": 94.2,
-        "heikinAvg30d": 7.121
+        "ouatsu": 66.733,
+        "saikou": 4.73,
+        "heikin": 4.23,
+        "boshuAvg30d": 89.5,
+        "heikinAvg30d": 6.957
       },
       {
         "block": 46,
         "label": "22:30~23:00",
         "boshu": 39,
-        "ouatsu": 73.553,
-        "saikou": 5.58,
-        "heikin": 4.12,
-        "boshuAvg30d": 93.2,
-        "heikinAvg30d": 7.081
+        "ouatsu": 63.483,
+        "saikou": 5.41,
+        "heikin": 4.38,
+        "boshuAvg30d": 88.5,
+        "heikinAvg30d": 6.911
       },
       {
         "block": 47,
         "label": "23:00~23:30",
         "boshu": 37,
-        "ouatsu": 76.833,
-        "saikou": 5.79,
-        "heikin": 4.31,
-        "boshuAvg30d": 91.9,
-        "heikinAvg30d": 7.237
+        "ouatsu": 63.483,
+        "saikou": 5.49,
+        "heikin": 4.91,
+        "boshuAvg30d": 87.1,
+        "heikinAvg30d": 7.072
       },
       {
         "block": 48,
         "label": "23:30~24:00",
         "boshu": 37,
-        "ouatsu": 75.333,
-        "saikou": 6.1,
-        "heikin": 4.36,
-        "boshuAvg30d": 91.2,
-        "heikinAvg30d": 7.458
+        "ouatsu": 87.333,
+        "saikou": 5.87,
+        "heikin": 4.51,
+        "boshuAvg30d": 86.5,
+        "heikinAvg30d": 7.296
       }
     ],
     "東京": [
@@ -1488,481 +1488,481 @@ window.EPRX_DATA = {
         "block": 1,
         "label": "00:00~00:30",
         "boshu": 264,
-        "ouatsu": 523.282,
-        "saikou": 5.75,
-        "heikin": 2.89,
-        "boshuAvg30d": 396.1,
-        "heikinAvg30d": 3.492
+        "ouatsu": 301.109,
+        "saikou": 6.6,
+        "heikin": 5.02,
+        "boshuAvg30d": 387.0,
+        "heikinAvg30d": 3.484
       },
       {
         "block": 2,
         "label": "00:30~01:00",
         "boshu": 264,
-        "ouatsu": 476.043,
-        "saikou": 6.02,
-        "heikin": 3.49,
-        "boshuAvg30d": 396.1,
-        "heikinAvg30d": 3.443
+        "ouatsu": 297.907,
+        "saikou": 8.5,
+        "heikin": 5.79,
+        "boshuAvg30d": 387.0,
+        "heikinAvg30d": 3.477
       },
       {
         "block": 3,
         "label": "01:00~01:30",
         "boshu": 264,
-        "ouatsu": 477.993,
-        "saikou": 6.1,
-        "heikin": 3.48,
-        "boshuAvg30d": 396.1,
-        "heikinAvg30d": 3.289
+        "ouatsu": 362.618,
+        "saikou": 8.86,
+        "heikin": 5.04,
+        "boshuAvg30d": 387.0,
+        "heikinAvg30d": 3.321
       },
       {
         "block": 4,
         "label": "01:30~02:00",
         "boshu": 264,
-        "ouatsu": 491.243,
-        "saikou": 6.18,
-        "heikin": 3.42,
-        "boshuAvg30d": 396.1,
-        "heikinAvg30d": 3.3
+        "ouatsu": 422.876,
+        "saikou": 9.91,
+        "heikin": 4.62,
+        "boshuAvg30d": 387.0,
+        "heikinAvg30d": 3.319
       },
       {
         "block": 5,
         "label": "02:00~02:30",
         "boshu": 263,
-        "ouatsu": 512.449,
-        "saikou": 6.39,
-        "heikin": 3.53,
-        "boshuAvg30d": 394.4,
-        "heikinAvg30d": 3.247
+        "ouatsu": 410.904,
+        "saikou": 9.91,
+        "heikin": 4.51,
+        "boshuAvg30d": 385.3,
+        "heikinAvg30d": 3.238
       },
       {
         "block": 6,
         "label": "02:30~03:00",
         "boshu": 262,
-        "ouatsu": 479.271,
-        "saikou": 6.17,
-        "heikin": 3.94,
-        "boshuAvg30d": 394.1,
-        "heikinAvg30d": 3.237
+        "ouatsu": 392.466,
+        "saikou": 9.43,
+        "heikin": 4.64,
+        "boshuAvg30d": 385.0,
+        "heikinAvg30d": 3.27
       },
       {
         "block": 7,
         "label": "03:00~03:30",
         "boshu": 260,
-        "ouatsu": 491.243,
-        "saikou": 5.48,
-        "heikin": 3.01,
-        "boshuAvg30d": 392.8,
-        "heikinAvg30d": 3.262
+        "ouatsu": 402.344,
+        "saikou": 8.04,
+        "heikin": 5.27,
+        "boshuAvg30d": 383.6,
+        "heikinAvg30d": 3.275
       },
       {
         "block": 8,
         "label": "03:30~04:00",
         "boshu": 262,
-        "ouatsu": 532.876,
-        "saikou": 5.48,
-        "heikin": 3.3,
-        "boshuAvg30d": 394.1,
-        "heikinAvg30d": 3.455
+        "ouatsu": 404.583,
+        "saikou": 7.97,
+        "heikin": 5.28,
+        "boshuAvg30d": 385.0,
+        "heikinAvg30d": 3.478
       },
       {
         "block": 9,
         "label": "04:00~04:30",
         "boshu": 262,
-        "ouatsu": 532.267,
-        "saikou": 5.48,
-        "heikin": 3.35,
-        "boshuAvg30d": 394.8,
-        "heikinAvg30d": 3.545
+        "ouatsu": 369.23,
+        "saikou": 7.43,
+        "heikin": 5.47,
+        "boshuAvg30d": 385.6,
+        "heikinAvg30d": 3.569
       },
       {
         "block": 10,
         "label": "04:30~05:00",
         "boshu": 263,
-        "ouatsu": 522.004,
-        "saikou": 5.48,
-        "heikin": 3.74,
-        "boshuAvg30d": 395.1,
-        "heikinAvg30d": 3.645
+        "ouatsu": 373,
+        "saikou": 7.63,
+        "heikin": 5.43,
+        "boshuAvg30d": 386.0,
+        "heikinAvg30d": 3.683
       },
       {
         "block": 11,
         "label": "05:00~05:30",
         "boshu": 263,
-        "ouatsu": 483.078,
-        "saikou": 5.48,
-        "heikin": 4.12,
-        "boshuAvg30d": 395.1,
-        "heikinAvg30d": 3.557
+        "ouatsu": 266.9,
+        "saikou": 5.37,
+        "heikin": 4.45,
+        "boshuAvg30d": 386.0,
+        "heikinAvg30d": 3.598
       },
       {
         "block": 12,
         "label": "05:30~06:00",
         "boshu": 263,
-        "ouatsu": 475.029,
-        "saikou": 5.48,
-        "heikin": 4.39,
-        "boshuAvg30d": 395.1,
-        "heikinAvg30d": 3.676
+        "ouatsu": 301.057,
+        "saikou": 5.43,
+        "heikin": 4.79,
+        "boshuAvg30d": 386.0,
+        "heikinAvg30d": 3.735
       },
       {
         "block": 13,
         "label": "06:00~06:30",
         "boshu": 282,
-        "ouatsu": 365.918,
-        "saikou": 6.38,
-        "heikin": 4.77,
-        "boshuAvg30d": 415.5,
-        "heikinAvg30d": 3.884
+        "ouatsu": 275.37,
+        "saikou": 4.95,
+        "heikin": 2.68,
+        "boshuAvg30d": 406.3,
+        "heikinAvg30d": 3.952
       },
       {
         "block": 14,
         "label": "06:30~07:00",
         "boshu": 290,
-        "ouatsu": 417.795,
-        "saikou": 10,
-        "heikin": 5.22,
-        "boshuAvg30d": 423.5,
-        "heikinAvg30d": 4.049
+        "ouatsu": 299.955,
+        "saikou": 6.7,
+        "heikin": 3.07,
+        "boshuAvg30d": 414.3,
+        "heikinAvg30d": 4.127
       },
       {
         "block": 15,
         "label": "07:00~07:30",
         "boshu": 295,
-        "ouatsu": 400.631,
+        "ouatsu": 459.155,
         "saikou": 10,
-        "heikin": 5.03,
-        "boshuAvg30d": 428.5,
-        "heikinAvg30d": 3.74
+        "heikin": 4.43,
+        "boshuAvg30d": 419.3,
+        "heikinAvg30d": 3.791
       },
       {
         "block": 16,
         "label": "07:30~08:00",
         "boshu": 300,
-        "ouatsu": 382.985,
-        "saikou": 10,
-        "heikin": 4.82,
-        "boshuAvg30d": 433.5,
-        "heikinAvg30d": 3.599
+        "ouatsu": 299.955,
+        "saikou": 6.7,
+        "heikin": 2.76,
+        "boshuAvg30d": 424.3,
+        "heikinAvg30d": 3.642
       },
       {
         "block": 17,
         "label": "08:00~08:30",
         "boshu": 300,
-        "ouatsu": 384.951,
-        "saikou": 10,
-        "heikin": 4.65,
-        "boshuAvg30d": 433.5,
-        "heikinAvg30d": 3.889
+        "ouatsu": 301.921,
+        "saikou": 6.7,
+        "heikin": 2.76,
+        "boshuAvg30d": 424.3,
+        "heikinAvg30d": 3.909
       },
       {
         "block": 18,
         "label": "08:30~09:00",
         "boshu": 300,
-        "ouatsu": 384.951,
-        "saikou": 10,
-        "heikin": 4.8,
-        "boshuAvg30d": 433.5,
-        "heikinAvg30d": 3.922
+        "ouatsu": 283.482,
+        "saikou": 6.7,
+        "heikin": 3,
+        "boshuAvg30d": 424.3,
+        "heikinAvg30d": 3.933
       },
       {
         "block": 19,
         "label": "09:00~09:30",
         "boshu": 292,
-        "ouatsu": 366.513,
-        "saikou": 10,
-        "heikin": 5,
-        "boshuAvg30d": 430.8,
-        "heikinAvg30d": 4.234
+        "ouatsu": 283.482,
+        "saikou": 6.7,
+        "heikin": 2.99,
+        "boshuAvg30d": 421.6,
+        "heikinAvg30d": 4.236
       },
       {
         "block": 20,
         "label": "09:30~10:00",
         "boshu": 292,
-        "ouatsu": 366.513,
-        "saikou": 10,
-        "heikin": 5.09,
-        "boshuAvg30d": 430.8,
-        "heikinAvg30d": 4.314
+        "ouatsu": 274.016,
+        "saikou": 6.79,
+        "heikin": 3.3,
+        "boshuAvg30d": 421.6,
+        "heikinAvg30d": 4.315
       },
       {
         "block": 21,
         "label": "10:00~10:30",
         "boshu": 292,
-        "ouatsu": 349.434,
-        "saikou": 10,
-        "heikin": 5.37,
-        "boshuAvg30d": 430.8,
-        "heikinAvg30d": 4.217
+        "ouatsu": 239.761,
+        "saikou": 7.49,
+        "heikin": 3.74,
+        "boshuAvg30d": 421.6,
+        "heikinAvg30d": 4.238
       },
       {
         "block": 22,
         "label": "10:30~11:00",
         "boshu": 291,
-        "ouatsu": 349.434,
-        "saikou": 10,
-        "heikin": 5.36,
-        "boshuAvg30d": 429.8,
-        "heikinAvg30d": 4.067
+        "ouatsu": 239.761,
+        "saikou": 7.49,
+        "heikin": 3.79,
+        "boshuAvg30d": 420.6,
+        "heikinAvg30d": 4.083
       },
       {
         "block": 23,
         "label": "11:00~11:30",
         "boshu": 289,
-        "ouatsu": 331.794,
-        "saikou": 10,
-        "heikin": 5.85,
-        "boshuAvg30d": 427.1,
-        "heikinAvg30d": 4.029
+        "ouatsu": 256.83,
+        "saikou": 6.99,
+        "heikin": 3.56,
+        "boshuAvg30d": 418.0,
+        "heikinAvg30d": 4.061
       },
       {
         "block": 24,
         "label": "11:30~12:00",
         "boshu": 289,
-        "ouatsu": 414.38,
-        "saikou": 10,
-        "heikin": 4.78,
-        "boshuAvg30d": 427.1,
-        "heikinAvg30d": 3.972
+        "ouatsu": 252.978,
+        "saikou": 6.79,
+        "heikin": 3.46,
+        "boshuAvg30d": 418.0,
+        "heikinAvg30d": 3.959
       },
       {
         "block": 25,
         "label": "12:00~12:30",
         "boshu": 286,
-        "ouatsu": 427.975,
-        "saikou": 10,
-        "heikin": 4.45,
-        "boshuAvg30d": 425.5,
-        "heikinAvg30d": 3.938
+        "ouatsu": 279.419,
+        "saikou": 7.2,
+        "heikin": 2.96,
+        "boshuAvg30d": 416.3,
+        "heikinAvg30d": 3.922
       },
       {
         "block": 26,
         "label": "12:30~13:00",
         "boshu": 286,
-        "ouatsu": 429.991,
-        "saikou": 10,
-        "heikin": 4.13,
-        "boshuAvg30d": 425.5,
-        "heikinAvg30d": 3.874
+        "ouatsu": 283.482,
+        "saikou": 7.07,
+        "heikin": 2.81,
+        "boshuAvg30d": 416.3,
+        "heikinAvg30d": 3.857
       },
       {
         "block": 27,
         "label": "13:00~13:30",
         "boshu": 286,
-        "ouatsu": 429.991,
-        "saikou": 10,
-        "heikin": 3.9,
-        "boshuAvg30d": 422.5,
-        "heikinAvg30d": 4.006
+        "ouatsu": 301.919,
+        "saikou": 6.49,
+        "heikin": 2.26,
+        "boshuAvg30d": 413.3,
+        "heikinAvg30d": 3.977
       },
       {
         "block": 28,
         "label": "13:30~14:00",
         "boshu": 286,
-        "ouatsu": 429.991,
-        "saikou": 10,
-        "heikin": 3.95,
-        "boshuAvg30d": 422.2,
-        "heikinAvg30d": 4.105
+        "ouatsu": 301.919,
+        "saikou": 6.95,
+        "heikin": 2.29,
+        "boshuAvg30d": 413.0,
+        "heikinAvg30d": 4.077
       },
       {
         "block": 29,
         "label": "14:00~14:30",
         "boshu": 285,
-        "ouatsu": 426.177,
-        "saikou": 10,
-        "heikin": 3.62,
-        "boshuAvg30d": 421.2,
-        "heikinAvg30d": 3.993
+        "ouatsu": 299.934,
+        "saikou": 4.6,
+        "heikin": 2.21,
+        "boshuAvg30d": 412.0,
+        "heikinAvg30d": 3.948
       },
       {
         "block": 30,
         "label": "14:30~15:00",
         "boshu": 284,
-        "ouatsu": 429.971,
-        "saikou": 10,
-        "heikin": 3.89,
-        "boshuAvg30d": 420.9,
-        "heikinAvg30d": 3.86
+        "ouatsu": 301.848,
+        "saikou": 5.02,
+        "heikin": 2.02,
+        "boshuAvg30d": 411.6,
+        "heikinAvg30d": 3.841
       },
       {
         "block": 31,
         "label": "15:00~15:30",
         "boshu": 282,
-        "ouatsu": 299.731,
-        "saikou": 4.84,
-        "heikin": 1.74,
-        "boshuAvg30d": 419.6,
-        "heikinAvg30d": 3.894
+        "ouatsu": 294.03,
+        "saikou": 4.54,
+        "heikin": 2.78,
+        "boshuAvg30d": 410.3,
+        "heikinAvg30d": 3.803
       },
       {
         "block": 32,
         "label": "15:30~16:00",
         "boshu": 282,
-        "ouatsu": 318.169,
-        "saikou": 4.84,
-        "heikin": 2.45,
-        "boshuAvg30d": 419.6,
-        "heikinAvg30d": 3.811
+        "ouatsu": 315.811,
+        "saikou": 5.6,
+        "heikin": 3.49,
+        "boshuAvg30d": 410.3,
+        "heikinAvg30d": 3.743
       },
       {
         "block": 33,
         "label": "16:00~16:30",
         "boshu": 282,
-        "ouatsu": 412.301,
-        "saikou": 4.46,
-        "heikin": 2.56,
-        "boshuAvg30d": 419.6,
-        "heikinAvg30d": 4.134
+        "ouatsu": 322.704,
+        "saikou": 5.23,
+        "heikin": 2.94,
+        "boshuAvg30d": 410.3,
+        "heikinAvg30d": 4.062
       },
       {
         "block": 34,
         "label": "16:30~17:00",
         "boshu": 282,
-        "ouatsu": 448.415,
-        "saikou": 4.9,
-        "heikin": 2.6,
-        "boshuAvg30d": 419.5,
-        "heikinAvg30d": 4.35
+        "ouatsu": 408.828,
+        "saikou": 5.42,
+        "heikin": 2.85,
+        "boshuAvg30d": 410.2,
+        "heikinAvg30d": 4.291
       },
       {
         "block": 35,
         "label": "17:00~17:30",
         "boshu": 282,
-        "ouatsu": 448.395,
-        "saikou": 5.47,
-        "heikin": 2.93,
-        "boshuAvg30d": 415.4,
-        "heikinAvg30d": 4.268
+        "ouatsu": 387.861,
+        "saikou": 4.54,
+        "heikin": 2.62,
+        "boshuAvg30d": 406.1,
+        "heikinAvg30d": 4.204
       },
       {
         "block": 36,
         "label": "17:30~18:00",
         "boshu": 282,
-        "ouatsu": 405.512,
-        "saikou": 4.84,
-        "heikin": 2.3,
-        "boshuAvg30d": 415.0,
-        "heikinAvg30d": 4.199
+        "ouatsu": 433.178,
+        "saikou": 6.78,
+        "heikin": 3.15,
+        "boshuAvg30d": 405.7,
+        "heikinAvg30d": 4.134
       },
       {
         "block": 37,
         "label": "18:00~18:30",
         "boshu": 285,
-        "ouatsu": 450.846,
-        "saikou": 3.99,
-        "heikin": 2.47,
-        "boshuAvg30d": 417.3,
-        "heikinAvg30d": 4.381
+        "ouatsu": 496.035,
+        "saikou": 6.44,
+        "heikin": 2.44,
+        "boshuAvg30d": 408.1,
+        "heikinAvg30d": 4.309
       },
       {
         "block": 38,
         "label": "18:30~19:00",
         "boshu": 285,
-        "ouatsu": 406.862,
-        "saikou": 4.42,
-        "heikin": 2.17,
-        "boshuAvg30d": 417.3,
-        "heikinAvg30d": 4.208
+        "ouatsu": 650.756,
+        "saikou": 6.4,
+        "heikin": 2.35,
+        "boshuAvg30d": 408.1,
+        "heikinAvg30d": 4.149
       },
       {
         "block": 39,
         "label": "19:00~19:30",
         "boshu": 285,
-        "ouatsu": 587.155,
-        "saikou": 5.68,
-        "heikin": 2.73,
-        "boshuAvg30d": 417.6,
-        "heikinAvg30d": 4.195
+        "ouatsu": 653.259,
+        "saikou": 4.81,
+        "heikin": 2.35,
+        "boshuAvg30d": 408.4,
+        "heikinAvg30d": 4.148
       },
       {
         "block": 40,
         "label": "19:30~20:00",
         "boshu": 285,
-        "ouatsu": 578.276,
-        "saikou": 5.36,
-        "heikin": 2.59,
-        "boshuAvg30d": 417.6,
-        "heikinAvg30d": 4.071
+        "ouatsu": 626.821,
+        "saikou": 5.48,
+        "heikin": 2.35,
+        "boshuAvg30d": 408.4,
+        "heikinAvg30d": 4.03
       },
       {
         "block": 41,
         "label": "20:00~20:30",
         "boshu": 283,
-        "ouatsu": 627.92,
-        "saikou": 6.12,
-        "heikin": 2.57,
-        "boshuAvg30d": 415.6,
-        "heikinAvg30d": 4.041
+        "ouatsu": 580.145,
+        "saikou": 5.31,
+        "heikin": 2.44,
+        "boshuAvg30d": 406.4,
+        "heikinAvg30d": 4.006
       },
       {
         "block": 42,
         "label": "20:30~21:00",
         "boshu": 283,
-        "ouatsu": 607.733,
-        "saikou": 6.12,
-        "heikin": 2.64,
-        "boshuAvg30d": 415.6,
-        "heikinAvg30d": 3.983
+        "ouatsu": 597.799,
+        "saikou": 5.36,
+        "heikin": 2.53,
+        "boshuAvg30d": 406.4,
+        "heikinAvg30d": 3.946
       },
       {
         "block": 43,
         "label": "21:00~21:30",
         "boshu": 283,
-        "ouatsu": 623.719,
-        "saikou": 6.08,
-        "heikin": 2.87,
-        "boshuAvg30d": 414.9,
-        "heikinAvg30d": 3.877
+        "ouatsu": 610.781,
+        "saikou": 3.9,
+        "heikin": 1.96,
+        "boshuAvg30d": 405.7,
+        "heikinAvg30d": 3.834
       },
       {
         "block": 44,
         "label": "21:30~22:00",
         "boshu": 283,
-        "ouatsu": 612.965,
-        "saikou": 4.88,
-        "heikin": 2.51,
-        "boshuAvg30d": 414.9,
-        "heikinAvg30d": 4.062
+        "ouatsu": 576.945,
+        "saikou": 3.49,
+        "heikin": 2.43,
+        "boshuAvg30d": 405.7,
+        "heikinAvg30d": 4.007
       },
       {
         "block": 45,
         "label": "22:00~22:30",
         "boshu": 283,
-        "ouatsu": 455.75,
-        "saikou": 4.88,
-        "heikin": 2.45,
-        "boshuAvg30d": 415.3,
-        "heikinAvg30d": 3.757
+        "ouatsu": 444.974,
+        "saikou": 5.37,
+        "heikin": 2.63,
+        "boshuAvg30d": 406.1,
+        "heikinAvg30d": 3.694
       },
       {
         "block": 46,
         "label": "22:30~23:00",
         "boshu": 281,
-        "ouatsu": 555.996,
-        "saikou": 4.89,
-        "heikin": 2.53,
-        "boshuAvg30d": 413.3,
-        "heikinAvg30d": 3.899
+        "ouatsu": 539.398,
+        "saikou": 5.34,
+        "heikin": 2.41,
+        "boshuAvg30d": 404.1,
+        "heikinAvg30d": 3.852
       },
       {
         "block": 47,
         "label": "23:00~23:30",
         "boshu": 279,
-        "ouatsu": 558.005,
-        "saikou": 4.96,
-        "heikin": 2.61,
-        "boshuAvg30d": 411.3,
-        "heikinAvg30d": 3.986
+        "ouatsu": 539.58,
+        "saikou": 5.29,
+        "heikin": 2.68,
+        "boshuAvg30d": 402.1,
+        "heikinAvg30d": 3.954
       },
       {
         "block": 48,
         "label": "23:30~24:00",
         "boshu": 278,
-        "ouatsu": 497.51,
-        "saikou": 5.36,
-        "heikin": 3.78,
-        "boshuAvg30d": 410.3,
-        "heikinAvg30d": 3.941
+        "ouatsu": 545.395,
+        "saikou": 5.29,
+        "heikin": 2.66,
+        "boshuAvg30d": 401.1,
+        "heikinAvg30d": 3.948
       }
     ],
     "中部": [
@@ -1970,481 +1970,481 @@ window.EPRX_DATA = {
         "block": 1,
         "label": "00:00~00:30",
         "boshu": 121,
-        "ouatsu": 184.811,
-        "saikou": 3.54,
-        "heikin": 1.84,
-        "boshuAvg30d": 70.6,
-        "heikinAvg30d": 1.952
+        "ouatsu": 288.941,
+        "saikou": 1.9,
+        "heikin": 1.03,
+        "boshuAvg30d": 72.8,
+        "heikinAvg30d": 1.95
       },
       {
         "block": 2,
         "label": "00:30~01:00",
         "boshu": 121,
-        "ouatsu": 246.852,
-        "saikou": 1.89,
-        "heikin": 1.14,
-        "boshuAvg30d": 70.6,
-        "heikinAvg30d": 1.715
+        "ouatsu": 309.21,
+        "saikou": 1.83,
+        "heikin": 1.11,
+        "boshuAvg30d": 72.8,
+        "heikinAvg30d": 1.735
       },
       {
         "block": 3,
         "label": "01:00~01:30",
         "boshu": 121,
-        "ouatsu": 249.095,
-        "saikou": 1.93,
-        "heikin": 1.32,
-        "boshuAvg30d": 70.6,
-        "heikinAvg30d": 1.764
+        "ouatsu": 331.046,
+        "saikou": 1.9,
+        "heikin": 1.35,
+        "boshuAvg30d": 72.8,
+        "heikinAvg30d": 1.755
       },
       {
         "block": 4,
         "label": "01:30~02:00",
         "boshu": 121,
-        "ouatsu": 252.897,
-        "saikou": 1.92,
-        "heikin": 1.39,
-        "boshuAvg30d": 70.6,
-        "heikinAvg30d": 1.834
+        "ouatsu": 332.958,
+        "saikou": 1.87,
+        "heikin": 1.29,
+        "boshuAvg30d": 72.8,
+        "heikinAvg30d": 1.824
       },
       {
         "block": 5,
         "label": "02:00~02:30",
         "boshu": 120,
-        "ouatsu": 237.059,
-        "saikou": 1.93,
-        "heikin": 1.28,
-        "boshuAvg30d": 69.6,
-        "heikinAvg30d": 1.74
+        "ouatsu": 316.914,
+        "saikou": 2.38,
+        "heikin": 1.5,
+        "boshuAvg30d": 71.8,
+        "heikinAvg30d": 1.717
       },
       {
         "block": 6,
         "label": "02:30~03:00",
         "boshu": 120,
-        "ouatsu": 244.868,
-        "saikou": 1.92,
-        "heikin": 1.33,
-        "boshuAvg30d": 69.6,
-        "heikinAvg30d": 1.765
+        "ouatsu": 320.933,
+        "saikou": 1.9,
+        "heikin": 1.41,
+        "boshuAvg30d": 71.8,
+        "heikinAvg30d": 1.748
       },
       {
         "block": 7,
         "label": "03:00~03:30",
         "boshu": 119,
-        "ouatsu": 276.563,
+        "ouatsu": 344.646,
         "saikou": 2.2,
-        "heikin": 1.37,
-        "boshuAvg30d": 69.3,
-        "heikinAvg30d": 1.685
+        "heikin": 1.27,
+        "boshuAvg30d": 71.4,
+        "heikinAvg30d": 1.697
       },
       {
         "block": 8,
         "label": "03:30~04:00",
         "boshu": 119,
-        "ouatsu": 270.863,
+        "ouatsu": 340.846,
         "saikou": 2.2,
-        "heikin": 1.5,
-        "boshuAvg30d": 69.3,
-        "heikinAvg30d": 1.898
+        "heikin": 1.31,
+        "boshuAvg30d": 71.4,
+        "heikinAvg30d": 1.881
       },
       {
         "block": 9,
         "label": "04:00~04:30",
         "boshu": 120,
-        "ouatsu": 255.746,
-        "saikou": 2.2,
-        "heikin": 1.58,
-        "boshuAvg30d": 69.6,
-        "heikinAvg30d": 1.939
+        "ouatsu": 346.546,
+        "saikou": 1.9,
+        "heikin": 1.24,
+        "boshuAvg30d": 71.8,
+        "heikinAvg30d": 1.936
       },
       {
         "block": 10,
         "label": "04:30~05:00",
         "boshu": 120,
-        "ouatsu": 255.746,
-        "saikou": 2,
-        "heikin": 1.56,
-        "boshuAvg30d": 69.6,
-        "heikinAvg30d": 1.826
+        "ouatsu": 346.546,
+        "saikou": 2.8,
+        "heikin": 1.5,
+        "boshuAvg30d": 71.8,
+        "heikinAvg30d": 1.844
       },
       {
         "block": 11,
         "label": "05:00~05:30",
         "boshu": 120,
-        "ouatsu": 257.736,
-        "saikou": 1.95,
-        "heikin": 1.55,
-        "boshuAvg30d": 69.6,
-        "heikinAvg30d": 1.937
+        "ouatsu": 340.736,
+        "saikou": 3.43,
+        "heikin": 1.45,
+        "boshuAvg30d": 71.8,
+        "heikinAvg30d": 1.919
       },
       {
         "block": 12,
         "label": "05:30~06:00",
         "boshu": 120,
-        "ouatsu": 254.308,
-        "saikou": 1.95,
-        "heikin": 1.54,
-        "boshuAvg30d": 69.6,
-        "heikinAvg30d": 1.929
+        "ouatsu": 339.236,
+        "saikou": 3.57,
+        "heikin": 1.5,
+        "boshuAvg30d": 71.8,
+        "heikinAvg30d": 1.946
       },
       {
         "block": 13,
         "label": "06:00~06:30",
         "boshu": 129,
-        "ouatsu": 255.808,
-        "saikou": 2.07,
-        "heikin": 1.48,
-        "boshuAvg30d": 79.3,
-        "heikinAvg30d": 2.074
+        "ouatsu": 318.927,
+        "saikou": 2.4,
+        "heikin": 1.46,
+        "boshuAvg30d": 81.4,
+        "heikinAvg30d": 2.076
       },
       {
         "block": 14,
         "label": "06:30~07:00",
         "boshu": 133,
-        "ouatsu": 255.808,
-        "saikou": 2.7,
-        "heikin": 1.88,
-        "boshuAvg30d": 82.6,
-        "heikinAvg30d": 2.133
+        "ouatsu": 251.977,
+        "saikou": 1.94,
+        "heikin": 1.12,
+        "boshuAvg30d": 84.8,
+        "heikinAvg30d": 2.144
       },
       {
         "block": 15,
         "label": "07:00~07:30",
         "boshu": 136,
-        "ouatsu": 246.608,
-        "saikou": 2.34,
-        "heikin": 2.03,
-        "boshuAvg30d": 85.6,
-        "heikinAvg30d": 2.185
+        "ouatsu": 251.977,
+        "saikou": 2.22,
+        "heikin": 1.18,
+        "boshuAvg30d": 87.8,
+        "heikinAvg30d": 2.129
       },
       {
         "block": 16,
         "label": "07:30~08:00",
         "boshu": 138,
-        "ouatsu": 174.137,
-        "saikou": 9.29,
-        "heikin": 3.06,
-        "boshuAvg30d": 87.6,
-        "heikinAvg30d": 2.094
+        "ouatsu": 186.788,
+        "saikou": 2.14,
+        "heikin": 1.2,
+        "boshuAvg30d": 89.8,
+        "heikinAvg30d": 2.061
       },
       {
         "block": 17,
         "label": "08:00~08:30",
         "boshu": 138,
-        "ouatsu": 174.189,
-        "saikou": 7.59,
-        "heikin": 2.23,
-        "boshuAvg30d": 87.6,
-        "heikinAvg30d": 2.329
+        "ouatsu": 175.609,
+        "saikou": 2.43,
+        "heikin": 1.31,
+        "boshuAvg30d": 89.8,
+        "heikinAvg30d": 2.282
       },
       {
         "block": 18,
         "label": "08:30~09:00",
         "boshu": 138,
-        "ouatsu": 160.584,
-        "saikou": 6.48,
-        "heikin": 2.08,
-        "boshuAvg30d": 87.6,
-        "heikinAvg30d": 2.375
+        "ouatsu": 187.535,
+        "saikou": 2.42,
+        "heikin": 1.29,
+        "boshuAvg30d": 89.8,
+        "heikinAvg30d": 2.324
       },
       {
         "block": 19,
         "label": "09:00~09:30",
         "boshu": 143,
-        "ouatsu": 158.684,
-        "saikou": 6.48,
-        "heikin": 2.58,
-        "boshuAvg30d": 91.9,
-        "heikinAvg30d": 2.659
+        "ouatsu": 189.425,
+        "saikou": 3.24,
+        "heikin": 1.78,
+        "boshuAvg30d": 94.1,
+        "heikinAvg30d": 2.623
       },
       {
         "block": 20,
         "label": "09:30~10:00",
         "boshu": 143,
-        "ouatsu": 155.284,
-        "saikou": 6.48,
-        "heikin": 2.51,
-        "boshuAvg30d": 91.9,
-        "heikinAvg30d": 2.678
+        "ouatsu": 189.425,
+        "saikou": 3.24,
+        "heikin": 1.8,
+        "boshuAvg30d": 94.1,
+        "heikinAvg30d": 2.642
       },
       {
         "block": 21,
         "label": "10:00~10:30",
         "boshu": 143,
-        "ouatsu": 147.378,
-        "saikou": 7.48,
-        "heikin": 2.79,
-        "boshuAvg30d": 92.6,
-        "heikinAvg30d": 2.958
+        "ouatsu": 182.507,
+        "saikou": 3.84,
+        "heikin": 1.95,
+        "boshuAvg30d": 94.8,
+        "heikinAvg30d": 2.914
       },
       {
         "block": 22,
         "label": "10:30~11:00",
         "boshu": 143,
-        "ouatsu": 149.368,
+        "ouatsu": 184.497,
         "saikou": 7.48,
-        "heikin": 2.94,
-        "boshuAvg30d": 91.9,
-        "heikinAvg30d": 3.002
+        "heikin": 2.56,
+        "boshuAvg30d": 94.1,
+        "heikinAvg30d": 2.962
       },
       {
         "block": 23,
         "label": "11:00~11:30",
         "boshu": 142,
-        "ouatsu": 155.284,
+        "ouatsu": 187.435,
         "saikou": 7.48,
-        "heikin": 2.63,
-        "boshuAvg30d": 90.9,
-        "heikinAvg30d": 2.915
+        "heikin": 2.32,
+        "boshuAvg30d": 93.1,
+        "heikinAvg30d": 2.871
       },
       {
         "block": 24,
         "label": "11:30~12:00",
         "boshu": 141,
-        "ouatsu": 155.284,
+        "ouatsu": 175.484,
         "saikou": 7.48,
-        "heikin": 2.62,
-        "boshuAvg30d": 89.9,
-        "heikinAvg30d": 2.786
+        "heikin": 2.32,
+        "boshuAvg30d": 92.1,
+        "heikinAvg30d": 2.796
       },
       {
         "block": 25,
         "label": "12:00~12:30",
         "boshu": 137,
-        "ouatsu": 149.416,
-        "saikou": 8.48,
-        "heikin": 2.63,
-        "boshuAvg30d": 86.6,
-        "heikinAvg30d": 2.726
+        "ouatsu": 183.457,
+        "saikou": 7.48,
+        "heikin": 2.28,
+        "boshuAvg30d": 88.8,
+        "heikinAvg30d": 2.72
       },
       {
         "block": 26,
         "label": "12:30~13:00",
         "boshu": 137,
-        "ouatsu": 160.595,
-        "saikou": 8.48,
-        "heikin": 2.96,
-        "boshuAvg30d": 86.6,
-        "heikinAvg30d": 2.754
+        "ouatsu": 192.746,
+        "saikou": 3.38,
+        "heikin": 1.89,
+        "boshuAvg30d": 88.8,
+        "heikinAvg30d": 2.767
       },
       {
         "block": 27,
         "label": "13:00~13:30",
         "boshu": 137,
-        "ouatsu": 164.484,
-        "saikou": 8.48,
-        "heikin": 2.96,
-        "boshuAvg30d": 86.6,
-        "heikinAvg30d": 2.599
+        "ouatsu": 196.635,
+        "saikou": 3.29,
+        "heikin": 1.76,
+        "boshuAvg30d": 88.8,
+        "heikinAvg30d": 2.634
       },
       {
         "block": 28,
         "label": "13:30~14:00",
         "boshu": 136,
-        "ouatsu": 164.484,
-        "saikou": 8.48,
-        "heikin": 2.89,
-        "boshuAvg30d": 86.3,
-        "heikinAvg30d": 2.623
+        "ouatsu": 196.635,
+        "saikou": 3.2,
+        "heikin": 1.71,
+        "boshuAvg30d": 88.4,
+        "heikinAvg30d": 2.632
       },
       {
         "block": 29,
         "label": "14:00~14:30",
         "boshu": 136,
-        "ouatsu": 164.484,
-        "saikou": 9.38,
-        "heikin": 2.99,
-        "boshuAvg30d": 85.6,
-        "heikinAvg30d": 2.822
+        "ouatsu": 198.625,
+        "saikou": 9.48,
+        "heikin": 2.47,
+        "boshuAvg30d": 87.8,
+        "heikinAvg30d": 2.808
       },
       {
         "block": 30,
         "label": "14:30~15:00",
         "boshu": 136,
-        "ouatsu": 164.484,
-        "saikou": 9.38,
-        "heikin": 2.99,
-        "boshuAvg30d": 85.6,
-        "heikinAvg30d": 2.848
+        "ouatsu": 198.625,
+        "saikou": 9.48,
+        "heikin": 2.66,
+        "boshuAvg30d": 87.8,
+        "heikinAvg30d": 2.878
       },
       {
         "block": 31,
         "label": "15:00~15:30",
         "boshu": 134,
-        "ouatsu": 211.857,
-        "saikou": 7.59,
-        "heikin": 2.25,
-        "boshuAvg30d": 84.3,
-        "heikinAvg30d": 2.596
+        "ouatsu": 234.377,
+        "saikou": 7.48,
+        "heikin": 2.09,
+        "boshuAvg30d": 86.4,
+        "heikinAvg30d": 2.611
       },
       {
         "block": 32,
         "label": "15:30~16:00",
         "boshu": 134,
-        "ouatsu": 232.674,
+        "ouatsu": 210.963,
         "saikou": 7.59,
-        "heikin": 2.73,
-        "boshuAvg30d": 84.3,
-        "heikinAvg30d": 2.566
+        "heikin": 2.86,
+        "boshuAvg30d": 86.4,
+        "heikinAvg30d": 2.588
       },
       {
         "block": 33,
         "label": "16:00~16:30",
         "boshu": 134,
-        "ouatsu": 310.63,
-        "saikou": 2.73,
-        "heikin": 2.56,
-        "boshuAvg30d": 84.3,
-        "heikinAvg30d": 2.397
+        "ouatsu": 242.307,
+        "saikou": 3.2,
+        "heikin": 2.39,
+        "boshuAvg30d": 86.4,
+        "heikinAvg30d": 2.413
       },
       {
         "block": 34,
         "label": "16:30~17:00",
         "boshu": 134,
-        "ouatsu": 315.66,
-        "saikou": 3,
-        "heikin": 2.33,
-        "boshuAvg30d": 84.3,
-        "heikinAvg30d": 2.649
+        "ouatsu": 162.504,
+        "saikou": 7.48,
+        "heikin": 2.72,
+        "boshuAvg30d": 86.4,
+        "heikinAvg30d": 2.657
       },
       {
         "block": 35,
         "label": "17:00~17:30",
         "boshu": 134,
-        "ouatsu": 315.66,
-        "saikou": 2.73,
-        "heikin": 2.16,
-        "boshuAvg30d": 84.3,
-        "heikinAvg30d": 2.531
+        "ouatsu": 197.711,
+        "saikou": 5.1,
+        "heikin": 1.73,
+        "boshuAvg30d": 86.4,
+        "heikinAvg30d": 2.534
       },
       {
         "block": 36,
         "label": "17:30~18:00",
         "boshu": 133,
-        "ouatsu": 302.314,
-        "saikou": 3.39,
-        "heikin": 2.26,
-        "boshuAvg30d": 84.0,
-        "heikinAvg30d": 2.488
+        "ouatsu": 223.671,
+        "saikou": 2.67,
+        "heikin": 2.17,
+        "boshuAvg30d": 86.1,
+        "heikinAvg30d": 2.499
       },
       {
         "block": 37,
         "label": "18:00~18:30",
         "boshu": 131,
-        "ouatsu": 294.312,
-        "saikou": 2.9,
-        "heikin": 2.02,
-        "boshuAvg30d": 82.0,
-        "heikinAvg30d": 2.266
+        "ouatsu": 221.284,
+        "saikou": 2.92,
+        "heikin": 2.04,
+        "boshuAvg30d": 84.1,
+        "heikinAvg30d": 2.257
       },
       {
         "block": 38,
         "label": "18:30~19:00",
         "boshu": 131,
-        "ouatsu": 298.759,
-        "saikou": 2.54,
-        "heikin": 2.21,
-        "boshuAvg30d": 82.0,
-        "heikinAvg30d": 2.179
+        "ouatsu": 336.592,
+        "saikou": 2.7,
+        "heikin": 1.7,
+        "boshuAvg30d": 84.1,
+        "heikinAvg30d": 2.188
       },
       {
         "block": 39,
         "label": "19:00~19:30",
         "boshu": 131,
-        "ouatsu": 384.057,
-        "saikou": 5.1,
-        "heikin": 1.96,
-        "boshuAvg30d": 82.0,
-        "heikinAvg30d": 2.004
+        "ouatsu": 343.391,
+        "saikou": 2.12,
+        "heikin": 1.93,
+        "boshuAvg30d": 84.1,
+        "heikinAvg30d": 2.006
       },
       {
         "block": 40,
         "label": "19:30~20:00",
         "boshu": 131,
-        "ouatsu": 405.18,
-        "saikou": 2.38,
-        "heikin": 1.63,
-        "boshuAvg30d": 82.0,
-        "heikinAvg30d": 2.112
+        "ouatsu": 347.193,
+        "saikou": 2.61,
+        "heikin": 2.17,
+        "boshuAvg30d": 84.1,
+        "heikinAvg30d": 2.092
       },
       {
         "block": 41,
         "label": "20:00~20:30",
         "boshu": 131,
-        "ouatsu": 397.274,
-        "saikou": 2.32,
-        "heikin": 1.73,
-        "boshuAvg30d": 82.0,
-        "heikinAvg30d": 2.106
+        "ouatsu": 340.19,
+        "saikou": 2.6,
+        "heikin": 2.11,
+        "boshuAvg30d": 84.1,
+        "heikinAvg30d": 2.062
       },
       {
         "block": 42,
         "label": "20:30~21:00",
         "boshu": 131,
-        "ouatsu": 406.474,
-        "saikou": 2.28,
-        "heikin": 1.76,
-        "boshuAvg30d": 82.0,
-        "heikinAvg30d": 2.126
+        "ouatsu": 319.19,
+        "saikou": 2.81,
+        "heikin": 2.23,
+        "boshuAvg30d": 84.1,
+        "heikinAvg30d": 2.098
       },
       {
         "block": 43,
         "label": "21:00~21:30",
         "boshu": 132,
-        "ouatsu": 410.4,
-        "saikou": 2.2,
-        "heikin": 1.36,
-        "boshuAvg30d": 82.3,
-        "heikinAvg30d": 1.966
+        "ouatsu": 324.118,
+        "saikou": 2.64,
+        "heikin": 2.13,
+        "boshuAvg30d": 84.4,
+        "heikinAvg30d": 1.924
       },
       {
         "block": 44,
         "label": "21:30~22:00",
         "boshu": 133,
-        "ouatsu": 410.4,
-        "saikou": 2.16,
-        "heikin": 1.71,
-        "boshuAvg30d": 83.3,
-        "heikinAvg30d": 2.162
+        "ouatsu": 318.088,
+        "saikou": 2.7,
+        "heikin": 2.21,
+        "boshuAvg30d": 85.4,
+        "heikinAvg30d": 2.119
       },
       {
         "block": 45,
         "label": "22:00~22:30",
         "boshu": 133,
-        "ouatsu": 371.493,
-        "saikou": 2.73,
-        "heikin": 1.71,
-        "boshuAvg30d": 83.3,
-        "heikinAvg30d": 2.204
+        "ouatsu": 253.333,
+        "saikou": 4.26,
+        "heikin": 2.66,
+        "boshuAvg30d": 85.4,
+        "heikinAvg30d": 2.151
       },
       {
         "block": 46,
         "label": "22:30~23:00",
         "boshu": 132,
-        "ouatsu": 337.363,
-        "saikou": 3.1,
-        "heikin": 1.58,
-        "boshuAvg30d": 82.3,
-        "heikinAvg30d": 2.139
+        "ouatsu": 271.554,
+        "saikou": 3.86,
+        "heikin": 2.2,
+        "boshuAvg30d": 84.4,
+        "heikinAvg30d": 2.075
       },
       {
         "block": 47,
         "label": "23:00~23:30",
         "boshu": 131,
-        "ouatsu": 315.472,
-        "saikou": 3.02,
-        "heikin": 1.36,
-        "boshuAvg30d": 81.3,
-        "heikinAvg30d": 2.112
+        "ouatsu": 271.554,
+        "saikou": 3.72,
+        "heikin": 2.3,
+        "boshuAvg30d": 83.4,
+        "heikinAvg30d": 2.034
       },
       {
         "block": 48,
         "label": "23:30~24:00",
         "boshu": 128,
-        "ouatsu": 318.798,
-        "saikou": 1.93,
-        "heikin": 1.35,
-        "boshuAvg30d": 78.3,
-        "heikinAvg30d": 2.089
+        "ouatsu": 270.054,
+        "saikou": 3.78,
+        "heikin": 2.39,
+        "boshuAvg30d": 80.4,
+        "heikinAvg30d": 2.038
       }
     ],
     "北陸": [
@@ -2452,81 +2452,81 @@ window.EPRX_DATA = {
         "block": 1,
         "label": "00:00~00:30",
         "boshu": 57,
-        "ouatsu": 20.93,
-        "saikou": 1.55,
-        "heikin": 0.5,
-        "boshuAvg30d": 54.2,
-        "heikinAvg30d": 0.912
+        "ouatsu": 80.93,
+        "saikou": 0.39,
+        "heikin": 0.39,
+        "boshuAvg30d": 54.3,
+        "heikinAvg30d": 0.824
       },
       {
         "block": 2,
         "label": "00:30~01:00",
         "boshu": 57,
-        "ouatsu": 22.928,
+        "ouatsu": 82.928,
         "saikou": 0.39,
         "heikin": 0.39,
-        "boshuAvg30d": 54.2,
-        "heikinAvg30d": 1.002
+        "boshuAvg30d": 54.3,
+        "heikinAvg30d": 0.996
       },
       {
         "block": 3,
         "label": "01:00~01:30",
         "boshu": 57,
-        "ouatsu": 22.928,
+        "ouatsu": 82.928,
         "saikou": 1.7,
-        "heikin": 0.61,
-        "boshuAvg30d": 54.2,
-        "heikinAvg30d": 1.0
+        "heikin": 0.45,
+        "boshuAvg30d": 54.3,
+        "heikinAvg30d": 1.004
       },
       {
         "block": 4,
         "label": "01:30~02:00",
         "boshu": 57,
-        "ouatsu": 22.928,
-        "saikou": 1.85,
-        "heikin": 0.64,
-        "boshuAvg30d": 54.2,
-        "heikinAvg30d": 1.109
+        "ouatsu": 82.928,
+        "saikou": 0.39,
+        "heikin": 0.39,
+        "boshuAvg30d": 54.3,
+        "heikinAvg30d": 1.106
       },
       {
         "block": 5,
         "label": "02:00~02:30",
         "boshu": 57,
-        "ouatsu": 22.928,
+        "ouatsu": 82.928,
         "saikou": 1.5,
-        "heikin": 0.58,
-        "boshuAvg30d": 54.2,
-        "heikinAvg30d": 1.126
+        "heikin": 0.44,
+        "boshuAvg30d": 54.3,
+        "heikinAvg30d": 1.122
       },
       {
         "block": 6,
         "label": "02:30~03:00",
         "boshu": 57,
-        "ouatsu": 22.928,
+        "ouatsu": 82.928,
         "saikou": 1.5,
-        "heikin": 0.58,
-        "boshuAvg30d": 54.2,
-        "heikinAvg30d": 0.944
+        "heikin": 0.44,
+        "boshuAvg30d": 54.3,
+        "heikinAvg30d": 0.945
       },
       {
         "block": 7,
         "label": "03:00~03:30",
         "boshu": 57,
-        "ouatsu": 22.928,
-        "saikou": 2.2,
-        "heikin": 0.7,
-        "boshuAvg30d": 54.2,
-        "heikinAvg30d": 1.146
+        "ouatsu": 47.928,
+        "saikou": 0.39,
+        "heikin": 0.39,
+        "boshuAvg30d": 54.3,
+        "heikinAvg30d": 1.154
       },
       {
         "block": 8,
         "label": "03:30~04:00",
         "boshu": 57,
-        "ouatsu": 22.928,
-        "saikou": 1.95,
-        "heikin": 0.65,
-        "boshuAvg30d": 54.2,
-        "heikinAvg30d": 1.399
+        "ouatsu": 47.928,
+        "saikou": 1.11,
+        "heikin": 0.8,
+        "boshuAvg30d": 54.3,
+        "heikinAvg30d": 1.396
       },
       {
         "block": 9,
@@ -2535,68 +2535,68 @@ window.EPRX_DATA = {
         "ouatsu": 22.928,
         "saikou": 0.39,
         "heikin": 0.39,
-        "boshuAvg30d": 54.2,
-        "heikinAvg30d": 1.299
+        "boshuAvg30d": 54.3,
+        "heikinAvg30d": 1.29
       },
       {
         "block": 10,
         "label": "04:30~05:00",
         "boshu": 57,
         "ouatsu": 22.928,
-        "saikou": 0.39,
-        "heikin": 0.39,
-        "boshuAvg30d": 54.2,
-        "heikinAvg30d": 1.359
+        "saikou": 2.3,
+        "heikin": 2.21,
+        "boshuAvg30d": 54.3,
+        "heikinAvg30d": 1.353
       },
       {
         "block": 11,
         "label": "05:00~05:30",
         "boshu": 57,
-        "ouatsu": 3.928,
-        "saikou": 1.95,
-        "heikin": 1.95,
-        "boshuAvg30d": 54.2,
-        "heikinAvg30d": 1.566
+        "ouatsu": 22.928,
+        "saikou": 2.19,
+        "heikin": 2.15,
+        "boshuAvg30d": 54.3,
+        "heikinAvg30d": 1.564
       },
       {
         "block": 12,
         "label": "05:30~06:00",
         "boshu": 57,
-        "ouatsu": 3.928,
-        "saikou": 1.95,
-        "heikin": 1.95,
-        "boshuAvg30d": 54.2,
-        "heikinAvg30d": 1.55
+        "ouatsu": 10.328,
+        "saikou": 0.39,
+        "heikin": 0.39,
+        "boshuAvg30d": 54.3,
+        "heikinAvg30d": 1.549
       },
       {
         "block": 13,
         "label": "06:00~06:30",
         "boshu": 61,
-        "ouatsu": 3.928,
-        "saikou": 1.9,
-        "heikin": 1.9,
-        "boshuAvg30d": 58.2,
-        "heikinAvg30d": 1.71
+        "ouatsu": 47.928,
+        "saikou": 3.49,
+        "heikin": 2.47,
+        "boshuAvg30d": 58.3,
+        "heikinAvg30d": 1.707
       },
       {
         "block": 14,
         "label": "06:30~07:00",
         "boshu": 61,
-        "ouatsu": 57.928,
-        "saikou": 0.89,
-        "heikin": 0.71,
-        "boshuAvg30d": 58.2,
-        "heikinAvg30d": 1.621
+        "ouatsu": 82.928,
+        "saikou": 1.1,
+        "heikin": 0.83,
+        "boshuAvg30d": 58.3,
+        "heikinAvg30d": 1.627
       },
       {
         "block": 15,
         "label": "07:00~07:30",
         "boshu": 63,
-        "ouatsu": 57.928,
+        "ouatsu": 82.928,
         "saikou": 0.39,
         "heikin": 0.39,
-        "boshuAvg30d": 59.5,
-        "heikinAvg30d": 1.524
+        "boshuAvg30d": 59.7,
+        "heikinAvg30d": 1.517
       },
       {
         "block": 16,
@@ -2605,177 +2605,177 @@ window.EPRX_DATA = {
         "ouatsu": 3.928,
         "saikou": 2.4,
         "heikin": 2.4,
-        "boshuAvg30d": 60.5,
-        "heikinAvg30d": 1.484
+        "boshuAvg30d": 60.7,
+        "heikinAvg30d": 1.546
       },
       {
         "block": 17,
         "label": "08:00~08:30",
         "boshu": 64,
-        "ouatsu": 57.928,
-        "saikou": 5.5,
-        "heikin": 1.29,
-        "boshuAvg30d": 61.2,
-        "heikinAvg30d": 2.025
+        "ouatsu": 3.928,
+        "saikou": 0,
+        "heikin": 0,
+        "boshuAvg30d": 61.3,
+        "heikinAvg30d": 2.055
       },
       {
         "block": 18,
         "label": "08:30~09:00",
         "boshu": 64,
-        "ouatsu": 57.928,
-        "saikou": 3.15,
-        "heikin": 0.56,
-        "boshuAvg30d": 61.2,
-        "heikinAvg30d": 2.118
+        "ouatsu": 3.928,
+        "saikou": 0,
+        "heikin": 0,
+        "boshuAvg30d": 61.3,
+        "heikinAvg30d": 2.124
       },
       {
         "block": 19,
         "label": "09:00~09:30",
         "boshu": 65,
-        "ouatsu": 57.928,
-        "saikou": 3.05,
-        "heikin": 0.55,
-        "boshuAvg30d": 62.2,
-        "heikinAvg30d": 2.562
+        "ouatsu": 3.928,
+        "saikou": 2.35,
+        "heikin": 2.35,
+        "boshuAvg30d": 62.3,
+        "heikinAvg30d": 2.568
       },
       {
         "block": 20,
         "label": "09:30~10:00",
         "boshu": 65,
-        "ouatsu": 57.928,
-        "saikou": 4.3,
-        "heikin": 0.59,
-        "boshuAvg30d": 62.2,
-        "heikinAvg30d": 2.467
+        "ouatsu": 3.928,
+        "saikou": 0,
+        "heikin": 0,
+        "boshuAvg30d": 62.3,
+        "heikinAvg30d": 2.474
       },
       {
         "block": 21,
         "label": "10:00~10:30",
         "boshu": 66,
-        "ouatsu": 57.928,
+        "ouatsu": 3.928,
         "saikou": 5.55,
-        "heikin": 0.74,
-        "boshuAvg30d": 63.2,
+        "heikin": 5.55,
+        "boshuAvg30d": 63.3,
         "heikinAvg30d": 3.417
       },
       {
         "block": 22,
         "label": "10:30~11:00",
         "boshu": 66,
-        "ouatsu": 57.928,
+        "ouatsu": 3.928,
         "saikou": 6.96,
-        "heikin": 0.82,
-        "boshuAvg30d": 63.2,
+        "heikin": 6.71,
+        "boshuAvg30d": 63.3,
         "heikinAvg30d": 2.626
       },
       {
         "block": 23,
         "label": "11:00~11:30",
         "boshu": 66,
-        "ouatsu": 57.928,
+        "ouatsu": 3.928,
         "saikou": 3.85,
-        "heikin": 0.62,
-        "boshuAvg30d": 63.2,
-        "heikinAvg30d": 3.14
+        "heikin": 3.85,
+        "boshuAvg30d": 63.3,
+        "heikinAvg30d": 3.137
       },
       {
         "block": 24,
         "label": "11:30~12:00",
         "boshu": 66,
-        "ouatsu": 57.928,
+        "ouatsu": 3.928,
         "saikou": 3.9,
-        "heikin": 0.63,
-        "boshuAvg30d": 63.2,
-        "heikinAvg30d": 2.774
+        "heikin": 3.9,
+        "boshuAvg30d": 63.3,
+        "heikinAvg30d": 2.782
       },
       {
         "block": 25,
         "label": "12:00~12:30",
         "boshu": 65,
-        "ouatsu": 82.928,
-        "saikou": 4.5,
-        "heikin": 0.55,
-        "boshuAvg30d": 62.9,
-        "heikinAvg30d": 2.25
+        "ouatsu": 3.928,
+        "saikou": 4.7,
+        "heikin": 3.89,
+        "boshuAvg30d": 63.0,
+        "heikinAvg30d": 2.255
       },
       {
         "block": 26,
         "label": "12:30~13:00",
         "boshu": 65,
-        "ouatsu": 82.928,
-        "saikou": 0.39,
-        "heikin": 0.39,
-        "boshuAvg30d": 62.9,
+        "ouatsu": 3.928,
+        "saikou": 3.55,
+        "heikin": 3.45,
+        "boshuAvg30d": 63.0,
         "heikinAvg30d": 2.313
       },
       {
         "block": 27,
         "label": "13:00~13:30",
         "boshu": 65,
-        "ouatsu": 82.928,
-        "saikou": 0.39,
-        "heikin": 0.39,
-        "boshuAvg30d": 62.9,
+        "ouatsu": 3.928,
+        "saikou": 5.55,
+        "heikin": 5.55,
+        "boshuAvg30d": 63.0,
         "heikinAvg30d": 2.449
       },
       {
         "block": 28,
         "label": "13:30~14:00",
         "boshu": 65,
-        "ouatsu": 82.928,
+        "ouatsu": 3.928,
         "saikou": 2.75,
-        "heikin": 0.76,
-        "boshuAvg30d": 62.9,
-        "heikinAvg30d": 2.314
+        "heikin": 2.75,
+        "boshuAvg30d": 63.0,
+        "heikinAvg30d": 2.319
       },
       {
         "block": 29,
         "label": "14:00~14:30",
         "boshu": 65,
-        "ouatsu": 82.928,
-        "saikou": 1.03,
-        "heikin": 0.78,
-        "boshuAvg30d": 62.9,
+        "ouatsu": 3.928,
+        "saikou": 3.75,
+        "heikin": 3.6,
+        "boshuAvg30d": 63.0,
         "heikinAvg30d": 2.218
       },
       {
         "block": 30,
         "label": "14:30~15:00",
         "boshu": 65,
-        "ouatsu": 82.928,
-        "saikou": 1.23,
-        "heikin": 0.93,
-        "boshuAvg30d": 62.9,
-        "heikinAvg30d": 2.94
+        "ouatsu": 3.928,
+        "saikou": 3.55,
+        "heikin": 3.5,
+        "boshuAvg30d": 63.0,
+        "heikinAvg30d": 2.917
       },
       {
         "block": 31,
         "label": "15:00~15:30",
         "boshu": 66,
-        "ouatsu": 22.928,
-        "saikou": 0.39,
-        "heikin": 0.39,
-        "boshuAvg30d": 63.9,
-        "heikinAvg30d": 2.553
+        "ouatsu": 3.928,
+        "saikou": 5.45,
+        "heikin": 5.27,
+        "boshuAvg30d": 64.0,
+        "heikinAvg30d": 2.518
       },
       {
         "block": 32,
         "label": "15:30~16:00",
         "boshu": 66,
-        "ouatsu": 3.928,
+        "ouatsu": 61.288,
         "saikou": 5.75,
-        "heikin": 5.67,
-        "boshuAvg30d": 63.9,
-        "heikinAvg30d": 2.966
+        "heikin": 1.18,
+        "boshuAvg30d": 64.0,
+        "heikinAvg30d": 3.155
       },
       {
         "block": 33,
         "label": "16:00~16:30",
         "boshu": 67,
         "ouatsu": 3.928,
-        "saikou": 0,
-        "heikin": 0,
-        "boshuAvg30d": 64.2,
+        "saikou": 3.7,
+        "heikin": 3.7,
+        "boshuAvg30d": 64.3,
         "heikinAvg30d": 2.384
       },
       {
@@ -2783,9 +2783,9 @@ window.EPRX_DATA = {
         "label": "16:30~17:00",
         "boshu": 67,
         "ouatsu": 3.928,
-        "saikou": 0,
-        "heikin": 0,
-        "boshuAvg30d": 64.2,
+        "saikou": 3.15,
+        "heikin": 2.95,
+        "boshuAvg30d": 64.3,
         "heikinAvg30d": 2.426
       },
       {
@@ -2793,20 +2793,20 @@ window.EPRX_DATA = {
         "label": "17:00~17:30",
         "boshu": 67,
         "ouatsu": 3.928,
-        "saikou": 0,
-        "heikin": 0,
-        "boshuAvg30d": 64.2,
+        "saikou": 3.3,
+        "heikin": 3.3,
+        "boshuAvg30d": 64.3,
         "heikinAvg30d": 2.292
       },
       {
         "block": 36,
         "label": "17:30~18:00",
         "boshu": 67,
-        "ouatsu": 47.928,
-        "saikou": 5.53,
-        "heikin": 4.72,
-        "boshuAvg30d": 64.2,
-        "heikinAvg30d": 3.025
+        "ouatsu": 3.928,
+        "saikou": 4,
+        "heikin": 3.97,
+        "boshuAvg30d": 64.3,
+        "heikinAvg30d": 3.049
       },
       {
         "block": 37,
@@ -2815,18 +2815,18 @@ window.EPRX_DATA = {
         "ouatsu": 3.928,
         "saikou": 2.3,
         "heikin": 2.3,
-        "boshuAvg30d": 63.9,
-        "heikinAvg30d": 2.579
+        "boshuAvg30d": 64.0,
+        "heikinAvg30d": 2.51
       },
       {
         "block": 38,
         "label": "18:30~19:00",
         "boshu": 66,
         "ouatsu": 3.928,
-        "saikou": 3.6,
-        "heikin": 3.6,
-        "boshuAvg30d": 63.9,
-        "heikinAvg30d": 2.451
+        "saikou": 0,
+        "heikin": 0,
+        "boshuAvg30d": 64.0,
+        "heikinAvg30d": 2.571
       },
       {
         "block": 39,
@@ -2835,8 +2835,8 @@ window.EPRX_DATA = {
         "ouatsu": 3.928,
         "saikou": 2,
         "heikin": 1.98,
-        "boshuAvg30d": 63.9,
-        "heikinAvg30d": 2.645
+        "boshuAvg30d": 64.0,
+        "heikinAvg30d": 2.571
       },
       {
         "block": 40,
@@ -2845,8 +2845,8 @@ window.EPRX_DATA = {
         "ouatsu": 3.928,
         "saikou": 0,
         "heikin": 0,
-        "boshuAvg30d": 63.9,
-        "heikinAvg30d": 1.794
+        "boshuAvg30d": 64.0,
+        "heikinAvg30d": 1.729
       },
       {
         "block": 41,
@@ -2855,38 +2855,38 @@ window.EPRX_DATA = {
         "ouatsu": 3.928,
         "saikou": 2.1,
         "heikin": 2.1,
-        "boshuAvg30d": 61.9,
-        "heikinAvg30d": 2.077
+        "boshuAvg30d": 62.0,
+        "heikinAvg30d": 2.017
       },
       {
         "block": 42,
         "label": "20:30~21:00",
         "boshu": 63,
         "ouatsu": 3.928,
-        "saikou": 0,
-        "heikin": 0,
-        "boshuAvg30d": 60.2,
-        "heikinAvg30d": 1.871
+        "saikou": 2.5,
+        "heikin": 2.5,
+        "boshuAvg30d": 60.3,
+        "heikinAvg30d": 1.779
       },
       {
         "block": 43,
         "label": "21:00~21:30",
         "boshu": 63,
         "ouatsu": 3.928,
-        "saikou": 2.2,
-        "heikin": 2.2,
-        "boshuAvg30d": 60.2,
-        "heikinAvg30d": 1.847
+        "saikou": 2.3,
+        "heikin": 2.25,
+        "boshuAvg30d": 60.3,
+        "heikinAvg30d": 1.834
       },
       {
         "block": 44,
         "label": "21:30~22:00",
         "boshu": 63,
         "ouatsu": 3.928,
-        "saikou": 0,
-        "heikin": 0,
-        "boshuAvg30d": 60.2,
-        "heikinAvg30d": 1.986
+        "saikou": 2.2,
+        "heikin": 2.2,
+        "boshuAvg30d": 60.3,
+        "heikinAvg30d": 1.899
       },
       {
         "block": 45,
@@ -2895,38 +2895,38 @@ window.EPRX_DATA = {
         "ouatsu": 3.928,
         "saikou": 2.5,
         "heikin": 2.48,
-        "boshuAvg30d": 60.2,
-        "heikinAvg30d": 1.985
+        "boshuAvg30d": 60.3,
+        "heikinAvg30d": 1.983
       },
       {
         "block": 46,
         "label": "22:30~23:00",
         "boshu": 63,
         "ouatsu": 3.928,
-        "saikou": 2.4,
-        "heikin": 2.35,
-        "boshuAvg30d": 60.2,
-        "heikinAvg30d": 1.675
+        "saikou": 0,
+        "heikin": 0,
+        "boshuAvg30d": 60.3,
+        "heikinAvg30d": 1.668
       },
       {
         "block": 47,
         "label": "23:00~23:30",
         "boshu": 62,
         "ouatsu": 3.928,
-        "saikou": 2.3,
-        "heikin": 2.3,
-        "boshuAvg30d": 59.2,
-        "heikinAvg30d": 1.546
+        "saikou": 0,
+        "heikin": 0,
+        "boshuAvg30d": 59.3,
+        "heikinAvg30d": 1.538
       },
       {
         "block": 48,
         "label": "23:30~24:00",
         "boshu": 62,
-        "ouatsu": 47.928,
-        "saikou": 0.39,
-        "heikin": 0.39,
-        "boshuAvg30d": 58.5,
-        "heikinAvg30d": 1.135
+        "ouatsu": 60.132,
+        "saikou": 2.45,
+        "heikin": 0.52,
+        "boshuAvg30d": 58.7,
+        "heikinAvg30d": 1.12
       }
     ],
     "関西": [
@@ -2934,131 +2934,131 @@ window.EPRX_DATA = {
         "block": 1,
         "label": "00:00~00:30",
         "boshu": 128,
-        "ouatsu": 95.452,
-        "saikou": 1.97,
-        "heikin": 1.6,
-        "boshuAvg30d": 130.8,
-        "heikinAvg30d": 1.956
+        "ouatsu": 94.009,
+        "saikou": 1.68,
+        "heikin": 1.5,
+        "boshuAvg30d": 130.7,
+        "heikinAvg30d": 1.959
       },
       {
         "block": 2,
         "label": "00:30~01:00",
         "boshu": 128,
-        "ouatsu": 108.042,
-        "saikou": 1.54,
-        "heikin": 1.32,
-        "boshuAvg30d": 130.8,
-        "heikinAvg30d": 1.626
+        "ouatsu": 163.039,
+        "saikou": 1.59,
+        "heikin": 0.91,
+        "boshuAvg30d": 130.7,
+        "heikinAvg30d": 1.627
       },
       {
         "block": 3,
         "label": "01:00~01:30",
         "boshu": 128,
-        "ouatsu": 94.258,
-        "saikou": 1.72,
-        "heikin": 1.27,
-        "boshuAvg30d": 130.8,
-        "heikinAvg30d": 1.551
+        "ouatsu": 122.141,
+        "saikou": 1.56,
+        "heikin": 1,
+        "boshuAvg30d": 130.7,
+        "heikinAvg30d": 1.543
       },
       {
         "block": 4,
         "label": "01:30~02:00",
         "boshu": 128,
-        "ouatsu": 107.278,
-        "saikou": 1.73,
-        "heikin": 1.19,
-        "boshuAvg30d": 130.8,
-        "heikinAvg30d": 1.504
+        "ouatsu": 133.163,
+        "saikou": 1.55,
+        "heikin": 0.99,
+        "boshuAvg30d": 130.7,
+        "heikinAvg30d": 1.487
       },
       {
         "block": 5,
         "label": "02:00~02:30",
         "boshu": 127,
-        "ouatsu": 59.853,
-        "saikou": 1.51,
-        "heikin": 1.11,
-        "boshuAvg30d": 129.8,
-        "heikinAvg30d": 1.474
+        "ouatsu": 85.738,
+        "saikou": 1.55,
+        "heikin": 0.91,
+        "boshuAvg30d": 129.7,
+        "heikinAvg30d": 1.455
       },
       {
         "block": 6,
         "label": "02:30~03:00",
         "boshu": 127,
-        "ouatsu": 89.514,
-        "saikou": 1.73,
-        "heikin": 1.38,
-        "boshuAvg30d": 129.1,
-        "heikinAvg30d": 1.6
+        "ouatsu": 135.013,
+        "saikou": 1.57,
+        "heikin": 1,
+        "boshuAvg30d": 129.0,
+        "heikinAvg30d": 1.59
       },
       {
         "block": 7,
         "label": "03:00~03:30",
         "boshu": 127,
-        "ouatsu": 99.341,
-        "saikou": 1.97,
-        "heikin": 1.6,
-        "boshuAvg30d": 129.8,
-        "heikinAvg30d": 1.737
+        "ouatsu": 142.9,
+        "saikou": 1.6,
+        "heikin": 1.1,
+        "boshuAvg30d": 129.7,
+        "heikinAvg30d": 1.732
       },
       {
         "block": 8,
         "label": "03:30~04:00",
         "boshu": 127,
-        "ouatsu": 101.339,
-        "saikou": 1.99,
-        "heikin": 1.63,
-        "boshuAvg30d": 129.8,
-        "heikinAvg30d": 1.89
+        "ouatsu": 144.898,
+        "saikou": 1.49,
+        "heikin": 0.95,
+        "boshuAvg30d": 129.7,
+        "heikinAvg30d": 1.884
       },
       {
         "block": 9,
         "label": "04:00~04:30",
         "boshu": 128,
-        "ouatsu": 101.339,
-        "saikou": 1.85,
-        "heikin": 1.52,
-        "boshuAvg30d": 130.8,
-        "heikinAvg30d": 1.81
+        "ouatsu": 144.898,
+        "saikou": 1.5,
+        "heikin": 1.04,
+        "boshuAvg30d": 130.7,
+        "heikinAvg30d": 1.802
       },
       {
         "block": 10,
         "label": "04:30~05:00",
         "boshu": 128,
-        "ouatsu": 101.339,
-        "saikou": 1.94,
-        "heikin": 1.53,
-        "boshuAvg30d": 130.8,
-        "heikinAvg30d": 1.904
+        "ouatsu": 144.898,
+        "saikou": 1.99,
+        "heikin": 1.25,
+        "boshuAvg30d": 130.7,
+        "heikinAvg30d": 1.884
       },
       {
         "block": 11,
         "label": "05:00~05:30",
         "boshu": 128,
         "ouatsu": 144.898,
-        "saikou": 1.98,
-        "heikin": 1.22,
-        "boshuAvg30d": 130.8,
-        "heikinAvg30d": 1.844
+        "saikou": 1.99,
+        "heikin": 1.25,
+        "boshuAvg30d": 130.7,
+        "heikinAvg30d": 1.81
       },
       {
         "block": 12,
         "label": "05:30~06:00",
         "boshu": 128,
         "ouatsu": 144.898,
-        "saikou": 1.98,
-        "heikin": 1.23,
-        "boshuAvg30d": 130.8,
-        "heikinAvg30d": 1.699
+        "saikou": 1.5,
+        "heikin": 1.07,
+        "boshuAvg30d": 130.7,
+        "heikinAvg30d": 1.682
       },
       {
         "block": 13,
         "label": "06:00~06:30",
         "boshu": 139,
         "ouatsu": 144.898,
-        "saikou": 1.94,
-        "heikin": 1.06,
-        "boshuAvg30d": 143.2,
-        "heikinAvg30d": 1.837
+        "saikou": 1.64,
+        "heikin": 1.09,
+        "boshuAvg30d": 143.0,
+        "heikinAvg30d": 1.836
       },
       {
         "block": 14,
@@ -3066,89 +3066,89 @@ window.EPRX_DATA = {
         "boshu": 143,
         "ouatsu": 144.898,
         "saikou": 1.94,
-        "heikin": 1.03,
-        "boshuAvg30d": 146.5,
-        "heikinAvg30d": 1.762
+        "heikin": 1.17,
+        "boshuAvg30d": 146.3,
+        "heikinAvg30d": 1.753
       },
       {
         "block": 15,
         "label": "07:00~07:30",
         "boshu": 148,
-        "ouatsu": 142.9,
-        "saikou": 1.97,
-        "heikin": 1.19,
-        "boshuAvg30d": 150.8,
-        "heikinAvg30d": 1.883
+        "ouatsu": 152.018,
+        "saikou": 2.02,
+        "heikin": 1.2,
+        "boshuAvg30d": 150.7,
+        "heikinAvg30d": 1.868
       },
       {
         "block": 16,
         "label": "07:30~08:00",
         "boshu": 151,
-        "ouatsu": 136.963,
-        "saikou": 2.2,
-        "heikin": 1.38,
-        "boshuAvg30d": 154.5,
-        "heikinAvg30d": 1.915
+        "ouatsu": 146.463,
+        "saikou": 1.49,
+        "heikin": 0.53,
+        "boshuAvg30d": 154.3,
+        "heikinAvg30d": 1.903
       },
       {
         "block": 17,
         "label": "08:00~08:30",
         "boshu": 151,
-        "ouatsu": 135.054,
-        "saikou": 2.2,
-        "heikin": 1.38,
-        "boshuAvg30d": 154.5,
-        "heikinAvg30d": 2.138
+        "ouatsu": 138.921,
+        "saikou": 2,
+        "heikin": 1.31,
+        "boshuAvg30d": 154.3,
+        "heikinAvg30d": 2.107
       },
       {
         "block": 18,
         "label": "08:30~09:00",
         "boshu": 151,
-        "ouatsu": 144.898,
-        "saikou": 3.95,
-        "heikin": 1.82,
-        "boshuAvg30d": 154.5,
-        "heikinAvg30d": 2.388
+        "ouatsu": 129.151,
+        "saikou": 2.25,
+        "heikin": 1.17,
+        "boshuAvg30d": 154.3,
+        "heikinAvg30d": 2.375
       },
       {
         "block": 19,
         "label": "09:00~09:30",
         "boshu": 151,
         "ouatsu": 131.138,
-        "saikou": 3.5,
-        "heikin": 2.39,
-        "boshuAvg30d": 153.8,
-        "heikinAvg30d": 2.59
+        "saikou": 2.58,
+        "heikin": 0.71,
+        "boshuAvg30d": 153.7,
+        "heikinAvg30d": 2.599
       },
       {
         "block": 20,
         "label": "09:30~10:00",
         "boshu": 151,
-        "ouatsu": 131.138,
-        "saikou": 3.95,
-        "heikin": 2.4,
-        "boshuAvg30d": 153.8,
-        "heikinAvg30d": 2.531
+        "ouatsu": 129.695,
+        "saikou": 0.39,
+        "heikin": 0.39,
+        "boshuAvg30d": 153.7,
+        "heikinAvg30d": 2.538
       },
       {
         "block": 21,
         "label": "10:00~10:30",
         "boshu": 151,
         "ouatsu": 127.71,
-        "saikou": 5.95,
-        "heikin": 2.64,
-        "boshuAvg30d": 153.8,
-        "heikinAvg30d": 2.824
+        "saikou": 2.5,
+        "heikin": 1,
+        "boshuAvg30d": 153.7,
+        "heikinAvg30d": 2.791
       },
       {
         "block": 22,
         "label": "10:30~11:00",
         "boshu": 150,
-        "ouatsu": 127.71,
+        "ouatsu": 129.153,
         "saikou": 5.95,
-        "heikin": 2.64,
-        "boshuAvg30d": 153.5,
-        "heikinAvg30d": 2.785
+        "heikin": 2.63,
+        "boshuAvg30d": 153.3,
+        "heikinAvg30d": 2.753
       },
       {
         "block": 23,
@@ -3156,9 +3156,9 @@ window.EPRX_DATA = {
         "boshu": 149,
         "ouatsu": 131.138,
         "saikou": 5.95,
-        "heikin": 2.69,
-        "boshuAvg30d": 153.2,
-        "heikinAvg30d": 2.713
+        "heikin": 2.72,
+        "boshuAvg30d": 153.0,
+        "heikinAvg30d": 2.683
       },
       {
         "block": 24,
@@ -3166,108 +3166,108 @@ window.EPRX_DATA = {
         "boshu": 149,
         "ouatsu": 131.138,
         "saikou": 3.5,
-        "heikin": 2.39,
-        "boshuAvg30d": 153.2,
-        "heikinAvg30d": 2.449
+        "heikin": 2.43,
+        "boshuAvg30d": 153.0,
+        "heikinAvg30d": 2.458
       },
       {
         "block": 25,
         "label": "12:00~12:30",
         "boshu": 148,
-        "ouatsu": 125.271,
+        "ouatsu": 123.273,
         "saikou": 3,
-        "heikin": 2.18,
-        "boshuAvg30d": 152.9,
-        "heikinAvg30d": 2.367
+        "heikin": 2.15,
+        "boshuAvg30d": 152.7,
+        "heikinAvg30d": 2.327
       },
       {
         "block": 26,
         "label": "12:30~13:00",
         "boshu": 148,
-        "ouatsu": 148.882,
-        "saikou": 2.5,
-        "heikin": 0.76,
-        "boshuAvg30d": 152.9,
-        "heikinAvg30d": 2.458
+        "ouatsu": 150.752,
+        "saikou": 2.98,
+        "heikin": 1.75,
+        "boshuAvg30d": 152.7,
+        "heikinAvg30d": 2.413
       },
       {
         "block": 27,
         "label": "13:00~13:30",
         "boshu": 148,
-        "ouatsu": 148.882,
+        "ouatsu": 163.21,
         "saikou": 2.5,
-        "heikin": 1.11,
-        "boshuAvg30d": 152.9,
-        "heikinAvg30d": 2.756
+        "heikin": 0.87,
+        "boshuAvg30d": 152.7,
+        "heikinAvg30d": 2.714
       },
       {
         "block": 28,
         "label": "13:30~14:00",
         "boshu": 148,
-        "ouatsu": 148.882,
-        "saikou": 3,
-        "heikin": 1.93,
-        "boshuAvg30d": 152.2,
-        "heikinAvg30d": 2.536
+        "ouatsu": 150.752,
+        "saikou": 2.7,
+        "heikin": 1.71,
+        "boshuAvg30d": 152.0,
+        "heikinAvg30d": 2.519
       },
       {
         "block": 29,
         "label": "14:00~14:30",
         "boshu": 148,
-        "ouatsu": 148.882,
-        "saikou": 3,
-        "heikin": 1.86,
-        "boshuAvg30d": 152.9,
-        "heikinAvg30d": 2.514
+        "ouatsu": 150.752,
+        "saikou": 0.39,
+        "heikin": 0.39,
+        "boshuAvg30d": 152.7,
+        "heikinAvg30d": 2.481
       },
       {
         "block": 30,
         "label": "14:30~15:00",
         "boshu": 148,
-        "ouatsu": 148.882,
-        "saikou": 3,
-        "heikin": 1.77,
-        "boshuAvg30d": 152.9,
-        "heikinAvg30d": 2.512
+        "ouatsu": 174.69,
+        "saikou": 0.39,
+        "heikin": 0.39,
+        "boshuAvg30d": 152.7,
+        "heikinAvg30d": 2.496
       },
       {
         "block": 31,
         "label": "15:00~15:30",
         "boshu": 147,
-        "ouatsu": 195.32,
+        "ouatsu": 149.309,
         "saikou": 3.95,
-        "heikin": 1.43,
-        "boshuAvg30d": 151.9,
-        "heikinAvg30d": 2.464
+        "heikin": 1.92,
+        "boshuAvg30d": 151.7,
+        "heikinAvg30d": 2.439
       },
       {
         "block": 32,
         "label": "15:30~16:00",
         "boshu": 147,
-        "ouatsu": 154.407,
+        "ouatsu": 149.309,
         "saikou": 3.95,
-        "heikin": 1.91,
-        "boshuAvg30d": 151.9,
-        "heikinAvg30d": 2.63
+        "heikin": 2.07,
+        "boshuAvg30d": 151.7,
+        "heikinAvg30d": 2.629
       },
       {
         "block": 33,
         "label": "16:00~16:30",
         "boshu": 147,
-        "ouatsu": 172.825,
-        "saikou": 2.5,
-        "heikin": 1.84,
-        "boshuAvg30d": 151.9,
-        "heikinAvg30d": 2.546
+        "ouatsu": 174.69,
+        "saikou": 3.95,
+        "heikin": 1.65,
+        "boshuAvg30d": 151.7,
+        "heikinAvg30d": 2.534
       },
       {
         "block": 34,
         "label": "16:30~17:00",
         "boshu": 147,
-        "ouatsu": 105.195,
+        "ouatsu": 124.809,
         "saikou": 2.67,
-        "heikin": 2.18,
-        "boshuAvg30d": 151.9,
+        "heikin": 1.94,
+        "boshuAvg30d": 151.7,
         "heikinAvg30d": 2.574
       },
       {
@@ -3275,10 +3275,10 @@ window.EPRX_DATA = {
         "label": "17:00~17:30",
         "boshu": 147,
         "ouatsu": 103.208,
-        "saikou": 2.5,
-        "heikin": 2.1,
-        "boshuAvg30d": 151.9,
-        "heikinAvg30d": 2.638
+        "saikou": 2.63,
+        "heikin": 2.12,
+        "boshuAvg30d": 151.7,
+        "heikinAvg30d": 2.635
       },
       {
         "block": 36,
@@ -3286,49 +3286,49 @@ window.EPRX_DATA = {
         "boshu": 146,
         "ouatsu": 103.208,
         "saikou": 3.7,
-        "heikin": 2.37,
-        "boshuAvg30d": 150.9,
-        "heikinAvg30d": 2.652
+        "heikin": 2.38,
+        "boshuAvg30d": 150.7,
+        "heikinAvg30d": 2.658
       },
       {
         "block": 37,
         "label": "18:00~18:30",
         "boshu": 144,
-        "ouatsu": 101.248,
-        "saikou": 2.24,
-        "heikin": 1.94,
-        "boshuAvg30d": 147.5,
-        "heikinAvg30d": 2.4
+        "ouatsu": 97.381,
+        "saikou": 2.29,
+        "heikin": 1.88,
+        "boshuAvg30d": 147.3,
+        "heikinAvg30d": 2.394
       },
       {
         "block": 38,
         "label": "18:30~19:00",
         "boshu": 144,
-        "ouatsu": 120.862,
-        "saikou": 3.7,
-        "heikin": 1.66,
-        "boshuAvg30d": 147.5,
-        "heikinAvg30d": 2.449
+        "ouatsu": 97.381,
+        "saikou": 2.42,
+        "heikin": 1.87,
+        "boshuAvg30d": 147.3,
+        "heikinAvg30d": 2.434
       },
       {
         "block": 39,
         "label": "19:00~19:30",
         "boshu": 144,
-        "ouatsu": 120.953,
-        "saikou": 2.28,
-        "heikin": 1.61,
-        "boshuAvg30d": 147.5,
-        "heikinAvg30d": 2.512
+        "ouatsu": 101.339,
+        "saikou": 2,
+        "heikin": 1.8,
+        "boshuAvg30d": 147.3,
+        "heikinAvg30d": 2.493
       },
       {
         "block": 40,
         "label": "19:30~20:00",
         "boshu": 143,
         "ouatsu": 101.339,
-        "saikou": 2.14,
-        "heikin": 1.71,
-        "boshuAvg30d": 147.2,
-        "heikinAvg30d": 2.459
+        "saikou": 2.21,
+        "heikin": 1.72,
+        "boshuAvg30d": 147.0,
+        "heikinAvg30d": 2.442
       },
       {
         "block": 41,
@@ -3337,8 +3337,8 @@ window.EPRX_DATA = {
         "ouatsu": 142.913,
         "saikou": 1.99,
         "heikin": 1.3,
-        "boshuAvg30d": 146.2,
-        "heikinAvg30d": 2.402
+        "boshuAvg30d": 146.0,
+        "heikinAvg30d": 2.372
       },
       {
         "block": 42,
@@ -3347,68 +3347,68 @@ window.EPRX_DATA = {
         "ouatsu": 118.968,
         "saikou": 1.99,
         "heikin": 1.48,
-        "boshuAvg30d": 145.5,
-        "heikinAvg30d": 2.375
+        "boshuAvg30d": 145.3,
+        "heikinAvg30d": 2.349
       },
       {
         "block": 43,
         "label": "21:00~21:30",
         "boshu": 142,
         "ouatsu": 101.339,
-        "saikou": 2,
+        "saikou": 2.02,
         "heikin": 1.67,
-        "boshuAvg30d": 145.5,
-        "heikinAvg30d": 2.277
+        "boshuAvg30d": 145.3,
+        "heikinAvg30d": 2.259
       },
       {
         "block": 44,
         "label": "21:30~22:00",
         "boshu": 142,
-        "ouatsu": 168.841,
+        "ouatsu": 101.339,
         "saikou": 2.05,
-        "heikin": 1.22,
-        "boshuAvg30d": 145.5,
-        "heikinAvg30d": 2.347
+        "heikin": 1.74,
+        "boshuAvg30d": 145.3,
+        "heikinAvg30d": 2.312
       },
       {
         "block": 45,
         "label": "22:00~22:30",
         "boshu": 142,
-        "ouatsu": 168.841,
-        "saikou": 2.03,
-        "heikin": 1.22,
-        "boshuAvg30d": 145.5,
-        "heikinAvg30d": 2.367
+        "ouatsu": 117.233,
+        "saikou": 2.05,
+        "heikin": 1.55,
+        "boshuAvg30d": 145.3,
+        "heikinAvg30d": 2.342
       },
       {
         "block": 46,
         "label": "22:30~23:00",
         "boshu": 141,
-        "ouatsu": 166.843,
-        "saikou": 1.99,
-        "heikin": 1.16,
-        "boshuAvg30d": 143.8,
-        "heikinAvg30d": 2.305
+        "ouatsu": 120.953,
+        "saikou": 1.98,
+        "heikin": 1.4,
+        "boshuAvg30d": 143.7,
+        "heikinAvg30d": 2.286
       },
       {
         "block": 47,
         "label": "23:00~23:30",
         "boshu": 139,
-        "ouatsu": 168.841,
-        "saikou": 1.99,
-        "heikin": 1.13,
-        "boshuAvg30d": 142.5,
-        "heikinAvg30d": 1.829
+        "ouatsu": 120.953,
+        "saikou": 1.94,
+        "heikin": 1.35,
+        "boshuAvg30d": 142.3,
+        "heikinAvg30d": 1.809
       },
       {
         "block": 48,
         "label": "23:30~24:00",
         "boshu": 137,
-        "ouatsu": 101.339,
-        "saikou": 1.94,
-        "heikin": 1.5,
-        "boshuAvg30d": 140.5,
-        "heikinAvg30d": 1.974
+        "ouatsu": 99.896,
+        "saikou": 1.99,
+        "heikin": 1.66,
+        "boshuAvg30d": 140.3,
+        "heikinAvg30d": 1.949
       }
     ],
     "中国": [
@@ -3416,481 +3416,481 @@ window.EPRX_DATA = {
         "block": 1,
         "label": "00:00~00:30",
         "boshu": 141,
-        "ouatsu": 189.152,
+        "ouatsu": 161.656,
         "saikou": 2.29,
-        "heikin": 2.03,
+        "heikin": 1.61,
         "boshuAvg30d": 140.3,
-        "heikinAvg30d": 1.5
+        "heikinAvg30d": 1.448
       },
       {
         "block": 2,
         "label": "00:30~01:00",
         "boshu": 141,
-        "ouatsu": 189.152,
-        "saikou": 2.29,
-        "heikin": 1.85,
+        "ouatsu": 161.656,
+        "saikou": 1.56,
+        "heikin": 1.39,
         "boshuAvg30d": 140.3,
-        "heikinAvg30d": 1.532
+        "heikinAvg30d": 1.537
       },
       {
         "block": 3,
         "label": "01:00~01:30",
         "boshu": 141,
-        "ouatsu": 190.952,
+        "ouatsu": 163.456,
         "saikou": 2.29,
-        "heikin": 1.79,
+        "heikin": 1.47,
         "boshuAvg30d": 140.3,
-        "heikinAvg30d": 1.614
+        "heikinAvg30d": 1.619
       },
       {
         "block": 4,
         "label": "01:30~02:00",
         "boshu": 141,
-        "ouatsu": 192.942,
-        "saikou": 2.29,
-        "heikin": 1.79,
+        "ouatsu": 165.446,
+        "saikou": 1.56,
+        "heikin": 0.9,
         "boshuAvg30d": 140.3,
-        "heikinAvg30d": 1.537
+        "heikinAvg30d": 1.54
       },
       {
         "block": 5,
         "label": "02:00~02:30",
         "boshu": 141,
-        "ouatsu": 192.942,
+        "ouatsu": 165.446,
         "saikou": 2.29,
-        "heikin": 1.67,
+        "heikin": 1.19,
         "boshuAvg30d": 140.3,
-        "heikinAvg30d": 1.448
+        "heikinAvg30d": 1.449
       },
       {
         "block": 6,
         "label": "02:30~03:00",
         "boshu": 141,
-        "ouatsu": 192.942,
+        "ouatsu": 165.446,
         "saikou": 2.29,
-        "heikin": 2.06,
+        "heikin": 1.6,
         "boshuAvg30d": 140.3,
-        "heikinAvg30d": 1.606
+        "heikinAvg30d": 1.618
       },
       {
         "block": 7,
         "label": "03:00~03:30",
         "boshu": 141,
-        "ouatsu": 207.812,
-        "saikou": 2.38,
-        "heikin": 2.2,
+        "ouatsu": 182.305,
+        "saikou": 2.29,
+        "heikin": 1.67,
         "boshuAvg30d": 140.3,
-        "heikinAvg30d": 1.867
+        "heikinAvg30d": 1.887
       },
       {
         "block": 8,
         "label": "03:30~04:00",
         "boshu": 141,
-        "ouatsu": 207.812,
-        "saikou": 2.57,
-        "heikin": 2.31,
+        "ouatsu": 182.213,
+        "saikou": 2.69,
+        "heikin": 2.18,
         "boshuAvg30d": 140.3,
-        "heikinAvg30d": 2.106
+        "heikinAvg30d": 2.116
       },
       {
         "block": 9,
         "label": "04:00~04:30",
         "boshu": 141,
-        "ouatsu": 207.812,
-        "saikou": 2.29,
-        "heikin": 1.96,
+        "ouatsu": 182.213,
+        "saikou": 3.1,
+        "heikin": 2.38,
         "boshuAvg30d": 140.3,
-        "heikinAvg30d": 2.223
+        "heikinAvg30d": 2.224
       },
       {
         "block": 10,
         "label": "04:30~05:00",
         "boshu": 141,
-        "ouatsu": 207.812,
-        "saikou": 2.36,
-        "heikin": 2.07,
+        "ouatsu": 182.213,
+        "saikou": 5.66,
+        "heikin": 4.59,
         "boshuAvg30d": 140.3,
-        "heikinAvg30d": 2.498
+        "heikinAvg30d": 2.516
       },
       {
         "block": 11,
         "label": "05:00~05:30",
         "boshu": 141,
-        "ouatsu": 207.812,
-        "saikou": 4.66,
-        "heikin": 3.87,
+        "ouatsu": 182.213,
+        "saikou": 5.66,
+        "heikin": 4.54,
         "boshuAvg30d": 140.3,
-        "heikinAvg30d": 2.726
+        "heikinAvg30d": 2.764
       },
       {
         "block": 12,
         "label": "05:30~06:00",
         "boshu": 141,
-        "ouatsu": 207.812,
-        "saikou": 2.86,
-        "heikin": 2.49,
+        "ouatsu": 182.213,
+        "saikou": 3.24,
+        "heikin": 2.46,
         "boshuAvg30d": 140.3,
-        "heikinAvg30d": 2.805
+        "heikinAvg30d": 2.798
       },
       {
         "block": 13,
         "label": "06:00~06:30",
         "boshu": 143,
-        "ouatsu": 207.812,
-        "saikou": 3.8,
-        "heikin": 2.93,
-        "boshuAvg30d": 141.6,
-        "heikinAvg30d": 3.053
+        "ouatsu": 182.213,
+        "saikou": 5.1,
+        "heikin": 3.7,
+        "boshuAvg30d": 141.7,
+        "heikinAvg30d": 3.073
       },
       {
         "block": 14,
         "label": "06:30~07:00",
         "boshu": 144,
-        "ouatsu": 189.928,
-        "saikou": 2.29,
-        "heikin": 2.04,
-        "boshuAvg30d": 142.6,
-        "heikinAvg30d": 2.208
+        "ouatsu": 182.305,
+        "saikou": 2.38,
+        "heikin": 2.07,
+        "boshuAvg30d": 142.7,
+        "heikinAvg30d": 2.224
       },
       {
         "block": 15,
         "label": "07:00~07:30",
         "boshu": 145,
-        "ouatsu": 191.917,
+        "ouatsu": 186.067,
         "saikou": 2.29,
-        "heikin": 1.63,
-        "boshuAvg30d": 143.6,
-        "heikinAvg30d": 1.699
+        "heikin": 1.31,
+        "boshuAvg30d": 143.7,
+        "heikinAvg30d": 1.691
       },
       {
         "block": 16,
         "label": "07:30~08:00",
         "boshu": 146,
-        "ouatsu": 289.646,
-        "saikou": 1.56,
-        "heikin": 1.22,
-        "boshuAvg30d": 144.6,
-        "heikinAvg30d": 1.394
+        "ouatsu": 292.079,
+        "saikou": 1.45,
+        "heikin": 0.53,
+        "boshuAvg30d": 144.7,
+        "heikinAvg30d": 1.373
       },
       {
         "block": 17,
         "label": "08:00~08:30",
         "boshu": 146,
-        "ouatsu": 289.646,
-        "saikou": 1.5,
-        "heikin": 0.75,
-        "boshuAvg30d": 144.6,
-        "heikinAvg30d": 1.549
+        "ouatsu": 196.14,
+        "saikou": 2.29,
+        "heikin": 1.06,
+        "boshuAvg30d": 144.7,
+        "heikinAvg30d": 1.521
       },
       {
         "block": 18,
         "label": "08:30~09:00",
         "boshu": 146,
-        "ouatsu": 207.118,
-        "saikou": 1.6,
-        "heikin": 1,
-        "boshuAvg30d": 144.6,
-        "heikinAvg30d": 1.637
+        "ouatsu": 217.861,
+        "saikou": 2.29,
+        "heikin": 0.99,
+        "boshuAvg30d": 144.7,
+        "heikinAvg30d": 1.615
       },
       {
         "block": 19,
         "label": "09:00~09:30",
         "boshu": 149,
-        "ouatsu": 281.576,
-        "saikou": 1.98,
-        "heikin": 0.86,
+        "ouatsu": 290.089,
+        "saikou": 2.07,
+        "heikin": 0.66,
         "boshuAvg30d": 148.3,
-        "heikinAvg30d": 1.793
+        "heikinAvg30d": 1.761
       },
       {
         "block": 20,
         "label": "09:30~10:00",
         "boshu": 151,
-        "ouatsu": 233.151,
+        "ouatsu": 290.089,
         "saikou": 1.56,
-        "heikin": 0.95,
-        "boshuAvg30d": 149.6,
-        "heikinAvg30d": 1.758
+        "heikin": 0.62,
+        "boshuAvg30d": 149.7,
+        "heikinAvg30d": 1.736
       },
       {
         "block": 21,
         "label": "10:00~10:30",
         "boshu": 152,
-        "ouatsu": 292.079,
+        "ouatsu": 290.089,
         "saikou": 1.56,
         "heikin": 0.55,
-        "boshuAvg30d": 150.6,
-        "heikinAvg30d": 2.022
+        "boshuAvg30d": 150.7,
+        "heikinAvg30d": 1.936
       },
       {
         "block": 22,
         "label": "10:30~11:00",
         "boshu": 152,
-        "ouatsu": 260.345,
-        "saikou": 2.29,
-        "heikin": 0.8,
+        "ouatsu": 290.089,
+        "saikou": 0.39,
+        "heikin": 0.39,
         "boshuAvg30d": 151.3,
-        "heikinAvg30d": 1.925
+        "heikinAvg30d": 1.848
       },
       {
         "block": 23,
         "label": "11:00~11:30",
         "boshu": 152,
-        "ouatsu": 260.345,
-        "saikou": 2.29,
-        "heikin": 0.78,
+        "ouatsu": 290.089,
+        "saikou": 0.39,
+        "heikin": 0.39,
         "boshuAvg30d": 151.3,
-        "heikinAvg30d": 1.893
+        "heikinAvg30d": 1.824
       },
       {
         "block": 24,
         "label": "11:30~12:00",
         "boshu": 152,
-        "ouatsu": 260.345,
-        "saikou": 2.29,
-        "heikin": 0.78,
+        "ouatsu": 290.089,
+        "saikou": 0.39,
+        "heikin": 0.39,
         "boshuAvg30d": 151.3,
-        "heikinAvg30d": 1.719
+        "heikinAvg30d": 1.692
       },
       {
         "block": 25,
         "label": "12:00~12:30",
         "boshu": 149,
-        "ouatsu": 260.345,
+        "ouatsu": 290.089,
         "saikou": 0.39,
         "heikin": 0.39,
         "boshuAvg30d": 149.0,
-        "heikinAvg30d": 1.592
+        "heikinAvg30d": 1.557
       },
       {
         "block": 26,
         "label": "12:30~13:00",
         "boshu": 149,
-        "ouatsu": 260.345,
-        "saikou": 1.56,
-        "heikin": 0.44,
+        "ouatsu": 290.089,
+        "saikou": 0.39,
+        "heikin": 0.39,
         "boshuAvg30d": 149.0,
-        "heikinAvg30d": 1.637
+        "heikinAvg30d": 1.598
       },
       {
         "block": 27,
         "label": "13:00~13:30",
         "boshu": 149,
-        "ouatsu": 283.128,
-        "saikou": 2.29,
-        "heikin": 1.17,
+        "ouatsu": 290.089,
+        "saikou": 1.56,
+        "heikin": 0.51,
         "boshuAvg30d": 149.0,
-        "heikinAvg30d": 1.888
+        "heikinAvg30d": 1.871
       },
       {
         "block": 28,
         "label": "13:30~14:00",
         "boshu": 149,
-        "ouatsu": 292.079,
-        "saikou": 2.29,
-        "heikin": 1.13,
+        "ouatsu": 240.922,
+        "saikou": 1.56,
+        "heikin": 0.6,
         "boshuAvg30d": 148.3,
-        "heikinAvg30d": 1.742
+        "heikinAvg30d": 1.727
       },
       {
         "block": 29,
         "label": "14:00~14:30",
         "boshu": 149,
-        "ouatsu": 292.079,
+        "ouatsu": 290.089,
         "saikou": 1.56,
-        "heikin": 0.79,
+        "heikin": 0.62,
         "boshuAvg30d": 148.3,
-        "heikinAvg30d": 1.73
+        "heikinAvg30d": 1.69
       },
       {
         "block": 30,
         "label": "14:30~15:00",
         "boshu": 148,
-        "ouatsu": 153.461,
-        "saikou": 2.29,
-        "heikin": 1.41,
+        "ouatsu": 240.41,
+        "saikou": 1.56,
+        "heikin": 0.6,
         "boshuAvg30d": 148.0,
-        "heikinAvg30d": 1.835
+        "heikinAvg30d": 1.847
       },
       {
         "block": 31,
         "label": "15:00~15:30",
         "boshu": 148,
-        "ouatsu": 292.079,
-        "saikou": 1.56,
-        "heikin": 0.7,
+        "ouatsu": 180.223,
+        "saikou": 2.29,
+        "heikin": 1.29,
         "boshuAvg30d": 147.3,
-        "heikinAvg30d": 2.184
+        "heikinAvg30d": 2.141
       },
       {
         "block": 32,
         "label": "15:30~16:00",
         "boshu": 148,
-        "ouatsu": 239.967,
-        "saikou": 2.29,
-        "heikin": 1.57,
+        "ouatsu": 180.223,
+        "saikou": 2.7,
+        "heikin": 1.62,
         "boshuAvg30d": 147.3,
-        "heikinAvg30d": 2.532
+        "heikinAvg30d": 2.48
       },
       {
         "block": 33,
         "label": "16:00~16:30",
         "boshu": 148,
-        "ouatsu": 191.917,
-        "saikou": 2.38,
+        "ouatsu": 180.223,
+        "saikou": 2.7,
         "heikin": 2.2,
         "boshuAvg30d": 147.3,
-        "heikinAvg30d": 2.784
+        "heikinAvg30d": 2.746
       },
       {
         "block": 34,
         "label": "16:30~17:00",
         "boshu": 148,
-        "ouatsu": 191.917,
-        "saikou": 5.19,
-        "heikin": 4.28,
+        "ouatsu": 180.223,
+        "saikou": 6.1,
+        "heikin": 4.44,
         "boshuAvg30d": 147.3,
-        "heikinAvg30d": 3.361
+        "heikinAvg30d": 3.359
       },
       {
         "block": 35,
         "label": "17:00~17:30",
         "boshu": 148,
-        "ouatsu": 191.917,
-        "saikou": 6.52,
-        "heikin": 4.81,
+        "ouatsu": 180.223,
+        "saikou": 6.2,
+        "heikin": 4.51,
         "boshuAvg30d": 147.3,
-        "heikinAvg30d": 3.792
+        "heikinAvg30d": 3.808
       },
       {
         "block": 36,
         "label": "17:30~18:00",
         "boshu": 148,
-        "ouatsu": 191.917,
-        "saikou": 7.12,
-        "heikin": 5.81,
+        "ouatsu": 180.223,
+        "saikou": 6.26,
+        "heikin": 4.57,
         "boshuAvg30d": 147.3,
-        "heikinAvg30d": 3.929
+        "heikinAvg30d": 3.976
       },
       {
         "block": 37,
         "label": "18:00~18:30",
         "boshu": 148,
-        "ouatsu": 189.927,
+        "ouatsu": 180.223,
         "saikou": 6.67,
-        "heikin": 5.38,
+        "heikin": 4.79,
         "boshuAvg30d": 147.3,
-        "heikinAvg30d": 4.232
+        "heikinAvg30d": 4.265
       },
       {
         "block": 38,
         "label": "18:30~19:00",
         "boshu": 148,
-        "ouatsu": 189.927,
-        "saikou": 6.35,
-        "heikin": 5.16,
+        "ouatsu": 180.223,
+        "saikou": 6.26,
+        "heikin": 4.52,
         "boshuAvg30d": 147.3,
-        "heikinAvg30d": 4.253
+        "heikinAvg30d": 4.307
       },
       {
         "block": 39,
         "label": "19:00~19:30",
         "boshu": 148,
-        "ouatsu": 207.811,
-        "saikou": 6.4,
-        "heikin": 5.17,
+        "ouatsu": 180.223,
+        "saikou": 6.26,
+        "heikin": 4.5,
         "boshuAvg30d": 147.3,
-        "heikinAvg30d": 3.942
+        "heikinAvg30d": 3.997
       },
       {
         "block": 40,
         "label": "19:30~20:00",
         "boshu": 148,
-        "ouatsu": 209.801,
-        "saikou": 6.26,
-        "heikin": 4.49,
+        "ouatsu": 182.213,
+        "saikou": 6.23,
+        "heikin": 4.45,
         "boshuAvg30d": 147.3,
-        "heikinAvg30d": 3.479
+        "heikinAvg30d": 3.518
       },
       {
         "block": 41,
         "label": "20:00~20:30",
         "boshu": 147,
-        "ouatsu": 209.801,
-        "saikou": 6.35,
-        "heikin": 5.16,
+        "ouatsu": 182.213,
+        "saikou": 6.2,
+        "heikin": 4.42,
         "boshuAvg30d": 147.0,
-        "heikinAvg30d": 3.44
+        "heikinAvg30d": 3.507
       },
       {
         "block": 42,
         "label": "20:30~21:00",
         "boshu": 147,
-        "ouatsu": 209.801,
-        "saikou": 6.35,
-        "heikin": 5.18,
+        "ouatsu": 182.213,
+        "saikou": 6.11,
+        "heikin": 4.36,
         "boshuAvg30d": 146.3,
-        "heikinAvg30d": 3.123
+        "heikinAvg30d": 3.205
       },
       {
         "block": 43,
         "label": "21:00~21:30",
         "boshu": 145,
-        "ouatsu": 209.801,
+        "ouatsu": 182.213,
         "saikou": 6.26,
-        "heikin": 5.13,
+        "heikin": 4.45,
         "boshuAvg30d": 144.3,
-        "heikinAvg30d": 3.321
+        "heikinAvg30d": 3.375
       },
       {
         "block": 44,
         "label": "21:30~22:00",
         "boshu": 145,
-        "ouatsu": 209.801,
-        "saikou": 5.66,
-        "heikin": 4.66,
+        "ouatsu": 182.213,
+        "saikou": 6.23,
+        "heikin": 4.95,
         "boshuAvg30d": 144.3,
-        "heikinAvg30d": 3.246
+        "heikinAvg30d": 3.284
       },
       {
         "block": 45,
         "label": "22:00~22:30",
         "boshu": 145,
-        "ouatsu": 209.801,
-        "saikou": 4.66,
-        "heikin": 3.87,
+        "ouatsu": 182.213,
+        "saikou": 6.2,
+        "heikin": 4.51,
         "boshuAvg30d": 144.3,
-        "heikinAvg30d": 3.16
+        "heikinAvg30d": 3.176
       },
       {
         "block": 46,
         "label": "22:30~23:00",
         "boshu": 145,
-        "ouatsu": 209.801,
-        "saikou": 2.69,
-        "heikin": 2.37,
+        "ouatsu": 182.213,
+        "saikou": 3.85,
+        "heikin": 2.9,
         "boshuAvg30d": 144.3,
-        "heikinAvg30d": 2.718
+        "heikinAvg30d": 2.703
       },
       {
         "block": 47,
         "label": "23:00~23:30",
         "boshu": 144,
-        "ouatsu": 209.801,
-        "saikou": 2.69,
-        "heikin": 2.24,
+        "ouatsu": 182.213,
+        "saikou": 3.1,
+        "heikin": 2.41,
         "boshuAvg30d": 143.3,
-        "heikinAvg30d": 2.708
+        "heikinAvg30d": 2.666
       },
       {
         "block": 48,
         "label": "23:30~24:00",
         "boshu": 144,
-        "ouatsu": 208.001,
+        "ouatsu": 180.505,
         "saikou": 2.29,
-        "heikin": 1.17,
+        "heikin": 1.46,
         "boshuAvg30d": 143.3,
-        "heikinAvg30d": 1.781
+        "heikinAvg30d": 1.753
       }
     ],
     "四国": [
@@ -3898,71 +3898,71 @@ window.EPRX_DATA = {
         "block": 1,
         "label": "00:00~00:30",
         "boshu": 40,
-        "ouatsu": 95.543,
+        "ouatsu": 123.543,
         "saikou": 1.7,
-        "heikin": 1.11,
+        "heikin": 0.92,
         "boshuAvg30d": 40.7,
-        "heikinAvg30d": 0.796
+        "heikinAvg30d": 0.815
       },
       {
         "block": 2,
         "label": "00:30~01:00",
         "boshu": 40,
-        "ouatsu": 95.543,
-        "saikou": 1.7,
-        "heikin": 1.11,
+        "ouatsu": 124.543,
+        "saikou": 1.55,
+        "heikin": 0.65,
         "boshuAvg30d": 40.7,
-        "heikinAvg30d": 0.781
+        "heikinAvg30d": 0.8
       },
       {
         "block": 3,
         "label": "01:00~01:30",
         "boshu": 40,
-        "ouatsu": 95.543,
-        "saikou": 1.5,
-        "heikin": 0.76,
+        "ouatsu": 124.543,
+        "saikou": 1.7,
+        "heikin": 0.73,
         "boshuAvg30d": 40.7,
-        "heikinAvg30d": 0.767
+        "heikinAvg30d": 0.775
       },
       {
         "block": 4,
         "label": "01:30~02:00",
         "boshu": 40,
-        "ouatsu": 95.543,
-        "saikou": 1.08,
-        "heikin": 0.58,
+        "ouatsu": 147.543,
+        "saikou": 1.7,
+        "heikin": 0.93,
         "boshuAvg30d": 40.7,
-        "heikinAvg30d": 0.759
+        "heikinAvg30d": 0.761
       },
       {
         "block": 5,
         "label": "02:00~02:30",
         "boshu": 40,
-        "ouatsu": 95.543,
-        "saikou": 1.08,
-        "heikin": 0.58,
+        "ouatsu": 110.543,
+        "saikou": 2.29,
+        "heikin": 1.23,
         "boshuAvg30d": 40.0,
-        "heikinAvg30d": 0.754
+        "heikinAvg30d": 0.757
       },
       {
         "block": 6,
         "label": "02:30~03:00",
         "boshu": 40,
         "ouatsu": 95.543,
-        "saikou": 1.08,
-        "heikin": 0.58,
+        "saikou": 1.7,
+        "heikin": 0.9,
         "boshuAvg30d": 40.0,
-        "heikinAvg30d": 0.765
+        "heikinAvg30d": 0.769
       },
       {
         "block": 7,
         "label": "03:00~03:30",
         "boshu": 41,
         "ouatsu": 92.543,
-        "saikou": 1.08,
-        "heikin": 0.6,
+        "saikou": 1.55,
+        "heikin": 0.81,
         "boshuAvg30d": 41.0,
-        "heikinAvg30d": 0.8
+        "heikinAvg30d": 0.797
       },
       {
         "block": 8,
@@ -3972,15 +3972,15 @@ window.EPRX_DATA = {
         "saikou": 1.08,
         "heikin": 0.6,
         "boshuAvg30d": 41.0,
-        "heikinAvg30d": 0.84
+        "heikinAvg30d": 0.819
       },
       {
         "block": 9,
         "label": "04:00~04:30",
         "boshu": 41,
         "ouatsu": 92.543,
-        "saikou": 1.7,
-        "heikin": 1.13,
+        "saikou": 1.08,
+        "heikin": 0.6,
         "boshuAvg30d": 41.0,
         "heikinAvg30d": 0.859
       },
@@ -3990,9 +3990,9 @@ window.EPRX_DATA = {
         "boshu": 41,
         "ouatsu": 92.543,
         "saikou": 1.7,
-        "heikin": 1.13,
+        "heikin": 1.6,
         "boshuAvg30d": 41.0,
-        "heikinAvg30d": 0.861
+        "heikinAvg30d": 0.874
       },
       {
         "block": 11,
@@ -4000,19 +4000,19 @@ window.EPRX_DATA = {
         "boshu": 41,
         "ouatsu": 92.543,
         "saikou": 1.7,
-        "heikin": 1.09,
+        "heikin": 1.6,
         "boshuAvg30d": 41.0,
-        "heikinAvg30d": 0.833
+        "heikinAvg30d": 0.848
       },
       {
         "block": 12,
         "label": "05:30~06:00",
         "boshu": 41,
         "ouatsu": 92.543,
-        "saikou": 1.08,
-        "heikin": 0.6,
+        "saikou": 1.5,
+        "heikin": 0.78,
         "boshuAvg30d": 41.0,
-        "heikinAvg30d": 0.804
+        "heikinAvg30d": 0.803
       },
       {
         "block": 13,
@@ -4020,139 +4020,139 @@ window.EPRX_DATA = {
         "boshu": 44,
         "ouatsu": 95.543,
         "saikou": 1.7,
-        "heikin": 1.14,
+        "heikin": 1.34,
         "boshuAvg30d": 44.0,
-        "heikinAvg30d": 0.874
+        "heikinAvg30d": 0.883
       },
       {
         "block": 14,
         "label": "06:30~07:00",
         "boshu": 44,
-        "ouatsu": 96.543,
-        "saikou": 1.7,
-        "heikin": 1.04,
+        "ouatsu": 95.543,
+        "saikou": 1.5,
+        "heikin": 0.76,
         "boshuAvg30d": 44.0,
-        "heikinAvg30d": 0.898
+        "heikinAvg30d": 0.907
       },
       {
         "block": 15,
         "label": "07:00~07:30",
         "boshu": 45,
         "ouatsu": 148.043,
-        "saikou": 1.7,
-        "heikin": 0.84,
+        "saikou": 1.07,
+        "heikin": 0.46,
         "boshuAvg30d": 45.0,
-        "heikinAvg30d": 0.936
+        "heikinAvg30d": 0.915
       },
       {
         "block": 16,
         "label": "07:30~08:00",
         "boshu": 46,
-        "ouatsu": 148.043,
-        "saikou": 1.55,
-        "heikin": 0.79,
+        "ouatsu": 171.043,
+        "saikou": 1.5,
+        "heikin": 0.87,
         "boshuAvg30d": 45.3,
-        "heikinAvg30d": 0.879
+        "heikinAvg30d": 0.863
       },
       {
         "block": 17,
         "label": "08:00~08:30",
         "boshu": 46,
-        "ouatsu": 160.043,
-        "saikou": 1.5,
-        "heikin": 0.76,
+        "ouatsu": 171.043,
+        "saikou": 1.99,
+        "heikin": 1.19,
         "boshuAvg30d": 45.3,
-        "heikinAvg30d": 0.871
+        "heikinAvg30d": 0.85
       },
       {
         "block": 18,
         "label": "08:30~09:00",
         "boshu": 46,
-        "ouatsu": 159.043,
-        "saikou": 1.59,
-        "heikin": 1.01,
+        "ouatsu": 171.043,
+        "saikou": 1.99,
+        "heikin": 1.19,
         "boshuAvg30d": 45.3,
-        "heikinAvg30d": 0.931
+        "heikinAvg30d": 0.916
       },
       {
         "block": 19,
         "label": "09:00~09:30",
         "boshu": 48,
-        "ouatsu": 137.043,
+        "ouatsu": 171.043,
         "saikou": 1.7,
-        "heikin": 1.47,
+        "heikin": 1.13,
         "boshuAvg30d": 47.3,
-        "heikinAvg30d": 1.06
+        "heikinAvg30d": 1.072
       },
       {
         "block": 20,
         "label": "09:30~10:00",
         "boshu": 49,
-        "ouatsu": 137.043,
+        "ouatsu": 171.043,
         "saikou": 1.7,
-        "heikin": 1.16,
-        "boshuAvg30d": 47.6,
-        "heikinAvg30d": 1.03
+        "heikin": 1.06,
+        "boshuAvg30d": 47.7,
+        "heikinAvg30d": 1.031
       },
       {
         "block": 21,
         "label": "10:00~10:30",
         "boshu": 49,
-        "ouatsu": 137.043,
-        "saikou": 1.7,
-        "heikin": 1.47,
+        "ouatsu": 171.043,
+        "saikou": 1.6,
+        "heikin": 0.82,
         "boshuAvg30d": 48.3,
-        "heikinAvg30d": 1.05
+        "heikinAvg30d": 1.06
       },
       {
         "block": 22,
         "label": "10:30~11:00",
         "boshu": 49,
-        "ouatsu": 137.043,
-        "saikou": 1.7,
-        "heikin": 1.47,
+        "ouatsu": 171.043,
+        "saikou": 1.07,
+        "heikin": 0.64,
         "boshuAvg30d": 48.3,
-        "heikinAvg30d": 1.005
+        "heikinAvg30d": 1.015
       },
       {
         "block": 23,
         "label": "11:00~11:30",
         "boshu": 49,
-        "ouatsu": 137.043,
-        "saikou": 1.7,
-        "heikin": 1.47,
+        "ouatsu": 171.043,
+        "saikou": 1.07,
+        "heikin": 0.64,
         "boshuAvg30d": 48.3,
-        "heikinAvg30d": 1.064
+        "heikinAvg30d": 1.075
       },
       {
         "block": 24,
         "label": "11:30~12:00",
         "boshu": 49,
-        "ouatsu": 137.043,
-        "saikou": 1.7,
-        "heikin": 1.47,
+        "ouatsu": 171.043,
+        "saikou": 1.07,
+        "heikin": 0.64,
         "boshuAvg30d": 48.3,
-        "heikinAvg30d": 1.083
+        "heikinAvg30d": 1.093
       },
       {
         "block": 25,
         "label": "12:00~12:30",
         "boshu": 49,
-        "ouatsu": 137.043,
+        "ouatsu": 118.543,
         "saikou": 1.7,
-        "heikin": 1.47,
+        "heikin": 0.75,
         "boshuAvg30d": 48.3,
-        "heikinAvg30d": 1.188
+        "heikinAvg30d": 1.198
       },
       {
         "block": 26,
         "label": "12:30~13:00",
         "boshu": 49,
-        "ouatsu": 137.043,
+        "ouatsu": 118.543,
         "saikou": 1.7,
-        "heikin": 1.47,
+        "heikin": 0.76,
         "boshuAvg30d": 48.3,
-        "heikinAvg30d": 1.164
+        "heikinAvg30d": 1.175
       },
       {
         "block": 27,
@@ -4160,9 +4160,9 @@ window.EPRX_DATA = {
         "boshu": 49,
         "ouatsu": 137.043,
         "saikou": 1.7,
-        "heikin": 1.19,
+        "heikin": 1.21,
         "boshuAvg30d": 48.3,
-        "heikinAvg30d": 1.099
+        "heikinAvg30d": 1.109
       },
       {
         "block": 28,
@@ -4170,29 +4170,29 @@ window.EPRX_DATA = {
         "boshu": 49,
         "ouatsu": 137.043,
         "saikou": 1.7,
-        "heikin": 1.16,
+        "heikin": 1.29,
         "boshuAvg30d": 48.3,
-        "heikinAvg30d": 1.107
+        "heikinAvg30d": 1.112
       },
       {
         "block": 29,
         "label": "14:00~14:30",
         "boshu": 48,
-        "ouatsu": 119.043,
+        "ouatsu": 137.043,
         "saikou": 1.7,
-        "heikin": 1.31,
+        "heikin": 1.2,
         "boshuAvg30d": 48.0,
-        "heikinAvg30d": 1.095
+        "heikinAvg30d": 1.107
       },
       {
         "block": 30,
         "label": "14:30~15:00",
         "boshu": 48,
-        "ouatsu": 117.043,
+        "ouatsu": 137.043,
         "saikou": 1.7,
-        "heikin": 1.47,
+        "heikin": 1.25,
         "boshuAvg30d": 47.3,
-        "heikinAvg30d": 1.023
+        "heikinAvg30d": 1.045
       },
       {
         "block": 31,
@@ -4200,19 +4200,19 @@ window.EPRX_DATA = {
         "boshu": 45,
         "ouatsu": 137.043,
         "saikou": 1.7,
-        "heikin": 1.33,
+        "heikin": 1.27,
         "boshuAvg30d": 45.0,
-        "heikinAvg30d": 1.074
+        "heikinAvg30d": 1.082
       },
       {
         "block": 32,
         "label": "15:30~16:00",
         "boshu": 45,
-        "ouatsu": 99.543,
+        "ouatsu": 106.043,
         "saikou": 1.6,
-        "heikin": 1.41,
+        "heikin": 1.2,
         "boshuAvg30d": 45.0,
-        "heikinAvg30d": 1.103
+        "heikinAvg30d": 1.119
       },
       {
         "block": 33,
@@ -4220,59 +4220,59 @@ window.EPRX_DATA = {
         "boshu": 45,
         "ouatsu": 48.543,
         "saikou": 1.6,
-        "heikin": 1.42,
+        "heikin": 1.54,
         "boshuAvg30d": 45.0,
-        "heikinAvg30d": 1.119
+        "heikinAvg30d": 1.136
       },
       {
         "block": 34,
         "label": "16:30~17:00",
         "boshu": 44,
         "ouatsu": 47.543,
-        "saikou": 1.6,
-        "heikin": 1.57,
+        "saikou": 1.99,
+        "heikin": 1.69,
         "boshuAvg30d": 44.7,
-        "heikinAvg30d": 1.116
+        "heikinAvg30d": 1.137
       },
       {
         "block": 35,
         "label": "17:00~17:30",
         "boshu": 44,
         "ouatsu": 47.543,
-        "saikou": 2.4,
-        "heikin": 1.64,
+        "saikou": 2.45,
+        "heikin": 1.73,
         "boshuAvg30d": 44.0,
-        "heikinAvg30d": 1.256
+        "heikinAvg30d": 1.285
       },
       {
         "block": 36,
         "label": "17:30~18:00",
         "boshu": 43,
         "ouatsu": 47.543,
-        "saikou": 7.99,
-        "heikin": 3.22,
+        "saikou": 7.98,
+        "heikin": 3.19,
         "boshuAvg30d": 43.0,
-        "heikinAvg30d": 1.133
+        "heikinAvg30d": 1.214
       },
       {
         "block": 37,
         "label": "18:00~18:30",
         "boshu": 42,
         "ouatsu": 47.543,
-        "saikou": 1.95,
-        "heikin": 1.62,
+        "saikou": 7.98,
+        "heikin": 2.99,
         "boshuAvg30d": 42.0,
-        "heikinAvg30d": 1.179
+        "heikinAvg30d": 1.207
       },
       {
         "block": 38,
         "label": "18:30~19:00",
         "boshu": 42,
         "ouatsu": 47.543,
-        "saikou": 7.99,
-        "heikin": 3.36,
+        "saikou": 1.95,
+        "heikin": 1.62,
         "boshuAvg30d": 42.0,
-        "heikinAvg30d": 1.225
+        "heikinAvg30d": 1.311
       },
       {
         "block": 39,
@@ -4282,7 +4282,7 @@ window.EPRX_DATA = {
         "saikou": 1.6,
         "heikin": 1.6,
         "boshuAvg30d": 42.0,
-        "heikinAvg30d": 1.183
+        "heikinAvg30d": 1.206
       },
       {
         "block": 40,
@@ -4292,7 +4292,7 @@ window.EPRX_DATA = {
         "saikou": 1.6,
         "heikin": 1.6,
         "boshuAvg30d": 42.0,
-        "heikinAvg30d": 1.206
+        "heikinAvg30d": 1.233
       },
       {
         "block": 41,
@@ -4302,7 +4302,7 @@ window.EPRX_DATA = {
         "saikou": 2.2,
         "heikin": 1.63,
         "boshuAvg30d": 42.0,
-        "heikinAvg30d": 1.182
+        "heikinAvg30d": 1.203
       },
       {
         "block": 42,
@@ -4310,29 +4310,29 @@ window.EPRX_DATA = {
         "boshu": 42,
         "ouatsu": 47.543,
         "saikou": 1.6,
-        "heikin": 1.57,
+        "heikin": 1.6,
         "boshuAvg30d": 42.0,
-        "heikinAvg30d": 1.166
+        "heikinAvg30d": 1.169
       },
       {
         "block": 43,
         "label": "21:00~21:30",
         "boshu": 42,
         "ouatsu": 81.543,
-        "saikou": 1.6,
-        "heikin": 1.6,
+        "saikou": 1.7,
+        "heikin": 1.64,
         "boshuAvg30d": 42.0,
-        "heikinAvg30d": 0.797
+        "heikinAvg30d": 0.832
       },
       {
         "block": 44,
         "label": "21:30~22:00",
         "boshu": 42,
         "ouatsu": 81.543,
-        "saikou": 1.7,
+        "saikou": 1.6,
         "heikin": 1.6,
         "boshuAvg30d": 42.0,
-        "heikinAvg30d": 0.763
+        "heikinAvg30d": 0.798
       },
       {
         "block": 45,
@@ -4342,17 +4342,17 @@ window.EPRX_DATA = {
         "saikou": 1.7,
         "heikin": 1.6,
         "boshuAvg30d": 42.0,
-        "heikinAvg30d": 0.793
+        "heikinAvg30d": 0.828
       },
       {
         "block": 46,
         "label": "22:30~23:00",
         "boshu": 42,
         "ouatsu": 95.543,
-        "saikou": 1.08,
-        "heikin": 0.93,
+        "saikou": 1.7,
+        "heikin": 1.57,
         "boshuAvg30d": 42.0,
-        "heikinAvg30d": 0.795
+        "heikinAvg30d": 0.81
       },
       {
         "block": 47,
@@ -4360,19 +4360,19 @@ window.EPRX_DATA = {
         "boshu": 42,
         "ouatsu": 95.543,
         "saikou": 1.7,
-        "heikin": 1.22,
+        "heikin": 1.43,
         "boshuAvg30d": 42.0,
-        "heikinAvg30d": 0.812
+        "heikinAvg30d": 0.837
       },
       {
         "block": 48,
         "label": "23:30~24:00",
         "boshu": 42,
-        "ouatsu": 100.543,
+        "ouatsu": 95.543,
         "saikou": 1.7,
-        "heikin": 1.1,
+        "heikin": 1.06,
         "boshuAvg30d": 42.0,
-        "heikinAvg30d": 0.854
+        "heikinAvg30d": 0.873
       }
     ],
     "九州": [
@@ -4380,481 +4380,481 @@ window.EPRX_DATA = {
         "block": 1,
         "label": "00:00~00:30",
         "boshu": 169,
-        "ouatsu": 179.014,
-        "saikou": 7.66,
-        "heikin": 2.38,
-        "boshuAvg30d": 164.8,
-        "heikinAvg30d": 3.994
+        "ouatsu": 99.136,
+        "saikou": 7.31,
+        "heikin": 3.67,
+        "boshuAvg30d": 165.0,
+        "heikinAvg30d": 3.936
       },
       {
         "block": 2,
         "label": "00:30~01:00",
         "boshu": 169,
-        "ouatsu": 185.936,
-        "saikou": 7.57,
-        "heikin": 4.26,
-        "boshuAvg30d": 164.8,
-        "heikinAvg30d": 3.344
+        "ouatsu": 106.058,
+        "saikou": 6.78,
+        "heikin": 3.46,
+        "boshuAvg30d": 165.0,
+        "heikinAvg30d": 3.405
       },
       {
         "block": 3,
         "label": "01:00~01:30",
         "boshu": 169,
-        "ouatsu": 187.742,
-        "saikou": 7.47,
-        "heikin": 4.3,
-        "boshuAvg30d": 164.8,
-        "heikinAvg30d": 3.029
+        "ouatsu": 107.864,
+        "saikou": 6.61,
+        "heikin": 3.39,
+        "boshuAvg30d": 165.0,
+        "heikinAvg30d": 3.091
       },
       {
         "block": 4,
         "label": "01:30~02:00",
         "boshu": 169,
-        "ouatsu": 187.74,
-        "saikou": 7.51,
-        "heikin": 4.92,
-        "boshuAvg30d": 164.8,
-        "heikinAvg30d": 2.822
+        "ouatsu": 107.862,
+        "saikou": 6.31,
+        "heikin": 3.25,
+        "boshuAvg30d": 165.0,
+        "heikinAvg30d": 2.917
       },
       {
         "block": 5,
         "label": "02:00~02:30",
         "boshu": 169,
-        "ouatsu": 187.74,
-        "saikou": 7.51,
-        "heikin": 4.73,
-        "boshuAvg30d": 164.8,
-        "heikinAvg30d": 2.751
+        "ouatsu": 107.862,
+        "saikou": 6.44,
+        "heikin": 3.26,
+        "boshuAvg30d": 165.0,
+        "heikinAvg30d": 2.843
       },
       {
         "block": 6,
         "label": "02:30~03:00",
         "boshu": 169,
-        "ouatsu": 187.74,
-        "saikou": 7.78,
-        "heikin": 4.92,
-        "boshuAvg30d": 164.8,
-        "heikinAvg30d": 3.08
+        "ouatsu": 107.862,
+        "saikou": 6.76,
+        "heikin": 3.44,
+        "boshuAvg30d": 165.0,
+        "heikinAvg30d": 3.175
       },
       {
         "block": 7,
         "label": "03:00~03:30",
         "boshu": 169,
-        "ouatsu": 206.895,
-        "saikou": 8.16,
-        "heikin": 4.97,
-        "boshuAvg30d": 165.5,
-        "heikinAvg30d": 3.388
+        "ouatsu": 168.017,
+        "saikou": 6.99,
+        "heikin": 4.28,
+        "boshuAvg30d": 165.7,
+        "heikinAvg30d": 3.482
       },
       {
         "block": 8,
         "label": "03:30~04:00",
         "boshu": 169,
-        "ouatsu": 203.067,
-        "saikou": 8.18,
-        "heikin": 5.03,
-        "boshuAvg30d": 165.5,
-        "heikinAvg30d": 3.78
+        "ouatsu": 221.213,
+        "saikou": 7.23,
+        "heikin": 5.07,
+        "boshuAvg30d": 165.7,
+        "heikinAvg30d": 3.873
       },
       {
         "block": 9,
         "label": "04:00~04:30",
         "boshu": 169,
-        "ouatsu": 204.911,
-        "saikou": 8.16,
-        "heikin": 4.58,
-        "boshuAvg30d": 166.2,
-        "heikinAvg30d": 4.043
+        "ouatsu": 253.017,
+        "saikou": 6.8,
+        "heikin": 5.23,
+        "boshuAvg30d": 166.3,
+        "heikinAvg30d": 4.116
       },
       {
         "block": 10,
         "label": "04:30~05:00",
         "boshu": 169,
-        "ouatsu": 204.919,
-        "saikou": 8.31,
-        "heikin": 4.68,
-        "boshuAvg30d": 166.2,
-        "heikinAvg30d": 4.454
+        "ouatsu": 251.041,
+        "saikou": 6.89,
+        "heikin": 6.08,
+        "boshuAvg30d": 166.3,
+        "heikinAvg30d": 4.509
       },
       {
         "block": 11,
         "label": "05:00~05:30",
         "boshu": 169,
-        "ouatsu": 266.919,
-        "saikou": 8.81,
-        "heikin": 6.79,
-        "boshuAvg30d": 166.2,
-        "heikinAvg30d": 4.605
+        "ouatsu": 251.041,
+        "saikou": 7.04,
+        "heikin": 6.26,
+        "boshuAvg30d": 166.3,
+        "heikinAvg30d": 4.744
       },
       {
         "block": 12,
         "label": "05:30~06:00",
         "boshu": 169,
-        "ouatsu": 263.619,
-        "saikou": 8.31,
-        "heikin": 6.66,
-        "boshuAvg30d": 166.2,
-        "heikinAvg30d": 4.484
+        "ouatsu": 247.741,
+        "saikou": 6.88,
+        "heikin": 5.28,
+        "boshuAvg30d": 166.3,
+        "heikinAvg30d": 4.63
       },
       {
         "block": 13,
         "label": "06:00~06:30",
         "boshu": 173,
-        "ouatsu": 267.619,
-        "saikou": 7.51,
-        "heikin": 5.62,
-        "boshuAvg30d": 169.5,
-        "heikinAvg30d": 4.089
+        "ouatsu": 251.741,
+        "saikou": 6.93,
+        "heikin": 5.04,
+        "boshuAvg30d": 169.7,
+        "heikinAvg30d": 4.176
       },
       {
         "block": 14,
         "label": "06:30~07:00",
         "boshu": 174,
-        "ouatsu": 268.619,
-        "saikou": 5.55,
-        "heikin": 4.28,
-        "boshuAvg30d": 170.5,
-        "heikinAvg30d": 3.41
+        "ouatsu": 159.741,
+        "saikou": 2.71,
+        "heikin": 1.8,
+        "boshuAvg30d": 170.7,
+        "heikinAvg30d": 3.478
       },
       {
         "block": 15,
         "label": "07:00~07:30",
         "boshu": 175,
-        "ouatsu": 167.619,
-        "saikou": 2.11,
-        "heikin": 1.32,
-        "boshuAvg30d": 171.5,
-        "heikinAvg30d": 2.64
+        "ouatsu": 114.741,
+        "saikou": 1.7,
+        "heikin": 1.2,
+        "boshuAvg30d": 171.7,
+        "heikinAvg30d": 2.613
       },
       {
         "block": 16,
         "label": "07:30~08:00",
         "boshu": 176,
-        "ouatsu": 160.619,
-        "saikou": 1.55,
-        "heikin": 0.9,
-        "boshuAvg30d": 172.5,
-        "heikinAvg30d": 2.651
+        "ouatsu": 164.741,
+        "saikou": 2.18,
+        "heikin": 1.34,
+        "boshuAvg30d": 172.7,
+        "heikinAvg30d": 2.604
       },
       {
         "block": 17,
         "label": "08:00~08:30",
         "boshu": 176,
-        "ouatsu": 160.619,
-        "saikou": 1.52,
-        "heikin": 0.94,
-        "boshuAvg30d": 172.5,
-        "heikinAvg30d": 2.889
+        "ouatsu": 131.741,
+        "saikou": 2.12,
+        "heikin": 1.58,
+        "boshuAvg30d": 172.7,
+        "heikinAvg30d": 2.84
       },
       {
         "block": 18,
         "label": "08:30~09:00",
         "boshu": 176,
-        "ouatsu": 177.619,
-        "saikou": 2.4,
-        "heikin": 1.5,
-        "boshuAvg30d": 172.5,
-        "heikinAvg30d": 3.193
+        "ouatsu": 181.741,
+        "saikou": 1.49,
+        "heikin": 0.71,
+        "boshuAvg30d": 172.7,
+        "heikinAvg30d": 3.151
       },
       {
         "block": 19,
         "label": "09:00~09:30",
         "boshu": 180,
-        "ouatsu": 213.733,
-        "saikou": 1.99,
-        "heikin": 1.16,
-        "boshuAvg30d": 176.5,
-        "heikinAvg30d": 3.21
+        "ouatsu": 179.763,
+        "saikou": 1.7,
+        "heikin": 0.8,
+        "boshuAvg30d": 176.7,
+        "heikinAvg30d": 3.135
       },
       {
         "block": 20,
         "label": "09:30~10:00",
         "boshu": 180,
-        "ouatsu": 218.727,
-        "saikou": 1.7,
-        "heikin": 0.66,
-        "boshuAvg30d": 176.5,
-        "heikinAvg30d": 3.089
+        "ouatsu": 231.741,
+        "saikou": 1.68,
+        "heikin": 0.69,
+        "boshuAvg30d": 176.7,
+        "heikinAvg30d": 3.002
       },
       {
         "block": 21,
         "label": "10:00~10:30",
         "boshu": 181,
-        "ouatsu": 216.779,
-        "saikou": 1.49,
-        "heikin": 0.56,
-        "boshuAvg30d": 177.5,
-        "heikinAvg30d": 2.969
+        "ouatsu": 223.809,
+        "saikou": 1.5,
+        "heikin": 0.64,
+        "boshuAvg30d": 177.7,
+        "heikinAvg30d": 2.89
       },
       {
         "block": 22,
         "label": "10:30~11:00",
         "boshu": 182,
-        "ouatsu": 255.79,
-        "saikou": 2,
-        "heikin": 0.72,
-        "boshuAvg30d": 177.8,
-        "heikinAvg30d": 3.044
+        "ouatsu": 221.82,
+        "saikou": 0.39,
+        "heikin": 0.39,
+        "boshuAvg30d": 178.0,
+        "heikinAvg30d": 2.972
       },
       {
         "block": 23,
         "label": "11:00~11:30",
         "boshu": 182,
-        "ouatsu": 262.222,
-        "saikou": 1.95,
-        "heikin": 0.62,
-        "boshuAvg30d": 178.5,
-        "heikinAvg30d": 2.954
+        "ouatsu": 228.252,
+        "saikou": 0.39,
+        "heikin": 0.39,
+        "boshuAvg30d": 178.7,
+        "heikinAvg30d": 2.878
       },
       {
         "block": 24,
         "label": "11:30~12:00",
         "boshu": 182,
-        "ouatsu": 260.137,
-        "saikou": 1.92,
-        "heikin": 0.6,
-        "boshuAvg30d": 178.5,
-        "heikinAvg30d": 2.9
+        "ouatsu": 218.317,
+        "saikou": 0.39,
+        "heikin": 0.39,
+        "boshuAvg30d": 178.7,
+        "heikinAvg30d": 2.836
       },
       {
         "block": 25,
         "label": "12:00~12:30",
         "boshu": 180,
-        "ouatsu": 258.189,
-        "saikou": 1.49,
-        "heikin": 0.53,
-        "boshuAvg30d": 177.2,
-        "heikinAvg30d": 2.412
+        "ouatsu": 208.719,
+        "saikou": 0.39,
+        "heikin": 0.39,
+        "boshuAvg30d": 177.3,
+        "heikinAvg30d": 2.376
       },
       {
         "block": 26,
         "label": "12:30~13:00",
         "boshu": 180,
-        "ouatsu": 260.152,
-        "saikou": 1.49,
-        "heikin": 0.58,
-        "boshuAvg30d": 177.2,
-        "heikinAvg30d": 2.602
+        "ouatsu": 210.667,
+        "saikou": 1,
+        "heikin": 0.41,
+        "boshuAvg30d": 177.3,
+        "heikinAvg30d": 2.573
       },
       {
         "block": 27,
         "label": "13:00~13:30",
         "boshu": 180,
-        "ouatsu": 267.587,
-        "saikou": 2.43,
-        "heikin": 1.9,
-        "boshuAvg30d": 177.2,
-        "heikinAvg30d": 2.996
+        "ouatsu": 227.943,
+        "saikou": 1.44,
+        "heikin": 0.55,
+        "boshuAvg30d": 177.3,
+        "heikinAvg30d": 2.958
       },
       {
         "block": 28,
         "label": "13:30~14:00",
         "boshu": 180,
-        "ouatsu": 269.563,
-        "saikou": 2.51,
-        "heikin": 1.99,
-        "boshuAvg30d": 177.2,
-        "heikinAvg30d": 3.576
+        "ouatsu": 235.593,
+        "saikou": 1.3,
+        "heikin": 0.54,
+        "boshuAvg30d": 177.3,
+        "heikinAvg30d": 3.505
       },
       {
         "block": 29,
         "label": "14:00~14:30",
         "boshu": 180,
-        "ouatsu": 219.563,
-        "saikou": 2.38,
-        "heikin": 1.84,
-        "boshuAvg30d": 176.5,
-        "heikinAvg30d": 3.822
+        "ouatsu": 235.593,
+        "saikou": 1.5,
+        "heikin": 0.52,
+        "boshuAvg30d": 176.7,
+        "heikinAvg30d": 3.714
       },
       {
         "block": 30,
         "label": "14:30~15:00",
         "boshu": 178,
-        "ouatsu": 213.563,
-        "saikou": 3.45,
-        "heikin": 2.01,
-        "boshuAvg30d": 175.2,
-        "heikinAvg30d": 4.204
+        "ouatsu": 218.593,
+        "saikou": 2.34,
+        "heikin": 1.68,
+        "boshuAvg30d": 175.3,
+        "heikinAvg30d": 4.091
       },
       {
         "block": 31,
         "label": "15:00~15:30",
         "boshu": 174,
-        "ouatsu": 150.579,
-        "saikou": 1.9,
-        "heikin": 1.04,
-        "boshuAvg30d": 171.2,
-        "heikinAvg30d": 4.475
+        "ouatsu": 168.593,
+        "saikou": 3.75,
+        "heikin": 2.32,
+        "boshuAvg30d": 171.3,
+        "heikinAvg30d": 4.317
       },
       {
         "block": 32,
         "label": "15:30~16:00",
         "boshu": 174,
-        "ouatsu": 190.563,
-        "saikou": 3.64,
-        "heikin": 2.24,
-        "boshuAvg30d": 171.2,
-        "heikinAvg30d": 5.153
+        "ouatsu": 125.593,
+        "saikou": 6.06,
+        "heikin": 3.11,
+        "boshuAvg30d": 171.3,
+        "heikinAvg30d": 5.02
       },
       {
         "block": 33,
         "label": "16:00~16:30",
         "boshu": 174,
-        "ouatsu": 252.913,
-        "saikou": 7.31,
-        "heikin": 6.28,
-        "boshuAvg30d": 171.2,
-        "heikinAvg30d": 5.605
+        "ouatsu": 256.593,
+        "saikou": 7.09,
+        "heikin": 5.27,
+        "boshuAvg30d": 171.3,
+        "heikinAvg30d": 5.596
       },
       {
         "block": 34,
         "label": "16:30~17:00",
         "boshu": 174,
-        "ouatsu": 252.913,
-        "saikou": 8.18,
-        "heikin": 7.1,
-        "boshuAvg30d": 170.5,
-        "heikinAvg30d": 5.982
+        "ouatsu": 256.593,
+        "saikou": 7.99,
+        "heikin": 5.92,
+        "boshuAvg30d": 170.7,
+        "heikinAvg30d": 5.999
       },
       {
         "block": 35,
         "label": "17:00~17:30",
         "boshu": 173,
-        "ouatsu": 257.574,
-        "saikou": 8.5,
-        "heikin": 6.42,
-        "boshuAvg30d": 170.2,
-        "heikinAvg30d": 6.014
+        "ouatsu": 253.604,
+        "saikou": 7.69,
+        "heikin": 6.09,
+        "boshuAvg30d": 170.3,
+        "heikinAvg30d": 6.01
       },
       {
         "block": 36,
         "label": "17:30~18:00",
         "boshu": 172,
-        "ouatsu": 297.748,
-        "saikou": 8.7,
-        "heikin": 7.76,
-        "boshuAvg30d": 169.2,
-        "heikinAvg30d": 6.18
+        "ouatsu": 242.778,
+        "saikou": 8.08,
+        "heikin": 6.3,
+        "boshuAvg30d": 169.3,
+        "heikinAvg30d": 6.221
       },
       {
         "block": 37,
         "label": "18:00~18:30",
         "boshu": 171,
-        "ouatsu": 236.109,
-        "saikou": 8.31,
-        "heikin": 7.2,
-        "boshuAvg30d": 168.2,
-        "heikinAvg30d": 6.204
+        "ouatsu": 241.965,
+        "saikou": 8.34,
+        "heikin": 6.43,
+        "boshuAvg30d": 168.3,
+        "heikinAvg30d": 6.242
       },
       {
         "block": 38,
         "label": "18:30~19:00",
         "boshu": 171,
-        "ouatsu": 247.911,
-        "saikou": 8.36,
-        "heikin": 7.2,
-        "boshuAvg30d": 168.2,
-        "heikinAvg30d": 6.06
+        "ouatsu": 241.965,
+        "saikou": 8.12,
+        "heikin": 6.15,
+        "boshuAvg30d": 168.3,
+        "heikinAvg30d": 6.103
       },
       {
         "block": 39,
         "label": "19:00~19:30",
         "boshu": 171,
-        "ouatsu": 268.655,
-        "saikou": 8.06,
-        "heikin": 6.98,
-        "boshuAvg30d": 168.2,
-        "heikinAvg30d": 5.817
+        "ouatsu": 243.141,
+        "saikou": 7.68,
+        "heikin": 5.86,
+        "boshuAvg30d": 168.3,
+        "heikinAvg30d": 5.866
       },
       {
         "block": 40,
         "label": "19:30~20:00",
         "boshu": 171,
-        "ouatsu": 262.994,
-        "saikou": 8.06,
-        "heikin": 6.03,
-        "boshuAvg30d": 168.2,
-        "heikinAvg30d": 5.393
+        "ouatsu": 245.13,
+        "saikou": 7.14,
+        "heikin": 5.49,
+        "boshuAvg30d": 168.3,
+        "heikinAvg30d": 5.413
       },
       {
         "block": 41,
         "label": "20:00~20:30",
         "boshu": 171,
-        "ouatsu": 254.489,
-        "saikou": 7.51,
-        "heikin": 6.49,
-        "boshuAvg30d": 168.2,
-        "heikinAvg30d": 5.355
+        "ouatsu": 238.609,
+        "saikou": 7.12,
+        "heikin": 5.41,
+        "boshuAvg30d": 168.3,
+        "heikinAvg30d": 5.407
       },
       {
         "block": 42,
         "label": "20:30~21:00",
         "boshu": 171,
-        "ouatsu": 264.123,
-        "saikou": 7.46,
-        "heikin": 6.41,
-        "boshuAvg30d": 168.2,
-        "heikinAvg30d": 5.181
+        "ouatsu": 238.609,
+        "saikou": 6.98,
+        "heikin": 5.32,
+        "boshuAvg30d": 168.3,
+        "heikinAvg30d": 5.232
       },
       {
         "block": 43,
         "label": "21:00~21:30",
         "boshu": 171,
-        "ouatsu": 260.949,
-        "saikou": 6.93,
-        "heikin": 6.01,
-        "boshuAvg30d": 168.2,
-        "heikinAvg30d": 5.055
+        "ouatsu": 245.071,
+        "saikou": 7.25,
+        "heikin": 5.51,
+        "boshuAvg30d": 168.3,
+        "heikinAvg30d": 5.107
       },
       {
         "block": 44,
         "label": "21:30~22:00",
         "boshu": 172,
-        "ouatsu": 263.925,
-        "saikou": 7.19,
-        "heikin": 6.26,
-        "boshuAvg30d": 169.2,
-        "heikinAvg30d": 4.989
+        "ouatsu": 246.071,
+        "saikou": 7.44,
+        "heikin": 5.78,
+        "boshuAvg30d": 169.3,
+        "heikinAvg30d": 5.066
       },
       {
         "block": 45,
         "label": "22:00~22:30",
         "boshu": 172,
-        "ouatsu": 263.925,
-        "saikou": 7.51,
-        "heikin": 5.69,
-        "boshuAvg30d": 169.2,
-        "heikinAvg30d": 5.071
+        "ouatsu": 246.071,
+        "saikou": 7.79,
+        "heikin": 6.04,
+        "boshuAvg30d": 169.3,
+        "heikinAvg30d": 5.134
       },
       {
         "block": 46,
         "label": "22:30~23:00",
         "boshu": 172,
-        "ouatsu": 271.575,
-        "saikou": 7.31,
-        "heikin": 5.63,
-        "boshuAvg30d": 168.5,
-        "heikinAvg30d": 4.6
+        "ouatsu": 248.047,
+        "saikou": 7.28,
+        "heikin": 5.46,
+        "boshuAvg30d": 168.7,
+        "heikinAvg30d": 4.677
       },
       {
         "block": 47,
         "label": "23:00~23:30",
         "boshu": 172,
-        "ouatsu": 196.575,
-        "saikou": 7.12,
-        "heikin": 1.96,
-        "boshuAvg30d": 168.5,
-        "heikinAvg30d": 4.611
+        "ouatsu": 248.047,
+        "saikou": 7.11,
+        "heikin": 5.37,
+        "boshuAvg30d": 168.7,
+        "heikinAvg30d": 4.566
       },
       {
         "block": 48,
         "label": "23:30~24:00",
         "boshu": 171,
-        "ouatsu": 206.575,
-        "saikou": 6.84,
-        "heikin": 3.81,
-        "boshuAvg30d": 168.2,
-        "heikinAvg30d": 3.747
+        "ouatsu": 126.697,
+        "saikou": 7.05,
+        "heikin": 3.56,
+        "boshuAvg30d": 168.3,
+        "heikinAvg30d": 3.796
       }
     ]
   }
