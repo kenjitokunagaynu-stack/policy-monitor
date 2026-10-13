@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-10-09",
+  "collectedAt": "2026-10-13",
   "periodLabel": "2025年11月〜2026年10月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,40 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20261013_helios_lowvoltage_primary_reserve_demo",
+      "image": "https://prcdn.freetls.fastly.net/release_image/185181/4/185181-4-769ee740ae6d0f94a298a8f4d01aa095-2400x1260.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-13",
+      "genre": "operation",
+      "title": "ヘリオス、クラウドで束ねた低圧蓄電所で一次調整力を実証 ─ 追従率100%・応動1.8秒",
+      "subtitle": "神奈川・千葉の低圧蓄電所2拠点（各49.9kW/205.02kWh）を仮想EMSで統合し、一次調整力の事前審査項目に沿った試験で要件をクリア",
+      "sourceName": "PR TIMES（株式会社ヘリオス）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000004.000185181.html",
+      "topics": [
+        {
+          "theme": "低圧アグリゲーションの技術実証",
+          "conclusion": "クラウド経由でも一次調整力の応動要件（30秒以内）を大きく下回る1.8秒で応動",
+          "detail": "ワンズエナジー、スマートパワーシステムと協力し、9月28日に約定量99kWの模擬信号試験で追従率100%（基準90%以上）、周波数急低下時は1.8秒で応動し2秒で約定量の98%に到達。9月29日には実系統で1時間の連続動作も確認した（市場取引実績ではない）。2026年度から低圧リソースの需給調整市場参入が始まったが最低入札量は1MWのため、約25区画を束ねる「低圧アグリゲーションサービス」として実取引開始を準備する。"
+        }
+      ]
+    },
+    {
+      "id": "n20261008_everylab_lowvoltage_100projects",
+      "image": "https://prcdn.freetls.fastly.net/release_image/185462/4/185462-4-26d9d5d0021ae99a031ae2483b792164-1536x1024.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-08",
+      "genre": "entry",
+      "title": "エブリーラボ、低圧系統用蓄電池の申請済み・申請準備案件が100件突破 ─ 土地付きプラン50件を先行販売",
+      "subtitle": "東北・東京電力管内中心に49.9kW/200kWhクラスの低圧蓄電所を開発、2027年に年間200件の販売を目指す",
+      "sourceName": "PR TIMES（エブリーラボ株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000004.000185462.html",
+      "topics": [
+        {
+          "theme": "低圧蓄電所の開発・販売拡大",
+          "conclusion": "土地と設備を一体化した「土地付き低圧系統用蓄電池プラン」を第一期50件限定で販売開始",
+          "detail": "福島県郡山市のエブリーラボは、8月20日時点で申請完了25件・手続き着手55件だった案件が、申請済み・申請準備合わせて100件を突破したと発表。土地を持たない法人・個人も同社の開発案件から購入を検討できる。なお低圧蓄電池は敷地分割対策などの制度見直しが進行中で、計画は電力会社の接続検討結果により変わり得るとしている。"
+        }
+      ]
+    },
     {
       "id": "n20261008_gritz_3sites_energized",
       "image": "https://prcdn.freetls.fastly.net/release_image/117277/12/117277-12-7ee987affd0fd5da27a488c39269f90e-3400x2550.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
