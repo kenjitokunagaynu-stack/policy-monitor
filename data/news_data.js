@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-10-13",
+  "collectedAt": "2026-10-14",
   "periodLabel": "2025年11月〜2026年10月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,73 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20261013_qenest_sano_primary_reserve_entry",
+      "image": "https://prcdn.freetls.fastly.net/release_image/126341/33/126341-33-4d9ba54597ce7464a8b48f1f03d2a268-1300x975.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-13",
+      "genre": "operation",
+      "title": "Q.ENEST（キューエネス）ホールディングス、自社所有の系統用蓄電池で需給調整市場へ参入",
+      "subtitle": "ハンファジャパン系のQ.ENESTが「Q.ENEST 佐野高圧蓄電所」（栃木県佐野市・1,999kW/8,226kWh）で2026年10月から一次調整力の運用を開始",
+      "sourceName": "PR TIMES（Q.ENESTホールディングス株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000033.000126341.html",
+      "topics": [
+        {
+          "theme": "自社保有・自社運用での市場参入",
+          "conclusion": "卸電力市場での充放電運用（2026年5月〜）に続き、需給調整市場（一次調整力）へ参入",
+          "detail": "Q.ENESTはハンファジャパンの電力事業会社として2023年に設立。佐野高圧蓄電所は自社で保有・運用し、2026年5月から卸電力市場で充放電運用、10月から一次調整力に参入した。今後は卸電力市場・需給調整市場・容量市場・市場外契約を組み合わせた運用を目指し、AIによる市場予測・充放電制御の高度化やVPP事業による多様なリソースの統合管理も進める。"
+        }
+      ]
+    },
+    {
+      "id": "n20261013_sunvillage_4sites_balancing_market_entry",
+      "date": "2026-10-13",
+      "genre": "operation",
+      "title": "サンヴィレッジ、系統用蓄電池4案件（合計8MW/32MWh）の需給調整市場への参入を完了",
+      "subtitle": "栃木県足利市・埼玉県本庄市（2件）・寄居町の各2MW/8MWh蓄電所が2026年9月までに参入審査に合格し実需給を開始、アグリゲーターは丸紅新電力",
+      "sourceName": "PR TIMES（株式会社サンヴィレッジ）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000079.000086244.html",
+      "topics": [
+        {
+          "theme": "開発〜アグリゲーションのフルパッケージ",
+          "conclusion": "サンヴィレッジがEPC・O&M、丸紅新電力がアグリゲーションを担う体制で4案件すべてが需給調整市場で稼働",
+          "detail": "足利（2025年9月受電→2026年1月参入）、本庄①（2026年3月受電→6月参入）、本庄②（4月受電→7月参入）、寄居（7月受電→9月参入）の4案件。サンヴィレッジは土地・系統権利の提供、EPC、O&Mを、丸紅新電力は試運転対応・一般送配電事業者との調整・市場入札を担当。開発からアグリゲーションまで一体の「系統用蓄電池のフルパッケージ商品」を第三者向けに展開し、全国で事業を拡大する方針。"
+        }
+      ]
+    },
+    {
+      "id": "n20261013_enecho_derwg4_subsidy_bess_operation_data",
+      "image": "https://bessnews.jp/institutional/proffessional/4630803102001/img/thumbnail.jpg",
+      "date": "2026-10-13",
+      "genre": "policy",
+      "title": "エネ庁、補助金採択の系統用蓄電池の2025年度運用データを検証 ─ 「ほぼ需給調整市場だけ」の運用モデルに影響の可能性（分散型エネルギー推進戦略WG 第4回）",
+      "subtitle": "運用は一次調整力が中心、スポットの売買単価差は約6.5円/kWh。上限価格の引下げ（19.51円→15円→10円、最終7.21円まで）と応札不足の縮小で従来モデルに影響と指摘",
+      "sourceName": "BESS NEWS（資源エネルギー庁 DER-WG資料の解説）",
+      "sourceUrl": "https://bessnews.jp/institutional/proffessional/4630803102001/",
+      "topics": [
+        {
+          "theme": "需給調整市場依存モデルの見直し",
+          "conclusion": "エネ庁資料は「ほぼ需給調整市場のみで運用を行う従来のビジネスモデルに影響を及ぼす可能性」と明記",
+          "detail": "補助金案件の2025年度実績では、一次調整力の約定1コマ収入・約定コマ数ともスポットを上回った。スポットの平均買電8.3円/kWh・売電14.8円/kWhで差は約6.5円（費用控除前）。補助金・長期脱炭素電源オークション案件の運転開始見込みは約510万kW、2026年6月末の契約申込みは約4,100万kW、接続検討は約2億1,100万kW。出力制御抑制に資する取組の検討も提案された。"
+        }
+      ]
+    },
+    {
+      "id": "n20261013_sii_bess_subsidy_faq_update",
+      "image": "https://bessnews.jp/institutional/standard/4630802102001/img/thumbnail.jpg",
+      "date": "2026-10-13",
+      "genre": "policy",
+      "title": "系統用蓄電池補助金のFAQが3問追加 ─ 土地取得・系統連系契約は交付決定前に契約可、蓄電池・PCSの発注は交付決定後",
+      "subtitle": "令和7年度補正「系統用蓄電システム等導入支援事業」（SII、公募締切11月4日17時必着）のFAQが18問→21問に。防音壁・フェンスは補助対象外と明記",
+      "sourceName": "BESS NEWS（SII公表FAQの解説）",
+      "sourceUrl": "https://bessnews.jp/institutional/standard/4630802102001/",
+      "topics": [
+        {
+          "theme": "補助金申請実務の留意点",
+          "conclusion": "交付決定前に前倒しで契約できるのは補助対象外費用のみ",
+          "detail": "10月9日版FAQで追加されたのはNo.7（複数年度事業の概算払は採択事業者に別途案内）、No.10（土地取得費・系統連系契約費など補助対象外費用は交付決定前の契約・発注可）、No.14（防音壁・フェンスは補助対象外）。蓄電池・PCS等の補助対象経費は交付決定日（2027年1月上旬以降予定）以降の契約が必要で、一括契約の場合は契約単位ごとにSIIへの確認が推奨される。申請はJグランツと書類郵送の併用。"
+        }
+      ]
+    },
     {
       "id": "n20261013_helios_lowvoltage_primary_reserve_demo",
       "image": "https://prcdn.freetls.fastly.net/release_image/185181/4/185181-4-769ee740ae6d0f94a298a8f4d01aa095-2400x1260.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
