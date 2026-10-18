@@ -8,7 +8,7 @@
 window.EPRX_DATA = {
   "product": "一次調整力（複合市場）",
   "targetDate": "2026-10-17",
-  "fetchedAt": "2026-10-17",
+  "fetchedAt": "2026-10-18",
   "avgWindowLabel": "過去30日平均（2026/09/17〜2026/10/16）",
   "sourceUrl": "https://www.eprx.or.jp/information/results.php",
   "units": {
