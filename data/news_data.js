@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-10-14",
+  "collectedAt": "2026-10-19",
   "periodLabel": "2025年11月〜2026年10月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,90 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20261016_nextes_syndicated_loan_2bn",
+      "image": "https://prcdn.freetls.fastly.net/release_image/176308/20/176308-20-a70406d12d4a154c8dfe227cdbdefbee-1920x1080.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-16",
+      "genre": "capital",
+      "title": "NEXTES、総額20億円のシンジケートローンを締結 ─ 中小機構の債務保証制度を活用",
+      "subtitle": "商工中金をアレンジャーに地銀8行が参加する20億円のタームローンで、定置用蓄電池の生産体制強化と研究開発に充当",
+      "sourceName": "PR TIMES（株式会社NEXTES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000020.000176308.html",
+      "topics": [
+        {
+          "theme": "国産蓄電池メーカーの資金調達",
+          "conclusion": "系統用蓄電池需要の拡大に向け、生産・開発基盤を強化",
+          "detail": "旧NExT-e SolutionsのNEXTESは2026年9月17日、商工中金をアレンジャーとし、静岡・京葉・北國・常陽・横浜・七十七・千葉・山梨中央の地域金融機関8行が参加する総額20億円のシンジケートローンを締結。中小企業基盤整備機構の「革新的技術研究成果活用事業円滑化債務保証制度」により貸付額の50%が保証される。資金は定置用蓄電池の生産体制強化と、電池制御技術「ACTIVA」を軸とする研究開発に充てる。"
+        }
+      ]
+    },
+    {
+      "id": "n20261015_amplify_mihama_50mw_aurora_ing",
+      "date": "2026-10-15",
+      "genre": "capital",
+      "title": "AMP-lifyの福井県美浜町・系統用蓄電池（50MW/200MWh）、ING主幹事の約65億円ファイナンス ─ オーロラが経済性分析を支援",
+      "subtitle": "マーチャント型の美浜町プロジェクト（50MW/200MWh）でINGが単独主幹事として約64.8億円を組成、Aurora Energy Researchがマーケットアドバイザーとして収益見通しを提供",
+      "sourceName": "PR TIMES（オーロラ・エナジー・リサーチ）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000009.000167879.html",
+      "topics": [
+        {
+          "theme": "マーチャント型大型BESSのファイナンス",
+          "conclusion": "市場収益のみに依拠する大型案件で外資系銀行主導の資金調達が成立",
+          "detail": "AMP-lify株式会社が福井県美浜町で開発する出力50MW・容量200MWhの系統用蓄電池プロジェクトについて、ING Wholesale Bankingが単独主幹事として約64億8,100万円のファイナンスを組成。電力市場での取引で収益を得るマーチャント型で、英Aurora Energy Researchが独自の日本電力市場モデルに基づく収益見通しレポートを提供した。同日、オーロラは住友商事の浪江町蓄電所（62MW）の経済性分析支援も発表している。"
+        }
+      ]
+    },
+    {
+      "id": "n20261015_nihonchikudenchi_nc_nagahama_mikawa_market",
+      "image": "https://prcdn.freetls.fastly.net/release_image/161802/114/161802-114-50448f7bacd304f3d524edd320fd27be-864x650.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-15",
+      "genre": "operation",
+      "title": "日本蓄電池、滋賀県長浜市「NC長浜市三川町蓄電所」が需給調整市場へ参入",
+      "subtitle": "1,999kW/8,146kWhの高圧蓄電所が2026年10月13日に需給調整市場での運用を開始、アグリゲーターはデジタルグリッド",
+      "sourceName": "PR TIMES（日本蓄電池株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000114.000161802.html",
+      "topics": [
+        {
+          "theme": "NCシリーズ蓄電所の市場運用開始",
+          "conclusion": "TMEIC製システム（CATLセル）の蓄電所がデジタルグリッド経由で市場参入",
+          "detail": "日本蓄電池が開発・運用・現場管理を担う「NC長浜市三川町蓄電所」（定格出力1,999kW・容量8,146kWh）が、2026年10月13日から需給調整市場での運用を開始した。蓄電池システムはTMEIC製（電池セルはCATL）。アグリゲーションはデジタルグリッドが自社プラットフォームで担い、再エネの出力変動吸収・平準化に貢献するとしている。"
+        }
+      ]
+    },
+    {
+      "id": "n20261014_fantasista_nagahama_pss_construction",
+      "image": "https://prcdn.freetls.fastly.net/release_image/93934/64/93934-64-c9a5fcb3cb201c77888ab39f3e9ab48f-1448x1086.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-14",
+      "genre": "epc",
+      "title": "fantasista、系統用蓄電池事業の第2号案件「fantasista nagahama PSS」（滋賀県長浜市）の建設を開始",
+      "subtitle": "定格1,999kW/7,521kWhの高圧蓄電所を2026年10月に着工、2027年4月運用開始予定（蓄電池パワーエックス、PCS富士電機、アグリゲーターE-Flow）",
+      "sourceName": "PR TIMES（株式会社fantasista）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000064.000093934.html",
+      "topics": [
+        {
+          "theme": "上場企業グループの蓄電所第2号案件",
+          "conclusion": "群馬太田に続く高圧案件を着工し、特別高圧（東京都稲城市）も計画",
+          "detail": "東証スタンダード上場のfantasista（1783）グループのNC MAX WORLD傘下SPC「合同会社fantasista battery 3」が事業主体。滋賀県長浜市の約1,790㎡に定格出力1,999kW・容量7,521kWhの蓄電所を建設し、2027年3月完工・4月運用開始を予定。基本設計・建設はスズカ電工、蓄電池パワーエックス、PCS富士電機、EMSニシム電子工業でJC-STAR認証取得済み。アグリゲーターは関西電力子会社のE-Flow。"
+        }
+      ]
+    },
+    {
+      "id": "n20261014_sanwasystem_first_bess_operation_5orders",
+      "image": "https://prcdn.freetls.fastly.net/release_image/187082/2/187082-2-defb6305cc53aed303ebdd2a6b66acf0-1372x960.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-14",
+      "genre": "entry",
+      "title": "サンワシステム（高島グループ）、系統用蓄電池事業の第1号案件が運転開始 ─ 追加5件を受注",
+      "subtitle": "2026年1月に蓄電事業部を発足、5月着工の第1号案件が9月に運転開始し、さらに5件を受注済み。2027年までに約30MW、中長期で100MW超を目標",
+      "sourceName": "PR TIMES（株式会社サンワシステム）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000002.000187082.html",
+      "topics": [
+        {
+          "theme": "商社系子会社のBESS事業参入",
+          "conclusion": "発足約2か月で初受注、パイプラインは50MW超",
+          "detail": "東証プライム上場の高島（8007）の子会社サンワシステムは、オフサイトPPA等の再エネ事業の経験を生かし2026年1月に蓄電事業部を設立。開発・設計・調達・施工・保守を担い、サンライフコーポレーション（アグリゲーター・蓄電池メーカー選定）やデジタルグリッド（アグリゲーション・運用）と連携する。第1号案件（所在地・規模は非公表）は5月着工・9月運転開始。追加5件も順次着工予定。"
+        }
+      ]
+    },
     {
       "id": "n20261013_qenest_sano_primary_reserve_entry",
       "image": "https://prcdn.freetls.fastly.net/release_image/126341/33/126341-33-4d9ba54597ce7464a8b48f1f03d2a268-1300x975.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
