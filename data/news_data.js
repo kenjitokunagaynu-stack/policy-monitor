@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-10-19",
+  "collectedAt": "2026-10-21",
   "periodLabel": "2025年11月〜2026年10月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,57 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20261020_growup_kaseguri_ai_aggregation",
+      "image": "https://prcdn.freetls.fastly.net/release_image/188531/4/188531-4-8ecbe73443dad12672db0e8a50513614-3358x1892.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-20",
+      "genre": "entry",
+      "title": "グローアップ、系統用蓄電池向けAIアグリゲーション「かせぐり」を開始",
+      "subtitle": "容量市場・一次調整力・JEPX・三次調整力を組み合わせるAI運用で、中部エリアのバックテストでは一次調整力ポジワット単独比で年間最大7,500万円の収益差",
+      "sourceName": "PR TIMES（株式会社グローアップ）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000004.000188531.html",
+      "topics": [
+        {
+          "theme": "AIアグリゲーションへの新規参入",
+          "conclusion": "単一市場依存から複数市場のバリュースタッキングへの移行を訴求",
+          "detail": "グローアップは系統用蓄電池事業「GUグリッド」の一環として、AIによる市場価格予測と充放電制御で複数市場・運用手法を組み合わせるアグリゲーションサービス「かせぐり」を開始。対象は容量市場、一次調整力（ポジワット・ネガワット）、JEPX、三次調整力など。中部エリアの2026年4〜8月データを用いたバックテストでは、一次調整力ポジワットのみの運用と比べ年間収益ベースで最大7,500万円の差が出たとしている。"
+        }
+      ]
+    },
+    {
+      "id": "n20261019_remixpoint_ena_iwamura3_site",
+      "image": "https://prcdn.freetls.fastly.net/release_image/33609/231/33609-231-e78ce5f003cee5829a1424d8fc5244c5-1392x552.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-19",
+      "genre": "entry",
+      "title": "リミックスポイント、自社保有12か所目「恵那岩村3蓄電所（仮称）」（岐阜県恵那市）の開発用地等を取得",
+      "subtitle": "約2MW/約8MWhの高圧蓄電所で、2027年4月着工・7月下旬受電開始・同年秋頃の需給調整市場参入を予定、自社保有目標25か所に対し進捗48%",
+      "sourceName": "PR TIMES（株式会社リミックスポイント）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000231.000033609.html",
+      "topics": [
+        {
+          "theme": "自社保有型蓄電所の積み上げ",
+          "conclusion": "開発段階を含む自社保有案件が12か所に到達",
+          "detail": "リミックスポイントは岐阜県恵那市で「恵那岩村3蓄電所（仮称）」（定格出力約2MW・定格容量約8MWh）の開発用地等を取得。工事は2027年4月着工、蓄電池設置は6月下旬開始、受電開始は7月下旬の予定で、需給調整市場への参入は2027年秋頃を見込む。開発段階を含む自社保有案件は12か所目となり、目標とする25か所に対する進捗率は48%。"
+        }
+      ]
+    },
+    {
+      "id": "n20261019_nippon_chikudenchi_rsaa_sbi_bess_fund",
+      "image": "https://prcdn.freetls.fastly.net/release_image/154894/16/154894-16-e6156919116843af4590d7eeb9163fbf-567x355.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-19",
+      "genre": "capital",
+      "title": "日本蓄電池・SBIスマートエナジー、系統用蓄電池事業ファンドを組成 ─ RSアセットアドバイザーズが運営開始",
+      "subtitle": "全国7件の高圧系統用蓄電施設を対象とするファンドで、RSアセットアドバイザーズがアセットマネジメント、日本蓄電池がオリジネーターとして開発・維持管理を担い、2026年度中の商業運転開始を見込む",
+      "sourceName": "PR TIMES（RSアセットアドバイザーズ株式会社／日本蓄電池株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000016.000154894.html",
+      "topics": [
+        {
+          "theme": "系統用蓄電池のファンド化",
+          "conclusion": "高圧蓄電所7件をファンド＋ノンリコースPFで資金調達",
+          "detail": "SBIスマートエナジーと日本蓄電池が共同で「系統用蓄電池事業ファンド」を組成し、RSアセットアドバイザーズが2026年10月1日から運営（アセットマネジメント業務）を開始。日本蓄電池はオリジネーターとして各施設の開発と維持管理を担う。対象は全国7件の高圧系統用蓄電施設で、SPCを活用したノンリコース型プロジェクトファイナンスで資金を調達し、需給調整市場・卸電力市場・容量市場での収益化を目指す。ファンド規模・総容量は非開示。日本蓄電池も同日に同内容のリリース（000000115.000161802）を発表。"
+        }
+      ]
+    },
     {
       "id": "n20261016_nextes_syndicated_loan_2bn",
       "image": "https://prcdn.freetls.fastly.net/release_image/176308/20/176308-20-a70406d12d4a154c8dfe227cdbdefbee-1920x1080.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
