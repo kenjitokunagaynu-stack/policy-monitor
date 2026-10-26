@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-10-21",
+  "collectedAt": "2026-10-26",
   "periodLabel": "2025年11月〜2026年10月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,91 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20261026_tensorenergy_microgx_kyoto_aggregation",
+      "image": "https://prcdn.freetls.fastly.net/release_image/96424/54/96424-54-600cb2408e932f1b377441195e4f0845-3840x2160.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-26",
+      "genre": "capital",
+      "title": "Tensor Energy、グリーンエナジー＆カンパニーの「福知山市土師蓄電所」にアグリゲーションシステムを提供",
+      "subtitle": "GE&Cグループのアグリゲーター GREEN ACTIONがTensor Cloudを使い、京都府福知山市の蓄電所（1,999kW/8,146kWh）で初のJEPX取引を開始、需給調整市場にも参加予定",
+      "sourceName": "PR TIMES（Tensor Energy株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000054.000096424.html",
+      "topics": [
+        {
+          "theme": "自社保有蓄電所の運用システム",
+          "conclusion": "開発から運用まで自社グループで担うGE&Cが、市場運用の基盤としてTensor Cloudを採用",
+          "detail": "Tensor Energyは、グリーンエナジー＆カンパニーが100％出資する合同会社マイクロGX京都にアグリゲーションシステムの提供を開始。9月29日に運用開始した福知山市土師蓄電所（LFP）で、グループのGREEN ACTIONがJEPXでの売買入札・OCCTOへの計画提出を自動化して運用する。需給調整市場への参加後はマルチマーケット入札最適化も行う。EPCはグリーンエナジー・プラス、O&Mはグリーンエナジー・ファシリティーズ。GE&Cは今後、東京・中部電力管内にも保有蓄電所を広げる方針。"
+        }
+      ]
+    },
+    {
+      "id": "n20261023_hepco_nw_charge_control_rinku_tomato",
+      "image": "https://bessnews.jp/institutional/beginner/4631801102001/img/thumbnail.jpg",
+      "date": "2026-10-23",
+      "genre": "policy",
+      "title": "北海道電力ネットワーク、「充電制御装置」を条件とした系統用蓄電池の接続対象に臨空苫東系統を追加 ─ 対象は28系統に",
+      "subtitle": "充電側の空容量が足りない系統でも増強を待たずに接続できる取り扱いを臨空苫東変電所（2030年3月使用開始予定）以下に拡大、混雑時の充電抑制は無補償",
+      "sourceName": "BESS NEWS（ベスニュース）",
+      "sourceUrl": "https://bessnews.jp/institutional/beginner/4631801102001/",
+      "topics": [
+        {
+          "theme": "北海道の充電側系統制約への対応",
+          "conclusion": "充電制御装置つき接続の対象が27系統から28系統へ。条件は2023年1月の受付開始以来の枠組みのまま",
+          "detail": "北海道電力ネットワークは10月23日、充電制御装置の設置を前提に系統用蓄電池の接続申込みを受け付ける対象に臨空苫東系統を追加し、同日から受付を開始した。混雑時は充電を一律の割合で抑制され、その損失は補償されない。工事費は事業者負担で、親局A（基幹系変電所）は1億5,000万円程度、親局Bは6,000万円程度、子局は1,000万円程度が現時点の想定。2026年に追加された南千歳・東石狩・臨空苫東はいずれも変電所の新設待ちとなっている。"
+        }
+      ]
+    },
+    {
+      "id": "n20261022_eprx_mms_clearing_halt",
+      "image": "https://bessnews.jp/market/proffessional/4631703001002/img/thumbnail.jpg",
+      "date": "2026-10-22",
+      "genre": "policy",
+      "title": "EPRX、需給調整市場の約定処理停止（10/17）の原因は「最適化計算で最適解が得られなかった」ため ─ 未操作の取引会員は「受諾可」扱い",
+      "subtitle": "10月18日実需給分はリカバリWebアプリでのコンティンジェンシー対応に移行し、17時までに受諾可否を操作しなかった会員は「受諾可」とみなされた。再発防止策は未公表",
+      "sourceName": "BESS NEWS（ベスニュース）",
+      "sourceUrl": "https://bessnews.jp/market/proffessional/4631703001002/",
+      "topics": [
+        {
+          "theme": "需給調整市場の運営リスク",
+          "conclusion": "組合せによっては最適解が得られず同様の事象が再発し得るため、取引会員は当日中の受諾操作体制を整える必要",
+          "detail": "電力需給調整力取引所（EPRX）は10月17日、需給調整市場システム（MMS）で10月18日実需給分の約定処理が停止したと公表。第二報で入札データの健全性を確認したとしてコンティンジェンシー対応に移行し、取引会員に1時間以内のリカバリWebアプリでの受諾可否操作を求めた。18日の第四報で原因はMMSの不具合ではなく最適化計算で最適解が得られなかったためと説明し、同日取引分は通常どおり約定した。10月上旬の中部電力PG中給システム障害に続き、2週間で2件目の市場影響となった。"
+        }
+      ]
+    },
+    {
+      "id": "n20261020_erex_sammu_chiba_bess_cod",
+      "image": "https://prcdn.freetls.fastly.net/release_image/29914/179/29914-179-68013f6db853dde64331dc7d962723d9-1920x1440.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-20",
+      "genre": "operation",
+      "title": "イーレックス、系統用蓄電池第2号案件「千葉県山武郡蓄電所」の商業運転を開始",
+      "subtitle": "千葉県芝山町の蓄電所（1,989.6kW/8,147kWh・LFP）が10月20日に商業運転開始。2026年4月の第1号に続き、2028年までに取扱電源100MWを目指す",
+      "sourceName": "PR TIMES（イーレックス株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000179.000029914.html",
+      "topics": [
+        {
+          "theme": "アグリゲーション事業の拡大",
+          "conclusion": "自社蓄電所の運用と他社蓄電池の運用受託を組み合わせ、アグリゲーション事業を拡大",
+          "detail": "イーレックスは、2026年1月に公表した系統用蓄電池第2号案件「千葉県山武郡蓄電所」（千葉県山武郡芝山町、敷地1,014㎡）が10月20日に商業運転を開始したと発表。同社は蓄電池の運用・制御（アグリゲーター）を担う。系統用蓄電池・再エネ併設型蓄電池・コーポレートPPA・デマンドレスポンスの4領域を柱にアグリゲーション事業を展開し、事業全体で2028年までに取扱電源100MWを目指す。"
+        }
+      ]
+    },
+    {
+      "id": "n20261020_nipponchikudenchi_nc_kuchiharu_eprx",
+      "image": "https://prcdn.freetls.fastly.net/release_image/161802/116/161802-116-48b90587baefba0f378e32c5a0dbec92-432x267.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-20",
+      "genre": "operation",
+      "title": "日本蓄電池、福岡県嘉麻市「NC口春蓄電所」が需給調整市場での運用を開始",
+      "subtitle": "リミックスポイントとの共同ファンドで開発した1,975kW/8,146kWhの蓄電所（TMEIC製・CATL電池）が10月20日から需給調整市場に参入、アグリゲーターはデジタルグリッド",
+      "sourceName": "PR TIMES（日本蓄電池株式会社）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000116.000161802.html",
+      "topics": [
+        {
+          "theme": "共同ファンド案件の運用開始",
+          "conclusion": "日本蓄電池（開発・運営）・リミックスポイント（事業管理）・デジタルグリッド（アグリゲーション）の3社協業モデル",
+          "detail": "日本蓄電池とデジタルグリッドは、福岡県嘉麻市の系統用蓄電施設「NC口春蓄電所」で2026年10月20日から需給調整市場での運用を開始したと発表。日本蓄電池とリミックスポイントが共同で組成したファンドで開発した案件で、日本蓄電池が開発・運営・現場管理、リミックスポイントが契約・資金・収支管理などの事業統括、デジタルグリッドがDGPを活用したアグリゲーションと市場参入支援を担う。"
+        }
+      ]
+    },
     {
       "id": "n20261020_growup_kaseguri_ai_aggregation",
       "image": "https://prcdn.freetls.fastly.net/release_image/188531/4/188531-4-8ecbe73443dad12672db0e8a50513614-3358x1892.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
