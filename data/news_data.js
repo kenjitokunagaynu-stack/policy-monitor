@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-10-26",
+  "collectedAt": "2026-10-29",
   "periodLabel": "2025年11月〜2026年10月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,22 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20261023_gec_mine_yamaguchi_epc_order",
+      "date": "2026-10-23",
+      "genre": "epc",
+      "title": "グリーンエナジー＆カンパニー、山口県美祢市の系統用蓄電所システム（1,999kW/8,128kWh）の工事を受注",
+      "subtitle": "100％子会社グリーンエナジー・プラスが兵庫県に本社を置く企業と、山口県美祢市における系統用蓄電所（定格出力1,999kW・公称容量8,128kWh）の建設受注契約を締結",
+      "sourceName": "株式会社グリーンエナジー＆カンパニー（適時開示）",
+      "sourceUrl": "https://www.nikkei.com/markets/ir/irftp/data/tdnr/tdnetg3/20261023/g70u1z/140120261023555079.pdf",
+      "topics": [
+        {
+          "theme": "高圧蓄電所のEPC受注",
+          "conclusion": "GE&Cグループが山口県で高圧規模の系統用蓄電所建設を新たに受注",
+          "detail": "グリーンエナジー＆カンパニー（東証1436）は2026年10月23日、子会社グリーンエナジー・プラスが兵庫県の企業と山口県美祢市の系統用蓄電所建設（1,999kW/8,128kWh）の受注契約を締結したと開示。単独での業績影響は軽微としつつ、脱炭素化の進展と需給調整市場の拡大を背景に受注環境は堅調に推移しているとし、受注動向次第で業績予想を見直す可能性にも言及した。"
+        }
+      ]
+    },
     {
       "id": "n20261026_tensorenergy_microgx_kyoto_aggregation",
       "image": "https://prcdn.freetls.fastly.net/release_image/96424/54/96424-54-600cb2408e932f1b377441195e4f0845-3840x2160.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
