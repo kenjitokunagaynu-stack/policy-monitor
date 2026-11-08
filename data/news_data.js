@@ -7,8 +7,8 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-10-29",
-  "periodLabel": "2025年11月〜2026年10月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
+  "collectedAt": "2026-11-08",
+  "periodLabel": "2025年11月〜2026年11月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
     { "id": "entry", "label": "新規参入・事業拡大" },
@@ -18,6 +18,429 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20261106_nipponchikudenchi_nc_karatsu_market_entry",
+      "image": "https://prcdn.freetls.fastly.net/release_image/161802/120/161802-120-7cc0a4a521ab3dc1361e2e056afeb0b5-432x331.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-06",
+      "genre": "operation",
+      "title": "日本蓄電池、佐賀県唐津市「NC唐津市浜玉町浜崎蓄電所」が需給調整市場での運用を開始",
+      "subtitle": "定格1,983kW・8,146kWh（ダイヘン製システム、CATLセル）の高圧蓄電所が11月6日から需給調整市場で運用開始、アグリゲーターはデジタルグリッド",
+      "sourceName": "日本蓄電池株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000120.000161802.html",
+      "topics": [
+        {
+          "theme": "九州エリアの高圧蓄電所が市場運用入り",
+          "conclusion": "日本蓄電池・デジタルグリッド・リミックスポイントの3社協業モデルで唐津の蓄電所が需給調整市場に参入",
+          "detail": "日本蓄電池とデジタルグリッドは2026年11月6日、佐賀県唐津市の「NC唐津市浜玉町浜崎蓄電所」（1,983kW・8,146kWh、蓄電池システムはダイヘン、セルはCATL）で同日から需給調整市場での運用を開始したと発表。日本蓄電池が開発・運用・現場管理、デジタルグリッドがアグリゲーション、リミックスポイントが事業管理・統括を担う。"
+        }
+      ]
+    },
+    {
+      "id": "n20261105_remixpoint_nc_makurazaki_juden",
+      "image": "https://prcdn.freetls.fastly.net/release_image/33609/232/33609-232-16d49734f4f781bc7cc0af71e8b62b0a-1477x938.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-05",
+      "genre": "operation",
+      "title": "リミックスポイント・日本蓄電池、鹿児島県枕崎市「NC枕崎市桜山東町蓄電所」が受電開始",
+      "subtitle": "NCパイオニアを通じた全国7か所の共同プロジェクトの4か所目（1,988kW/8,146kWh、CATL・TMEIC）が11月4日に受電、需給調整市場参入は2027年3月頃の予定",
+      "sourceName": "株式会社リミックスポイント（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000232.000033609.html",
+      "topics": [
+        {
+          "theme": "NCパイオニア案件の受電進捗",
+          "conclusion": "7か所中4か所目が受電、残る海南市・揖斐川町・長野市も2027年3月までに受電見込み",
+          "detail": "リミックスポイントは2026年11月5日、連結子会社の合同会社NCパイオニアが日本蓄電池と開発する「NC枕崎市桜山東町蓄電所」（定格1,988kW・8,146kWh、蓄電システムはCATL製、PCSはTMEIC製、施工は鹿栄電設）が11月4日に受電を開始したと発表。残る3か所は和歌山県海南市が11月、岐阜県揖斐川町が12月、長野市が2027年3月の受電を見込む。"
+        }
+      ]
+    },
+    {
+      "id": "n20261106_jesdi_lowvoltage_vpp_service",
+      "image": "https://prcdn.freetls.fastly.net/release_image/173175/11/173175-11-44626c91d315f0432d3ac9df8672c3a0-1461x638.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-06",
+      "genre": "entry",
+      "title": "日本蓄電開発機構、低圧蓄電所向けVPPサービス「JESDI VPP」を発表",
+      "subtitle": "2026年度から1MW以上に束ねれば需給調整市場に参加可能となった低圧蓄電所向けに、接続・監視制御・市場運用・精算までを一括提供、第一弾はHOBE ENERGY製システムと接続検証済み",
+      "sourceName": "日本蓄電開発機構株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000011.000173175.html",
+      "topics": [
+        {
+          "theme": "低圧リソースの束ね運用",
+          "conclusion": "高圧蓄電所の開発・市場参入ノウハウを低圧に展開し、受電後の待機期間短縮を狙う",
+          "detail": "日本蓄電開発機構は2026年11月6日、低圧蓄電所を束ねて需給調整市場で運用するVPPサービス「JESDI VPP」を発表。接続・設定、遠隔監視・制御、連携アグリゲーターによる入札、精算・レポートまで一つの窓口で担う。同社は高圧蓄電所で4件が運転開始、9件を施工中で、試験データ取得と試運転を約1.5時間で完了する仕組みを低圧にも展開するとしている。"
+        }
+      ]
+    },
+    {
+      "id": "n20261105_buddynet_3sites_completion",
+      "image": "https://prcdn.freetls.fastly.net/release_image/168478/24/168478-24-c6502970d664f89382d42713ea6ae221-1060x590.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-05",
+      "genre": "epc",
+      "title": "バディネット、北海道弟子屈町・静岡県富士宮市・長野県佐久市の系統用蓄電池（各2MW/8MWh）建設プロジェクトが完工",
+      "subtitle": "AKIBAホールディングス傘下のバディネットが、用地開発・系統申請から土木・電気工事・連系までをワンストップで担った3案件を2026年9〜10月に完工・引き渡し",
+      "sourceName": "株式会社バディネット（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000024.000168478.html",
+      "topics": [
+        {
+          "theme": "ワンストップEPCの完工実績",
+          "conclusion": "高圧2MW級の案件を着工から約5か月で完工させる施工体制を全国で並行展開",
+          "detail": "バディネットは2026年11月5日、長野県佐久市の「長野5号蓄電所」（2MW/8MWh、敷地約430㎡）が5月中旬の着工から約5か月で10月に完工・引き渡しとなったと発表。同日、北海道弟子屈町・静岡県富士宮市の同規模案件の完工も発表した。物件開発・地権者交渉・系統申請から土木・据付・電気工事・連系検査まで一貫で担い、将来はVPPインフラ構築も見据える。"
+        }
+      ]
+    },
+    {
+      "id": "n20261105_digitalgrid_bess_250mw",
+      "image": "https://prcdn.freetls.fastly.net/release_image/45726/68/45726-68-95a18c7605ae57615f646eec98c6f562-1259x784.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-05",
+      "genre": "entry",
+      "title": "デジタルグリッド、系統用蓄電池のアグリゲーション取扱量が250MWを突破",
+      "subtitle": "約1カ月で200MWから250MWへ拡大（11月4日時点）、沖縄を除く全国9エリアすべてで受託蓄電池が商用運転",
+      "sourceName": "デジタルグリッド株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000068.000045726.html",
+      "topics": [
+        {
+          "theme": "アグリゲーター取扱量の拡大",
+          "conclusion": "受託蓄電所の商用運転開始が相次ぎ、大手アグリゲーターの取扱規模が急拡大",
+          "detail": "デジタルグリッドは2026年11月5日、系統用蓄電池のアグリゲーションサービスの取扱量が11月4日時点で250MWを突破したと発表。運用受託先の商用運転開始が相次ぎ約1カ月で50MW増加した。北海道から九州まで沖縄を除く9エリアすべてで商用運転を開始しており、蓄電池メーカーを限定しない対応を強みとする。拠点数は非開示。"
+        }
+      ]
+    },
+    {
+      "id": "n20261105_bluefield_aggregation_150mw",
+      "image": "https://prcdn.freetls.fastly.net/release_image/174524/46/174524-46-915c0cad4efe818f5ae9d9ccad8bf7af-1731x909.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-05",
+      "genre": "entry",
+      "title": "Bluefield Energy、アグリゲーションサービスの採用決定容量が150MWを突破",
+      "subtitle": "内示を含む採用決定容量が2026年6月50MW→8月100MW→10月150MWと推移、太陽光・風力発電所から蓄電所・併設案件まで対象が拡大",
+      "sourceName": "Bluefield Energy株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000046.000174524.html",
+      "topics": [
+        {
+          "theme": "新興アグリゲーターの成長",
+          "conclusion": "2カ月ごとに50MWずつ積み上げ、蓄電所向けアグリゲーション市場で存在感を高める",
+          "detail": "Bluefield Energyは2026年11月5日、太陽光・風力発電所や系統用蓄電所向けアグリゲーションサービスの採用決定容量（正式契約前の内示を含む）が150MWを突破したと発表。6月に50MW、8月に100MWを突破していた。蓄電所の内訳や顧客名は非開示。今後は既設太陽光のFIP転換や蓄電池併設・活用にも取り組むとしている。"
+        }
+      ]
+    },
+    {
+      "id": "n20261105_nextes_kasama_bousai_bess",
+      "image": "https://prcdn.freetls.fastly.net/release_image/176308/21/176308-21-1469a297921470ab9989ff215b22de60-3000x1687.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-05",
+      "genre": "operation",
+      "title": "NEXTES製蓄電池、笠間市・芙蓉総合リース・東電タウンプランニングの防災連携型系統用蓄電所（2MW/8MWh）に採用 ─ 10月30日運転開始",
+      "subtitle": "茨城県笠間市の市民体育館隣接地で10月30日に運転開始、平常時は電力市場で運用し、大規模災害時は拠点避難所へ電力を無償供給",
+      "sourceName": "株式会社NEXTES（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000021.000176308.html",
+      "topics": [
+        {
+          "theme": "自治体連携の防災型蓄電所",
+          "conclusion": "東電認証を取得したNEXTESの13ft水冷式蓄電池が、自治体・リース会社・東電グループの防災連携案件に採用",
+          "detail": "NEXTESは2026年11月5日、笠間市・芙蓉総合リース・東電タウンプランニングが茨城県笠間市で進める系統用蓄電所（出力2,000kW・容量8,000kWh、6kV）に同社の13ft水冷式蓄電池が採用されたと発表。10月30日に運転を開始し運開式を実施。平常時は市場取引で充放電し、広域・長期停電時は笠間市民体育館へ無償給電する。アグリゲーターは非開示。"
+        }
+      ]
+    },
+    {
+      "id": "n20261105_sunpin_shiga_otsu_45mw_grid_connection",
+      "image": "https://prcdn.freetls.fastly.net/release_image/193954/2/193954-2-880b8956cb902c708e1b09eb3e275175-1024x576.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-05",
+      "genre": "operation",
+      "title": "SUNPIN JAPAN、滋賀県大津市の特別高圧蓄電所「SP滋賀大津蓄電所」（45MW/180MWh）が系統接続",
+      "subtitle": "関西電力送配電の77kV線に11月5日接続、2026年12月に商業運転開始予定で運用・アグリゲーションはE-Flowが担当",
+      "sourceName": "株式会社SUNPIN JAPAN（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000002.000193954.html",
+      "topics": [
+        {
+          "theme": "関西の特高蓄電所が系統接続",
+          "conclusion": "45MW/180MWhの特高案件が自社開発で系統接続に到達、年内の商業運転開始へ",
+          "detail": "SUNPIN JAPANは2026年11月5日、滋賀県大津市石山千町の特別高圧蓄電所「SP滋賀大津蓄電所」（45MW/180MWh）が関西電力送配電の77kV湖南新山科線に同日接続したと発表。商業運転は12月予定。運用・アグリゲーションはE-Flow、建設はグループEPCのブルーポイントパワーソリューション。用地・許認可・系統接続は自社主導で、東京・関西・東北でも複数案件を開発中。"
+        }
+      ]
+    },
+    {
+      "id": "n20261030_powerx_kansaitd_grid_congestion_mou",
+      "image": "https://prcdn.freetls.fastly.net/release_image/109041/283/109041-283-40084ebaf897018799539916cb788828-1920x1080.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-30",
+      "genre": "capital",
+      "title": "パワーエックスと関西電力送配電、蓄電池を系統接続・設備形成に活用する手法の実証に向け基本合意",
+      "subtitle": "系統混雑時に送配電事業者の条件に基づき蓄電池を充放電させる仕組みを検討、大阪北部の変電所構内に約2MW/8MWh（想定）を設置し2027年度に実証開始予定",
+      "sourceName": "株式会社パワーエックス（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000283.000109041.html",
+      "topics": [
+        {
+          "theme": "蓄電池による設備増強の回避・繰延べ",
+          "conclusion": "事業者保有の蓄電池を送配電の設備形成に組み込む新たな収益・接続モデルの検討が始まる",
+          "detail": "パワーエックスと関西電力送配電は2026年10月30日、蓄電池事業者が所有・運営する蓄電池を一般送配電事業者との契約に基づき系統接続や設備形成に活用する手法の実証に向け、基本合意書を締結。系統混雑が見込まれる時間帯に条件に沿って充放電し、新規需要・電源の早期接続と設備投資の合理化の両立を目指す。実証場所・期間などの詳細は今後詰める。"
+        }
+      ]
+    },
+    {
+      "id": "n20261030_taoke_minamichita_grid_connection",
+      "image": "https://prcdn.freetls.fastly.net/release_image/103834/47/103834-47-b10d49f18e53787b1c19d94e254977f3-1200x630.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-30",
+      "genre": "operation",
+      "title": "TAOKE ENERGY、愛知県南知多町の2MW系統用蓄電所（8.14MWh）が系統連系を完了",
+      "subtitle": "ベルテクノの持株会社BTホールディングとの2件目の協業案件が10月30日に連系、試運転・調整後にBTホールディングへ引き渡し予定",
+      "sourceName": "TAOKE ENERGY株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000047.000103834.html",
+      "topics": [
+        {
+          "theme": "異業種オーナー向け開発・引き渡し",
+          "conclusion": "SI・EM・AGを一体提供するTAOKEが、異業種の事業者向け案件を連系まで完了",
+          "detail": "TAOKE ENERGYは2026年10月30日、「愛知県南知多町2MW高圧蓄電所」（定格2MW・8.14MWh）が同日系統連系を完了したと発表。BTホールディング（ベルテクノの持株会社）との2件目の協業案件で、試運転・調整を経て同社へ引き渡す。設備インテグレーション、エネルギーマネジメント、アグリゲーションを連携させたサービスを導入している。"
+        }
+      ]
+    },
+    {
+      "id": "n20261028_denkinoeki_isahaya_16mw_construction",
+      "image": "https://prcdn.freetls.fastly.net/release_image/37933/1441/37933-1441-9c1510e5431a6bf7690499dc40fc3bc5-1008x567.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-28",
+      "genre": "epc",
+      "title": "JR九州・住友商事グループの「でんきの駅」、長崎県諫早市で第3号案件「でんきの駅諫早」（16MW/70MWh）に着工",
+      "subtitle": "JR九州の鉄道用変電所跡地と隣接地を活用した同社最大規模の系統用蓄電所で、2026年10月に準備工事着工、2028年12月運用開始予定",
+      "sourceName": "九州旅客鉄道株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000001441.000037933.html",
+      "topics": [
+        {
+          "theme": "鉄道用地の蓄電所転用",
+          "conclusion": "熊本の1.5MW級2案件に続き、10倍規模の16MW案件で鉄道インフラ跡地活用を本格化",
+          "detail": "JR九州・BSホールディングス（住友商事の蓄電アセット保有会社）・住友商事九州が出資するでんきの駅合同会社は2026年10月28日、長崎県諫早市の「でんきの駅諫早」（定格16MW・70MWh）の準備工事に10月着工したと発表。運用開始は2028年12月予定。第1号「川尻」・第2号「富合」（熊本市、各1.5MW）は既に需給調整市場で運用中。"
+        }
+      ]
+    },
+    {
+      "id": "n20261026_tokyocentury_retail_registration_aggregation",
+      "image": "https://prcdn.freetls.fastly.net/release_image/76147/257/76147-257-bb5deb1fa22d445cd547ee54f20c3be9-1406x1407.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-26",
+      "genre": "entry",
+      "title": "東京センチュリー、小売電気事業者に登録 ─ 系統用蓄電池の自社アグリゲーションへ",
+      "subtitle": "2026年9月11日付で小売電気事業者登録、単独出資する東北エリアの系統用蓄電所を2026年度中をめどに自社アグリゲーションへ切り替える計画",
+      "sourceName": "東京センチュリー株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000257.000076147.html",
+      "topics": [
+        {
+          "theme": "リース会社のアグリゲーション内製化",
+          "conclusion": "保有アセットの運用を自社化し、将来は他社蓄電池・太陽光向けアグリゲーション事業にも拡大",
+          "detail": "東京センチュリーは2026年10月26日、アグリゲーションビジネス本格展開に向け9月11日付で小売電気事業者として登録されたと発表。保有アセットの自社運用準備を進め、単独出資の東北エリア系統用蓄電所を2026年度中をめどに自社アグリゲーションへ切り替える。これまで荒尾・飯塚の併設蓄電池等でTensor Energyの「Tensor Cloud」を活用してきた。"
+        }
+      ]
+    },
+    {
+      "id": "n20261023_kepco_eflow_solar_bess_multiuse",
+      "image": "https://prcdn.freetls.fastly.net/release_image/189198/3/189198-3-1b7149a9ef4b84dc60f495c8b4c04d34-1300x900.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-23",
+      "genre": "entry",
+      "title": "関西電力とE-Flow、太陽光発電所の併設蓄電池でマルチユース運用へ ─ 2027年以降、合計110MWで実施予定",
+      "subtitle": "関電のAI最適制御「SenaSon」とE-Flowの「K-VIPs+」を連携し、併設蓄電池を卸電力市場・需給調整市場へ複合供出",
+      "sourceName": "E-Flow合同会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000003.000189198.html",
+      "topics": [
+        {
+          "theme": "併設蓄電池のマルチユース",
+          "conclusion": "余剰太陽光の充電と市場供出を予測ベースで最適化し、併設型でも需給調整市場収益を取り込む",
+          "detail": "関西電力とE-Flowは2026年10月23日、太陽光発電所の併設蓄電池を卸電力市場への供出や需給調整市場への調整力供出など複数用途に活用する「マルチユース運用」に向けた取り組みを発表。発電量・市場価格予測に基づき太陽光と蓄電池の充放電を制御する。2027年以降、複数エリアの併設蓄電池（合計110MW）で実施予定。対象発電所名は非開示。"
+        }
+      ]
+    },
+    {
+      "id": "n20261023_taoke_ota_wake_grid_connection",
+      "image": "https://prcdn.freetls.fastly.net/release_image/103834/46/103834-46-db998df8c09517d04900437e08a8fe32-1200x630.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-23",
+      "genre": "operation",
+      "title": "TAOKE ENERGY、群馬県太田市龍舞町と岡山県和気郡の系統用蓄電所（各2MW/8MWh）が系統連系",
+      "subtitle": "自社投資の太田市案件（10月9日受電）とGK-TKスキームの和気郡案件（10月10日受電）の2拠点が連系",
+      "sourceName": "TAOKE ENERGY株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000046.000103834.html",
+      "topics": [
+        {
+          "theme": "自社投資とGK-TKの併用",
+          "conclusion": "自社保有と投資家スキームの両輪で高圧蓄電所の連系を積み上げ",
+          "detail": "TAOKE ENERGYは2026年10月23日、群馬県太田市龍舞町2MW蓄電所と岡山県和気郡2MW蓄電所（いずれも定格2MW・8MWh）が系統連系したと発表。受電日はそれぞれ10月9日、10日。太田市は自社投資、和気郡は合同会社と匿名組合を組み合わせたGK-TKスキームで構築した。開発・構築（SI）、エネルギーマネジメント（EM）、市場運用（AG）の一体提供を強みとする。"
+        }
+      ]
+    },
+    {
+      "id": "n20261023_sustech_soden_kyoto_aggregation",
+      "image": "https://prcdn.freetls.fastly.net/release_image/92942/95/92942-95-aceb3565b707467ff82381eafdb1c209-2191x670.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-23",
+      "genre": "operation",
+      "title": "Sustech、綜電の京都府綾部市・福知山市の系統用蓄電所2件のアグリゲーションを受託 ─ 9月に本格運転開始",
+      "subtitle": "「SD京都綾部蓄電所」（1,960kW）と「SD京都福知山蓄電所」（1,969kW、各8,146kWh）をプラットフォーム「ELIC」でJEPX・EPRX・容量市場に運用",
+      "sourceName": "株式会社Sustech（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000095.000092942.html",
+      "topics": [
+        {
+          "theme": "3市場横断のアグリゲーション",
+          "conclusion": "SOCや設備制約を踏まえた30分単位の運用計画で、京都の高圧蓄電所2件が本格運転入り",
+          "detail": "Sustechは2026年10月23日、綜電が所有する京都府の「SD京都綾部蓄電所」「SD京都福知山蓄電所」のアグリゲーションを受託し、9月に本格運転を開始したと発表。分散型電力運用プラットフォーム「ELIC」で卸電力市場・需給調整市場・容量市場を対象に30分単位の運用計画を策定し、EMSと連携して充放電を制御。応動指令対応や実績分析も担う。"
+        }
+      ]
+    },
+    {
+      "id": "n20261021_kanei_teras_tk1_joint_development",
+      "image": "https://prcdn.freetls.fastly.net/release_image/174524/42/174524-42-a4e455f1231d368b96c61871d5f922c6-1200x630.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-21",
+      "genre": "capital",
+      "title": "カンエイとTERAS、SPC「TK蓄電所1号」で系統用蓄電池（2MW/4MWh）を共同開発 ─ Bluefield Energyがアグリゲーター",
+      "subtitle": "Sigenergy製機器を採用し2027年4月運転開始予定、需給調整市場での24時間ネガポジ運用と時間前市場取引を組み合わせて運用",
+      "sourceName": "Bluefield Energy株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000042.000174524.html",
+      "topics": [
+        {
+          "theme": "共同SPCによる蓄電所開発",
+          "conclusion": "施工会社と機器調達会社がSPCを組成し、防災活用も組み込んだ2時間型蓄電所を開発",
+          "detail": "カンエイとTERASは2026年10月21日、共同設立したSPC「株式会社TK蓄電所1号」を事業主体に出力2MW・容量4MWhの系統用蓄電池を導入すると発表。カンエイが共同開発・施工・O&M、TERASが共同開発・機器調達を担い、Bluefield EnergyがAIによる価格予測で需給調整市場のネガポジ運用を行う。関西電機工業と共同で非常時の地域活用の仕組みも構築する。所在地は非開示。"
+        }
+      ]
+    },
+    {
+      "id": "n20261019_mitsuuroko_kitahiroshima_primary_reserve",
+      "date": "2026-10-19",
+      "genre": "operation",
+      "title": "ミツウロコグリーンエネルギー、北海道北広島市の第一・第二蓄電所が一次調整力（オフライン枠）へ参入",
+      "subtitle": "各1,534kW/7,834kWhの2蓄電所が10月16日から一次調整力に参入、これまでは三次調整力①・②で運用",
+      "sourceName": "株式会社ミツウロコグループホールディングス（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000379.000070816.html",
+      "topics": [
+        {
+          "theme": "運用商品の拡大",
+          "conclusion": "自社統合システムIPoCCで一次調整力に対応、受託先蓄電所にも順次展開し二次・複合への対応も開発中",
+          "detail": "ミツウロコグループHDは2026年10月19日、子会社ミツウロコグリーンエネルギーの北海道北広島第一・第二蓄電所（各1,534kW・7,834kWh、6月1日運用開始の系統用蓄電池第3・4号案件）が10月16日から需給調整市場の一次調整力（オフライン枠）に参入したと発表。受託サービス契約先の蓄電所でも一次での運用が可能になる予定で、二次①②・複合商品向けのシステム開発も進める。"
+        }
+      ]
+    },
+    {
+      "id": "n20261016_powerpool_pp7_gktk_fund",
+      "image": "https://prcdn.freetls.fastly.net/release_image/183333/5/183333-5-b493d53c3e3ad7346b2cec360b495e66-1269x656.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-16",
+      "genre": "capital",
+      "title": "パワープール（POWER POOL）、高圧系統用蓄電所6案件を投資対象とする「PP7号合同会社」を設立 ─ 総事業規模約45億円",
+      "subtitle": "GK-TKスキームで匿名組合出資の募集を完了、POWER POOLが出資とアグリゲーション、TAOKE ENERGYがAM・O&Mを担当",
+      "sourceName": "パワープール株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000005.000183333.html",
+      "topics": [
+        {
+          "theme": "高圧蓄電所のGK-TKファンド",
+          "conclusion": "6案件・約45億円の蓄電所ファンドが組成され、投資家資金による高圧案件の束ね投資が進む",
+          "detail": "パワープールは2026年10月16日、国内の高圧系統用蓄電所6案件を投資対象とする「PP7号合同会社」を9月18日に設立したと発表。GK-TKスキームで同社が蓄電設備と事業の権利を保有し、総事業規模は約45億円、匿名組合出資の募集は完了済み。POWER POOLは出資者兼アグリゲーター、TAOKE ENERGYがアセットマネジメントとO&Mを担う。所在地・規模は非開示。"
+        }
+      ]
+    },
+    {
+      "id": "n20261016_tess_yasugi_kani_installation_orders",
+      "date": "2026-10-16",
+      "genre": "epc",
+      "title": "TESSグループ、島根県安来市（クラダシ・インベストメント２号）と岐阜県可児市（糺の森）の系統用蓄電所で設置工事を受注",
+      "subtitle": "テス・エンジニアリングが安来市（1,995kW/8,224kWh、Sungrow製）と可児市（1,999kW/6,266kWh、HUAWEI製）の設置工事を10月16日・20日に相次ぎ受注",
+      "sourceName": "テスホールディングス株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000184.000143072.html",
+      "topics": [
+        {
+          "theme": "高圧蓄電所の設置工事受注",
+          "conclusion": "クラダシ・GE&C出資案件など高圧蓄電所の施工受注を積み増し、2030年累積施工700MW目標へ",
+          "detail": "テスホールディングスは2026年10月16日と20日、子会社テス・エンジニアリングが系統用蓄電所の設置工事を受注したと発表。安来市はクラダシとグリーンエナジー＆カンパニー出資の合同会社クラダシ・インベストメント２号が事業者（PCS1,995kW・8,224kWh、Sungrow製、2027年2月納入予定）、可児市は糺の森が事業者（1,999kW・6,266kWh、HUAWEI製、2027年3月納入予定）。"
+        }
+      ]
+    },
+    {
+      "id": "n20261014_trina_storage_aej_nozu_supply",
+      "image": "https://prcdn.freetls.fastly.net/release_image/8483/247/8483-247-cff8e902c5b0694fb4ae04b1317d7601-1980x1280.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-14",
+      "genre": "epc",
+      "title": "トリナ・ストレージ、大分県臼杵市「AEJ野津蓄電池プロジェクト」（50MW/196MWh）の蓄電システム供給業者に選定",
+      "subtitle": "第1回長期脱炭素電源オークション落札案件に「Elementa G2 Pro 5MWh」を供給、2028年第3四半期完成予定",
+      "sourceName": "トリナ・ソーラー・ジャパン株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000247.000008483.html",
+      "topics": [
+        {
+          "theme": "LTDC案件の機器選定",
+          "conclusion": "中国大手トリナが九州のLTDC落札案件を受注し、国内ユーティリティ規模BESSでの実績を拡大",
+          "detail": "トリナ・ソーラーの蓄電部門トリナ・ストレージは2026年10月14日、大分県臼杵市野津町の「AEJ野津蓄電池プロジェクト」（50MW/196MWh、2023年度第1回長期脱炭素電源オークション落札案件）の蓄電システム供給業者に選定されたと発表。供給製品は「Elementa G2 Pro 5MWh」。同社は2026年9月にAMP-lifyと約1GWhの国内供給の覚書も締結している。"
+        }
+      ]
+    },
+    {
+      "id": "n20261006_powerx_kuribayashi_hachinohe_order",
+      "image": "https://prcdn.freetls.fastly.net/release_image/109041/274/109041-274-46cc95bed3f526d3d5ed1be0ce616c5a-2048x1152.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-10-06",
+      "genre": "epc",
+      "title": "パワーエックス子会社の海上パワーグリッド、栗林商会出資の青森県八戸市の系統蓄電所向けに蓄電システム一式を受注",
+      "subtitle": "「Mega Power 2500」3台（7.52MWh公称、PCS1,998kW）と受変電設備等を受注、2027年10月運転開始予定で運用はパワーエックスが担当",
+      "sourceName": "株式会社パワーエックス（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000274.000109041.html",
+      "topics": [
+        {
+          "theme": "港湾事業者の蓄電所参入",
+          "conclusion": "港湾運送の栗林商会が蓄電所事業に参入、機器販売から運用までパワーエックスグループが一括支援",
+          "detail": "パワーエックスは2026年10月6日、子会社の海上パワーグリッドが栗林商会（北海道室蘭市）100％出資のセブンパワーストレージ合同会社から、青森県八戸市櫛引の系統蓄電所向けに「Mega Power 2500」3台とPCS・受変電設備等を受注したと発表。合計7.52MWh（公称）、運転開始は2027年10月予定。運転開始後のアグリゲーションはパワーエックスが担う。"
+        }
+      ]
+    },
+    {
+      "id": "n20261102_ria_partners_primary_reserve_price_drop",
+      "image": "https://prcdn.freetls.fastly.net/release_image/193143/4/193143-4-d403b1d2a47e43203e6924988018b462-2400x1260.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-02",
+      "genre": "policy",
+      "title": "需給調整市場の一次調整力（オフライン枠）、10月の加重平均約定単価は2.69円 ─ 上限価格引下げ前の8月から約7割低下（RIA PARTNERS速報）",
+      "subtitle": "上限15円→10円引下げ2か月目の10月、一次オフライン枠の単価は8月9.63円→9月5.79円→10月2.69円（8月比-72%）、約定量は4月の約2.3倍",
+      "sourceName": "RIA PARTNERS株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000004.000193143.html",
+      "topics": [
+        {
+          "theme": "上限価格引下げ後の市況",
+          "conclusion": "単価の下げ幅が上限引下げ幅を大きく上回り、一次調整力中心の収益モデルは8月比で約4分の1水準に",
+          "detail": "RIA PARTNERSは2026年11月2日、EPRXの取引実績を基に10月の需給調整市場を集計（速報）。一次（オフライン枠）の加重平均約定単価は2.69円/ΔkW・30分で前月比-54%、8月比-72%。約定量は前月比+13%、約定率は62%。単価×約定率で見た一次の収入指数は8月を100として9月57、10月27。二次①②・三次①は上昇、複合・三次②はほぼ横ばいだった。"
+        }
+      ]
+    },
+    {
+      "id": "n20261106_chugoku_pumped_hydro_contract_resume",
+      "image": "https://bessnews.jp/market/proffessional/4633203001001/img/thumbnail.jpg",
+      "date": "2026-11-06",
+      "genre": "policy",
+      "title": "中国エリアの揚水随意契約（運用権貸与）、11月10日に再開の見通し ─ 需給調整市場（複合商品）の募集量が再び変化",
+      "subtitle": "中国電力ネットワークが運転上の制約で中断していた揚水の運用権貸与（約15万kW）の11月10日再開見通しと、2027年3月までの募集量推移を公表",
+      "sourceName": "BESS NEWS（bessnews.jp）",
+      "sourceUrl": "https://bessnews.jp/market/proffessional/4633203001001/",
+      "topics": [
+        {
+          "theme": "中国エリアの募集量前提",
+          "conclusion": "随契再開で中国エリアの複合商品募集量が減る方向に見直され、蓄電池の応札計画の前提が変わる",
+          "detail": "中国電力ネットワークは2026年11月6日、6月に締結した揚水発電の運用権貸与（随意契約、約15万kW、2027年3月末まで）が11月10日から再開される見通しと、同日以降の募集量推移を公表。EPRXも告知を更新した。随契分は市場募集量から控除される仕組みで、9月末の中断で控除なしとなっていた前提が再び変わる。新募集量は日別グラフのみで数値表はない。"
+        }
+      ]
+    },
+    {
+      "id": "n20261105_occto_thermal_spare_5320mw",
+      "image": "https://bessnews.jp/institutional/proffessional/4633103102001/img/thumbnail.jpg",
+      "date": "2026-11-05",
+      "genre": "policy",
+      "title": "夏も需給調整市場の外に火力の自然体余力5,320MW、複合必要量を上回る ─ OCCTOが「控除」の再検討へ（需給調整市場検討小委員会 第64回）",
+      "subtitle": "2026年7〜9月の火力の自然体余力は9エリア平均5,320MWで複合必要量（参考値）4,968MWを上回り、事務局は応札増加策と自然体余力の控除を対応例に提示",
+      "sourceName": "BESS NEWS（bessnews.jp）",
+      "sourceUrl": "https://bessnews.jp/institutional/proffessional/4633103102001/",
+      "topics": [
+        {
+          "theme": "需給調整市場の募集量論点",
+          "conclusion": "自然体余力の控除が2026年度以降も続けば募集量が縮小し、蓄電池の需給調整市場収益の前提に影響",
+          "detail": "OCCTOは2026年11月5日の第64回需給調整市場検討小委員会で、市場で調達されず一般送配電事業者が実需給で使える火力の自然体余力が7〜9月に9エリア平均5,320MW（前年同期比+321MW）あり、複合必要量4,968MWを上回ったと報告。5エリアで余力が必要量を超えた。調整力提供者へアンケートを行い、2025年度に実施した募集量からの控除の継続可否などを検討する。"
+        }
+      ]
+    },
+    {
+      "id": "n20261029_occto_tokko_connection_study_cost_cap",
+      "image": "https://bessnews.jp/institutional/standard/4632402102001/img/thumbnail.jpg",
+      "date": "2026-10-29",
+      "genre": "policy",
+      "title": "特高の接続検討、11月から申込時に「負担可能上限額」を記入 ─ 超過なら連系否で検討料は返金なし（OCCTO新様式）",
+      "subtitle": "OCCTOが接続検討申込書【特別高圧】の新様式を公開、負担可能上限額（税込）と特高送電系統の増強を含む回答の受容性の2欄を追加し2026年11月から運用",
+      "sourceName": "BESS NEWS（bessnews.jp）",
+      "sourceUrl": "https://bessnews.jp/institutional/standard/4632402102001/",
+      "topics": [
+        {
+          "theme": "接続検討の早期化に向けた運用変更",
+          "conclusion": "特高で系統用蓄電池を計画する事業者は、申込前に工事費負担の上限と増強受容の可否を事業計画から決める必要",
+          "detail": "OCCTOは2026年10月29日、次世代電力系統WG（第7回）で議論された接続検討の早期化策を反映した接続検討申込書【特別高圧】の新様式（AK1特高-202611）を公開。様式1に負担可能上限額と特高送電系統の増強を含む回答の受容性有無の欄が加わり、上限超過や「受容性無」で増強が必要な場合は連系否と回答され検討料は返金されない。2025年4月以降5回目の様式変更。"
+        }
+      ]
+    },
     {
       "id": "n20261023_gec_mine_yamaguchi_epc_order",
       "date": "2026-10-23",
