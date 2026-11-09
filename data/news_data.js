@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-11-08",
+  "collectedAt": "2026-11-09",
   "periodLabel": "2025年11月〜2026年11月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,23 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20261109_ecokaku_11sites_grid_connected",
+      "image": "https://prcdn.freetls.fastly.net/release_image/187675/3/187675-3-5908a2db01f7f036c6e1e3330215e6c3-1672x941.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-09",
+      "genre": "operation",
+      "title": "エコ革、全国11か所の系統用蓄電所が系統連系を完了 ─ 3か所が運転開始、7か所が試運転中",
+      "subtitle": "栃木県佐野市のエコ革が6県11か所（最大受電電力合計約21.9MW・蓄電池容量合計約82.7MWh）の系統連系を11月4日時点で完了、うち3か所が運転開始",
+      "sourceName": "株式会社エコ革（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000003.000187675.html",
+      "topics": [
+        {
+          "theme": "中小事業者の高圧蓄電所が本格稼働フェーズへ",
+          "conclusion": "初連系から約4か月で11か所・約82.7MWhが連系完了、試運転中の7か所も順次運転開始へ",
+          "detail": "エコ革（栃木県佐野市）は2026年11月9日、系統用蓄電池事業で11月4日時点で11か所の蓄電所が系統連系を完了したと発表。岐阜・千葉・栃木・埼玉・鳥取など6県に所在し、3か所が運転開始、7か所が試運転中、1か所が連系完了。合計は最大受電電力約21.9MW、蓄電池容量約82.7MWh。用地開発から系統接続調整、設計、機器調達、施工まで一貫して手がけ、新規蓄電所の開発も継続する。"
+        }
+      ]
+    },
     {
       "id": "n20261106_nipponchikudenchi_nc_karatsu_market_entry",
       "image": "https://prcdn.freetls.fastly.net/release_image/161802/120/161802-120-7cc0a4a521ab3dc1361e2e056afeb0b5-432x331.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
