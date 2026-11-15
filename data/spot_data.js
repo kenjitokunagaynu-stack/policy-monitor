@@ -8,8 +8,8 @@
 // spread3h（3時間値差）は当日の最高値コマ・最低値コマそれぞれの前後3コマ（計6コマ=3時間、
 // 当該コマ自身は含まない）の平均値の差分。日境界をまたぐ場合は前日・翌日のコマを参照する。
 window.SPOT_DATA = {
-  "targetDate": "2026-11-14",
-  "fetchedAt": "2026-11-14T13:03:35+09:00",
+  "targetDate": "2026-11-15",
+  "fetchedAt": "2026-11-15T12:49:56+09:00",
   "sourceUrl": "https://www.jepx.jp/electricpower/market-data/spot/",
   "avgWindowLabel": "過去30日平均",
   "national": {
@@ -18,302 +18,302 @@ window.SPOT_DATA = {
       {
         "block": 1,
         "label": "00:00~00:30",
-        "price": 28.23,
-        "priceAvg30d": 25.78
+        "price": 24.79,
+        "priceAvg30d": 25.95
       },
       {
         "block": 2,
         "label": "00:30~01:00",
-        "price": 27.87,
-        "priceAvg30d": 24.75
+        "price": 22.14,
+        "priceAvg30d": 24.94
       },
       {
         "block": 3,
         "label": "01:00~01:30",
-        "price": 27.84,
-        "priceAvg30d": 24.0
+        "price": 21.26,
+        "priceAvg30d": 24.18
       },
       {
         "block": 4,
         "label": "01:30~02:00",
-        "price": 27.76,
-        "priceAvg30d": 23.92
+        "price": 22.59,
+        "priceAvg30d": 24.09
       },
       {
         "block": 5,
         "label": "02:00~02:30",
-        "price": 27.91,
-        "priceAvg30d": 24.15
+        "price": 22.91,
+        "priceAvg30d": 24.31
       },
       {
         "block": 6,
         "label": "02:30~03:00",
-        "price": 28.95,
-        "priceAvg30d": 24.92
+        "price": 25.42,
+        "priceAvg30d": 25.09
       },
       {
         "block": 7,
         "label": "03:00~03:30",
-        "price": 29.86,
-        "priceAvg30d": 25.92
+        "price": 26.84,
+        "priceAvg30d": 26.1
       },
       {
         "block": 8,
         "label": "03:30~04:00",
-        "price": 30.0,
-        "priceAvg30d": 26.77
+        "price": 25.01,
+        "priceAvg30d": 26.95
       },
       {
         "block": 9,
         "label": "04:00~04:30",
-        "price": 30.29,
-        "priceAvg30d": 27.17
+        "price": 26.2,
+        "priceAvg30d": 27.35
       },
       {
         "block": 10,
         "label": "04:30~05:00",
-        "price": 30.24,
-        "priceAvg30d": 27.52
+        "price": 26.2,
+        "priceAvg30d": 27.69
       },
       {
         "block": 11,
         "label": "05:00~05:30",
-        "price": 30.23,
-        "priceAvg30d": 27.81
+        "price": 26.2,
+        "priceAvg30d": 27.98
       },
       {
         "block": 12,
         "label": "05:30~06:00",
-        "price": 29.86,
-        "priceAvg30d": 28.08
+        "price": 25.89,
+        "priceAvg30d": 28.23
       },
       {
         "block": 13,
         "label": "06:00~06:30",
-        "price": 30.0,
-        "priceAvg30d": 28.35
+        "price": 24.34,
+        "priceAvg30d": 28.51
       },
       {
         "block": 14,
         "label": "06:30~07:00",
-        "price": 29.87,
-        "priceAvg30d": 28.13
+        "price": 23.44,
+        "priceAvg30d": 28.29
       },
       {
         "block": 15,
         "label": "07:00~07:30",
-        "price": 29.5,
-        "priceAvg30d": 26.15
+        "price": 25.36,
+        "priceAvg30d": 26.39
       },
       {
         "block": 16,
         "label": "07:30~08:00",
-        "price": 27.71,
-        "priceAvg30d": 23.74
+        "price": 25.89,
+        "priceAvg30d": 24.0
       },
       {
         "block": 17,
         "label": "08:00~08:30",
-        "price": 25.0,
-        "priceAvg30d": 22.52
+        "price": 26.66,
+        "priceAvg30d": 22.95
       },
       {
         "block": 18,
         "label": "08:30~09:00",
-        "price": 22.45,
-        "priceAvg30d": 21.8
+        "price": 27.12,
+        "priceAvg30d": 22.15
       },
       {
         "block": 19,
         "label": "09:00~09:30",
-        "price": 21.73,
-        "priceAvg30d": 19.85
+        "price": 27.47,
+        "priceAvg30d": 20.22
       },
       {
         "block": 20,
         "label": "09:30~10:00",
-        "price": 15.71,
-        "priceAvg30d": 17.73
+        "price": 27.59,
+        "priceAvg30d": 17.93
       },
       {
         "block": 21,
         "label": "10:00~10:30",
-        "price": 13.62,
-        "priceAvg30d": 16.57
+        "price": 27.6,
+        "priceAvg30d": 16.69
       },
       {
         "block": 22,
         "label": "10:30~11:00",
-        "price": 13.01,
-        "priceAvg30d": 15.69
+        "price": 27.59,
+        "priceAvg30d": 15.79
       },
       {
         "block": 23,
         "label": "11:00~11:30",
-        "price": 12.32,
-        "priceAvg30d": 15.24
+        "price": 27.91,
+        "priceAvg30d": 15.37
       },
       {
         "block": 24,
         "label": "11:30~12:00",
-        "price": 12.82,
-        "priceAvg30d": 15.16
+        "price": 28.02,
+        "priceAvg30d": 15.31
       },
       {
         "block": 25,
         "label": "12:00~12:30",
-        "price": 13.32,
-        "priceAvg30d": 13.25
+        "price": 28.08,
+        "priceAvg30d": 13.59
       },
       {
         "block": 26,
         "label": "12:30~13:00",
-        "price": 13.98,
-        "priceAvg30d": 13.78
+        "price": 27.71,
+        "priceAvg30d": 14.09
       },
       {
         "block": 27,
         "label": "13:00~13:30",
-        "price": 20.0,
-        "priceAvg30d": 17.55
+        "price": 27.5,
+        "priceAvg30d": 17.86
       },
       {
         "block": 28,
         "label": "13:30~14:00",
-        "price": 23.44,
-        "priceAvg30d": 20.24
+        "price": 27.91,
+        "priceAvg30d": 20.58
       },
       {
         "block": 29,
         "label": "14:00~14:30",
-        "price": 25.14,
-        "priceAvg30d": 22.0
+        "price": 27.71,
+        "priceAvg30d": 22.45
       },
       {
         "block": 30,
         "label": "14:30~15:00",
-        "price": 27.17,
-        "priceAvg30d": 25.39
+        "price": 27.71,
+        "priceAvg30d": 25.63
       },
       {
         "block": 31,
         "label": "15:00~15:30",
-        "price": 28.29,
-        "priceAvg30d": 27.7
+        "price": 28.24,
+        "priceAvg30d": 27.89
       },
       {
         "block": 32,
         "label": "15:30~16:00",
-        "price": 28.71,
-        "priceAvg30d": 31.07
+        "price": 29.77,
+        "priceAvg30d": 31.2
       },
       {
         "block": 33,
         "label": "16:00~16:30",
-        "price": 30.0,
-        "priceAvg30d": 34.78
+        "price": 31.36,
+        "priceAvg30d": 34.67
       },
       {
         "block": 34,
         "label": "16:30~17:00",
-        "price": 30.27,
-        "priceAvg30d": 36.13
+        "price": 34.75,
+        "priceAvg30d": 35.88
       },
       {
         "block": 35,
         "label": "17:00~17:30",
-        "price": 30.0,
-        "priceAvg30d": 35.65
+        "price": 33.62,
+        "priceAvg30d": 35.46
       },
       {
         "block": 36,
         "label": "17:30~18:00",
-        "price": 30.0,
-        "priceAvg30d": 35.21
+        "price": 34.94,
+        "priceAvg30d": 35.04
       },
       {
         "block": 37,
         "label": "18:00~18:30",
-        "price": 28.6,
-        "priceAvg30d": 33.91
+        "price": 33.59,
+        "priceAvg30d": 33.75
       },
       {
         "block": 38,
         "label": "18:30~19:00",
-        "price": 28.6,
-        "priceAvg30d": 33.32
+        "price": 33.3,
+        "priceAvg30d": 33.31
       },
       {
         "block": 39,
         "label": "19:00~19:30",
-        "price": 28.29,
-        "priceAvg30d": 32.49
+        "price": 32.99,
+        "priceAvg30d": 32.53
       },
       {
         "block": 40,
         "label": "19:30~20:00",
-        "price": 28.29,
-        "priceAvg30d": 31.06
+        "price": 31.88,
+        "priceAvg30d": 31.17
       },
       {
         "block": 41,
         "label": "20:00~20:30",
-        "price": 29.5,
-        "priceAvg30d": 30.41
+        "price": 32.97,
+        "priceAvg30d": 30.57
       },
       {
         "block": 42,
         "label": "20:30~21:00",
-        "price": 30.13,
-        "priceAvg30d": 29.8
+        "price": 31.28,
+        "priceAvg30d": 29.99
       },
       {
         "block": 43,
         "label": "21:00~21:30",
-        "price": 29.74,
-        "priceAvg30d": 29.38
+        "price": 30.38,
+        "priceAvg30d": 29.54
       },
       {
         "block": 44,
         "label": "21:30~22:00",
-        "price": 28.41,
-        "priceAvg30d": 28.72
+        "price": 28.43,
+        "priceAvg30d": 28.84
       },
       {
         "block": 45,
         "label": "22:00~22:30",
-        "price": 28.41,
-        "priceAvg30d": 28.98
+        "price": 28.24,
+        "priceAvg30d": 29.09
       },
       {
         "block": 46,
         "label": "22:30~23:00",
-        "price": 27.71,
-        "priceAvg30d": 28.07
+        "price": 27.69,
+        "priceAvg30d": 28.17
       },
       {
         "block": 47,
         "label": "23:00~23:30",
-        "price": 27.47,
-        "priceAvg30d": 27.7
+        "price": 27.37,
+        "priceAvg30d": 27.78
       },
       {
         "block": 48,
         "label": "23:30~24:00",
-        "price": 25.42,
-        "priceAvg30d": 25.66
+        "price": 23.44,
+        "priceAvg30d": 25.69
       }
     ],
-    "avg": 25.91,
-    "max": 30.29,
-    "maxBlock": 9,
-    "min": 12.32,
-    "minBlock": 23,
-    "spread3h": 16.11,
-    "spreadLowAvg": 13.74,
-    "spreadHighAvg": 29.86,
-    "avg30d": 25.71,
-    "spread30dAvg": 20.08,
+    "avg": 27.82,
+    "max": 34.94,
+    "maxBlock": 36,
+    "min": 21.26,
+    "minBlock": 3,
+    "spread3h": 9.39,
+    "spreadLowAvg": 23.88,
+    "spreadHighAvg": 33.27,
+    "avg30d": 25.86,
+    "spread30dAvg": 19.9,
     "historyDays": 30
   },
   "areaOrder": [
@@ -334,302 +334,302 @@ window.SPOT_DATA = {
         {
           "block": 1,
           "label": "00:00~00:30",
-          "price": 28.84,
-          "priceAvg30d": 22.82
+          "price": 28.27,
+          "priceAvg30d": 23.43
         },
         {
           "block": 2,
           "label": "00:30~01:00",
-          "price": 28.16,
-          "priceAvg30d": 20.82
+          "price": 27.85,
+          "priceAvg30d": 21.41
         },
         {
           "block": 3,
           "label": "01:00~01:30",
-          "price": 27.97,
-          "priceAvg30d": 20.78
+          "price": 28.55,
+          "priceAvg30d": 21.37
         },
         {
           "block": 4,
           "label": "01:30~02:00",
-          "price": 27.69,
-          "priceAvg30d": 21.49
+          "price": 28.76,
+          "priceAvg30d": 22.07
         },
         {
           "block": 5,
           "label": "02:00~02:30",
-          "price": 27.9,
-          "priceAvg30d": 22.23
+          "price": 25.59,
+          "priceAvg30d": 22.82
         },
         {
           "block": 6,
           "label": "02:30~03:00",
-          "price": 27.99,
-          "priceAvg30d": 22.98
+          "price": 26.61,
+          "priceAvg30d": 23.57
         },
         {
           "block": 7,
           "label": "03:00~03:30",
-          "price": 28.02,
-          "priceAvg30d": 23.61
+          "price": 28.1,
+          "priceAvg30d": 24.2
         },
         {
           "block": 8,
           "label": "03:30~04:00",
-          "price": 28.31,
-          "priceAvg30d": 24.93
+          "price": 27.72,
+          "priceAvg30d": 25.53
         },
         {
           "block": 9,
           "label": "04:00~04:30",
-          "price": 29.48,
-          "priceAvg30d": 25.88
+          "price": 27.79,
+          "priceAvg30d": 26.52
         },
         {
           "block": 10,
           "label": "04:30~05:00",
-          "price": 29.64,
-          "priceAvg30d": 25.64
+          "price": 27.91,
+          "priceAvg30d": 26.28
         },
         {
           "block": 11,
           "label": "05:00~05:30",
-          "price": 30.23,
-          "priceAvg30d": 27.31
+          "price": 27.71,
+          "priceAvg30d": 27.98
         },
         {
           "block": 12,
           "label": "05:30~06:00",
-          "price": 30.24,
-          "priceAvg30d": 28.18
+          "price": 27.71,
+          "priceAvg30d": 28.84
         },
         {
           "block": 13,
           "label": "06:00~06:30",
-          "price": 31.05,
-          "priceAvg30d": 26.17
+          "price": 27.91,
+          "priceAvg30d": 26.87
         },
         {
           "block": 14,
           "label": "06:30~07:00",
-          "price": 31.05,
-          "priceAvg30d": 24.65
+          "price": 26.4,
+          "priceAvg30d": 25.34
         },
         {
           "block": 15,
           "label": "07:00~07:30",
-          "price": 27.32,
-          "priceAvg30d": 22.15
+          "price": 25.53,
+          "priceAvg30d": 22.73
         },
         {
           "block": 16,
           "label": "07:30~08:00",
-          "price": 26.1,
-          "priceAvg30d": 19.94
+          "price": 24.67,
+          "priceAvg30d": 20.5
         },
         {
           "block": 17,
           "label": "08:00~08:30",
-          "price": 12.38,
-          "priceAvg30d": 18.61
+          "price": 26.97,
+          "priceAvg30d": 18.72
         },
         {
           "block": 18,
           "label": "08:30~09:00",
-          "price": 11.38,
-          "priceAvg30d": 15.98
+          "price": 26.81,
+          "priceAvg30d": 16.12
         },
         {
           "block": 19,
           "label": "09:00~09:30",
-          "price": 10.5,
-          "priceAvg30d": 15.29
+          "price": 26.56,
+          "priceAvg30d": 15.48
         },
         {
           "block": 20,
           "label": "09:30~10:00",
-          "price": 9.82,
-          "priceAvg30d": 13.31
+          "price": 26.52,
+          "priceAvg30d": 13.55
         },
         {
           "block": 21,
           "label": "10:00~10:30",
-          "price": 10.4,
-          "priceAvg30d": 12.35
+          "price": 24.96,
+          "priceAvg30d": 12.66
         },
         {
           "block": 22,
           "label": "10:30~11:00",
-          "price": 10.4,
-          "priceAvg30d": 10.94
+          "price": 22.47,
+          "priceAvg30d": 11.28
         },
         {
           "block": 23,
           "label": "11:00~11:30",
-          "price": 9.82,
-          "priceAvg30d": 11.53
+          "price": 25.3,
+          "priceAvg30d": 11.85
         },
         {
           "block": 24,
           "label": "11:30~12:00",
-          "price": 10.4,
-          "priceAvg30d": 11.56
+          "price": 25.31,
+          "priceAvg30d": 11.91
         },
         {
           "block": 25,
           "label": "12:00~12:30",
-          "price": 10.4,
-          "priceAvg30d": 9.61
+          "price": 27.73,
+          "priceAvg30d": 9.95
         },
         {
           "block": 26,
           "label": "12:30~13:00",
-          "price": 10.34,
-          "priceAvg30d": 9.63
+          "price": 27.6,
+          "priceAvg30d": 9.95
         },
         {
           "block": 27,
           "label": "13:00~13:30",
-          "price": 9.82,
-          "priceAvg30d": 12.56
+          "price": 29.25,
+          "priceAvg30d": 12.85
         },
         {
           "block": 28,
           "label": "13:30~14:00",
-          "price": 10.4,
-          "priceAvg30d": 16.91
+          "price": 30.0,
+          "priceAvg30d": 17.01
         },
         {
           "block": 29,
           "label": "14:00~14:30",
-          "price": 10.73,
-          "priceAvg30d": 19.91
+          "price": 32.57,
+          "priceAvg30d": 19.96
         },
         {
           "block": 30,
           "label": "14:30~15:00",
-          "price": 22.45,
-          "priceAvg30d": 23.3
+          "price": 34.35,
+          "priceAvg30d": 23.71
         },
         {
           "block": 31,
           "label": "15:00~15:30",
-          "price": 27.28,
-          "priceAvg30d": 25.26
+          "price": 34.35,
+          "priceAvg30d": 25.84
         },
         {
           "block": 32,
           "label": "15:30~16:00",
-          "price": 30.2,
-          "priceAvg30d": 29.59
+          "price": 34.75,
+          "priceAvg30d": 30.25
         },
         {
           "block": 33,
           "label": "16:00~16:30",
-          "price": 30.03,
-          "priceAvg30d": 34.75
+          "price": 30.23,
+          "priceAvg30d": 35.41
         },
         {
           "block": 34,
           "label": "16:30~17:00",
-          "price": 31.21,
-          "priceAvg30d": 34.96
+          "price": 30.23,
+          "priceAvg30d": 35.57
         },
         {
           "block": 35,
           "label": "17:00~17:30",
-          "price": 30.03,
-          "priceAvg30d": 33.69
+          "price": 30.0,
+          "priceAvg30d": 34.15
         },
         {
           "block": 36,
           "label": "17:30~18:00",
-          "price": 30.0,
-          "priceAvg30d": 32.7
+          "price": 30.23,
+          "priceAvg30d": 32.91
         },
         {
           "block": 37,
           "label": "18:00~18:30",
-          "price": 28.6,
-          "priceAvg30d": 32.46
+          "price": 30.0,
+          "priceAvg30d": 32.9
         },
         {
           "block": 38,
           "label": "18:30~19:00",
-          "price": 28.6,
-          "priceAvg30d": 32.6
+          "price": 30.23,
+          "priceAvg30d": 33.04
         },
         {
           "block": 39,
           "label": "19:00~19:30",
-          "price": 28.6,
-          "priceAvg30d": 32.72
+          "price": 30.23,
+          "priceAvg30d": 33.33
         },
         {
           "block": 40,
           "label": "19:30~20:00",
-          "price": 28.6,
-          "priceAvg30d": 31.34
+          "price": 30.23,
+          "priceAvg30d": 31.95
         },
         {
           "block": 41,
           "label": "20:00~20:30",
-          "price": 29.53,
-          "priceAvg30d": 31.45
+          "price": 30.23,
+          "priceAvg30d": 31.99
         },
         {
           "block": 42,
           "label": "20:30~21:00",
-          "price": 30.03,
-          "priceAvg30d": 29.61
+          "price": 30.23,
+          "priceAvg30d": 30.17
         },
         {
           "block": 43,
           "label": "21:00~21:30",
-          "price": 30.13,
-          "priceAvg30d": 28.49
+          "price": 30.23,
+          "priceAvg30d": 29.08
         },
         {
           "block": 44,
           "label": "21:30~22:00",
-          "price": 27.63,
-          "priceAvg30d": 27.39
+          "price": 30.23,
+          "priceAvg30d": 27.97
         },
         {
           "block": 45,
           "label": "22:00~22:30",
-          "price": 26.89,
-          "priceAvg30d": 27.47
+          "price": 27.23,
+          "priceAvg30d": 28.02
         },
         {
           "block": 46,
           "label": "22:30~23:00",
-          "price": 27.9,
-          "priceAvg30d": 25.87
+          "price": 26.63,
+          "priceAvg30d": 26.45
         },
         {
           "block": 47,
           "label": "23:00~23:30",
-          "price": 26.71,
-          "priceAvg30d": 25.37
+          "price": 27.36,
+          "priceAvg30d": 25.82
         },
         {
           "block": 48,
           "label": "23:30~24:00",
-          "price": 26.0,
-          "priceAvg30d": 23.53
+          "price": 23.0,
+          "priceAvg30d": 24.04
         }
       ],
-      "avg": 23.69,
-      "max": 31.21,
-      "maxBlock": 34,
-      "min": 9.82,
-      "minBlock": 20,
-      "spread3h": 18.54,
-      "spreadLowAvg": 10.81,
-      "spreadHighAvg": 29.36,
-      "avg30d": 23.34,
-      "spread30dAvg": 21.4,
+      "avg": 28.31,
+      "max": 34.75,
+      "maxBlock": 32,
+      "min": 22.47,
+      "minBlock": 22,
+      "spread3h": 5.89,
+      "spreadLowAvg": 26.06,
+      "spreadHighAvg": 31.96,
+      "avg30d": 23.82,
+      "spread30dAvg": 21.59,
       "historyDays": 30
     },
     "東北": {
@@ -638,302 +638,302 @@ window.SPOT_DATA = {
         {
           "block": 1,
           "label": "00:00~00:30",
-          "price": 28.84,
-          "priceAvg30d": 26.32
+          "price": 27.94,
+          "priceAvg30d": 26.45
         },
         {
           "block": 2,
           "label": "00:30~01:00",
-          "price": 28.16,
-          "priceAvg30d": 26.03
+          "price": 21.11,
+          "priceAvg30d": 26.15
         },
         {
           "block": 3,
           "label": "01:00~01:30",
-          "price": 27.97,
-          "priceAvg30d": 25.5
+          "price": 13.59,
+          "priceAvg30d": 25.61
         },
         {
           "block": 4,
           "label": "01:30~02:00",
-          "price": 27.69,
-          "priceAvg30d": 25.34
+          "price": 18.14,
+          "priceAvg30d": 25.44
         },
         {
           "block": 5,
           "label": "02:00~02:30",
-          "price": 27.76,
-          "priceAvg30d": 25.83
+          "price": 18.82,
+          "priceAvg30d": 25.92
         },
         {
           "block": 6,
           "label": "02:30~03:00",
-          "price": 27.91,
-          "priceAvg30d": 26.21
+          "price": 26.61,
+          "priceAvg30d": 26.3
         },
         {
           "block": 7,
           "label": "03:00~03:30",
-          "price": 27.91,
-          "priceAvg30d": 26.89
+          "price": 28.1,
+          "priceAvg30d": 26.97
         },
         {
           "block": 8,
           "label": "03:30~04:00",
-          "price": 28.31,
-          "priceAvg30d": 26.88
+          "price": 27.48,
+          "priceAvg30d": 26.97
         },
         {
           "block": 9,
           "label": "04:00~04:30",
-          "price": 29.48,
-          "priceAvg30d": 27.31
+          "price": 27.79,
+          "priceAvg30d": 27.45
         },
         {
           "block": 10,
           "label": "04:30~05:00",
-          "price": 29.64,
-          "priceAvg30d": 27.41
+          "price": 27.91,
+          "priceAvg30d": 27.55
         },
         {
           "block": 11,
           "label": "05:00~05:30",
-          "price": 30.23,
-          "priceAvg30d": 27.89
+          "price": 27.71,
+          "priceAvg30d": 28.02
         },
         {
           "block": 12,
           "label": "05:30~06:00",
-          "price": 30.24,
-          "priceAvg30d": 28.25
+          "price": 27.71,
+          "priceAvg30d": 28.37
         },
         {
           "block": 13,
           "label": "06:00~06:30",
-          "price": 31.05,
-          "priceAvg30d": 28.56
+          "price": 27.91,
+          "priceAvg30d": 28.71
         },
         {
           "block": 14,
           "label": "06:30~07:00",
-          "price": 31.05,
-          "priceAvg30d": 27.64
+          "price": 26.4,
+          "priceAvg30d": 27.83
         },
         {
           "block": 15,
           "label": "07:00~07:30",
-          "price": 26.89,
-          "priceAvg30d": 24.85
+          "price": 20.22,
+          "priceAvg30d": 25.12
         },
         {
           "block": 16,
           "label": "07:30~08:00",
-          "price": 12.38,
-          "priceAvg30d": 22.51
+          "price": 17.5,
+          "priceAvg30d": 22.61
         },
         {
           "block": 17,
           "label": "08:00~08:30",
-          "price": 12.38,
-          "priceAvg30d": 21.25
+          "price": 26.97,
+          "priceAvg30d": 21.35
         },
         {
           "block": 18,
           "label": "08:30~09:00",
-          "price": 11.38,
-          "priceAvg30d": 19.73
+          "price": 26.81,
+          "priceAvg30d": 19.87
         },
         {
           "block": 19,
           "label": "09:00~09:30",
-          "price": 9.18,
-          "priceAvg30d": 18.8
+          "price": 26.89,
+          "priceAvg30d": 18.95
         },
         {
           "block": 20,
           "label": "09:30~10:00",
-          "price": 2.5,
+          "price": 26.52,
           "priceAvg30d": 18.0
         },
         {
           "block": 21,
           "label": "10:00~10:30",
-          "price": 2.5,
-          "priceAvg30d": 16.67
+          "price": 24.96,
+          "priceAvg30d": 16.72
         },
         {
           "block": 22,
           "label": "10:30~11:00",
-          "price": 1.0,
-          "priceAvg30d": 16.08
+          "price": 22.47,
+          "priceAvg30d": 16.11
         },
         {
           "block": 23,
           "label": "11:00~11:30",
-          "price": 1.0,
-          "priceAvg30d": 15.5
+          "price": 25.3,
+          "priceAvg30d": 15.53
         },
         {
           "block": 24,
           "label": "11:30~12:00",
-          "price": 1.0,
-          "priceAvg30d": 15.53
+          "price": 25.31,
+          "priceAvg30d": 15.56
         },
         {
           "block": 25,
           "label": "12:00~12:30",
-          "price": 1.01,
-          "priceAvg30d": 14.19
+          "price": 27.73,
+          "priceAvg30d": 14.22
         },
         {
           "block": 26,
           "label": "12:30~13:00",
-          "price": 2.0,
-          "priceAvg30d": 14.52
+          "price": 27.6,
+          "priceAvg30d": 14.56
         },
         {
           "block": 27,
           "label": "13:00~13:30",
-          "price": 9.18,
-          "priceAvg30d": 17.89
+          "price": 29.25,
+          "priceAvg30d": 18.17
         },
         {
           "block": 28,
           "label": "13:30~14:00",
-          "price": 10.36,
-          "priceAvg30d": 20.26
+          "price": 30.0,
+          "priceAvg30d": 20.36
         },
         {
           "block": 29,
           "label": "14:00~14:30",
-          "price": 10.73,
-          "priceAvg30d": 22.84
+          "price": 32.57,
+          "priceAvg30d": 22.89
         },
         {
           "block": 30,
           "label": "14:30~15:00",
-          "price": 22.45,
-          "priceAvg30d": 26.02
+          "price": 34.35,
+          "priceAvg30d": 26.07
         },
         {
           "block": 31,
           "label": "15:00~15:30",
-          "price": 27.28,
-          "priceAvg30d": 28.34
+          "price": 34.35,
+          "priceAvg30d": 28.41
         },
         {
           "block": 32,
           "label": "15:30~16:00",
-          "price": 29.17,
-          "priceAvg30d": 32.72
+          "price": 34.75,
+          "priceAvg30d": 32.62
         },
         {
           "block": 33,
           "label": "16:00~16:30",
-          "price": 30.16,
-          "priceAvg30d": 36.3
+          "price": 34.75,
+          "priceAvg30d": 36.12
         },
         {
           "block": 34,
           "label": "16:30~17:00",
-          "price": 31.21,
-          "priceAvg30d": 37.9
+          "price": 31.38,
+          "priceAvg30d": 37.62
         },
         {
           "block": 35,
           "label": "17:00~17:30",
-          "price": 31.13,
-          "priceAvg30d": 37.31
+          "price": 39.0,
+          "priceAvg30d": 37.06
         },
         {
           "block": 36,
           "label": "17:30~18:00",
-          "price": 30.08,
-          "priceAvg30d": 36.85
+          "price": 38.0,
+          "priceAvg30d": 36.56
         },
         {
           "block": 37,
           "label": "18:00~18:30",
-          "price": 28.6,
-          "priceAvg30d": 35.69
+          "price": 38.35,
+          "priceAvg30d": 35.47
         },
         {
           "block": 38,
           "label": "18:30~19:00",
-          "price": 28.6,
-          "priceAvg30d": 35.43
+          "price": 36.15,
+          "priceAvg30d": 35.27
         },
         {
           "block": 39,
           "label": "19:00~19:30",
-          "price": 28.6,
-          "priceAvg30d": 34.95
+          "price": 36.2,
+          "priceAvg30d": 34.84
         },
         {
           "block": 40,
           "label": "19:30~20:00",
-          "price": 28.6,
-          "priceAvg30d": 33.35
+          "price": 34.75,
+          "priceAvg30d": 33.38
         },
         {
           "block": 41,
           "label": "20:00~20:30",
-          "price": 29.53,
-          "priceAvg30d": 32.99
+          "price": 34.75,
+          "priceAvg30d": 33.06
         },
         {
           "block": 42,
           "label": "20:30~21:00",
-          "price": 30.03,
-          "priceAvg30d": 31.61
+          "price": 34.62,
+          "priceAvg30d": 31.73
         },
         {
           "block": 43,
           "label": "21:00~21:30",
-          "price": 30.13,
-          "priceAvg30d": 31.31
+          "price": 33.59,
+          "priceAvg30d": 31.4
         },
         {
           "block": 44,
           "label": "21:30~22:00",
-          "price": 27.63,
-          "priceAvg30d": 30.64
+          "price": 31.67,
+          "priceAvg30d": 30.6
         },
         {
           "block": 45,
           "label": "22:00~22:30",
-          "price": 26.89,
-          "priceAvg30d": 30.82
+          "price": 27.23,
+          "priceAvg30d": 30.76
         },
         {
           "block": 46,
           "label": "22:30~23:00",
-          "price": 27.9,
-          "priceAvg30d": 28.68
+          "price": 26.63,
+          "priceAvg30d": 28.7
         },
         {
           "block": 47,
           "label": "23:00~23:30",
-          "price": 26.71,
-          "priceAvg30d": 27.84
+          "price": 27.36,
+          "priceAvg30d": 27.83
         },
         {
           "block": 48,
           "label": "23:30~24:00",
-          "price": 26.0,
-          "priceAvg30d": 25.58
+          "price": 23.0,
+          "priceAvg30d": 25.61
         }
       ],
-      "avg": 22.09,
-      "max": 31.21,
-      "maxBlock": 34,
-      "min": 1.0,
-      "minBlock": 22,
-      "spread3h": 26.54,
-      "spreadLowAvg": 2.87,
-      "spreadHighAvg": 29.4,
-      "avg30d": 26.44,
-      "spread30dAvg": 21.43,
+      "avg": 28.5,
+      "max": 39.0,
+      "maxBlock": 35,
+      "min": 13.59,
+      "minBlock": 3,
+      "spread3h": 12.46,
+      "spreadLowAvg": 23.1,
+      "spreadHighAvg": 35.56,
+      "avg30d": 26.48,
+      "spread30dAvg": 21.19,
       "historyDays": 30
     },
     "東京": {
@@ -942,302 +942,302 @@ window.SPOT_DATA = {
         {
           "block": 1,
           "label": "00:00~00:30",
-          "price": 28.84,
-          "priceAvg30d": 29.22
+          "price": 27.94,
+          "priceAvg30d": 29.35
         },
         {
           "block": 2,
           "label": "00:30~01:00",
-          "price": 28.74,
-          "priceAvg30d": 29.02
+          "price": 27.48,
+          "priceAvg30d": 29.17
         },
         {
           "block": 3,
           "label": "01:00~01:30",
-          "price": 27.97,
-          "priceAvg30d": 29.02
+          "price": 27.91,
+          "priceAvg30d": 29.13
         },
         {
           "block": 4,
           "label": "01:30~02:00",
-          "price": 27.69,
-          "priceAvg30d": 28.58
+          "price": 27.71,
+          "priceAvg30d": 28.68
         },
         {
           "block": 5,
           "label": "02:00~02:30",
-          "price": 27.76,
-          "priceAvg30d": 28.8
+          "price": 27.47,
+          "priceAvg30d": 28.89
         },
         {
           "block": 6,
           "label": "02:30~03:00",
-          "price": 27.91,
-          "priceAvg30d": 28.83
+          "price": 27.48,
+          "priceAvg30d": 28.92
         },
         {
           "block": 7,
           "label": "03:00~03:30",
-          "price": 27.91,
-          "priceAvg30d": 28.95
+          "price": 28.1,
+          "priceAvg30d": 29.03
         },
         {
           "block": 8,
           "label": "03:30~04:00",
-          "price": 28.31,
-          "priceAvg30d": 28.93
+          "price": 27.48,
+          "priceAvg30d": 29.02
         },
         {
           "block": 9,
           "label": "04:00~04:30",
-          "price": 29.48,
-          "priceAvg30d": 29.21
+          "price": 27.79,
+          "priceAvg30d": 29.36
         },
         {
           "block": 10,
           "label": "04:30~05:00",
-          "price": 29.64,
-          "priceAvg30d": 29.27
+          "price": 27.91,
+          "priceAvg30d": 29.41
         },
         {
           "block": 11,
           "label": "05:00~05:30",
-          "price": 30.23,
-          "priceAvg30d": 29.53
+          "price": 27.71,
+          "priceAvg30d": 29.66
         },
         {
           "block": 12,
           "label": "05:30~06:00",
-          "price": 30.24,
-          "priceAvg30d": 30.12
+          "price": 27.71,
+          "priceAvg30d": 30.24
         },
         {
           "block": 13,
           "label": "06:00~06:30",
-          "price": 31.05,
-          "priceAvg30d": 30.69
+          "price": 27.91,
+          "priceAvg30d": 30.84
         },
         {
           "block": 14,
           "label": "06:30~07:00",
-          "price": 31.05,
-          "priceAvg30d": 30.42
+          "price": 28.13,
+          "priceAvg30d": 30.61
         },
         {
           "block": 15,
           "label": "07:00~07:30",
-          "price": 30.0,
-          "priceAvg30d": 30.18
+          "price": 29.66,
+          "priceAvg30d": 30.35
         },
         {
           "block": 16,
           "label": "07:30~08:00",
-          "price": 27.69,
-          "priceAvg30d": 29.66
+          "price": 30.27,
+          "priceAvg30d": 29.77
         },
         {
           "block": 17,
           "label": "08:00~08:30",
-          "price": 26.69,
-          "priceAvg30d": 28.32
+          "price": 29.91,
+          "priceAvg30d": 28.43
         },
         {
           "block": 18,
           "label": "08:30~09:00",
-          "price": 25.52,
-          "priceAvg30d": 28.85
+          "price": 30.65,
+          "priceAvg30d": 28.92
         },
         {
           "block": 19,
           "label": "09:00~09:30",
-          "price": 24.58,
-          "priceAvg30d": 28.07
+          "price": 32.61,
+          "priceAvg30d": 28.11
         },
         {
           "block": 20,
           "label": "09:30~10:00",
-          "price": 23.44,
+          "price": 33.0,
           "priceAvg30d": 26.57
         },
         {
           "block": 21,
           "label": "10:00~10:30",
-          "price": 21.73,
-          "priceAvg30d": 25.38
+          "price": 33.31,
+          "priceAvg30d": 25.33
         },
         {
           "block": 22,
           "label": "10:30~11:00",
-          "price": 21.73,
-          "priceAvg30d": 24.47
+          "price": 33.56,
+          "priceAvg30d": 24.44
         },
         {
           "block": 23,
           "label": "11:00~11:30",
-          "price": 21.73,
+          "price": 33.9,
           "priceAvg30d": 24.09
         },
         {
           "block": 24,
           "label": "11:30~12:00",
-          "price": 19.9,
-          "priceAvg30d": 24.37
+          "price": 35.1,
+          "priceAvg30d": 24.3
         },
         {
           "block": 25,
           "label": "12:00~12:30",
-          "price": 21.73,
-          "priceAvg30d": 23.57
+          "price": 40.0,
+          "priceAvg30d": 23.61
         },
         {
           "block": 26,
           "label": "12:30~13:00",
-          "price": 21.73,
-          "priceAvg30d": 24.41
+          "price": 42.65,
+          "priceAvg30d": 24.44
         },
         {
           "block": 27,
           "label": "13:00~13:30",
-          "price": 23.44,
-          "priceAvg30d": 26.92
+          "price": 41.15,
+          "priceAvg30d": 26.96
         },
         {
           "block": 28,
           "label": "13:30~14:00",
-          "price": 26.69,
-          "priceAvg30d": 28.94
+          "price": 42.92,
+          "priceAvg30d": 29.06
         },
         {
           "block": 29,
           "label": "14:00~14:30",
-          "price": 26.69,
-          "priceAvg30d": 30.57
+          "price": 42.92,
+          "priceAvg30d": 30.7
         },
         {
           "block": 30,
           "label": "14:30~15:00",
-          "price": 27.28,
-          "priceAvg30d": 32.84
+          "price": 34.35,
+          "priceAvg30d": 32.94
         },
         {
           "block": 31,
           "label": "15:00~15:30",
-          "price": 28.02,
-          "priceAvg30d": 33.38
+          "price": 42.65,
+          "priceAvg30d": 33.47
         },
         {
           "block": 32,
           "label": "15:30~16:00",
-          "price": 29.17,
-          "priceAvg30d": 36.42
+          "price": 42.96,
+          "priceAvg30d": 36.33
         },
         {
           "block": 33,
           "label": "16:00~16:30",
-          "price": 30.16,
-          "priceAvg30d": 38.2
+          "price": 42.96,
+          "priceAvg30d": 38.01
         },
         {
           "block": 34,
           "label": "16:30~17:00",
-          "price": 31.21,
-          "priceAvg30d": 39.28
+          "price": 42.96,
+          "priceAvg30d": 39.01
         },
         {
           "block": 35,
           "label": "17:00~17:30",
-          "price": 31.13,
-          "priceAvg30d": 38.91
+          "price": 41.15,
+          "priceAvg30d": 38.66
         },
         {
           "block": 36,
           "label": "17:30~18:00",
-          "price": 30.08,
-          "priceAvg30d": 38.47
+          "price": 38.0,
+          "priceAvg30d": 38.17
         },
         {
           "block": 37,
           "label": "18:00~18:30",
-          "price": 28.6,
-          "priceAvg30d": 36.92
+          "price": 38.35,
+          "priceAvg30d": 36.7
         },
         {
           "block": 38,
           "label": "18:30~19:00",
-          "price": 28.6,
-          "priceAvg30d": 36.98
+          "price": 36.15,
+          "priceAvg30d": 36.82
         },
         {
           "block": 39,
           "label": "19:00~19:30",
-          "price": 28.6,
-          "priceAvg30d": 36.28
+          "price": 36.2,
+          "priceAvg30d": 36.17
         },
         {
           "block": 40,
           "label": "19:30~20:00",
-          "price": 28.6,
-          "priceAvg30d": 34.89
+          "price": 36.24,
+          "priceAvg30d": 34.92
         },
         {
           "block": 41,
           "label": "20:00~20:30",
-          "price": 29.53,
-          "priceAvg30d": 33.89
+          "price": 42.65,
+          "priceAvg30d": 33.96
         },
         {
           "block": 42,
           "label": "20:30~21:00",
-          "price": 30.13,
-          "priceAvg30d": 32.73
+          "price": 34.62,
+          "priceAvg30d": 32.85
         },
         {
           "block": 43,
           "label": "21:00~21:30",
-          "price": 30.13,
-          "priceAvg30d": 32.4
+          "price": 33.59,
+          "priceAvg30d": 32.49
         },
         {
           "block": 44,
           "label": "21:30~22:00",
-          "price": 29.5,
-          "priceAvg30d": 32.11
+          "price": 31.67,
+          "priceAvg30d": 32.13
         },
         {
           "block": 45,
           "label": "22:00~22:30",
-          "price": 29.5,
-          "priceAvg30d": 33.7
+          "price": 31.8,
+          "priceAvg30d": 33.73
         },
         {
           "block": 46,
           "label": "22:30~23:00",
-          "price": 28.56,
-          "priceAvg30d": 31.85
+          "price": 31.37,
+          "priceAvg30d": 31.89
         },
         {
           "block": 47,
           "label": "23:00~23:30",
-          "price": 28.04,
-          "priceAvg30d": 30.54
+          "price": 30.58,
+          "priceAvg30d": 30.57
         },
         {
           "block": 48,
           "label": "23:30~24:00",
-          "price": 27.5,
-          "priceAvg30d": 29.18
+          "price": 28.79,
+          "priceAvg30d": 29.26
         }
       ],
-      "avg": 27.59,
-      "max": 31.21,
-      "maxBlock": 34,
-      "min": 19.9,
-      "minBlock": 24,
-      "spread3h": 7.51,
-      "spreadLowAvg": 22.02,
-      "spreadHighAvg": 29.53,
-      "avg30d": 30.71,
-      "spread30dAvg": 14.31,
+      "avg": 33.7,
+      "max": 42.96,
+      "maxBlock": 32,
+      "min": 27.47,
+      "minBlock": 5,
+      "spread3h": 13.47,
+      "spreadLowAvg": 27.69,
+      "spreadHighAvg": 41.16,
+      "avg30d": 30.74,
+      "spread30dAvg": 14.16,
       "historyDays": 30
     },
     "中部": {
@@ -1246,302 +1246,302 @@ window.SPOT_DATA = {
         {
           "block": 1,
           "label": "00:00~00:30",
-          "price": 31.46,
-          "priceAvg30d": 28.45
+          "price": 27.94,
+          "priceAvg30d": 28.67
         },
         {
           "block": 2,
           "label": "00:30~01:00",
-          "price": 31.09,
-          "priceAvg30d": 28.25
+          "price": 28.26,
+          "priceAvg30d": 28.47
         },
         {
           "block": 3,
           "label": "01:00~01:30",
-          "price": 31.11,
-          "priceAvg30d": 27.72
+          "price": 27.91,
+          "priceAvg30d": 27.93
         },
         {
           "block": 4,
           "label": "01:30~02:00",
-          "price": 31.48,
-          "priceAvg30d": 27.6
+          "price": 28.24,
+          "priceAvg30d": 27.83
         },
         {
           "block": 5,
           "label": "02:00~02:30",
-          "price": 31.52,
-          "priceAvg30d": 28.12
+          "price": 28.45,
+          "priceAvg30d": 28.34
         },
         {
           "block": 6,
           "label": "02:30~03:00",
-          "price": 31.6,
-          "priceAvg30d": 28.5
+          "price": 28.88,
+          "priceAvg30d": 28.72
         },
         {
           "block": 7,
           "label": "03:00~03:30",
-          "price": 31.8,
-          "priceAvg30d": 28.8
+          "price": 29.83,
+          "priceAvg30d": 29.01
         },
         {
           "block": 8,
           "label": "03:30~04:00",
-          "price": 31.8,
-          "priceAvg30d": 29.11
+          "price": 28.45,
+          "priceAvg30d": 29.31
         },
         {
           "block": 9,
           "label": "04:00~04:30",
-          "price": 31.79,
-          "priceAvg30d": 29.31
+          "price": 28.63,
+          "priceAvg30d": 29.51
         },
         {
           "block": 10,
           "label": "04:30~05:00",
-          "price": 31.6,
-          "priceAvg30d": 29.41
+          "price": 28.63,
+          "priceAvg30d": 29.6
         },
         {
           "block": 11,
           "label": "05:00~05:30",
-          "price": 31.47,
-          "priceAvg30d": 29.68
+          "price": 28.63,
+          "priceAvg30d": 29.85
         },
         {
           "block": 12,
           "label": "05:30~06:00",
-          "price": 31.1,
-          "priceAvg30d": 29.96
+          "price": 30.17,
+          "priceAvg30d": 30.1
         },
         {
           "block": 13,
           "label": "06:00~06:30",
-          "price": 31.1,
-          "priceAvg30d": 30.12
+          "price": 29.62,
+          "priceAvg30d": 30.27
         },
         {
           "block": 14,
           "label": "06:30~07:00",
-          "price": 31.05,
-          "priceAvg30d": 29.9
+          "price": 29.15,
+          "priceAvg30d": 30.09
         },
         {
           "block": 15,
           "label": "07:00~07:30",
-          "price": 30.46,
-          "priceAvg30d": 28.36
+          "price": 29.66,
+          "priceAvg30d": 28.55
         },
         {
           "block": 16,
           "label": "07:30~08:00",
-          "price": 29.86,
-          "priceAvg30d": 26.54
+          "price": 30.27,
+          "priceAvg30d": 26.73
         },
         {
           "block": 17,
           "label": "08:00~08:30",
-          "price": 26.69,
-          "priceAvg30d": 25.72
+          "price": 29.91,
+          "priceAvg30d": 26.0
         },
         {
           "block": 18,
           "label": "08:30~09:00",
-          "price": 25.52,
-          "priceAvg30d": 26.16
+          "price": 30.65,
+          "priceAvg30d": 26.39
         },
         {
           "block": 19,
           "label": "09:00~09:30",
-          "price": 24.58,
-          "priceAvg30d": 25.1
+          "price": 32.61,
+          "priceAvg30d": 25.31
         },
         {
           "block": 20,
           "label": "09:30~10:00",
-          "price": 23.44,
-          "priceAvg30d": 23.35
+          "price": 33.0,
+          "priceAvg30d": 23.64
         },
         {
           "block": 21,
           "label": "10:00~10:30",
-          "price": 21.73,
-          "priceAvg30d": 21.88
+          "price": 33.31,
+          "priceAvg30d": 22.21
         },
         {
           "block": 22,
           "label": "10:30~11:00",
-          "price": 21.73,
-          "priceAvg30d": 21.49
+          "price": 33.56,
+          "priceAvg30d": 21.83
         },
         {
           "block": 23,
           "label": "11:00~11:30",
-          "price": 21.73,
-          "priceAvg30d": 21.19
+          "price": 33.9,
+          "priceAvg30d": 21.54
         },
         {
           "block": 24,
           "label": "11:30~12:00",
-          "price": 19.9,
-          "priceAvg30d": 21.11
+          "price": 35.1,
+          "priceAvg30d": 21.4
         },
         {
           "block": 25,
           "label": "12:00~12:30",
-          "price": 21.73,
-          "priceAvg30d": 18.37
+          "price": 35.1,
+          "priceAvg30d": 18.98
         },
         {
           "block": 26,
           "label": "12:30~13:00",
-          "price": 21.73,
-          "priceAvg30d": 19.26
+          "price": 35.0,
+          "priceAvg30d": 19.7
         },
         {
           "block": 27,
           "label": "13:00~13:30",
-          "price": 23.44,
-          "priceAvg30d": 23.06
+          "price": 35.27,
+          "priceAvg30d": 23.46
         },
         {
           "block": 28,
           "label": "13:30~14:00",
-          "price": 26.69,
-          "priceAvg30d": 26.07
+          "price": 35.27,
+          "priceAvg30d": 26.3
         },
         {
           "block": 29,
           "label": "14:00~14:30",
-          "price": 26.69,
-          "priceAvg30d": 27.85
+          "price": 36.0,
+          "priceAvg30d": 28.0
         },
         {
           "block": 30,
           "label": "14:30~15:00",
-          "price": 28.28,
-          "priceAvg30d": 29.5
+          "price": 34.35,
+          "priceAvg30d": 29.63
         },
         {
           "block": 31,
           "label": "15:00~15:30",
-          "price": 28.02,
-          "priceAvg30d": 31.1
+          "price": 36.05,
+          "priceAvg30d": 31.19
         },
         {
           "block": 32,
           "label": "15:30~16:00",
-          "price": 29.17,
-          "priceAvg30d": 35.53
+          "price": 36.14,
+          "priceAvg30d": 35.44
         },
         {
           "block": 33,
           "label": "16:00~16:30",
-          "price": 30.16,
-          "priceAvg30d": 36.32
+          "price": 36.15,
+          "priceAvg30d": 36.13
         },
         {
           "block": 34,
           "label": "16:30~17:00",
-          "price": 31.21,
-          "priceAvg30d": 36.49
+          "price": 36.36,
+          "priceAvg30d": 36.21
         },
         {
           "block": 35,
           "label": "17:00~17:30",
-          "price": 31.13,
-          "priceAvg30d": 36.94
+          "price": 37.78,
+          "priceAvg30d": 36.68
         },
         {
           "block": 36,
           "label": "17:30~18:00",
-          "price": 30.08,
-          "priceAvg30d": 36.73
+          "price": 36.24,
+          "priceAvg30d": 36.43
         },
         {
           "block": 37,
           "label": "18:00~18:30",
-          "price": 28.6,
-          "priceAvg30d": 35.73
+          "price": 38.35,
+          "priceAvg30d": 35.51
         },
         {
           "block": 38,
           "label": "18:30~19:00",
-          "price": 28.6,
-          "priceAvg30d": 35.37
+          "price": 36.15,
+          "priceAvg30d": 35.22
         },
         {
           "block": 39,
           "label": "19:00~19:30",
-          "price": 28.6,
-          "priceAvg30d": 35.02
+          "price": 36.2,
+          "priceAvg30d": 34.91
         },
         {
           "block": 40,
           "label": "19:30~20:00",
-          "price": 28.6,
-          "priceAvg30d": 33.48
+          "price": 36.24,
+          "priceAvg30d": 33.52
         },
         {
           "block": 41,
           "label": "20:00~20:30",
-          "price": 29.53,
-          "priceAvg30d": 32.27
+          "price": 36.02,
+          "priceAvg30d": 32.35
         },
         {
           "block": 42,
           "label": "20:30~21:00",
-          "price": 31.98,
-          "priceAvg30d": 31.61
+          "price": 34.62,
+          "priceAvg30d": 31.8
         },
         {
           "block": 43,
           "label": "21:00~21:30",
-          "price": 31.66,
-          "priceAvg30d": 31.11
+          "price": 33.59,
+          "priceAvg30d": 31.25
         },
         {
           "block": 44,
           "label": "21:30~22:00",
-          "price": 29.9,
-          "priceAvg30d": 30.79
+          "price": 31.67,
+          "priceAvg30d": 30.82
         },
         {
           "block": 45,
           "label": "22:00~22:30",
-          "price": 29.5,
-          "priceAvg30d": 31.47
+          "price": 31.8,
+          "priceAvg30d": 31.5
         },
         {
           "block": 46,
           "label": "22:30~23:00",
-          "price": 28.56,
-          "priceAvg30d": 30.91
+          "price": 31.37,
+          "priceAvg30d": 30.96
         },
         {
           "block": 47,
           "label": "23:00~23:30",
-          "price": 28.48,
-          "priceAvg30d": 30.59
+          "price": 30.58,
+          "priceAvg30d": 30.64
         },
         {
           "block": 48,
           "label": "23:30~24:00",
-          "price": 28.26,
-          "priceAvg30d": 29.65
+          "price": 28.79,
+          "priceAvg30d": 29.75
         }
       ],
-      "avg": 28.46,
-      "max": 31.98,
-      "maxBlock": 42,
-      "min": 19.9,
-      "minBlock": 24,
-      "spread3h": 7.62,
-      "spreadLowAvg": 22.02,
-      "spreadHighAvg": 29.63,
-      "avg30d": 28.98,
-      "spread30dAvg": 17.14,
+      "avg": 32.5,
+      "max": 38.35,
+      "maxBlock": 37,
+      "min": 27.91,
+      "minBlock": 3,
+      "spread3h": 8.16,
+      "spreadLowAvg": 28.34,
+      "spreadHighAvg": 36.49,
+      "avg30d": 29.12,
+      "spread30dAvg": 16.66,
       "historyDays": 30
     },
     "北陸": {
@@ -1550,302 +1550,302 @@ window.SPOT_DATA = {
         {
           "block": 1,
           "label": "00:00~00:30",
-          "price": 15.71,
-          "priceAvg30d": 16.02
+          "price": 17.39,
+          "priceAvg30d": 16.11
         },
         {
           "block": 2,
           "label": "00:30~01:00",
-          "price": 17.89,
-          "priceAvg30d": 15.98
+          "price": 15.71,
+          "priceAvg30d": 16.13
         },
         {
           "block": 3,
           "label": "01:00~01:30",
-          "price": 22.59,
-          "priceAvg30d": 15.38
+          "price": 14.56,
+          "priceAvg30d": 15.69
         },
         {
           "block": 4,
           "label": "01:30~02:00",
-          "price": 22.59,
-          "priceAvg30d": 14.77
+          "price": 15.71,
+          "priceAvg30d": 15.07
         },
         {
           "block": 5,
           "label": "02:00~02:30",
-          "price": 22.91,
-          "priceAvg30d": 16.35
+          "price": 19.04,
+          "priceAvg30d": 16.67
         },
         {
           "block": 6,
           "label": "02:30~03:00",
-          "price": 25.42,
-          "priceAvg30d": 18.51
+          "price": 23.89,
+          "priceAvg30d": 18.79
         },
         {
           "block": 7,
           "label": "03:00~03:30",
-          "price": 25.53,
-          "priceAvg30d": 20.2
+          "price": 25.42,
+          "priceAvg30d": 20.45
         },
         {
           "block": 8,
           "label": "03:30~04:00",
-          "price": 28.53,
-          "priceAvg30d": 21.37
+          "price": 24.79,
+          "priceAvg30d": 21.7
         },
         {
           "block": 9,
           "label": "04:00~04:30",
-          "price": 30.0,
-          "priceAvg30d": 21.39
+          "price": 25.42,
+          "priceAvg30d": 21.74
         },
         {
           "block": 10,
           "label": "04:30~05:00",
-          "price": 30.0,
-          "priceAvg30d": 23.14
+          "price": 25.42,
+          "priceAvg30d": 23.38
         },
         {
           "block": 11,
           "label": "05:00~05:30",
-          "price": 27.13,
-          "priceAvg30d": 23.8
+          "price": 25.42,
+          "priceAvg30d": 24.04
         },
         {
           "block": 12,
           "label": "05:30~06:00",
-          "price": 25.18,
-          "priceAvg30d": 23.03
+          "price": 22.59,
+          "priceAvg30d": 23.17
         },
         {
           "block": 13,
           "label": "06:00~06:30",
-          "price": 24.79,
-          "priceAvg30d": 21.98
+          "price": 13.62,
+          "priceAvg30d": 22.05
         },
         {
           "block": 14,
           "label": "06:30~07:00",
-          "price": 25.42,
-          "priceAvg30d": 22.47
+          "price": 12.32,
+          "priceAvg30d": 22.52
         },
         {
           "block": 15,
           "label": "07:00~07:30",
-          "price": 27.27,
-          "priceAvg30d": 22.05
+          "price": 13.09,
+          "priceAvg30d": 22.31
         },
         {
           "block": 16,
           "label": "07:30~08:00",
-          "price": 26.63,
-          "priceAvg30d": 20.67
+          "price": 13.62,
+          "priceAvg30d": 21.02
         },
         {
           "block": 17,
           "label": "08:00~08:30",
-          "price": 25.74,
-          "priceAvg30d": 20.72
+          "price": 15.98,
+          "priceAvg30d": 20.97
         },
         {
           "block": 18,
           "label": "08:30~09:00",
-          "price": 25.52,
-          "priceAvg30d": 21.62
+          "price": 18.54,
+          "priceAvg30d": 21.85
         },
         {
           "block": 19,
           "label": "09:00~09:30",
-          "price": 24.58,
-          "priceAvg30d": 21.42
+          "price": 22.91,
+          "priceAvg30d": 21.63
         },
         {
           "block": 20,
           "label": "09:30~10:00",
-          "price": 22.91,
-          "priceAvg30d": 21.0
+          "price": 24.79,
+          "priceAvg30d": 21.26
         },
         {
           "block": 21,
           "label": "10:00~10:30",
-          "price": 20.0,
-          "priceAvg30d": 19.78
+          "price": 24.79,
+          "priceAvg30d": 20.06
         },
         {
           "block": 22,
           "label": "10:30~11:00",
-          "price": 15.57,
-          "priceAvg30d": 19.12
+          "price": 24.79,
+          "priceAvg30d": 19.26
         },
         {
           "block": 23,
           "label": "11:00~11:30",
-          "price": 15.71,
-          "priceAvg30d": 19.72
+          "price": 25.0,
+          "priceAvg30d": 19.88
         },
         {
           "block": 24,
           "label": "11:30~12:00",
-          "price": 15.71,
-          "priceAvg30d": 19.33
+          "price": 25.0,
+          "priceAvg30d": 19.49
         },
         {
           "block": 25,
           "label": "12:00~12:30",
-          "price": 15.71,
-          "priceAvg30d": 14.94
+          "price": 22.91,
+          "priceAvg30d": 15.34
         },
         {
           "block": 26,
           "label": "12:30~13:00",
-          "price": 21.73,
-          "priceAvg30d": 15.73
+          "price": 22.59,
+          "priceAvg30d": 16.18
         },
         {
           "block": 27,
           "label": "13:00~13:30",
-          "price": 23.44,
-          "priceAvg30d": 21.14
+          "price": 22.59,
+          "priceAvg30d": 21.53
         },
         {
           "block": 28,
           "label": "13:30~14:00",
-          "price": 26.69,
-          "priceAvg30d": 23.98
+          "price": 10.66,
+          "priceAvg30d": 24.2
         },
         {
           "block": 29,
           "label": "14:00~14:30",
-          "price": 26.69,
-          "priceAvg30d": 25.27
+          "price": 10.55,
+          "priceAvg30d": 25.51
         },
         {
           "block": 30,
           "label": "14:30~15:00",
-          "price": 28.28,
-          "priceAvg30d": 26.96
+          "price": 10.59,
+          "priceAvg30d": 27.24
         },
         {
           "block": 31,
           "label": "15:00~15:30",
-          "price": 28.02,
-          "priceAvg30d": 27.68
+          "price": 11.22,
+          "priceAvg30d": 27.96
         },
         {
           "block": 32,
           "label": "15:30~16:00",
-          "price": 29.17,
-          "priceAvg30d": 30.88
+          "price": 12.32,
+          "priceAvg30d": 31.07
         },
         {
           "block": 33,
           "label": "16:00~16:30",
-          "price": 26.68,
-          "priceAvg30d": 31.34
+          "price": 14.35,
+          "priceAvg30d": 31.46
         },
         {
           "block": 34,
           "label": "16:30~17:00",
-          "price": 27.4,
-          "priceAvg30d": 33.39
+          "price": 25.42,
+          "priceAvg30d": 33.04
         },
         {
           "block": 35,
           "label": "17:00~17:30",
-          "price": 30.0,
-          "priceAvg30d": 32.47
+          "price": 27.18,
+          "priceAvg30d": 32.4
         },
         {
           "block": 36,
           "label": "17:30~18:00",
-          "price": 30.0,
-          "priceAvg30d": 32.77
+          "price": 29.5,
+          "priceAvg30d": 32.61
         },
         {
           "block": 37,
           "label": "18:00~18:30",
-          "price": 28.6,
-          "priceAvg30d": 30.63
+          "price": 26.67,
+          "priceAvg30d": 30.81
         },
         {
           "block": 38,
           "label": "18:30~19:00",
-          "price": 27.9,
-          "priceAvg30d": 30.42
+          "price": 25.53,
+          "priceAvg30d": 30.63
         },
         {
           "block": 39,
           "label": "19:00~19:30",
           "price": 25.42,
-          "priceAvg30d": 30.2
+          "priceAvg30d": 30.35
         },
         {
           "block": 40,
           "label": "19:30~20:00",
-          "price": 25.53,
-          "priceAvg30d": 27.68
+          "price": 25.42,
+          "priceAvg30d": 27.82
         },
         {
           "block": 41,
           "label": "20:00~20:30",
-          "price": 29.53,
-          "priceAvg30d": 27.38
+          "price": 25.01,
+          "priceAvg30d": 27.67
         },
         {
           "block": 42,
           "label": "20:30~21:00",
-          "price": 28.5,
-          "priceAvg30d": 25.73
+          "price": 24.79,
+          "priceAvg30d": 25.99
         },
         {
           "block": 43,
           "label": "21:00~21:30",
           "price": 25.42,
-          "priceAvg30d": 25.25
+          "priceAvg30d": 25.4
         },
         {
           "block": 44,
           "label": "21:30~22:00",
-          "price": 23.0,
-          "priceAvg30d": 24.04
+          "price": 24.79,
+          "priceAvg30d": 24.12
         },
         {
           "block": 45,
           "label": "22:00~22:30",
           "price": 25.0,
-          "priceAvg30d": 24.3
+          "priceAvg30d": 24.41
         },
         {
           "block": 46,
           "label": "22:30~23:00",
           "price": 22.59,
-          "priceAvg30d": 22.13
+          "priceAvg30d": 22.18
         },
         {
           "block": 47,
           "label": "23:00~23:30",
-          "price": 22.59,
-          "priceAvg30d": 21.72
+          "price": 18.0,
+          "priceAvg30d": 21.76
         },
         {
           "block": 48,
           "label": "23:30~24:00",
-          "price": 14.0,
-          "priceAvg30d": 16.77
+          "price": 11.0,
+          "priceAvg30d": 16.51
         }
       ],
-      "avg": 24.48,
-      "max": 30.0,
-      "maxBlock": 9,
-      "min": 14.0,
-      "minBlock": 48,
-      "spread3h": 7.32,
-      "spreadLowAvg": 19.64,
-      "spreadHighAvg": 26.96,
-      "avg30d": 22.97,
-      "spread30dAvg": 17.4,
+      "avg": 20.61,
+      "max": 29.5,
+      "maxBlock": 36,
+      "min": 10.55,
+      "minBlock": 29,
+      "spread3h": 9.1,
+      "spreadLowAvg": 14.99,
+      "spreadHighAvg": 24.09,
+      "avg30d": 23.15,
+      "spread30dAvg": 17.18,
       "historyDays": 30
     },
     "関西": {
@@ -1854,302 +1854,302 @@ window.SPOT_DATA = {
         {
           "block": 1,
           "label": "00:00~00:30",
-          "price": 15.71,
-          "priceAvg30d": 15.77
+          "price": 17.39,
+          "priceAvg30d": 15.86
         },
         {
           "block": 2,
           "label": "00:30~01:00",
-          "price": 17.89,
-          "priceAvg30d": 15.98
+          "price": 15.71,
+          "priceAvg30d": 16.13
         },
         {
           "block": 3,
           "label": "01:00~01:30",
-          "price": 22.59,
-          "priceAvg30d": 15.38
+          "price": 14.56,
+          "priceAvg30d": 15.69
         },
         {
           "block": 4,
           "label": "01:30~02:00",
-          "price": 22.59,
-          "priceAvg30d": 14.77
+          "price": 15.71,
+          "priceAvg30d": 15.07
         },
         {
           "block": 5,
           "label": "02:00~02:30",
-          "price": 22.91,
-          "priceAvg30d": 15.26
+          "price": 19.04,
+          "priceAvg30d": 15.57
         },
         {
           "block": 6,
           "label": "02:30~03:00",
-          "price": 25.42,
-          "priceAvg30d": 17.69
+          "price": 23.89,
+          "priceAvg30d": 17.97
         },
         {
           "block": 7,
           "label": "03:00~03:30",
-          "price": 25.53,
-          "priceAvg30d": 18.94
+          "price": 25.42,
+          "priceAvg30d": 19.19
         },
         {
           "block": 8,
           "label": "03:30~04:00",
-          "price": 28.53,
-          "priceAvg30d": 20.24
+          "price": 24.79,
+          "priceAvg30d": 20.57
         },
         {
           "block": 9,
           "label": "04:00~04:30",
-          "price": 30.0,
-          "priceAvg30d": 20.21
+          "price": 25.42,
+          "priceAvg30d": 20.55
         },
         {
           "block": 10,
           "label": "04:30~05:00",
-          "price": 30.0,
-          "priceAvg30d": 21.26
+          "price": 25.42,
+          "priceAvg30d": 21.49
         },
         {
           "block": 11,
           "label": "05:00~05:30",
-          "price": 27.13,
-          "priceAvg30d": 21.28
+          "price": 25.42,
+          "priceAvg30d": 21.52
         },
         {
           "block": 12,
           "label": "05:30~06:00",
-          "price": 25.18,
-          "priceAvg30d": 20.57
+          "price": 22.59,
+          "priceAvg30d": 20.71
         },
         {
           "block": 13,
           "label": "06:00~06:30",
-          "price": 24.79,
-          "priceAvg30d": 20.91
+          "price": 13.62,
+          "priceAvg30d": 20.98
         },
         {
           "block": 14,
           "label": "06:30~07:00",
-          "price": 25.42,
-          "priceAvg30d": 21.72
+          "price": 12.32,
+          "priceAvg30d": 21.77
         },
         {
           "block": 15,
           "label": "07:00~07:30",
-          "price": 27.27,
-          "priceAvg30d": 21.53
+          "price": 13.09,
+          "priceAvg30d": 21.79
         },
         {
           "block": 16,
           "label": "07:30~08:00",
-          "price": 26.63,
-          "priceAvg30d": 20.17
+          "price": 13.62,
+          "priceAvg30d": 20.53
         },
         {
           "block": 17,
           "label": "08:00~08:30",
-          "price": 25.74,
-          "priceAvg30d": 20.53
+          "price": 15.98,
+          "priceAvg30d": 20.78
         },
         {
           "block": 18,
           "label": "08:30~09:00",
-          "price": 25.52,
-          "priceAvg30d": 21.62
+          "price": 18.54,
+          "priceAvg30d": 21.85
         },
         {
           "block": 19,
           "label": "09:00~09:30",
-          "price": 24.58,
-          "priceAvg30d": 21.42
+          "price": 22.91,
+          "priceAvg30d": 21.63
         },
         {
           "block": 20,
           "label": "09:30~10:00",
-          "price": 22.91,
-          "priceAvg30d": 21.0
+          "price": 24.79,
+          "priceAvg30d": 21.26
         },
         {
           "block": 21,
           "label": "10:00~10:30",
-          "price": 20.0,
-          "priceAvg30d": 19.78
+          "price": 24.79,
+          "priceAvg30d": 20.06
         },
         {
           "block": 22,
           "label": "10:30~11:00",
-          "price": 15.57,
-          "priceAvg30d": 19.12
+          "price": 24.79,
+          "priceAvg30d": 19.26
         },
         {
           "block": 23,
           "label": "11:00~11:30",
-          "price": 15.71,
-          "priceAvg30d": 19.72
+          "price": 25.0,
+          "priceAvg30d": 19.88
         },
         {
           "block": 24,
           "label": "11:30~12:00",
-          "price": 15.71,
-          "priceAvg30d": 19.33
+          "price": 25.0,
+          "priceAvg30d": 19.49
         },
         {
           "block": 25,
           "label": "12:00~12:30",
-          "price": 15.71,
-          "priceAvg30d": 14.85
+          "price": 22.91,
+          "priceAvg30d": 15.25
         },
         {
           "block": 26,
           "label": "12:30~13:00",
-          "price": 21.73,
-          "priceAvg30d": 15.64
+          "price": 22.59,
+          "priceAvg30d": 16.09
         },
         {
           "block": 27,
           "label": "13:00~13:30",
-          "price": 23.44,
-          "priceAvg30d": 21.14
+          "price": 22.59,
+          "priceAvg30d": 21.53
         },
         {
           "block": 28,
           "label": "13:30~14:00",
-          "price": 26.69,
-          "priceAvg30d": 23.98
+          "price": 10.66,
+          "priceAvg30d": 24.2
         },
         {
           "block": 29,
           "label": "14:00~14:30",
-          "price": 26.69,
-          "priceAvg30d": 25.0
+          "price": 10.55,
+          "priceAvg30d": 25.23
         },
         {
           "block": 30,
           "label": "14:30~15:00",
-          "price": 28.28,
-          "priceAvg30d": 26.19
+          "price": 10.59,
+          "priceAvg30d": 26.48
         },
         {
           "block": 31,
           "label": "15:00~15:30",
-          "price": 28.02,
-          "priceAvg30d": 27.61
+          "price": 11.22,
+          "priceAvg30d": 27.89
         },
         {
           "block": 32,
           "label": "15:30~16:00",
-          "price": 29.17,
-          "priceAvg30d": 30.84
+          "price": 12.32,
+          "priceAvg30d": 31.04
         },
         {
           "block": 33,
           "label": "16:00~16:30",
-          "price": 26.68,
-          "priceAvg30d": 31.34
+          "price": 14.35,
+          "priceAvg30d": 31.46
         },
         {
           "block": 34,
           "label": "16:30~17:00",
-          "price": 27.4,
-          "priceAvg30d": 33.39
+          "price": 25.42,
+          "priceAvg30d": 33.04
         },
         {
           "block": 35,
           "label": "17:00~17:30",
-          "price": 30.0,
-          "priceAvg30d": 31.97
+          "price": 27.18,
+          "priceAvg30d": 31.9
         },
         {
           "block": 36,
           "label": "17:30~18:00",
-          "price": 30.0,
-          "priceAvg30d": 31.88
+          "price": 29.5,
+          "priceAvg30d": 32.05
         },
         {
           "block": 37,
           "label": "18:00~18:30",
-          "price": 28.6,
-          "priceAvg30d": 30.61
+          "price": 26.67,
+          "priceAvg30d": 30.79
         },
         {
           "block": 38,
           "label": "18:30~19:00",
-          "price": 27.9,
-          "priceAvg30d": 29.97
+          "price": 25.53,
+          "priceAvg30d": 30.17
         },
         {
           "block": 39,
           "label": "19:00~19:30",
           "price": 25.42,
-          "priceAvg30d": 29.86
+          "priceAvg30d": 30.01
         },
         {
           "block": 40,
           "label": "19:30~20:00",
-          "price": 25.53,
-          "priceAvg30d": 27.5
+          "price": 25.42,
+          "priceAvg30d": 27.64
         },
         {
           "block": 41,
           "label": "20:00~20:30",
-          "price": 29.53,
-          "priceAvg30d": 27.12
+          "price": 25.01,
+          "priceAvg30d": 27.4
         },
         {
           "block": 42,
           "label": "20:30~21:00",
-          "price": 28.5,
-          "priceAvg30d": 25.23
+          "price": 24.79,
+          "priceAvg30d": 25.49
         },
         {
           "block": 43,
           "label": "21:00~21:30",
           "price": 25.42,
-          "priceAvg30d": 24.82
+          "priceAvg30d": 24.98
         },
         {
           "block": 44,
           "label": "21:30~22:00",
-          "price": 23.0,
-          "priceAvg30d": 23.79
+          "price": 24.79,
+          "priceAvg30d": 23.87
         },
         {
           "block": 45,
           "label": "22:00~22:30",
           "price": 25.0,
-          "priceAvg30d": 23.36
+          "priceAvg30d": 23.48
         },
         {
           "block": 46,
           "label": "22:30~23:00",
           "price": 22.59,
-          "priceAvg30d": 21.52
+          "priceAvg30d": 21.57
         },
         {
           "block": 47,
           "label": "23:00~23:30",
-          "price": 22.59,
-          "priceAvg30d": 21.22
+          "price": 18.0,
+          "priceAvg30d": 21.26
         },
         {
           "block": 48,
           "label": "23:30~24:00",
-          "price": 14.0,
-          "priceAvg30d": 16.64
+          "price": 11.0,
+          "priceAvg30d": 16.39
         }
       ],
-      "avg": 24.48,
-      "max": 30.0,
-      "maxBlock": 9,
-      "min": 14.0,
-      "minBlock": 48,
-      "spread3h": 7.32,
-      "spreadLowAvg": 19.64,
-      "spreadHighAvg": 26.96,
-      "avg30d": 22.49,
-      "spread30dAvg": 16.97,
+      "avg": 20.61,
+      "max": 29.5,
+      "maxBlock": 36,
+      "min": 10.55,
+      "minBlock": 29,
+      "spread3h": 9.1,
+      "spreadLowAvg": 14.99,
+      "spreadHighAvg": 24.09,
+      "avg30d": 22.68,
+      "spread30dAvg": 16.81,
       "historyDays": 30
     },
     "中国": {
@@ -2158,302 +2158,302 @@ window.SPOT_DATA = {
         {
           "block": 1,
           "label": "00:00~00:30",
-          "price": 15.71,
-          "priceAvg30d": 15.2
+          "price": 17.39,
+          "priceAvg30d": 15.29
         },
         {
           "block": 2,
           "label": "00:30~01:00",
-          "price": 17.89,
-          "priceAvg30d": 15.9
+          "price": 15.71,
+          "priceAvg30d": 16.05
         },
         {
           "block": 3,
           "label": "01:00~01:30",
-          "price": 22.59,
-          "priceAvg30d": 14.81
+          "price": 14.56,
+          "priceAvg30d": 15.12
         },
         {
           "block": 4,
           "label": "01:30~02:00",
-          "price": 22.59,
-          "priceAvg30d": 14.17
+          "price": 15.71,
+          "priceAvg30d": 14.47
         },
         {
           "block": 5,
           "label": "02:00~02:30",
-          "price": 22.91,
-          "priceAvg30d": 14.83
+          "price": 19.04,
+          "priceAvg30d": 15.15
         },
         {
           "block": 6,
           "label": "02:30~03:00",
-          "price": 25.42,
-          "priceAvg30d": 16.53
+          "price": 23.89,
+          "priceAvg30d": 16.81
         },
         {
           "block": 7,
           "label": "03:00~03:30",
-          "price": 25.53,
-          "priceAvg30d": 17.93
+          "price": 25.42,
+          "priceAvg30d": 18.18
         },
         {
           "block": 8,
           "label": "03:30~04:00",
-          "price": 28.53,
-          "priceAvg30d": 19.44
+          "price": 24.79,
+          "priceAvg30d": 19.77
         },
         {
           "block": 9,
           "label": "04:00~04:30",
-          "price": 30.0,
-          "priceAvg30d": 20.12
+          "price": 25.42,
+          "priceAvg30d": 20.46
         },
         {
           "block": 10,
           "label": "04:30~05:00",
-          "price": 30.0,
-          "priceAvg30d": 21.21
+          "price": 25.42,
+          "priceAvg30d": 21.45
         },
         {
           "block": 11,
           "label": "05:00~05:30",
-          "price": 27.13,
-          "priceAvg30d": 21.2
+          "price": 25.42,
+          "priceAvg30d": 21.44
         },
         {
           "block": 12,
           "label": "05:30~06:00",
-          "price": 25.18,
-          "priceAvg30d": 20.56
+          "price": 22.59,
+          "priceAvg30d": 20.71
         },
         {
           "block": 13,
           "label": "06:00~06:30",
-          "price": 24.79,
-          "priceAvg30d": 20.8
+          "price": 13.62,
+          "priceAvg30d": 20.87
         },
         {
           "block": 14,
           "label": "06:30~07:00",
-          "price": 25.42,
-          "priceAvg30d": 21.58
+          "price": 12.32,
+          "priceAvg30d": 21.63
         },
         {
           "block": 15,
           "label": "07:00~07:30",
-          "price": 27.27,
-          "priceAvg30d": 17.73
+          "price": 13.09,
+          "priceAvg30d": 18.2
         },
         {
           "block": 16,
           "label": "07:30~08:00",
-          "price": 26.63,
-          "priceAvg30d": 15.21
+          "price": 13.62,
+          "priceAvg30d": 15.77
         },
         {
           "block": 17,
           "label": "08:00~08:30",
-          "price": 25.74,
-          "priceAvg30d": 14.59
+          "price": 15.98,
+          "priceAvg30d": 15.13
         },
         {
           "block": 18,
           "label": "08:30~09:00",
-          "price": 25.52,
-          "priceAvg30d": 12.84
+          "price": 18.54,
+          "priceAvg30d": 13.41
         },
         {
           "block": 19,
           "label": "09:00~09:30",
-          "price": 24.58,
-          "priceAvg30d": 11.02
+          "price": 22.91,
+          "priceAvg30d": 11.61
         },
         {
           "block": 20,
           "label": "09:30~10:00",
-          "price": 18.0,
-          "priceAvg30d": 9.94
+          "price": 24.79,
+          "priceAvg30d": 10.45
         },
         {
           "block": 21,
           "label": "10:00~10:30",
-          "price": 19.9,
-          "priceAvg30d": 8.45
+          "price": 24.79,
+          "priceAvg30d": 9.03
         },
         {
           "block": 22,
           "label": "10:30~11:00",
-          "price": 15.57,
-          "priceAvg30d": 8.28
+          "price": 24.79,
+          "priceAvg30d": 8.73
         },
         {
           "block": 23,
           "label": "11:00~11:30",
-          "price": 15.71,
-          "priceAvg30d": 8.22
+          "price": 25.0,
+          "priceAvg30d": 8.71
         },
         {
           "block": 24,
           "label": "11:30~12:00",
-          "price": 15.71,
-          "priceAvg30d": 8.35
+          "price": 25.0,
+          "priceAvg30d": 8.84
         },
         {
           "block": 25,
           "label": "12:00~12:30",
-          "price": 15.71,
-          "priceAvg30d": 7.01
+          "price": 22.91,
+          "priceAvg30d": 7.54
         },
         {
           "block": 26,
           "label": "12:30~13:00",
-          "price": 18.0,
-          "priceAvg30d": 7.1
+          "price": 22.59,
+          "priceAvg30d": 7.7
         },
         {
           "block": 27,
           "label": "13:00~13:30",
-          "price": 16.09,
-          "priceAvg30d": 8.6
+          "price": 22.59,
+          "priceAvg30d": 9.06
         },
         {
           "block": 28,
           "label": "13:30~14:00",
-          "price": 22.65,
-          "priceAvg30d": 9.49
+          "price": 10.66,
+          "priceAvg30d": 10.11
         },
         {
           "block": 29,
           "label": "14:00~14:30",
-          "price": 25.74,
-          "priceAvg30d": 11.27
+          "price": 10.55,
+          "priceAvg30d": 11.85
         },
         {
           "block": 30,
           "label": "14:30~15:00",
-          "price": 26.5,
-          "priceAvg30d": 12.63
+          "price": 10.59,
+          "priceAvg30d": 13.18
         },
         {
           "block": 31,
           "label": "15:00~15:30",
-          "price": 26.3,
-          "priceAvg30d": 14.95
+          "price": 11.22,
+          "priceAvg30d": 15.49
         },
         {
           "block": 32,
           "label": "15:30~16:00",
-          "price": 18.5,
-          "priceAvg30d": 18.41
+          "price": 12.32,
+          "priceAvg30d": 18.63
         },
         {
           "block": 33,
           "label": "16:00~16:30",
-          "price": 26.68,
-          "priceAvg30d": 23.18
+          "price": 14.35,
+          "priceAvg30d": 23.38
         },
         {
           "block": 34,
           "label": "16:30~17:00",
-          "price": 27.4,
-          "priceAvg30d": 27.69
+          "price": 25.42,
+          "priceAvg30d": 27.57
         },
         {
           "block": 35,
           "label": "17:00~17:30",
-          "price": 30.0,
-          "priceAvg30d": 27.37
+          "price": 27.18,
+          "priceAvg30d": 27.31
         },
         {
           "block": 36,
           "label": "17:30~18:00",
-          "price": 30.0,
-          "priceAvg30d": 27.8
+          "price": 29.5,
+          "priceAvg30d": 27.98
         },
         {
           "block": 37,
           "label": "18:00~18:30",
-          "price": 28.6,
-          "priceAvg30d": 26.76
+          "price": 26.67,
+          "priceAvg30d": 26.94
         },
         {
           "block": 38,
           "label": "18:30~19:00",
-          "price": 27.9,
-          "priceAvg30d": 25.81
+          "price": 25.53,
+          "priceAvg30d": 26.02
         },
         {
           "block": 39,
           "label": "19:00~19:30",
           "price": 25.42,
-          "priceAvg30d": 25.38
+          "priceAvg30d": 25.53
         },
         {
           "block": 40,
           "label": "19:30~20:00",
-          "price": 25.53,
-          "priceAvg30d": 24.3
+          "price": 25.42,
+          "priceAvg30d": 24.44
         },
         {
           "block": 41,
           "label": "20:00~20:30",
-          "price": 29.53,
-          "priceAvg30d": 24.26
+          "price": 25.01,
+          "priceAvg30d": 24.54
         },
         {
           "block": 42,
           "label": "20:30~21:00",
-          "price": 28.5,
-          "priceAvg30d": 23.19
+          "price": 24.79,
+          "priceAvg30d": 23.44
         },
         {
           "block": 43,
           "label": "21:00~21:30",
           "price": 25.42,
-          "priceAvg30d": 22.82
+          "priceAvg30d": 22.97
         },
         {
           "block": 44,
           "label": "21:30~22:00",
-          "price": 23.0,
-          "priceAvg30d": 21.82
+          "price": 24.79,
+          "priceAvg30d": 21.9
         },
         {
           "block": 45,
           "label": "22:00~22:30",
           "price": 25.0,
-          "priceAvg30d": 21.01
+          "priceAvg30d": 21.12
         },
         {
           "block": 46,
           "label": "22:30~23:00",
           "price": 22.59,
-          "priceAvg30d": 19.16
+          "priceAvg30d": 19.21
         },
         {
           "block": 47,
           "label": "23:00~23:30",
-          "price": 22.59,
-          "priceAvg30d": 19.08
+          "price": 18.0,
+          "priceAvg30d": 19.11
         },
         {
           "block": 48,
           "label": "23:30~24:00",
-          "price": 14.0,
-          "priceAvg30d": 15.6
+          "price": 11.0,
+          "priceAvg30d": 15.35
         }
       ],
-      "avg": 23.75,
-      "max": 30.0,
-      "maxBlock": 9,
-      "min": 14.0,
-      "minBlock": 48,
-      "spread3h": 7.32,
-      "spreadLowAvg": 19.64,
-      "spreadHighAvg": 26.96,
-      "avg30d": 17.37,
-      "spread30dAvg": 16.41,
+      "avg": 20.61,
+      "max": 29.5,
+      "maxBlock": 36,
+      "min": 10.55,
+      "minBlock": 29,
+      "spread3h": 9.1,
+      "spreadLowAvg": 14.99,
+      "spreadHighAvg": 24.09,
+      "avg30d": 17.66,
+      "spread30dAvg": 15.98,
       "historyDays": 30
     },
     "四国": {
@@ -2462,302 +2462,302 @@ window.SPOT_DATA = {
         {
           "block": 1,
           "label": "00:00~00:30",
-          "price": 15.71,
-          "priceAvg30d": 12.1
+          "price": 17.39,
+          "priceAvg30d": 12.19
         },
         {
           "block": 2,
           "label": "00:30~01:00",
-          "price": 17.89,
-          "priceAvg30d": 11.53
+          "price": 15.71,
+          "priceAvg30d": 11.68
         },
         {
           "block": 3,
           "label": "01:00~01:30",
-          "price": 22.59,
-          "priceAvg30d": 11.03
+          "price": 14.56,
+          "priceAvg30d": 11.33
         },
         {
           "block": 4,
           "label": "01:30~02:00",
-          "price": 22.59,
-          "priceAvg30d": 10.9
+          "price": 15.71,
+          "priceAvg30d": 11.21
         },
         {
           "block": 5,
           "label": "02:00~02:30",
-          "price": 22.91,
-          "priceAvg30d": 11.12
+          "price": 19.04,
+          "priceAvg30d": 11.44
         },
         {
           "block": 6,
           "label": "02:30~03:00",
-          "price": 25.42,
-          "priceAvg30d": 11.72
+          "price": 23.89,
+          "priceAvg30d": 12.0
         },
         {
           "block": 7,
           "label": "03:00~03:30",
-          "price": 25.53,
-          "priceAvg30d": 12.32
+          "price": 25.42,
+          "priceAvg30d": 12.57
         },
         {
           "block": 8,
           "label": "03:30~04:00",
-          "price": 28.53,
-          "priceAvg30d": 14.64
+          "price": 24.79,
+          "priceAvg30d": 14.97
         },
         {
           "block": 9,
           "label": "04:00~04:30",
-          "price": 30.0,
-          "priceAvg30d": 15.4
+          "price": 25.42,
+          "priceAvg30d": 15.74
         },
         {
           "block": 10,
           "label": "04:30~05:00",
-          "price": 30.0,
-          "priceAvg30d": 16.41
+          "price": 25.42,
+          "priceAvg30d": 16.65
         },
         {
           "block": 11,
           "label": "05:00~05:30",
-          "price": 27.13,
-          "priceAvg30d": 16.96
+          "price": 25.42,
+          "priceAvg30d": 17.2
         },
         {
           "block": 12,
           "label": "05:30~06:00",
-          "price": 25.18,
-          "priceAvg30d": 16.47
+          "price": 22.59,
+          "priceAvg30d": 16.62
         },
         {
           "block": 13,
           "label": "06:00~06:30",
-          "price": 24.79,
-          "priceAvg30d": 15.8
+          "price": 13.62,
+          "priceAvg30d": 15.87
         },
         {
           "block": 14,
           "label": "06:30~07:00",
-          "price": 25.42,
-          "priceAvg30d": 15.14
+          "price": 12.32,
+          "priceAvg30d": 15.18
         },
         {
           "block": 15,
           "label": "07:00~07:30",
-          "price": 27.27,
-          "priceAvg30d": 13.15
+          "price": 13.09,
+          "priceAvg30d": 13.61
         },
         {
           "block": 16,
           "label": "07:30~08:00",
-          "price": 26.63,
-          "priceAvg30d": 12.74
+          "price": 13.62,
+          "priceAvg30d": 13.3
         },
         {
           "block": 17,
           "label": "08:00~08:30",
-          "price": 25.74,
-          "priceAvg30d": 12.64
+          "price": 15.98,
+          "priceAvg30d": 13.18
         },
         {
           "block": 18,
           "label": "08:30~09:00",
-          "price": 25.52,
-          "priceAvg30d": 10.94
+          "price": 18.54,
+          "priceAvg30d": 11.52
         },
         {
           "block": 19,
           "label": "09:00~09:30",
-          "price": 24.58,
-          "priceAvg30d": 9.16
+          "price": 22.91,
+          "priceAvg30d": 9.75
         },
         {
           "block": 20,
           "label": "09:30~10:00",
-          "price": 18.0,
-          "priceAvg30d": 8.01
+          "price": 24.79,
+          "priceAvg30d": 8.52
         },
         {
           "block": 21,
           "label": "10:00~10:30",
-          "price": 19.9,
-          "priceAvg30d": 6.46
+          "price": 24.79,
+          "priceAvg30d": 7.04
         },
         {
           "block": 22,
           "label": "10:30~11:00",
-          "price": 15.57,
-          "priceAvg30d": 5.61
+          "price": 24.79,
+          "priceAvg30d": 6.06
         },
         {
           "block": 23,
           "label": "11:00~11:30",
-          "price": 15.71,
-          "priceAvg30d": 5.83
+          "price": 25.0,
+          "priceAvg30d": 6.32
         },
         {
           "block": 24,
           "label": "11:30~12:00",
-          "price": 14.27,
-          "priceAvg30d": 5.75
+          "price": 25.0,
+          "priceAvg30d": 6.2
         },
         {
           "block": 25,
           "label": "12:00~12:30",
-          "price": 13.47,
-          "priceAvg30d": 4.88
+          "price": 22.91,
+          "priceAvg30d": 5.33
         },
         {
           "block": 26,
           "label": "12:30~13:00",
-          "price": 18.0,
-          "priceAvg30d": 5.15
+          "price": 22.59,
+          "priceAvg30d": 5.75
         },
         {
           "block": 27,
           "label": "13:00~13:30",
-          "price": 16.09,
-          "priceAvg30d": 6.82
+          "price": 22.59,
+          "priceAvg30d": 7.28
         },
         {
           "block": 28,
           "label": "13:30~14:00",
-          "price": 22.65,
-          "priceAvg30d": 7.59
+          "price": 10.66,
+          "priceAvg30d": 8.22
         },
         {
           "block": 29,
           "label": "14:00~14:30",
-          "price": 25.74,
-          "priceAvg30d": 8.96
+          "price": 10.55,
+          "priceAvg30d": 9.54
         },
         {
           "block": 30,
           "label": "14:30~15:00",
-          "price": 26.5,
-          "priceAvg30d": 10.11
+          "price": 10.59,
+          "priceAvg30d": 10.66
         },
         {
           "block": 31,
           "label": "15:00~15:30",
-          "price": 26.3,
-          "priceAvg30d": 11.22
+          "price": 11.22,
+          "priceAvg30d": 11.77
         },
         {
           "block": 32,
           "label": "15:30~16:00",
-          "price": 18.5,
-          "priceAvg30d": 12.67
+          "price": 12.32,
+          "priceAvg30d": 12.89
         },
         {
           "block": 33,
           "label": "16:00~16:30",
-          "price": 26.68,
-          "priceAvg30d": 15.36
+          "price": 14.35,
+          "priceAvg30d": 15.55
         },
         {
           "block": 34,
           "label": "16:30~17:00",
-          "price": 27.4,
-          "priceAvg30d": 20.04
+          "price": 25.42,
+          "priceAvg30d": 19.92
         },
         {
           "block": 35,
           "label": "17:00~17:30",
-          "price": 30.0,
-          "priceAvg30d": 21.14
+          "price": 27.18,
+          "priceAvg30d": 21.08
         },
         {
           "block": 36,
           "label": "17:30~18:00",
-          "price": 30.0,
-          "priceAvg30d": 21.66
+          "price": 29.5,
+          "priceAvg30d": 21.83
         },
         {
           "block": 37,
           "label": "18:00~18:30",
-          "price": 28.6,
-          "priceAvg30d": 20.74
+          "price": 26.67,
+          "priceAvg30d": 20.92
         },
         {
           "block": 38,
           "label": "18:30~19:00",
-          "price": 27.9,
-          "priceAvg30d": 19.97
+          "price": 25.53,
+          "priceAvg30d": 20.18
         },
         {
           "block": 39,
           "label": "19:00~19:30",
           "price": 25.42,
-          "priceAvg30d": 18.48
+          "priceAvg30d": 18.62
         },
         {
           "block": 40,
           "label": "19:30~20:00",
-          "price": 25.53,
-          "priceAvg30d": 17.53
+          "price": 25.42,
+          "priceAvg30d": 17.66
         },
         {
           "block": 41,
           "label": "20:00~20:30",
-          "price": 29.53,
-          "priceAvg30d": 17.77
+          "price": 25.01,
+          "priceAvg30d": 18.06
         },
         {
           "block": 42,
           "label": "20:30~21:00",
-          "price": 28.5,
-          "priceAvg30d": 15.72
+          "price": 24.79,
+          "priceAvg30d": 15.98
         },
         {
           "block": 43,
           "label": "21:00~21:30",
           "price": 25.42,
-          "priceAvg30d": 17.11
+          "priceAvg30d": 17.27
         },
         {
           "block": 44,
           "label": "21:30~22:00",
-          "price": 23.0,
-          "priceAvg30d": 15.52
+          "price": 24.79,
+          "priceAvg30d": 15.6
         },
         {
           "block": 45,
           "label": "22:00~22:30",
           "price": 25.0,
-          "priceAvg30d": 14.04
+          "priceAvg30d": 14.15
         },
         {
           "block": 46,
           "label": "22:30~23:00",
           "price": 22.59,
-          "priceAvg30d": 12.87
+          "priceAvg30d": 12.93
         },
         {
           "block": 47,
           "label": "23:00~23:30",
-          "price": 22.59,
-          "priceAvg30d": 13.42
+          "price": 18.0,
+          "priceAvg30d": 13.46
         },
         {
           "block": 48,
           "label": "23:30~24:00",
-          "price": 14.0,
-          "priceAvg30d": 11.84
+          "price": 11.0,
+          "priceAvg30d": 11.59
         }
       ],
-      "avg": 23.67,
-      "max": 30.0,
-      "maxBlock": 9,
-      "min": 13.47,
-      "minBlock": 25,
-      "spread3h": 9.92,
-      "spreadLowAvg": 17.05,
-      "spreadHighAvg": 26.96,
-      "avg30d": 12.97,
-      "spread30dAvg": 15.01,
+      "avg": 20.61,
+      "max": 29.5,
+      "maxBlock": 36,
+      "min": 10.55,
+      "minBlock": 29,
+      "spread3h": 9.1,
+      "spreadLowAvg": 14.99,
+      "spreadHighAvg": 24.09,
+      "avg30d": 13.26,
+      "spread30dAvg": 14.66,
       "historyDays": 30
     },
     "九州": {
@@ -2767,301 +2767,301 @@ window.SPOT_DATA = {
           "block": 1,
           "label": "00:00~00:30",
           "price": 15.71,
-          "priceAvg30d": 14.78
+          "priceAvg30d": 14.87
         },
         {
           "block": 2,
           "label": "00:30~01:00",
           "price": 15.71,
-          "priceAvg30d": 15.01
+          "priceAvg30d": 15.09
         },
         {
           "block": 3,
           "label": "01:00~01:30",
-          "price": 15.71,
-          "priceAvg30d": 13.97
+          "price": 14.56,
+          "priceAvg30d": 14.05
         },
         {
           "block": 4,
           "label": "01:30~02:00",
           "price": 15.71,
-          "priceAvg30d": 13.5
+          "priceAvg30d": 13.58
         },
         {
           "block": 5,
           "label": "02:00~02:30",
-          "price": 15.71,
-          "priceAvg30d": 14.15
+          "price": 19.04,
+          "priceAvg30d": 14.23
         },
         {
           "block": 6,
           "label": "02:30~03:00",
-          "price": 23.08,
-          "priceAvg30d": 15.85
+          "price": 23.89,
+          "priceAvg30d": 16.05
         },
         {
           "block": 7,
           "label": "03:00~03:30",
-          "price": 25.18,
-          "priceAvg30d": 17.56
+          "price": 25.42,
+          "priceAvg30d": 17.8
         },
         {
           "block": 8,
           "label": "03:30~04:00",
-          "price": 28.53,
-          "priceAvg30d": 19.4
+          "price": 24.79,
+          "priceAvg30d": 19.73
         },
         {
           "block": 9,
           "label": "04:00~04:30",
-          "price": 30.0,
-          "priceAvg30d": 19.94
+          "price": 25.42,
+          "priceAvg30d": 20.29
         },
         {
           "block": 10,
           "label": "04:30~05:00",
-          "price": 30.0,
-          "priceAvg30d": 20.91
+          "price": 25.42,
+          "priceAvg30d": 21.15
         },
         {
           "block": 11,
           "label": "05:00~05:30",
-          "price": 27.13,
-          "priceAvg30d": 20.89
+          "price": 25.42,
+          "priceAvg30d": 21.13
         },
         {
           "block": 12,
           "label": "05:30~06:00",
-          "price": 25.18,
-          "priceAvg30d": 20.26
+          "price": 22.59,
+          "priceAvg30d": 20.4
         },
         {
           "block": 13,
           "label": "06:00~06:30",
-          "price": 24.02,
-          "priceAvg30d": 20.6
+          "price": 13.62,
+          "priceAvg30d": 20.64
         },
         {
           "block": 14,
           "label": "06:30~07:00",
-          "price": 15.71,
-          "priceAvg30d": 21.42
+          "price": 12.32,
+          "priceAvg30d": 21.14
         },
         {
           "block": 15,
           "label": "07:00~07:30",
-          "price": 15.71,
-          "priceAvg30d": 17.66
+          "price": 13.09,
+          "priceAvg30d": 17.74
         },
         {
           "block": 16,
           "label": "07:30~08:00",
-          "price": 15.71,
-          "priceAvg30d": 15.21
+          "price": 13.62,
+          "priceAvg30d": 15.4
         },
         {
           "block": 17,
           "label": "08:00~08:30",
-          "price": 19.9,
-          "priceAvg30d": 13.82
+          "price": 15.98,
+          "priceAvg30d": 14.17
         },
         {
           "block": 18,
           "label": "08:30~09:00",
-          "price": 23.08,
-          "priceAvg30d": 11.34
+          "price": 18.54,
+          "priceAvg30d": 11.84
         },
         {
           "block": 19,
           "label": "09:00~09:30",
-          "price": 15.71,
-          "priceAvg30d": 9.16
+          "price": 14.75,
+          "priceAvg30d": 9.46
         },
         {
           "block": 20,
           "label": "09:30~10:00",
-          "price": 15.71,
-          "priceAvg30d": 7.66
+          "price": 12.32,
+          "priceAvg30d": 8.1
         },
         {
           "block": 21,
           "label": "10:00~10:30",
-          "price": 15.71,
-          "priceAvg30d": 6.79
+          "price": 11.42,
+          "priceAvg30d": 7.29
         },
         {
           "block": 22,
           "label": "10:30~11:00",
-          "price": 15.57,
-          "priceAvg30d": 6.55
+          "price": 11.42,
+          "priceAvg30d": 7.07
         },
         {
           "block": 23,
           "label": "11:00~11:30",
-          "price": 15.71,
-          "priceAvg30d": 6.35
+          "price": 11.42,
+          "priceAvg30d": 6.87
         },
         {
           "block": 24,
           "label": "11:30~12:00",
-          "price": 15.71,
-          "priceAvg30d": 6.21
+          "price": 11.42,
+          "priceAvg30d": 6.74
         },
         {
           "block": 25,
           "label": "12:00~12:30",
-          "price": 15.71,
-          "priceAvg30d": 5.46
+          "price": 11.42,
+          "priceAvg30d": 5.99
         },
         {
           "block": 26,
           "label": "12:30~13:00",
-          "price": 15.71,
-          "priceAvg30d": 5.55
+          "price": 11.22,
+          "priceAvg30d": 6.08
         },
         {
           "block": 27,
           "label": "13:00~13:30",
-          "price": 15.71,
-          "priceAvg30d": 6.5
+          "price": 11.22,
+          "priceAvg30d": 7.03
         },
         {
           "block": 28,
           "label": "13:30~14:00",
-          "price": 19.9,
-          "priceAvg30d": 7.83
+          "price": 10.66,
+          "priceAvg30d": 8.36
         },
         {
           "block": 29,
           "label": "14:00~14:30",
-          "price": 19.5,
-          "priceAvg30d": 9.31
+          "price": 10.55,
+          "priceAvg30d": 9.69
         },
         {
           "block": 30,
           "label": "14:30~15:00",
-          "price": 23.86,
-          "priceAvg30d": 11.73
+          "price": 10.59,
+          "priceAvg30d": 12.19
         },
         {
           "block": 31,
           "label": "15:00~15:30",
-          "price": 20.0,
-          "priceAvg30d": 14.92
+          "price": 11.22,
+          "priceAvg30d": 15.25
         },
         {
           "block": 32,
           "label": "15:30~16:00",
-          "price": 18.5,
-          "priceAvg30d": 17.77
+          "price": 12.32,
+          "priceAvg30d": 17.99
         },
         {
           "block": 33,
           "label": "16:00~16:30",
-          "price": 26.68,
-          "priceAvg30d": 23.18
+          "price": 14.35,
+          "priceAvg30d": 23.38
         },
         {
           "block": 34,
           "label": "16:30~17:00",
-          "price": 27.4,
-          "priceAvg30d": 27.69
+          "price": 25.42,
+          "priceAvg30d": 27.57
         },
         {
           "block": 35,
           "label": "17:00~17:30",
-          "price": 25.18,
-          "priceAvg30d": 27.37
+          "price": 27.18,
+          "priceAvg30d": 27.15
         },
         {
           "block": 36,
           "label": "17:30~18:00",
-          "price": 30.0,
-          "priceAvg30d": 27.8
+          "price": 29.5,
+          "priceAvg30d": 27.98
         },
         {
           "block": 37,
           "label": "18:00~18:30",
-          "price": 28.6,
-          "priceAvg30d": 26.76
+          "price": 26.67,
+          "priceAvg30d": 26.94
         },
         {
           "block": 38,
           "label": "18:30~19:00",
-          "price": 27.9,
-          "priceAvg30d": 25.81
+          "price": 25.53,
+          "priceAvg30d": 26.02
         },
         {
           "block": 39,
           "label": "19:00~19:30",
           "price": 25.42,
-          "priceAvg30d": 25.38
+          "priceAvg30d": 25.53
         },
         {
           "block": 40,
           "label": "19:30~20:00",
-          "price": 25.53,
-          "priceAvg30d": 24.3
+          "price": 25.42,
+          "priceAvg30d": 24.44
         },
         {
           "block": 41,
           "label": "20:00~20:30",
-          "price": 29.53,
-          "priceAvg30d": 24.26
+          "price": 25.01,
+          "priceAvg30d": 24.54
         },
         {
           "block": 42,
           "label": "20:30~21:00",
-          "price": 28.5,
-          "priceAvg30d": 23.19
+          "price": 24.79,
+          "priceAvg30d": 23.44
         },
         {
           "block": 43,
           "label": "21:00~21:30",
-          "price": 23.0,
-          "priceAvg30d": 22.82
+          "price": 25.42,
+          "priceAvg30d": 22.89
         },
         {
           "block": 44,
           "label": "21:30~22:00",
-          "price": 15.71,
-          "priceAvg30d": 21.82
+          "price": 24.79,
+          "priceAvg30d": 21.65
         },
         {
           "block": 45,
           "label": "22:00~22:30",
-          "price": 15.71,
-          "priceAvg30d": 21.01
+          "price": 25.0,
+          "priceAvg30d": 20.81
         },
         {
           "block": 46,
           "label": "22:30~23:00",
-          "price": 15.71,
-          "priceAvg30d": 19.14
+          "price": 22.59,
+          "priceAvg30d": 18.96
         },
         {
           "block": 47,
           "label": "23:00~23:30",
-          "price": 15.71,
-          "priceAvg30d": 19.02
+          "price": 18.0,
+          "priceAvg30d": 18.82
         },
         {
           "block": 48,
           "label": "23:30~24:00",
-          "price": 14.0,
-          "priceAvg30d": 15.36
+          "price": 11.0,
+          "priceAvg30d": 15.11
         }
       ],
-      "avg": 20.82,
-      "max": 30.0,
-      "maxBlock": 9,
-      "min": 14.0,
-      "minBlock": 48,
-      "spread3h": 11.0,
-      "spreadLowAvg": 15.52,
-      "spreadHighAvg": 26.52,
-      "avg30d": 16.73,
-      "spread30dAvg": 17.23,
+      "avg": 18.31,
+      "max": 29.5,
+      "maxBlock": 36,
+      "min": 10.55,
+      "minBlock": 29,
+      "spread3h": 12.89,
+      "spreadLowAvg": 11.21,
+      "spreadHighAvg": 24.09,
+      "avg30d": 16.93,
+      "spread30dAvg": 16.91,
       "historyDays": 30
     }
   }
