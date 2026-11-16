@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-11-09",
+  "collectedAt": "2026-11-16",
   "periodLabel": "2025年11月〜2026年11月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,136 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20261112_nomura_re_4sites_bess",
+      "image": "https://prcdn.freetls.fastly.net/release_image/25694/1034/25694-1034-49a094b75daf15dee7f6b065817726b3-832x624.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-12",
+      "genre": "entry",
+      "title": "野村不動産、全国4拠点の系統用蓄電所（各2MW/8MWh）を取得し系統用蓄電池事業に本格参入 ─ ブルースカイエナジーが施工・管理",
+      "subtitle": "野村不動産がいわき市・埼玉県児玉郡・前橋市・富士宮市の4蓄電所（各2MW/8MWh）を取得、2026年12月から順次稼働、特高6件と合わせ計10件体制に",
+      "sourceName": "野村不動産株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000001034.000025694.html",
+      "topics": [
+        { "theme": "不動産大手の高圧蓄電所取得", "conclusion": "野村不動産が高圧蓄電所4拠点を取得し、系統用蓄電池事業へ本格参入", "detail": "福島県いわき市（2026年12月運転開始予定）、埼玉県児玉郡（2027年1月）、群馬県前橋市（同4月）、静岡県富士宮市（同5月）の4拠点で、いずれも2MW/8MWh。設備施工・管理はブルースカイエナジー、アドバイザーはみずほ証券。同社は2026年3月に特別高圧案件6件へ出資参画しており、計10件の開発・運営体制となる。ブルースカイエナジーも同日に施工・管理担当を発表した。" }
+      ]
+    },
+    {
+      "id": "n20261112_digitalgrid_izumo_koshi_jukyu",
+      "image": "https://prcdn.freetls.fastly.net/release_image/45726/71/45726-71-87cfb3b564ff91151f9fcacedaa5fbe7-887x668.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-12",
+      "genre": "operation",
+      "title": "デジタルグリッド、子会社保有の島根県出雲市「出雲古志蓄電所」が需給調整市場へ参入 ─ 自社保有で3カ所目",
+      "subtitle": "デジタルグリッドアセットマネジメント保有の出雲古志蓄電所（1,997kW/8,128kWh）が11月11日に需給調整市場へ参入",
+      "sourceName": "デジタルグリッド株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000071.000045726.html",
+      "topics": [
+        { "theme": "アグリゲーターの自社保有蓄電所", "conclusion": "自社保有蓄電所の市場参入は御殿場・大垣に続き3カ所目", "detail": "島根県出雲市の出雲古志蓄電所（最大出力1,997kW、定格容量8,128kWh）が2026年11月11日に需給調整市場へ参入。需給管理はデジタルグリッドが担う。同社は2028年7月までの3年間で100億円規模を投資し、蓄電所保有をグループ事業の柱の1つとする計画。" }
+      ]
+    },
+    {
+      "id": "n20261111_rearth_energy_development",
+      "image": "https://prcdn.freetls.fastly.net/release_image/179313/19/179313-19-270ffbc93ef70a6adba132e15ce42adc-3900x2780.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-11",
+      "genre": "capital",
+      "title": "NAXTとBLD Power Stations、太陽光・系統用蓄電池の開発・保有・運営会社「Rearth Energy Development」を共同設立",
+      "subtitle": "NAXTとBLD Power Stationsが共同出資でリアースを2026年9月に設立、NAXT子会社のインテレクトが開発・EPC・O&Mを担う",
+      "sourceName": "株式会社インテレクト（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000019.000179313.html",
+      "topics": [
+        { "theme": "共同出資による事業会社設立", "conclusion": "アセットマネジメント（NAXT）と開発・EPC・O&M（インテレクト）を組み合わせた保有型の事業体", "detail": "Rearth Energy Developmentは太陽光発電所や系統用蓄電池の開発・保有・運営を行い、売電や蓄電池による電力市場参加を目指す。NAXTがアセットマネジメント、インテレクトが用地選定・系統接続・許認可からEPC、O&Mまでを担当。インテレクトは接続検討回答書付き案件や用地の情報募集も行っている。" }
+      ]
+    },
+    {
+      "id": "n20261111_enblue_sakaiminato_completion",
+      "image": "https://prcdn.freetls.fastly.net/release_image/171049/12/171049-12-979b1a864f43e853e0a08b37b2c52c45-1672x941.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-11",
+      "genre": "epc",
+      "title": "エンブルー、鳥取県境港市「境港市新屋町1158蓄電所」（1,998kW/8,226kWh）が完工 ─ NAMIJUへ引き渡し",
+      "subtitle": "エンブルーが開発した境港市の高圧蓄電所（パワーエックス製蓄電池3台）が2026年10月に完工し、NAMIJUへの引き渡しを完了",
+      "sourceName": "株式会社エンブルー（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000012.000171049.html",
+      "topics": [
+        { "theme": "開発・販売型の高圧蓄電所", "conclusion": "用地調達から販売・引き渡しまで一貫して担う開発モデル", "detail": "PCS出力1,998kW、蓄電容量8,226kWh（2,742kWh×3）で、蓄電池はパワーエックス製MegaPower。エンブルーは用地調達、開発計画、系統接続手続き、許認可、設備・施工会社の手配、販売・引き渡しまでを担当した。運転開始日の記載はない。" }
+      ]
+    },
+    {
+      "id": "n20261110_adw_chibagin_loan_bess",
+      "image": "https://prcdn.freetls.fastly.net/release_image/160356/94/160356-94-2cea6d6543326d612e1710d00bd0434c-3000x1625.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-10",
+      "genre": "capital",
+      "title": "エー・ディー・ワークス、千葉銀行から11億4,310万円の融資 ─ 三重県多気町・熊本市の系統用蓄電池事業所に充当",
+      "subtitle": "ADワークスグループのエー・ディー・ワークスが「ちばぎんリーダーズローンNEXT（環境設備型）」で2件計11億4,310万円を調達",
+      "sourceName": "株式会社ADワークスグループ（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000094.000160356.html",
+      "topics": [
+        { "theme": "地銀による蓄電所融資", "conclusion": "高圧蓄電所2件の蓄電池システム導入費を銀行融資で調達", "detail": "契約締結は2026年9月、融資額は2件合計11億4,310万円で、資金使途は系統用蓄電池事業所の取得資金。三重県多気郡多気町と熊本県熊本市に設置する高圧系統用蓄電池事業所の蓄電池システム導入費用に全額充当する。" }
+      ]
+    },
+    {
+      "id": "n20261106_adw_miyazaki_nichinan_completion",
+      "image": "https://prcdn.freetls.fastly.net/release_image/160356/93/160356-93-c236ca610275c2f3257f8c9098ebf9a4-3900x2600.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-06",
+      "genre": "operation",
+      "title": "エー・ディー・ワークス、宮崎県日南市「ADW宮崎日南市蓄電所」（約2MW/約8MWh）が竣工・引渡し ─ 稼働3か所目",
+      "subtitle": "ADW宮崎日南市蓄電所が11月6日に竣工・引渡し、卸電力市場で速やかに運用開始、需給調整市場は2027年2月頃の予定",
+      "sourceName": "株式会社ADワークスグループ（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000093.000160356.html",
+      "topics": [
+        { "theme": "不動産会社の蓄電所運営", "conclusion": "確保した11か所のうち稼働済みは累計3か所に", "detail": "本連系と試運転を完了済みで、卸電力市場では引き渡し後速やかに運用を開始する。需給調整市場での運用開始は事前審査等の状況により変動し得るが2027年2月頃の予定。同社がこれまでに開発用地を確保した11か所（取得契約締結済みを含む）のうち、稼働開始は本件で3か所目。" }
+      ]
+    },
+    {
+      "id": "n20261110_nc_kainan_kizu_juden",
+      "image": "https://prcdn.freetls.fastly.net/release_image/161802/123/161802-123-fcf61876d100d2a5eab8f9c4486ce6fa-1304x791.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-10",
+      "genre": "operation",
+      "title": "日本蓄電池・リミックスポイント、和歌山県海南市「NC海南市木津蓄電所」（1,996kW/8,146kWh）が受電開始",
+      "subtitle": "共同ファンドで開発するNC海南市木津蓄電所が11月9日に受電開始、TMEIC（CATL電池）採用、施工はワイ・ジャスト",
+      "sourceName": "日本蓄電池株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000123.000161802.html",
+      "topics": [
+        { "theme": "関西エリアの高圧蓄電所", "conclusion": "需給調整市場・JEPX・容量市場でのマルチユース運用を予定", "detail": "定格出力1,996kW・容量8,146kWh。CATL製蓄電システムとTMEIC製PCSを採用し、設計・施工は株式会社ワイ・ジャスト。リミックスポイントの発表では需給調整市場への参入は2027年2月頃の予定。日本蓄電池は同週に熊本県荒尾市の蓄電所でも蓄電池設置を開始している。" }
+      ]
+    },
+    {
+      "id": "n20261109_renon_power_1500sites",
+      "image": "https://prcdn.freetls.fastly.net/release_image/185433/7/185433-7-9847725ebd0210c29533308c3b8aa3ee-1672x941.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-09",
+      "genre": "entry",
+      "title": "RENON POWER、低圧系統用蓄電池パッケージの累計受注が1,500サイトを突破 ─ 年末目標1,000サイトを前倒し達成",
+      "subtitle": "7月の500サイト突破から約3.5か月で約1,000サイト増、標準パッケージ換算で合計約75MW/約300MWh",
+      "sourceName": "RENON POWER株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000007.000185433.html",
+      "topics": [
+        { "theme": "低圧蓄電所市場の急拡大", "conclusion": "低圧（50kW未満）系統用蓄電池の受注が急増", "detail": "同社の標準パッケージ（出力49.9kW/容量200kWh）換算で合計出力約75MW、蓄電池容量約300MWhに相当。2026年末までの目標1,000サイトを前倒しで達成した。数値は換算値で、個々の受注構成や納入・運転開始状況は開示されていない。" }
+      ]
+    },
+    {
+      "id": "n20261106_eflow_1_5gw_outlook",
+      "image": "https://prcdn.freetls.fastly.net/release_image/189198/4/189198-4-00578d1ed2f463a09d68fd1a48dc65d4-770x291.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-06",
+      "genre": "entry",
+      "title": "E-Flow、2030年までに稼働する系統用蓄電池の運用受託容量が1.5GW突破の見込み ─ 従来目標1.0GWを上回る",
+      "subtitle": "アグリゲーターE-Flowの運用受託容量見込みが1.5GWに、ストレージ式運用や併設・需要家側蓄電池の活用も進める",
+      "sourceName": "E-Flow合同会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000004.000189198.html",
+      "topics": [
+        { "theme": "アグリゲーション受託の拡大", "conclusion": "運用受託見込みが目標の1.5倍に", "detail": "2023年設立のE-Flowは系統用蓄電池などの分散型リソースのアグリゲーション事業を展開。今後は送配電会社との余力活用契約による「ストレージ式運用」への対応や、再エネ併設蓄電池・需要家側蓄電池の一次調整力・卸電力市場での活用など、運用手法の構築を進める。対象蓄電所の件数・所在地は非開示。" }
+      ]
+    },
+    {
+      "id": "n20261106_fdma_li_battery_sprinkler_rule",
+      "image": "https://bessnews.jp/regulations/standard/4633202203001/img/thumbnail.jpg",
+      "date": "2026-11-06",
+      "genre": "policy",
+      "title": "消防庁、リチウムイオン蓄電池の屋内貯蔵所に「閉鎖型スプリンクラー」も認める危険物規則改正案 ─ 意見は12月7日必着",
+      "subtitle": "危険物の屋内貯蔵所でリチウムイオン蓄電池を保管する場合のスプリンクラー設備に閉鎖型を加える規則改正案の意見公募",
+      "sourceName": "BESS NEWS",
+      "sourceUrl": "https://bessnews.jp/regulations/standard/4633202203001/",
+      "topics": [
+        { "theme": "蓄電池保管の消防規制", "conclusion": "屋内貯蔵所の消火設備の選択肢が広がる方向", "detail": "消防庁が「危険物の規制に関する規則」の改正案を示し、リチウムイオン蓄電池を危険物の屋内貯蔵所で保管する際のスプリンクラー設備として閉鎖型も認める内容。意見公募の締切は12月7日必着。蓄電池の保管倉庫・調達物流に関わる事業者は内容の確認が必要。" }
+      ]
+    },
     {
       "id": "n20261109_ecokaku_11sites_grid_connected",
       "image": "https://prcdn.freetls.fastly.net/release_image/187675/3/187675-3-5908a2db01f7f036c6e1e3330215e6c3-1672x941.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
