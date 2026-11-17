@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-11-16",
+  "collectedAt": "2026-11-17",
   "periodLabel": "2025年11月〜2026年11月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,62 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20261116_occto_capacity_exit_ltdecarb_deadlines",
+      "image": "https://bessnews.jp/market/proffessional/4634203001001/img/thumbnail.jpg",
+      "date": "2026-11-16",
+      "genre": "policy",
+      "title": "OCCTO、容量市場の市場退出と長期脱炭素電源オークションの運転開始時期変更の手続き・期限を公表 ─ 最初の期限は12月24日18時",
+      "subtitle": "容量市場2027年度分の退出表明は2026年12月24日18時まで、2028年度分と長期脱炭素電源の開始時期変更は2027年3月10日18時を過ぎるとペナルティが5%から10%に上がる",
+      "sourceName": "BESS NEWS（OCCTO公表資料の解説）",
+      "sourceUrl": "https://bessnews.jp/market/proffessional/4634203001001/",
+      "topics": [
+        {
+          "theme": "容量市場の市場退出期限",
+          "conclusion": "2027年度分は12月24日18時（システム表明）・1月18日（表明書）、2028年度分は2027年3月10日18時が確認期限日",
+          "detail": "OCCTOは11月16日、容量市場（メイン・追加オークション）で落札した電源の市場退出手続きを公表。2027年度分は容量市場システムでの表明を2026年12月24日18時まで、押印した表明書を2027年1月18日までに提出する（前年より1日早い）。2028年度分は3月10日18時までに表明すれば経済的ペナルティは5%の式で返金対象にもなり、過ぎると10%となる。工期遅延の恐れがある蓄電池案件は早めの判断が必要。"
+        },
+        {
+          "theme": "長期脱炭素電源オークションの運転開始後ろ倒し",
+          "conclusion": "2028年度に影響する変更は2027年3月10日18時まで（5%）、以降は10%。2031年度影響分は3月31日18時が期限",
+          "detail": "同日、長期脱炭素電源オークション落札電源の供給力提供開始時期の変更手続きも公表された（約款第15条）。2028年度に影響する変更は3月10日18時までに容量市場システムでの変更申込とD1様式の再提出を終えればペナルティは約定価格×契約容量×5%、過ぎると10%。2031年度に影響する変更は3月31日18時までに手続きすれば同年度分の5%ペナルティは科されない。（出典: BESS NEWS 2026年11月16日の2記事）"
+        }
+      ]
+    },
+    {
+      "id": "n20261116_sustainable_hd_matsumoto_succession",
+      "image": "https://prcdn.freetls.fastly.net/release_image/96742/210/96742-210-6105236f9186674d2e647f3014db92e4-1672x941.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-16",
+      "genre": "entry",
+      "title": "サステナブルホールディングス、長野県松本市の系統用蓄電池案件で事業承継に伴う名義変更・連系申込を推進 ─ 2027年11月の系統連系へ",
+      "subtitle": "2026年9月25日付で事業承継に伴う名義変更、10月1日に連系申込書等を整備し、2027年11月30日の系統連系を想定",
+      "sourceName": "サステナブルホールディングス（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000210.000096742.html",
+      "topics": [
+        {
+          "theme": "案件承継と系統連系手続き",
+          "conclusion": "接続検討回答・契約申込の権利義務も承継先へ引き継ぎ、2027年11月30日の連系を目指す",
+          "detail": "サステナブルホールディングスは長野県松本市の系統用蓄電池案件で、2026年9月25日付の事業承継に伴う一般送配電事業者との契約の名義変更を進め、10月1日に新事業主体を申込者とする連系申込書・接続供給兼基本契約申込書を整備した。既取得の接続検討回答なども承継対象とし、2027年11月30日の系統連系を想定して設計・調達・施工を進める。案件売買（セカンダリー）の実務例として参考になる。"
+        }
+      ]
+    },
+    {
+      "id": "n20261113_lehmansoft_ems_jcstar",
+      "image": "https://prcdn.freetls.fastly.net/release_image/116500/310/116500-310-089cf907f310edd6d301f1bc3d5a1e30-3017x1546.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-13",
+      "genre": "entry",
+      "title": "LehmanSoft Japan、系統用蓄電池向けローカルEMS「LehmanSoft BESS Gateway」がJC-STAR ★1適合ラベルを取得",
+      "subtitle": "一次調整力（FCR）制御・出力制御・SOC管理・PCS/BMS連携を統合したEMSコントローラが11月10日にJC-STAR ★1を取得、2027年4月以降の連系要件化に対応",
+      "sourceName": "Lehman Holdings（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000310.000116500.html",
+      "topics": [
+        {
+          "theme": "サイバーセキュリティ要件への対応",
+          "conclusion": "2027年4月以降に契約申込する高圧・特高の蓄電池案件ではJC-STAR ★1取得のPCS・BMS・EMSが連系要件に",
+          "detail": "LehmanSoft Japanは、自社開発EMSを搭載した系統用蓄電池向けローカル制御製品「LehmanSoft BESS Gateway」（型番Lehman-EMS-STD-4414）で、IPAのJC-STAR ★1適合ラベルを2026年11月10日に取得（有効期限2028年11月9日）。需給調整市場の一次調整力向けローカル周波数制御、出力制御指令の受信・実行、SOC管理、上位アグリゲーションシステムとの連携を一台に統合している。"
+        }
+      ]
+    },
     {
       "id": "n20261112_nomura_re_4sites_bess",
       "image": "https://prcdn.freetls.fastly.net/release_image/25694/1034/25694-1034-49a094b75daf15dee7f6b065817726b3-832x624.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
