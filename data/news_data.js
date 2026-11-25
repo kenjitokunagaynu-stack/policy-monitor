@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-11-17",
+  "collectedAt": "2026-11-25",
   "periodLabel": "2025年11月〜2026年11月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,122 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20261124_nippon_chikudenchi_nc_fuji_obuchi",
+      "image": "https://prcdn.freetls.fastly.net/release_image/161802/124/161802-124-f17874b9caabb76e655652c957bf1426-850x566.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-24",
+      "genre": "epc",
+      "title": "日本蓄電池、静岡県富士市「NC富士市大渕蓄電所」で蓄電池設置を開始",
+      "subtitle": "日本蓄電池が開発中の「NC富士市大渕蓄電所」（静岡県富士市）で系統用蓄電池の設置を実施、需給調整市場・JEPX・容量市場での運用を想定",
+      "sourceName": "日本蓄電池株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000124.000161802.html",
+      "topics": [
+        { "theme": "NCシリーズ蓄電所の新規施設", "conclusion": "日本蓄電池が静岡県富士市で新たな蓄電所の蓄電池設置段階に到達", "detail": "日本蓄電池は「NC○○蓄電所」の命名で全国に系統用蓄電所を展開しており、今回は静岡県富士市の「NC富士市大渕蓄電所」で蓄電池を設置したと発表。用地選定から電力会社との調整、蓄電池選定・導入、蓄電所構築までを一貫して手がけ、需給調整市場・JEPX・容量市場への対応や再エネ出力平準化を用途に掲げる。" }
+      ]
+    },
+    {
+      "id": "n20261120_hanwha_japan_lowvoltage_bess_entry",
+      "image": "https://prcdn.freetls.fastly.net/release_image/9490/253/9490-253-ed6e064186321d32f0baf01fe2c5448b-1372x913.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-20",
+      "genre": "entry",
+      "title": "ハンファジャパン、低圧系統用蓄電池事業に本格参入 ─ アグリゲーターにBluefield Energy",
+      "subtitle": "ハンファジャパンがSolaX製蓄電池（261kWh）・エナジー・ソリューションズのEMS・Bluefield Energyのアグリゲーションを束ねたワンストップ体制で低圧系統用蓄電池事業に本格参入",
+      "sourceName": "ハンファジャパン株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000253.000009490.html",
+      "topics": [
+        { "theme": "太陽光大手の低圧BESS参入", "conclusion": "ハンファジャパンが事業化検討から市場運用・保守までを統括する低圧系統用蓄電池の包括支援体制を構築", "detail": "蓄電池メーカー、販売店、EMS事業者、アグリゲーターと連携し、同社が事業全体を統括する。蓄電池はSolaX「SolaX TRENE」（261kWh）、EMSはエナジー・ソリューションズ、アグリゲーターはBluefield Energyが担い、同日Bluefield Energyも参画を発表。火災リスクや静音性など設置環境への配慮と長期運用体制を重視するとしている。" }
+      ]
+    },
+    {
+      "id": "n20261120_digitalgrid_aggregation_150mw",
+      "image": "https://prcdn.freetls.fastly.net/release_image/45726/72/45726-72-8eab386b8d28c067f9d85b320e9552e7-1281x766.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-20",
+      "genre": "operation",
+      "title": "デジタルグリッド、需給調整市場に参入した系統用蓄電池アグリゲーション容量が150MWを突破",
+      "subtitle": "デジタルグリッドの運用受託で需給調整市場に参入済みの系統用蓄電池容量が2026年11月19日に150MW超、取扱総容量は11月4日に250MWを突破",
+      "sourceName": "デジタルグリッド株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000072.000045726.html",
+      "topics": [
+        { "theme": "アグリゲーターの運用規模拡大", "conclusion": "デジタルグリッドが需給調整市場への初参入から1年5カ月で参入済み容量150MWを達成", "detail": "同社が取り扱う系統用蓄電池の総容量は2026年11月4日に250MWを突破し、そのうち約150MWが需給調整市場で運用を開始。11月19日に参入済み容量が150MWを超えた。運用受託型のアグリゲーションで、自社保有蓄電所（出雲古志蓄電所など）と合わせて運用規模を拡大している。" }
+      ]
+    },
+    {
+      "id": "n20261119_osakagas_sonnedix_oita_hybrid_bess",
+      "image": "https://prcdn.freetls.fastly.net/release_image/139670/286/139670-286-397d67f471f70e5a3e442665b5d0f697-1200x675.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-19",
+      "genre": "operation",
+      "title": "大阪ガス・ソネディックス、大分市の太陽光発電所併設蓄電池（約30MW/125MWh）が商業運転開始",
+      "subtitle": "大阪ガスとソネディックス・ジャパンの共同出資会社が大分市の39MW太陽光発電所に約30MW/約125MWhの蓄電池を併設し商業運転開始、EPCは東芝・蓄電池はTesla「Megapack」",
+      "sourceName": "Daigasグループ（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000286.000139670.html",
+      "topics": [
+        { "theme": "国内最大級の再エネ併設型蓄電池", "conclusion": "FIP転換太陽光への大型蓄電池併設が稼働、大阪ガスが市場取引・遠隔運用を担う", "detail": "ソネディックス・ジャパンが11月16日に運転開始を発表し、大阪ガスも11月19日に商業運転開始を発表。ソネディックスにとって国内初のBESS案件で、2025年10月に着工、東芝がEPC、Tesla JapanがMegapackを納入した。運転後の市場取引と運用管理は大阪ガスが担い、同社の系統用・再エネ併設型を合わせた蓄電池運用規模は300MWを超えたという。" }
+      ]
+    },
+    {
+      "id": "n20261119_sustainable_hd_16_bess_projects",
+      "image": "https://prcdn.freetls.fastly.net/release_image/96742/176/96742-176-7afdb64e8a939053487d8ec6de316e79-3900x3900.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-19",
+      "genre": "entry",
+      "title": "サステナブルホールディングス、系統用蓄電池16案件を4エリアで推進 ─ 関西電力エリアでも7件を計画",
+      "subtitle": "サステナブルHDが東京・中国・中部・九州の4エリアで計16件の系統用蓄電池案件を推進（2026年10月1日時点）、関西エリアでも7件を計画し2027年以降の系統連系を目指す",
+      "sourceName": "サステナブルホールディングス株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000176.000096742.html",
+      "topics": [
+        { "theme": "中堅デベロッパーのパイプライン拡大", "conclusion": "太陽光開発の経験を基盤に、複数送配電エリアで系統用蓄電池の開発パイプラインを積み上げ", "detail": "太陽光発電100MW超の開発経験を持つ同社は2025年末から蓄電池事業を本格展開し、2026年10月1日時点で4エリア16件を推進、さらに関西電力エリアで7件を計画している。同日、熊本市の案件で農地転用許可取得・資材発注を完了し2027年3月の引き渡しを目指すことも発表した。" }
+      ]
+    },
+    {
+      "id": "n20261118_ecostyle_lowvoltage_bess_kit",
+      "image": "https://prcdn.freetls.fastly.net/release_image/12501/398/12501-398-80494f2bfbd8d909b2f154e2b48f40db-508x133.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-18",
+      "genre": "entry",
+      "title": "エコスタイル、低圧系統用蓄電所の「機器パッケージ」（キット販売）を提供開始",
+      "subtitle": "エコスタイルがEPC・施工会社向けに低圧系統用蓄電所の部材一式をパッケージ販売、100kWhセット950万円〜・200kWhセット1,300万円〜（税抜）、SUNGROW・Sigenergy・GoodWeから選択",
+      "sourceName": "株式会社エコスタイル（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000398.000012501.html",
+      "topics": [
+        { "theme": "低圧BESSの機器調達パッケージ化", "conclusion": "最新連系規格に対応した低圧蓄電所キットで、施工会社・発電事業者の参入ハードルを下げる", "detail": "エコスタイルは低圧系統用蓄電所に必要な部材一式をキット化し、EPC・施工会社や発電事業者向けに販売を開始した。蓄電池はSUNGROW・Sigenergy・GoodWeの3メーカーから選べ、100kWhセットは950万円（税抜）〜、200kWhセットは1,300万円（税抜）〜。低圧蓄電池の価格水準を示す参考情報にもなる。" }
+      ]
+    },
+    {
+      "id": "n20261117_adworks_mashiki_jukyu_entry",
+      "image": "https://prcdn.freetls.fastly.net/release_image/160356/100/160356-100-1a0380a72fae1788020506d4e8f1a124-3900x2925.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-17",
+      "genre": "operation",
+      "title": "エー・ディー・ワークス、「ADW熊本益城町蓄電所」が需給調整市場へ参入",
+      "subtitle": "ADワークスグループのエー・ディー・ワークスが2026年8月稼働の「ADW熊本益城町蓄電所」で需給調整市場の取引を開始、同社の参入済み蓄電所は2か所に",
+      "sourceName": "株式会社ADワークスグループ（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000100.000160356.html",
+      "topics": [
+        { "theme": "不動産会社の蓄電所運用", "conclusion": "卸電力市場と需給調整市場の複数市場運用で収益獲得とノウハウ蓄積を進める", "detail": "収益不動産事業を手がけるエー・ディー・ワークスは、本年8月に稼働した熊本県益城町の蓄電所で需給調整市場への参入を完了。卸電力市場と需給調整市場の両方で運用する蓄電所は累計2か所となった。同社は千葉銀行からの融資で三重県多気町・熊本市の蓄電所事業も進めている。" }
+      ]
+    },
+    {
+      "id": "n20261117_second_foundation_ray8_sale",
+      "date": "2026-11-17",
+      "genre": "capital",
+      "title": "Second Foundation、国内の系統用蓄電池プロジェクト4件をレイエイトエナジーへ売却完了",
+      "subtitle": "欧州の電力トレーダーSecond Foundationが子会社・日本オブノ開発の出力2MW蓄電所4件をレイエイトエナジーへ売却、売却後も長期アグリゲーターとして運用",
+      "sourceName": "Second Foundation Japan合同会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000011.000177112.html",
+      "topics": [
+        { "theme": "稼働済み高圧蓄電所のセカンダリー取引", "conclusion": "開発者から保有者への稼働資産売却が成立、開発者は運用（アグリゲーション）を継続", "detail": "売却した4件はいずれも出力2MWで日本各地に所在し、Second Foundationを支配株主・IQgを少数株主とする合弁の日本オブノが開発した（同社は国内約400MWのパイプラインを保有）。レイエイトエナジーは特別高圧の開発パイプラインを補完する稼働資産と位置付け、Second Foundationは売却後も長期アグリゲーターとして運用を担う。" }
+      ]
+    },
+    {
+      "id": "n20261117_renon_power_jcstar",
+      "image": "https://prcdn.freetls.fastly.net/release_image/185433/8/185433-8-d3b71694a27b3baf06b9d60ddf5e4fae-1671x941.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-17",
+      "genre": "policy",
+      "title": "RENON POWER、低圧・高圧系統用蓄電池3製品で「JC-STAR★1」適合ラベルを取得",
+      "subtitle": "RENON POWERがECube 215B（215kWh）・MPack 261A（261kWh）・Smart Matrix B（1,672kWh）の3製品でIPAのJC-STAR★1を取得",
+      "sourceName": "RENON POWER株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000008.000185433.html",
+      "topics": [
+        { "theme": "蓄電池のサイバーセキュリティ要件対応", "conclusion": "系統用蓄電池でJC-STAR適合ラベル取得が相次ぎ、メーカー選定の要件化が進む", "detail": "情報処理推進機構（IPA）が運営するIoT製品のセキュリティ適合評価制度「JC-STAR」の★1を、低圧・高圧の3製品で取得した。販売はREVIX JAPANが独占代理店、運用はWATT-TUNEが担う体制。11月にはLehmanSoft JapanのEMSも取得しており、系統用蓄電池の機器選定でJC-STAR対応が重視されつつある。" }
+      ]
+    },
     {
       "id": "n20261116_occto_capacity_exit_ltdecarb_deadlines",
       "image": "https://bessnews.jp/market/proffessional/4634203001001/img/thumbnail.jpg",
