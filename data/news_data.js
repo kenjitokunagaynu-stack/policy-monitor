@@ -19,6 +19,71 @@ window.NEWS_DATA = {
   ],
   "items": [
     {
+      "id": "n20261124_japan_branding_bess_webinar_series",
+      "image": "https://prcdn.freetls.fastly.net/release_image/181124/287/181124-287-52af3abcb71e433b02e9738a26683bec-1672x875.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-24",
+      "genre": "policy",
+      "title": "ジャパンブランディング、国内外の蓄電池制度・事例を読み解くウェビナーを連続開催（最新回：ドイツの25GW接続承認）",
+      "subtitle": "GUS Technology蓄電池の日本総代理店ジャパンブランディングが、ドイツ・英国・豪州・テキサス・カリフォルニア・台湾/韓国の制度や国内事例を題材にしたウェビナー告知をほぼ毎日配信",
+      "sourceName": "ジャパンブランディング株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000287.000181124.html",
+      "topics": [
+        { "theme": "海外制度・国内事例の連続ウェビナー", "conclusion": "海外の市場設計・制度整備と国内の失敗パターン・地域モデルをテーマに、11月中旬からほぼ毎日ウェビナー告知を配信", "detail": "最新回（11/24）はドイツで約3800件・25GW・46GWhの系統接続が1年で承認された背景を解説。11月中旬以降、英国のキャップ・アンド・フロア制度、豪州ホーンズデール、容量市場のないテキサス、約13,000MWのカリフォルニア、台湾と韓国の政策比較、国の審議会資料に見る5つの失敗パターン、岐阜県恵那市の地産地消モデル、関西電力・中国電力の自社蓄電所なども題材にしている。" }
+      ]
+    },
+    {
+      "id": "n20261124_sciencex_bess_market_279deals",
+      "image": "https://prcdn.freetls.fastly.net/release_image/195288/1/195288-1-663c66b640c97cc30de2075a6c96f52a-1600x1242.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-24",
+      "genre": "entry",
+      "title": "サイエンスエックス「蓄電所マーケット」、系統用蓄電池の売り案件279件を登録なしで一覧化",
+      "subtitle": "蓄電所の売買マッチング「蓄電所マーケット」が9管内・38都道府県の売り案件279件（11/23時点）を登録なしで公開、条件別の入口と案件比較機能を追加",
+      "sourceName": "サイエンスエックス株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000001.000195288.html",
+      "topics": [
+        { "theme": "蓄電所の流通（セカンダリー）市場", "conclusion": "系統用蓄電池案件の売買プラットフォームで、公開案件数が279件規模に", "detail": "系統用蓄電池を買いたい会社と売りたい会社をつなぐ「蓄電所マーケット」に、条件ごとの入口と案件を横に並べて比べる機能など3つの機能を追加。2026年11月23日時点で9管内・38都道府県の279件を掲載し、価格・資料・質疑は無料登録後に閲覧できる。日本語と英語の頁を用意し、海外投資家も対象とする。" }
+      ]
+    },
+    {
+      "id": "n20261120_ssk_seminar_r9_tax_subsidy",
+      "image": "https://prcdn.freetls.fastly.net/release_image/32407/4781/32407-4781-0613f0820461858ebf2333ae2c5d0395-1672x941.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-20",
+      "genre": "policy",
+      "title": "新社会システム総合研究所、「令和9年度に向けた発電・蓄電設備に対する税制優遇・補助金」セミナーを12月22日に開催",
+      "subtitle": "SSKがKKRコンサルティング・山田純也税理士事務所の講師陣による発電・蓄電設備の税制優遇・補助金セミナーを2026年12月22日に開催、新制度「特定生産性向上設備等投資促進税制」も解説",
+      "sourceName": "株式会社新社会システム総合研究所（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000004781.000032407.html",
+      "topics": [
+        { "theme": "蓄電設備の税制・補助金", "conclusion": "令和9年度に向けた発電・蓄電設備向け税制優遇と補助金の最新情報を整理するセミナー", "detail": "ビジネスセミナーを企画するSSKが、KKRコンサルティング／山田純也税理士事務所の山田純也氏・池田美香氏を講師に、発電・蓄電設備に対する税制優遇と補助金を解説するセミナーを12月22日に開催する。新制度「特定生産性向上設備等投資促進税制」の最新情報も取り上げる。" }
+      ]
+    },
+    {
+      "id": "n20261120_riapartners_bluehour_datacenter_conversion",
+      "image": "https://prcdn.freetls.fastly.net/release_image/193143/7/193143-7-113dce7bf1e8be7605a3b25218812e82-2400x1260.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-20",
+      "genre": "entry",
+      "title": "RIA PARTNERSのBLUEHOUR、蓄電池開発用地の「データセンター転用の見立て」を開始",
+      "subtitle": "系統用蓄電池案件の取引プラットフォームBLUEHOURが、接続検討の回答書と用地条件から蓄電池用地のデータセンター転用可否を推論するサービスを開始（協力パートナー先着5社は無料）",
+      "sourceName": "RIA PARTNERS株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000007.000193143.html",
+      "topics": [
+        { "theme": "蓄電池用地とデータセンター需要", "conclusion": "系統接続枠を持つ蓄電池用地を、電力を求めるデータセンター用地として評価する動き", "detail": "生成AIの広がりでデータセンターの用地探しは「電気をいつ・どれだけ受けられるか」が最初の関門となっている。BLUEHOURは接続検討の情報を持つ蓄電池用地について、回答書と用地条件から転用を進める価値があるかを決まった型で推論する。データセンター用地の「買いたい条件」の登録も開始した。" }
+      ]
+    },
+    {
+      "id": "n20261119_powerx_averroes_gcc_partnership",
+      "image": "https://prcdn.freetls.fastly.net/release_image/109041/286/109041-286-eb7638d1f37548d12458daae35b3c274-1920x1080.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-19",
+      "genre": "capital",
+      "title": "パワーエックス、ドバイのAverroes社と中東湾岸地域での蓄電システム共同販売でパートナーシップ契約",
+      "subtitle": "パワーエックスがAverroes Tech Manufacturing（UAE・ドバイ）とGCC諸国で「Mega Power」シリーズを共同販売するパートナーシップ契約を締結（法的拘束力なし、個別案件ごとに最終契約）",
+      "sourceName": "株式会社パワーエックス（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000286.000109041.html",
+      "topics": [
+        { "theme": "国産蓄電池メーカーの海外展開", "conclusion": "パワーエックスが中東湾岸地域で蓄電システムの販売網づくりに着手", "detail": "両社は湾岸地域で蓄電システムの導入案件を共同で発掘し顧客提案を進める。パワーエックスは製品供給とシステム設計・技術仕様の策定、Averroes社は顧客対応・現地許認可・設置工事・アフターサービスを担当。10フィート型「Mega Power 2500」や20フィート型「Mega Power 4000」などを提案する。契約に法的拘束力はなく、販売・供給は個別案件の最終契約が条件。" }
+      ]
+    },
+    {
       "id": "n20261124_nippon_chikudenchi_nc_fuji_obuchi",
       "image": "https://prcdn.freetls.fastly.net/release_image/161802/124/161802-124-f17874b9caabb76e655652c957bf1426-850x566.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "date": "2026-11-24",
