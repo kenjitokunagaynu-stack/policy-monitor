@@ -7,7 +7,7 @@
 // 2025年11月〜2026年6月分は、テーマ4「投資プレイヤー一覧」（players.html）の調査時に見つかった個別ニュースを統合したものです。
 // ジャンルは収集した実データから抽出した「候補」です。
 window.NEWS_DATA = {
-  "collectedAt": "2026-11-25",
+  "collectedAt": "2026-11-26",
   "periodLabel": "2025年11月〜2026年11月（試験収集、投資プレイヤー調査と統合、企業横断フォローアップ・蓄電池メーカー動向を追加調査）",
   "genres": [
     { "id": "all", "label": "すべて" },
@@ -18,6 +18,84 @@ window.NEWS_DATA = {
     { "id": "capital", "label": "資本・提携・M&A" }
   ],
   "items": [
+    {
+      "id": "n20261125_occto_capacity_additional_auction_2027_dr_backfill",
+      "image": "https://bessnews.jp/institutional/proffessional/4635103102002/img/thumbnail.jpg",
+      "date": "2026-11-25",
+      "genre": "policy",
+      "title": "容量市場の2027年度追加オークション、発動指令電源の退出分を追加募集へ ─ 応札は2027年6月2日〜14日の予定",
+      "subtitle": "OCCTO第78回容量市場の在り方等に関する検討会（11/25・書面）で、発動指令電源の市場退出分を上限に追加募集する「充当措置」を新設する募集要綱案と日程が示された",
+      "sourceName": "bessnews（OCCTO「第78回 容量市場の在り方等に関する検討会」資料3に基づく解説記事）",
+      "sourceUrl": "https://bessnews.jp/institutional/proffessional/4635103102002/",
+      "topics": [
+        { "theme": "発動指令電源の充当措置と追加オークション日程", "conclusion": "調達オークションを開かない供給区域でも、発動指令電源の退出があれば退出分を上限に追加募集。約定価格は2028年度メインオークションのエリアプライス", "detail": "2027年度追加オークション（対象実需給年度2028年度）の要綱案・約款案は12月2日〜15日に意見募集、2027年3月1日から参加登録、4月16日〜30日に期待容量登録、6月2日〜14日に応札受付、7月末頃に約定結果公表の予定。指標価格見直しに伴う容量拠出金の影響緩和措置の適用や、実効性テストの代替報告要件の緩和（2027年度テストから）も盛り込まれた。安定電源の蓄電池は期待容量の再登録が必要。" }
+      ]
+    },
+    {
+      "id": "n20261125_occto_ltdecarb_auction4_battery_cap_price_correction",
+      "image": "https://bessnews.jp/institutional/proffessional/4635103102001/img/thumbnail.jpg",
+      "date": "2026-11-25",
+      "genre": "policy",
+      "title": "第4回長期脱炭素電源オークション、蓄電池の上限価格に誤り ─ 四国は467円/kW/年引き下げ、意見募集は12月8日まで",
+      "subtitle": "OCCTOが9月2日公表の募集要綱・約款の改定案で意見募集を開始、蓄電池の上限は四国71,621→71,154円/kW/年、中国71,154→71,211円/kW/年に修正、応札受付は2027年1月19日〜26日予定",
+      "sourceName": "bessnews（OCCTO「長期脱炭素電源オークション募集要綱・約款の改定案に関する意見募集」に基づく解説記事）",
+      "sourceUrl": "https://bessnews.jp/institutional/proffessional/4635103102001/",
+      "topics": [
+        { "theme": "蓄電池（新設）上限価格のエリア別修正", "conclusion": "要綱記載の上限価格の一部誤りを修正。蓄電池の上限範囲は71,140〜74,906円/kW/年となり、動くのは中国（+57円）と四国（−467円）のみ", "detail": "改定は電力安定供給WG（第7回10/7・第8回11/24）の議論に対応するためで、変更点は上限価格の修正と、LNG専焼火力の「還付の固定化」追記の2点。蓄電池の還付ルールは変わらない。四国で10万kWの案件なら上限いっぱいの契約金額の天井が年4,670万円下がる計算。期待容量の登録は12月9日〜15日の予定。" }
+      ]
+    },
+    {
+      "id": "n20261118_chubu_pg_lv_battery_pcs_ramp_5sec",
+      "image": "https://bessnews.jp/technology/standard/4634402405001/img/thumbnail.jpg",
+      "date": "2026-11-18",
+      "genre": "policy",
+      "title": "中部電力PG、低圧の系統用蓄電池にもPCS出力変化速度「0→100%に5秒以上」を要求 ─ 11月18日から即日適用",
+      "subtitle": "中部電力パワーグリッドが逆潮流する低圧蓄電設備にもPCS出力の0%⇔100%変化を5秒以上とする設定を求め、公表当日の2026年11月18日から適用（高圧は2024年11月28日から適用済み）",
+      "sourceName": "bessnews（中部電力パワーグリッド「蓄電設備の出力変化速度に関するお願い」に基づく解説記事）",
+      "sourceUrl": "https://bessnews.jp/technology/standard/4634402405001/",
+      "topics": [
+        { "theme": "中部エリア低圧蓄電池の連系要件", "conclusion": "中部エリアで今後申込む低圧案件は、PCSが「5秒以上・ランプ20%/秒以下・ステップ10%以下」に設定できる機種であることが前提に", "detail": "条件は充電・放電、増加・減少の両方向に適用。関連資料PDFにはお知らせページに無いランプ20%/秒以下の条件もある。低圧はパッケージ製品にPCSが組み込まれ、ランプ率等を利用者側で変更できない機種もあるため、機種選定と系統連系の契約申込に影響する。高圧は運転力率80〜100%の設定も求められる。" }
+      ]
+    },
+    {
+      "id": "n20261126_sciencex_aggregator_count_series",
+      "image": "https://prcdn.freetls.fastly.net/release_image/195288/4/195288-4-8c1aea6b2e4abb4c49de507486da8c74-2016x1080.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-26",
+      "genre": "policy",
+      "title": "サイエンスエックス、アグリゲーターを数える連載を開始 ─ 届出187社のうち需給調整市場の取引会員は115社",
+      "subtitle": "資源エネルギー庁の特定卸供給事業者一覧とEPRX取引会員一覧を集計、届出187社（10/30時点）のうち取引会員115社、62社は事業開始から1年未満、預かり量を数字で公表するのは約76社中9社",
+      "sourceName": "サイエンスエックス株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000004.000195288.html",
+      "topics": [
+        { "theme": "アグリゲーター市場の公表データ集計", "conclusion": "アグリゲーターの届出は許可ではなく運用能力は問われない。公表資料では会社ごとの成績や乗り換え手順は分からない", "detail": "入札資格を持つ126社のうち2025年度に実際に入札したのは56社（2026年3月末・EPRX公表資料）。取引会員一覧には11月20日時点で156社が掲載。連載は名簿編・預かり量編・値付け編（上限価格が1年で半分に）・海外編・乗り換え編の6本構成で、事業者がアグリゲーターを選ぶ際の判断材料を整理している。" }
+      ]
+    },
+    {
+      "id": "n20261125_sciencex_market_note_flash_oct_fcr",
+      "image": "https://prcdn.freetls.fastly.net/release_image/195288/2/195288-2-f71ca9d5f1de0259a50b21a490439419-1600x1206.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-25",
+      "genre": "policy",
+      "title": "需給調整市場の一次調整力（オンライン）、2026年10月は応札倍率145.9%・平均落札価格3.22円 ─ サイエンスエックス「蓄電所の市場ノート」に毎朝更新の速報",
+      "subtitle": "EPRX・JEPX公表データの集計で、一次調整力（オンライン）は9月→10月で応札倍率124.3%→145.9%、平均落札価格3.42円→3.22円/kW・30分、11月1〜24日は130.6%・2.91円",
+      "sourceName": "サイエンスエックス株式会社（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000002.000195288.html",
+      "topics": [
+        { "theme": "蓄電所の収益市場データ（2026年10〜11月）", "conclusion": "一次調整力の価格は低下傾向が続き、11月は2.91円まで下落。一方で三次調整力②は3.81円（前月2.22円）に上昇", "detail": "一次調整力（オフライン）は平均落札価格5.80円→2.69円で、応札倍率92.4%と募集未達。JEPXでは10月の高い4時間と安い4時間の値差が東京17.14円/kWh・九州19.30円/kWh、システムプライス月平均22.51円/kWh。11月1〜24日はシステムプライス平均28.41円、値差は東京17.92円・九州23.98円に拡大している。" }
+      ]
+    },
+    {
+      "id": "n20261125_maris_bessroom_mini_lv_bess",
+      "image": "https://prcdn.freetls.fastly.net/release_image/188178/6/188178-6-ad519eda0a1583f7158461650ba6f0e7-519x201.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "date": "2026-11-25",
+      "genre": "entry",
+      "title": "MARIS it up.、低圧系統用蓄電池の非公開案件を1基から紹介する「BESSROOM mini」を公開",
+      "subtitle": "高圧系統用蓄電池案件の流通を手掛けてきたMARIS it up.（横浜市）が、法人・個人向けに低圧案件の紹介・収益シミュレーション・購入相談を行う「BESSROOM mini」のサービスサイトを公開",
+      "sourceName": "株式会社MARIS it up.（PR TIMES）",
+      "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000006.000188178.html",
+      "topics": [
+        { "theme": "低圧蓄電所の案件流通サービス", "conclusion": "高圧向けBESSROOMの仕組みとネットワークを活用し、一般公開されていない低圧案件を購入希望者の条件に合わせて個別に案内", "detail": "土地・権利関係、電力会社との手続き状況、分割規制への該当可能性、工事条件、運転開始時期などを事前確認し、控えめ・標準・好調の複数シナリオで収益シミュレーションを提示。設備価格、運用会社、手数料、保守費用、土地賃料なども購入前に確認できるようにする。個人の資産運用目的の購入検討にも対応する。" }
+      ]
+    },
     {
       "id": "n20261124_japan_branding_bess_webinar_series",
       "image": "https://prcdn.freetls.fastly.net/release_image/181124/287/181124-287-52af3abcb71e433b02e9738a26683bec-1672x875.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
